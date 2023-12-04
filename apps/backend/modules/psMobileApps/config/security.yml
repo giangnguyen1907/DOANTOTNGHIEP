@@ -1,0 +1,21 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_REPORT_MOBILE_APPS_SHOW,PS_REPORT_MOBILE_APPS_DETAIL,PS_REPORT_MOBILE_APPS_EXPORT,PS_REPORT_MOBILE_APPS_FILTER_SCHOOL]]   
+
+detail:
+  is_secure: true
+  credentials: [PS_REPORT_MOBILE_APPS_DETAIL] 
+
+  crossChecking:
+  is_secure: true
+  credentials: [[PS_REPORT_MOBILE_APPS_SHOW,PS_REPORT_MOBILE_APPS_DETAIL,PS_REPORT_MOBILE_APPS_EXPORT,PS_REPORT_MOBILE_APPS_FILTER_SCHOOL]]   

@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ReceivableTemp
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_receivable_class
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        receivable_at: {date_format: dd-MM-yyyy}
+      list:
+        display:  [re_title,amount,receivable_at,class_name,updated_by]
+        table_method: doSelectQuery
+        actions:  {}
+        object_actions:
+          _delete: {credentials: PS_FEE_RECEIVABLE_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+          _delete: {credentials: PS_FEE_RECEIVABLE_DELETE,confirm: "Are you sure?"}
+      filter:
+        display: 	[ps_school_year_id,ps_month,ps_customer_id,ps_workplace_id,ps_myclass_id,keywords]
+      form:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_myclass_id,receivable_id,amount,receivable_at,note]
+      edit:    ~
+      new:     ~

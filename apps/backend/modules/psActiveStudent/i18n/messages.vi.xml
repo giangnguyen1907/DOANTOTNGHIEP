@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+		
+			<trans-unit>
+				<source>Start at</source>
+				<target>Ngày hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsActiveStudent List</source>
+				<target>Danh sách hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsActiveStudent</source>
+				<target>Thêm mới hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsActiveStudent</source>
+				<target>Cập nhật thông tin hoạt động</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Ps class</source>
+				<target>Chọn lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title service</source>
+				<target>Dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Hoạt động</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Note</source>
+				<target>Nội dung</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature branch import</source>
+				<target>Import lịch hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file successfully. You can add another one below.
+				</source>
+				<target>Import lịch hoạt động thành công. Bạn có thể tiếp tục.
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file failed.</source>
+				<target>File import bị lỗi, vui lòng kiểm tra lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Unknown class id</source>
+				<target>Không xác định 'CODE' = </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>line</source>
+				<target>, Dòng : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Of file</source>
+				<target>, Của File : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The excel file must be in the format: xls, xlsx. File size
+					less than %value%KB.</source>
+				<target>Không đúng định dạng file : xls, xlxs. Hoặc kích thước vượt
+					quá %value%KB</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error date line</source>
+				<target> Lỗi, Vui lòng kiểm tra lại giá trị thời gian, Dòng :
+				</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

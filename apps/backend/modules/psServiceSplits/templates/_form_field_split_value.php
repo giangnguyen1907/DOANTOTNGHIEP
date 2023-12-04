@@ -1,0 +1,1 @@
+<?php echo $split_value;?>

@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsAdviceCategories
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_advice_categories
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        is_activated : {label: Status}
+        updated_at : {date_format: HH:mm dd-MM-yyyy}
+        user_create_id : {label: User Create?}
+      list:
+        title: Advice Categories
+        display: [ps_customer_id,title,note,is_activated,user_created_id,user_updated_id,created_at]
+        max_per_page: 10
+        actions:
+          _new: {credentials: PS_STUDENT_ADVICE_CATEGORIES_ADD}
+        object_actions:
+#          _detail: {credentials: PS_STUDENT_ADVICE_CATEGORIES_DETAIL}
+          _edit: {credentials: PS_STUDENT_ADVICE_CATEGORIES_EDIT}
+          _delete: {credentials: PS_STUDENT_ADVICE_CATEGORIES_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_STUDENT_ADVICE_CATEGORIES_DELETE,confirm: "Are you sure?"}
+        table_method: doSelectQuery
+
+      filter:
+        display:  [ps_customer_id,is_activated,title]
+      form:    ~
+      edit:    ~
+      new:     ~

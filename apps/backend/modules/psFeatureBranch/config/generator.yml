@@ -1,0 +1,68 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           FeatureBranch
+    theme:                 admin2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_feature_branch
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: [PS_SYSTEM_FEATURE_BRANCH_EDIT,PS_SYSTEM_FEATURE_BRANCH_DETAIL,PS_SYSTEM_FEATURE_BRANCH_DELETE]}
+        _edit: {credentials: PS_SYSTEM_FEATURE_BRANCH_EDIT}
+        _new: {credentials: PS_SYSTEM_FEATURE_BRANCH_ADD}
+        _delete: {credentials: PS_SYSTEM_FEATURE_BRANCH_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, label: Updated by}        
+        file_name  : {label: Icon}
+        ps_class_room_id : {label: Class room}
+        is_continuity : {label: Continuity}
+        is_depend_attendance : {label: Depend attendance}      
+      list:
+        display: [id,_file_name,_name,_list_field_mode,_list_field_number_option_feature,is_activated,updated_at]
+        table_method: doSelectQuery
+        max_per_page: 35
+        sort: [iorder, asc]
+        object_actions:
+#          _schedule: {credentials: [[PS_SYSTEM_FEATURE_BRANCH_EDIT,PS_SYSTEM_FEATURE_BRANCH_DETAIL,PS_SYSTEM_FEATURE_BRANCH_DELETE]]}
+#          _detail: {credentials: [[PS_SYSTEM_FEATURE_BRANCH_EDIT,PS_SYSTEM_FEATURE_BRANCH_DETAIL,PS_SYSTEM_FEATURE_BRANCH_DELETE]]}
+          _edit: {credentials: PS_SYSTEM_FEATURE_BRANCH_EDIT}
+          _delete: {credentials: PS_SYSTEM_FEATURE_BRANCH_DELETE}
+        actions:
+          _list:
+            action: ps_feature
+            params: class=btn btn-default btn-success bg-color-green btn-psadmin pull-left
+            credentials: [PS_SYSTEM_FEATURE_SHOW]
+          _new: ~
+        batch_actions:          
+          _delete: ~
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,feature_id,ps_obj_group_id,is_study,is_activated,name]
+      form:
+        fields:
+          ps_obj_group_id: {help: "Help for object group"}
+          is_continuity: {help: "Help for is continuity"}
+      edit:
+        title: Edit Feature branch: "%%name%%"
+        display:
+          Feature branch infomation: [ps_customer_id,school_year_id,ps_workplace_id,ps_obj_group_id,feature_id,name,mode,ps_image_id,is_study,is_continuity,is_depend_attendance,note,iorder,is_activated]
+#          Feature branch times apply: [_feature_branch_times_form]
+          Feature branch times apply: [_list_feature_branch_time]
+        actions:
+          _list: {credentials: PS_SYSTEM_FEATURE_BRANCH_SHOW}
+          _save: {credentials: PS_SYSTEM_FEATURE_BRANCH_EDIT}
+          _save_and_add: {credentials: PS_SYSTEM_FEATURE_BRANCH_ADD}
+          _delete: {credentials: PS_SYSTEM_FEATURE_BRANCH_DELETE}          
+      new:
+        title: New Feature branch
+        display:
+          Feature branch infomation: [ps_customer_id,school_year_id,ps_workplace_id,ps_obj_group_id,feature_id,name,mode,ps_image_id,is_study,is_continuity,is_depend_attendance,note,iorder,is_activated]
+        actions:
+          _list: {credentials: PS_SYSTEM_FEATURE_BRANCH_SHOW}
+          _save: {credentials: PS_SYSTEM_FEATURE_BRANCH_EDIT}

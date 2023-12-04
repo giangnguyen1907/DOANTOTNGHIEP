@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Service amount</source>
+				<target>Giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Back to service</source>
+				<target>Về dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Back to subjects</source>
+				<target>Về môn học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New service split</source>
+				<target>Thêm mới giá trị tính cho công thức</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Formula for calculating fees: %%Service%%</source>
+				<target>Công thức tính phí cho: %%Service%%</target>
+			</trans-unit>
+			<!-- <trans-unit> <source>Count value</source> <target>Lần sử dụng từ</target> 
+				</trans-unit> -->
+			<trans-unit>
+				<source>Count value</source>
+				<target>Từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Count ceil</source>
+				<target>Đến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Split value</source>
+				<target>Tỷ lệ tính giá(%)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Number school days</source>
+				<target>Số ngày đi học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Split level fee</source>
+				<target>Mức tính phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Splits</source>
+				<target>Thêm mới giá trị tính cho công thức</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Splits</source>
+				<target>Cập nhật giá trị tính cho công thức</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is type fee</source>
+				<target>Cách quy đổi khi chia phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note of is type fee</source>
+				<target>Chỉ áp dụng đối với loại dịch vụ "Không cố định"</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Calculated according to the number of uses</source>
+				<target>Tính theo số lần sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Calculated according to the number of unused times</source>
+				<target>Tính theo số lần không sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Number of unused words</source>
+				<target>Số lần không sử dụng từ</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

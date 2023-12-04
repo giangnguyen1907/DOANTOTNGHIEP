@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			
+			<trans-unit>
+				<source>Is root</source>
+				<target>Đơn vị gốc(chỉ duy nhất)</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>History</source>
+				<target>Lịch sử</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsCustomer List</source>
+				<target>Danh sách trường học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsCustomer</source>
+				<target>Thêm mới trường học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsCustomer</source>
+				<target>Sửa thông tin trường học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Customers</source>
+				<target>Trường học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsCustomer List</source>
+				<target>Danh sách trường học(KH)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Prefix code</source>
+				<target>Mã tiền tố</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Prefix code help</source>
+				<target>Được sử dụng trong việc thiết lập cấu hình tiền tố cho các
+					loại: Mã nhân sự, mã học sinh,...</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>School code</source>
+				<target>Mã trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>School name</source>
+				<target>Tên trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Address</source>
+				<target>Địa chỉ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Description</source>
+				<target>Mô tả</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên Trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>URL</source>
+				<target>Website</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Type school</source>
+				<target>Loại hình trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps typeschool</source>
+				<target>Loại hình trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is Activated</source>
+				<target>Trạng thái</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not activated</source>
+				<target>Chưa kích hoạt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Agent</source>
+				<target>Đại diện</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Principal</source>
+				<target>Hiệu trưởng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps ward</source>
+				<target>Xã/Phường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>View logo</source>
+				<target>Logo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tel-Fax</source>
+				<target>Điện thoại-Fax</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Customer information</source>
+				<target>Thông tin trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Created At</source>
+				<target>Ngày tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated At</source>
+				<target>Cập nhật</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Created By</source>
+				<target>Tạo bởi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated By</source>
+				<target>Cập nhật bởi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>School information</source>
+				<target>Thông tin trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>School workplace</source>
+				<target>Cơ sở đào tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Workplace title</source>
+				<target>Tên cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is deploy</source>
+				<target>Tình trạng triển khai</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Deploying</source>
+				<target>Đang triển khai</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not deploy</source>
+				<target>Chưa triển khai</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select deploy state-</source>
+				<target>Tình trạng triển khai</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

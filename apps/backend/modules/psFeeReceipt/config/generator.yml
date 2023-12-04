@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsFeeReceipt
+    theme:                 admin2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_fee_receipt
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        updated_by: {date_format: HH:mm  dd-MM-yyyy}
+      list:
+        display: [student_id,receipt_no,receivable_amount,collected_amount,balance_amount,receipt_date,payment_status,payment_date,is_public,number_push_notication,updated_by]
+        table_method: doSelectQuery
+        max_per_page: 35
+        sort: [id, asc]
+        object_actions:
+          _edit: {credentials: PS_FEE_RECEIPT_NOTICATION_EDIT}
+          _delete: {credentials: PS_FEE_RECEIPT_NOTICATION_DELETE}
+      filter:
+        display: [school_year_id,ps_month,ps_customer_id,ps_workplace_id,ps_class_id,payment_status,keywords]
+      form:
+        fields:
+          ps_obj_group_id: {help: "Help for object group"}
+      edit:
+        title: Edit Fee receipt:
+        display:
+          Fee receipt infomation: [ps_customer_id,student_id,receipt_no,payment_relative,receivable_amount,collected_amount,balance_amount,receipt_date,payment_date,note,payment_status,is_public]
+          Fee receipt student apply: [_list_fee_receipt_student]
+      new:
+        title: New Fee receipt student
+        display:
+          Fee receipt infomation: [ps_customer_id,school_year_id,ps_workplace_id,ps_class_id,receipt_no,student_id,payment_relative,receivable_amount,collected_amount,balance_amount,receipt_date,payment_date,note,is_public,payment_status]

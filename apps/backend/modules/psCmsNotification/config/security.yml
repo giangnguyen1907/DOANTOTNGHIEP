@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+# Có quyền gửi cho tất cả toàn trường  : PS_CMS_NOTIFICATIONS_ALL
+# Có quyền gửi cho cơ sở đang công tác : PS_CMS_NOTIFICATIONS_WORKPLACE
+# Nhà phát triển, gửi thông báo toàn hệ thống : PS_CMS_NOTIFICATIONS_SYSTEM
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+#  credentials: [[PS_CMS_NOTIFICATIONS_ALL,PS_CMS_NOTIFICATIONS_WORKPLACE,PS_CMS_NOTIFICATIONS_SYSTEM,PS_CMS_NOTIFICATIONS_FILTER_SCHOOL,PS_CMS_NOTIFICATIONS_ADD,PS_CMS_NOTIFICATIONS_DELETE]]   
+new:
+  is_secure: true
+#  credentials: [PS_CMS_NOTIFICATIONS_ADD]
+    
+create:
+  is_secure: true
+#  credentials: [PS_CMS_NOTIFICATIONS_ADD]

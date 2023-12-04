@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsContract
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_contract
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_SYSTEM_CONTRACT_EDIT}
+        _new: {credentials: PS_SYSTEM_CONTRACT_ADD}
+        _delete: {credentials: PS_SYSTEM_CONTRACT_DELETE}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:    
+        display: [=title,iorder,is_activated, description,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+      filter:  ~
+      form: ~
+      edit: ~
+      new: ~

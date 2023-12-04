@@ -1,0 +1,52 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsLogtimes
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_logtimes
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _save: {credentials: [[PS_STUDENT_ATTENDANCE_ADD,PS_STUDENT_ATTENDANCE_EDIT]]}
+        _new: {credentials: PS_STUDENT_ATTENDANCE_ADD}
+      fields:
+        td_note: {label: Note}
+        td_service: {label: User service}
+      list:
+        display: [_view_img,student_name,_td_attendance,_td_login_infomation,_td_logout_infomation,_td_service,_td_note]
+        table_method: doSelectQuery
+        max_per_page: {}
+        batch_actions: {}
+        object_actions:
+          _edit: {credentials: PS_STUDENT_ATTENDANCE_EDIT}
+          _delete: {credentials: PS_STUDENT_ATTENDANCE_DELETE}
+        actions:
+          _save: {credentials: [[PS_STUDENT_ATTENDANCE_ADD,PS_STUDENT_ATTENDANCE_EDIT]]}
+          _new: {credentials: PS_STUDENT_ATTENDANCE_ADD, label: Attendance by baby}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,tracked_at]
+      form:    ~
+      edit:
+        display: 
+          Infomation relative to: [student_id,login_at,login_relative_id,login_member_id]
+          Student service diary: [_form_field_services]
+          Infomation relative back: [logout_relative_id,tracked_at,logout_at,logout_member_id]
+          Note: [note]
+        actions:
+          _list: ~
+          _save: ~
+          _save_and_add: ~
+          _delete: ~
+      new:
+        display: 
+          Infomation relative to: [student_id,login_at,login_relative_id,login_member_id]
+#          Student service diary: [student_service]
+          Student service diary: [_form_field_services]
+          Infomation relative back: [logout_relative_id,tracked_at,logout_at,logout_member_id]
+          Note: [note]

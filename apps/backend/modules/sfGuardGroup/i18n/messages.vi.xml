@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			
+			<trans-unit>
+				<source>Group list</source>
+				<target>Danh sách nhóm người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Group</source>
+				<target>Thêm nhóm người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Editing Group "%%name%%"</source>
+				<target>Cập nhật nhóm "%%name%%"</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Name</source>
+				<target>Tên nhóm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Users</source>
+				<target>Người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Groups list</source>
+				<target>Nhóm người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Permissions list</source>
+				<target>Danh sách quyền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is super admin</source>
+				<target>Giới hạn chỉnh sửa chi tiết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Only be corrected if the right to correct details</source>
+				<target>Chỉ được sửa nếu có quyền sửa chi tiết</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

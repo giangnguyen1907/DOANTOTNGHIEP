@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"	datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z" product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsApp List</source>
+				<target>Danh sách Ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsApp</source>
+				<target>Cài đặt Ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsApp</source>
+				<target>Cập nhật thông tin Ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Application name</source>
+				<target>Tên ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Application code</source>
+				<target>Mã ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>App code</source>
+				<target>Mã ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Application code help</source>
+				<target>Mã ứng dụng sẽ được tự động bổ sung tiền tố PS và mã ứng dụng gốc. Ví dụ PS_STUDENT, PS_STUDENT_CLASS</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps app</source>
+				<target>Ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps app root</source>
+				<target>Ứng dụng gốc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>--Select Application--</source>
+				<target>--Chọn ứng dụng--</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

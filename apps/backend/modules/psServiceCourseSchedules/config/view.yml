@@ -1,0 +1,15 @@
+########
+
+editSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js
+    - /psAdminThemePlugin/js/modules/ps_service_course_schedules.js: {position: last}
+ 
+newSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js
+    - /psAdminThemePlugin/js/modules/ps_service_course_schedules.js: {position: last}

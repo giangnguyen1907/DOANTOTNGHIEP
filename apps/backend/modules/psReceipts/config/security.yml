@@ -1,0 +1,96 @@
+default:
+  is_secure:   true
+
+all:
+  is_secure: true
+
+# quyen cua action: PS_FEE_REPORT_EDIT_DETAIL
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_FEE_REPORT_IMPORT_LAST_MONTH,PS_FEE_REPORT_PUSH,PS_FEE_REPORT_IMPORT,PS_FEE_REPORT_SHOW,PS_FEE_REPORT_DETAIL,PS_FEE_REPORT_ADD,PS_FEE_REPORT_EDIT,PS_FEE_REPORT_DELETE,PS_FEE_REPORT_FILTER_SCHOOL]]   
+
+new:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EDIT]  
+
+delete:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_DELETE]
+
+import:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_IMPORT]  
+
+batchPushNotication:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_PUSH]
+
+pushNotication:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_PUSH]
+
+notication:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_PUSH]
+
+batchExportFeeReports:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EXPORT]
+
+exportFeeReports:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EXPORT]
+
+#man hinh xu ly bao phi  
+feeControl:
+  is_secure: true
+  credentials: [[PS_FEE_REPORT_ADD,PS_FEE_REPORT_EDIT]]
+
+#Thanh toan  
+payment:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EDIT]
+
+#Sua phieu Thanh toan
+editPaymentReceipt:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EDIT]
+
+importLastMonth:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_IMPORT_LAST_MONTH]
+
+importLastMonthSave:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_IMPORT_LAST_MONTH]
+
+importreceipt:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_IMPORT]
+
+importreceiptSave:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_IMPORT]
+
+#Xuat bieu mau phieu du dau ky
+exportBalance:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_IMPORT_LAST_MONTH]
+
+#Xuat phieu thanh toan
+exportPayment:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_IMPORT]
+
+feeReceivableStudentStep1Success:
+  is_secure: true
+  credentials: [[PS_FEE_REPORT_ADD,PS_FEE_REPORT_EDIT]]

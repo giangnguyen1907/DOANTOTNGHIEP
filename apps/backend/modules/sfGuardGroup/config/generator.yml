@@ -1,0 +1,66 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardGroup
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_group
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: [[PS_SYSTEM_GROUP_USER_EDIT,PS_SYSTEM_GROUP_USER_DETAIL,PS_SYSTEM_GROUP_USER_DELETE, PS_SYSTEM_GROUP_USER_EDIT_DETAIL]]}
+        _edit: {credentials: [[PS_SYSTEM_GROUP_USER_EDIT,PS_SYSTEM_GROUP_USER_DELETE,PS_SYSTEM_GROUP_USER_EDIT_DETAIL]]}
+        _new: {credentials: PS_SYSTEM_GROUP_USER_ADD}
+        _delete: {credentials: PS_SYSTEM_GROUP_USER_DELETE,confirm: "Are you sure this group?"}
+      fields:         
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        customer_title : {label: Ps customer}        
+      filter:  
+        display: 	[ps_customer_id,name]        
+      list:
+        title: Group list
+        display: [=name,customer_title,description,_iorder,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        max_per_page: 50
+        object_actions:
+          _detail: ~
+          _edit: ~
+          _delete: ~
+        batch_actions:
+         _updateOrder: {credentials: PS_SYSTEM_GROUP_USER_EDIT,label: Update Order}
+      form:
+        fields:
+          is_super_admin: {help: Only be corrected if the right to correct details}       
+      edit:        
+        display:
+          Infomation: [ps_customer_id, name, description,iorder,is_super_admin]
+          Users:	[users_list]
+          Features:	[permissions_list] 
+        actions:
+          _list:
+            credentials: [[PS_SYSTEM_GROUP_USER_FILTER_SCHOOL,PS_SYSTEM_GROUP_USER_SHOW,PS_SYSTEM_GROUP_USER_EDIT,PS_SYSTEM_GROUP_USER_DETAIL,PS_SYSTEM_GROUP_USER_ADD,PS_SYSTEM_GROUP_USER_DELETE,PS_SYSTEM_GROUP_USER_EDIT_DETAIL]]
+          _save:
+            credentials: [[PS_SYSTEM_GROUP_USER_EDIT,PS_SYSTEM_GROUP_USER_EDIT_DETAIL]]
+          _save_and_add:
+            credentials: [PS_SYSTEM_GROUP_USER_ADD]
+          _delete: ~          
+      new:
+        title: New Group
+        display:
+          Infomation:		[ps_customer_id, name, description,iorder,is_super_admin]
+          Users Infomation:	[users_list]
+          Features Infomation:	[permissions_list]          
+        actions:          
+          _list:
+            credentials: [[PS_SYSTEM_GROUP_USER_FILTER_SCHOOL,PS_SYSTEM_GROUP_USER_SHOW,PS_SYSTEM_GROUP_USER_EDIT,PS_SYSTEM_GROUP_USER_DETAIL,PS_SYSTEM_GROUP_USER_ADD,PS_SYSTEM_GROUP_USER_DELETE,PS_SYSTEM_GROUP_USER_EDIT_DETAIL]]
+          _save:
+            credentials: [[PS_SYSTEM_GROUP_USER_EDIT,PS_SYSTEM_GROUP_USER_EDIT_DETAIL]]
+          _save_and_add:
+            credentials: [PS_SYSTEM_GROUP_USER_ADD]          

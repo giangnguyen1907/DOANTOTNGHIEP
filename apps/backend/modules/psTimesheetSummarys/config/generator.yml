@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsTimesheetSummarys
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_timesheet_summarys
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, label: Updated by}
+        timesheet_at: {date_format: dd/MM/yyyy}
+      list:
+        display: [member_id,timesheet_at,number_time,number_belated,number_early,updated_at]
+#        table_method: doSelectQuery
+        max_per_page: {}
+        batch_actions: {}
+        object_actions: {}
+        actions: {}
+      filter:
+      form:    ~
+      edit:    ~
+      new:
+        actions:
+         _list: ~
+         _save: ~

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsMenus List</source>
+				<target>Danh sách Thực đơn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsMenus</source>
+				<target>Thêm mới Thực đơn</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Edit PsMenus</source>
+				<target>Cập nhật thông tin Thực đơn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Copy</source>
+				<target>Sao chép</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Copy menu</source>
+				<target>Sao chép thực đơn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Week source</source>
+				<target>Tuần nguồn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Week destination</source>
+				<target>Tuần đích</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Food title</source>
+				<target>Tên món</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Meal title</source>
+				<target>Tên bữa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Object group title</source>
+				<target>Tên nhóm trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Id menu</source>
+				<target>Mã thực đơn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date at</source>
+				<target>Ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps food</source>
+				<target>Món ăn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps meal</source>
+				<target>Bữa ăn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure this menu?</source>
+				<target>Bạn có muốn xóa thực đơn này không?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select food-</source>
+				<target>-Chọn món ăn-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Menu of the week</source>
+				<target>Thực đơn trong tuần</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select meal-</source>
+				<target>-Chọn bữa-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You have not selected a school</source>
+				<target>Bạn chưa chọn trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The current week has no data</source>
+				<target>Tuần hiện tại không có dữ liệu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Destination menu has data. Do you want to continue?</source>
+				<target>Thực đơn tuần đích đã có dữ liệu. Nếu bạn đồng ý hệ thống sẽ
+					ghi bổ sung thêm. Bạn có muốn tiếp tục?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps object group</source>
+				<target>Nhóm trẻ</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>-Select object groups-</source>
+				<target>Chọn nhóm trẻ</target>
+			</trans-unit>
+
+
+
+		</body>
+	</file>
+</xliff>

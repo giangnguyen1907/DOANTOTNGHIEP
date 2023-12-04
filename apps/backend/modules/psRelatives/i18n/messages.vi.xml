@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>yes</source>
+				<target>Nam</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>no</source>
+				<target>Nữ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relatives List</source>
+				<target>Danh sách phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsRelatives List</source>
+				<target>Danh sách phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsRelatives</source>
+				<target>Thêm mới phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Invalid Identity card (includes only the characters
+					a-zA-Z0-9).</source>
+				<target>Chứng minh thư không hợp lệ (chỉ bao gồm các ký tự
+					a-zA-Z0-9).</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Invalid Mobile (includes only the characters 0-9).</source>
+				<target>Số điện thoại không hợp lệ (chỉ bao gồm các ký tự 0-9).
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>File is too large maximum is:.</source>
+				<target>Tệp quá lớn. Dung lượng phải nhỏ hơn:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Relative</source>
+				<target>Thêm mới phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsRelatives</source>
+				<target>Cập nhật phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Detail PsRelatives</source>
+				<target>Thông tin phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member code</source>
+				<target>Mã nhân sự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>username</source>
+				<target>Tên đăng nhập</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps ward</source>
+				<target>Xã/Phường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total: </source>
+				<target>Tổng: </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Granted: </source>
+				<target>Được cấp: </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Active app: </source>
+				<target>Đã kích hoạt: </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>ACCOUNTS RELATIVE STATISTIC BY CLASS </source>
+				<target>THỐNG KÊ TÀI KHOẢN PHỤ HUYNH THEO LỚP</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No.</source>
+				<target>STT</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>First name</source>
+				<target>Họ đệm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Last name</source>
+				<target>Tên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export xls</source>
+				<target>Xuất file xls</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Statistic account relatives</source>
+				<target>Thống kê tài khoản phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total relatives</source>
+				<target>Tổng số người</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Granted</source>
+				<target>Được cấp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Activated app</source>
+				<target>Kích hoạt app</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Actived</source>
+				<target>Đã kích hoạt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not Active</source>
+				<target>Chưa kích hoạt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List account relatives</source>
+				<target>Danh sách tài khoản phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Sometime, the total data not equal with total data of all class because some relative can have many children studied</source>
+				<target>Dữ liệu tổng có thể không bằng tổng dữ liệu của các lớp vì có phụ huynh sẽ có nhiều con em theo học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total all school</source>
+				<target>Toàn trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total by workplace</source>
+				<target>Toàn cơ sở</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>List account relatives by student stop</source>
+				<target>Danh sách phụ huynh liên quan đến học sinh đã xóa, đã kết thúc mà chưa khóa tài khoản</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Not student</source>
+				<target>Chưa gắn với học sinh</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>-Select status actived-</source>
+				<target>-Chọn trạng thái-</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Type with relative</source>
+				<target>TK theo phụ huynh</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Type with student</source>
+				<target>TK theo học sinh</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Statistic account relatives by relatives</source>
+				<target>Thống kê tài khoản phụ huynh tính theo số lượng phụ huynh được cấp</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Statistic account relatives by student</source>
+				<target>Thống kê tài khoản phụ huynh tính theo số lượng học sinh được cấp</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Policy Information</source>
+				<target>Thông tin chế độ / chính sách</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service Information</source>
+				<target>Thông tin dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Policy code</source>
+				<target>Mã giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsPolicyGroup List</source>
+				<target>Danh sách chế độ / chính sách</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsPolicyGroup</source>
+				<target>Thêm mới chế độ / chính sách</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsPolicyGroup</source>
+				<target>Cập nhật thông tin chế độ / chính sách</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is type</source>
+				<target>Loại giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Chế độ / chính sách</target>
+			</trans-unit>
+		
+			<trans-unit>
+				<source>Level</source>
+				<target>Mức độ giảm trừ</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

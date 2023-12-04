@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Caphoc</source>
+				<target>Cấp học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Chuongtrinh</source>
+				<target>Chương trình</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Khoihoc</source>
+				<target>Khối học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Doituong</source>
+				<target>Đối tượng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is order</source>
+				<target>TT ưu tiên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Policy</source>
+				<target>Chế độ / Chính sách</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Usage statistics</source>
+				<target>Thống kê sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Gender-</source>
+				<target>G.tính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Synthetic</source>
+				<target>Sổ tổng hợp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Gender</source>
+				<target>G.tính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Nick name</source>
+				<target>Biệt danh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsStudents</source>
+				<target>Thêm mới học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Students: %%first_name%% %%last_name%%</source>
+				<target>Cập nhật học sinh : %%first_name%% %%last_name%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Parent Main</source>
+				<target>Giám hộ chính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Role Parent</source>
+				<target>Quyền đưa đón</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Role Avatar</source>
+				<target>Quyền thay avatar</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Role Service</source>
+				<target>Quyền đ.ký dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Main</source>
+				<target>Giám hộ chính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Parent</source>
+				<target>Đưa đón</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Avatar</source>
+				<target>Thay avatar</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Register service</source>
+				<target>Đ.ký dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Role</source>
+				<target>Quyền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relative of student</source>
+				<target>Người thân của bé</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm remove relative assignment</source>
+				<target>Xác nhận xóa vai trò của người thân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You sure want to delete this relative's assignment?</source>
+				<target>Bạn có chắc muốn xóa vai trò của người thân này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm remove class</source>
+				<target>Xác nhận xóa lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You sure you want to remove the students from this class?
+				</source>
+				<target>Bạn chắc chắn muốn xóa học sinh khỏi lớp học này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You sure want to delete this class?</source>
+				<target>Bạn có chắc muốn xóa lớp này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add new relative</source>
+				<target>Thêm người thân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student infomation: %%first_name%% %%last_name%%</source>
+				<target>Thông tin học sinh: %%first_name%% %%last_name%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Class infomation</source>
+				<target>Thông tin lớp học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm remove registered service</source>
+				<target>Xác nhận xóa dịch vụ đã đăng ký</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You sure want to delete this registered service?</source>
+				<target>Bạn có chắc muốn xóa dịch vụ đã đăng ký này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Registered service</source>
+				<target>Dịch vụ đã đăng ký</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Added from the list</source>
+				<target>Thêm từ d/s</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add service</source>
+				<target>Thêm dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enable roll</source>
+				<target>Loại dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List enable roll</source>
+				<target>Loại dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service detail at</source>
+				<target>Áp dụng từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service amount</source>
+				<target>Giá thành</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Group name</source>
+				<target>Nhóm dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fixed</source>
+				<target>Cố định</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fixed note</source>
+				<target>Phí cố định là phí người học bắt buộc phải đóng khi tham gia
+					học tập tại trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fixed schedule note</source>
+				<target>Dịch vụ ngoại khóa theo thời khóa biểu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not fixed</source>
+				<target>Không cố định</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Discount</source>
+				<target>Giảm trừ (%)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total money</source>
+				<target>Tổng tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>STUDENT LIST BY YEAR </source>
+				<target>DANH SÁCH HỌC SINH NĂM HỌC </target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Day</source>
+				<target>Ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Offical</source>
+				<target>Chính thức</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Test</source>
+				<target>Học thử</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Pause</source>
+				<target>Tạm nghỉ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop studying</source>
+				<target>Thôi học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Graduation</source>
+				<target>Tốt nghiệp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Male</source>
+				<target>Nam</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Female</source>
+				<target>Nữ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total</source>
+				<target>Tổng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select class or workplace</source>
+				<target>Chọn lớp hoặc cơ sở theo học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Principal</source>
+				<target>Hiệu trưởng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Address</source>
+				<target>Địa chỉ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tel</source>
+				<target>ĐT</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Teacher: </source>
+				<target>Giáo viên phụ trách: </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Whole School</source>
+				<target>Toàn trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Class</source>
+				<target>Lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total Class</source>
+				<target>Số lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total Student</source>
+				<target>Sĩ số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Status</source>
+				<target>Trạng thái</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note</source>
+				<target>Ghi chú</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Group</source>
+				<target>Nhóm trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student Code</source>
+				<target>Mã HS</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No.</source>
+				<target>STT</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>First name</source>
+				<target>Họ đệm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Last name</source>
+				<target>Tên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Nickname</source>
+				<target>Tên thường gọi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Birthday</source>
+				<target>Ngày sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Birthday</source>
+				<target>Ngày sinh</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Nation</source>
+				<target>Dân tộc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Nationality</source>
+				<target>Quốc tịch</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Address</source>
+				<target>Địa chỉ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Status</source>
+				<target>Trạng thái</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Name</source>
+				<target>Họ tên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relationship</source>
+				<target>Quan hệ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total</source>
+				<target>Tổng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Phone</source>
+				<target>SĐT</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>STUDENT STATISTICS IN CUSTOMER</source>
+				<target>THỐNG KÊ HỌC SINH TRONG TRƯỜNG</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Year</source>
+				<target>Năm học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop</source>
+				<target>Thôi học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Teacher</source>
+				<target>GVCN</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Restore</source>
+				<target>Khôi phục</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Restore service</source>
+				<target>Khôi phục dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm restore service</source>
+				<target>Xác nhận khôi phục dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Click here to restore the service registry</source>
+				<target>Bấm vào đây để khôi phục lại đăng ký dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You sure want to restore this service?</source>
+				<target>Bạn có chắc chắn muốn khôi phục dịch vụ này không?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Account</source>
+				<target>Tài khoản</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Password</source>
+				<target>Mật khẩu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This student is in the trash.</source>
+				<target>Học sinh này đang ở trong thùng rác.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Class activated</source>
+				<target>Lớp hiện tại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You can select customer</source>
+				<target>Bạn cần phải chọn trường để thao tác dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You can select workplace</source>
+				<target>Bạn cần phải chọn cơ sở để thao tác dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You can select class</source>
+				<target>Bạn cần phải chọn lớp để thao tác dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Start date at</source>
+				<target>Ngày nhập học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Attendance</source>
+				<target>Điểm danh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Growths information</source>
+				<target>Y tế - Sức khỏe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Comment week</source>
+				<target>Nhận xét tháng - tuần</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Students synthetic</source>
+				<target>Sổ tổng hợp của hoc sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Features branch</source>
+				<target>ĐG hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature branch name</source>
+				<target>Tên hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature date</source>
+				<target>Ngày đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature option feature</source>
+				<target>Tiêu chí đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature note</source>
+				<target>Nhận xét khác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>World Health Organization</source>
+				<target>Đường chuẩn tăng trưởng trẻ em của Tổ Chức Y Tế Thế Giới
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Chart Height</source>
+				<target>Biểu đồ chiều cao</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Chart Weight</source>
+				<target>Biểu đồ cân nặng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Child height</source>
+				<target>Chiều cao của trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Child weight</source>
+				<target>Cân nặng của trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min height1</source>
+				<target>Chiều cao (-3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max height1</source>
+				<target>Chiều cao (+3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min height</source>
+				<target>Chiều cao (-2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max height</source>
+				<target>Chiều cao (+2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min weight1</source>
+				<target>Cân nặng (-3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max weight1</source>
+				<target>Cân nặng (+3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min weight</source>
+				<target>Cân nặng (-2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max weight</source>
+				<target>Cân nặng (+2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>bo</source>
+				<target>bố</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>me</source>
+				<target>mẹ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>II - THEO DOI TRE DEN LOP</source>
+				<target>II - THEO DÕI TRẺ ĐẾN LỚP</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Month</source>
+				<target>Tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Chuyen can %</source>
+				<target>Chuyên cần ...........%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Cuoi thang</source>
+				<target>Cuối tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>TS ngay</source>
+				<target>TS ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>TS ngay an</source>
+				<target>TS ngày ăn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tong so tre di hoc</source>
+				<target>Tổng số trẻ đi học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tong so tre bao an</source>
+				<target>Tổng số trẻ báo ăn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>III - THEO DOI SUC KHOE CUA TRE</source>
+				<target>III - THEO DÕI SỨC KHỎE CỦA TRẺ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Thong tin kham suc khoe</source>
+				<target>Thông tin khám sức khỏe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tre mac cac benh</source>
+				<target>Trẻ mắc các bệnh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student name</source>
+				<target>Họ và tên trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Can nang</source>
+				<target>Cân nặng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Chieu cao</source>
+				<target>Chiều cao</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Kenh binh thuong</source>
+				<target>Kênh bình thường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>SDD the nhe can</source>
+				<target>SDD thể nhẹ cân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Thua can beo phi</source>
+				<target>Thừa cân béo phì</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>SDD the thap coi</source>
+				<target>SDD thể thấp còi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>SDD the gay com</source>
+				<target>SDD thể gầy còm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Kham tim</source>
+				<target>Tim</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Kham phoi</source>
+				<target>Phổi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Kham da</source>
+				<target>Da</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>IV - THEO DOI DANH GIA SU PHAT TRIEN CUA TRE</source>
+				<target>IV - THEO DÕI ĐÁNH GIÁ SỰ PHÁT TRIỂN CỦA TRẺ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Danh gia su phat trien cua tre trong thang :</source>
+				<target>Đánh giá sự phát triển của trẻ trong tháng :</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Linh vuc giao duc: </source>
+				<target>Lĩnh vực giáo dục</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Muc tieu danh gia</source>
+				<target>Mục tiêu đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Xep loai chung</source>
+				<target>Xếp loại chung</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ti le</source>
+				<target>Tỉ lệ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tong so</source>
+				<target>Tổng số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export students</source>
+				<target>Xuất thông tin học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export logtimes</source>
+				<target>Xuất dữ liệu điểm danh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export examination</source>
+				<target>Xuất dữ liệu y tế</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export evaluate</source>
+				<target>Xuất đánh giá phát triển</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student synthetic export</source>
+				<target>Xuất sổ theo dõi của trẻ trong lớp</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

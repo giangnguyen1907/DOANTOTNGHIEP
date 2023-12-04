@@ -1,0 +1,11 @@
+showSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:    
+    - /psAdminThemePlugin/js/js_action_batch.js
+  stylesheets:    []
+
+
+    
+    
+    

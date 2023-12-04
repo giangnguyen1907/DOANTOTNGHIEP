@@ -1,0 +1,65 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsWorkPlaces
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_work_places
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: PS_SYSTEM_WORK_PLACES_DETAIL}
+        _edit: {credentials: PS_SYSTEM_WORK_PLACES_EDIT}
+        _new: {credentials: PS_SYSTEM_WORK_PLACES_ADD}
+        _delete: {credentials: PS_SYSTEM_WORK_PLACES_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, label: Updated by}
+      list:
+        display: 	[title,principal,address,is_activated,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_SYSTEM_WORK_PLACES_ADD}
+        object_actions:
+          _detail: ~
+          _edit: ~
+          _delete: ~        
+      filter:
+        display: [ps_customer_id,is_activated,title]
+      form:
+        fields:
+          config_time_receive_valid: {help: Example holiday report before 8h will be valid}
+#          config_closing_date_fee: {help: Valid Enter 1 to 28}
+          config_normal_day: {help: Valid Enter 10 to 31}
+          config_full_day: {help: Valid Enter 10 to 31}
+          is_receipt: {help: Config fee receipt file import}
+          config_choose_charge_paylate: {help: Only works if configured late payment fee}
+          config_choose_attendances_view_app: {help: Config choose attendances view app relative}
+          config_class_late: {help: Show class about late for attendance teacher }
+          config_default_logout: {help: Related to late return fees and late attendance }          
+          config_multiple_teacher_process_album: {label: Multiple teacher process album, help: Config multiple teacher process album }
+          config_email_report: {help: Email addresses separated by signs ; For example: ntsc279@gmail.com; hoanglc20@hotmail.com }
+          is_reduce: {help: 0 means no deduction; 1 means deduction from the number 2 onwards}
+        display:
+          Infomation: [ps_customer_id,title,address,phone,principal,email,note,description,iorder,is_activated]
+          Configuration related fees: [config_default_login,config_default_logout,config_choose_charge_showlate,config_choose_charge_late,config_choose_charge_paylate,config_time_receive_valid,config_time_cancel_saturday_valid,config_normal_day,config_full_day,config_number_attendance,config_start_date_system_fee,config_template_receipt_export,config_closing_date_fee,is_receipt,config_choose_charge_fee_mobile,config_template_menus,receipt_code,type_receipt]
+          Communication configuration: [config_msg_relative_to_relative,config_chat_relative_to_relative,config_chat_relative_to_teacher,config_time_chat_relative_to_teacher,is_notication_activities,from_time_notication_activities,to_time_notication_activities,from_time_notication_attendances,to_time_notication_attendances,config_push_notication_update_attendance,config_choose_attendances_relative,config_choose_attendances_view_app,config_class_late,from_time_class_delay,to_time_class_delay,config_multiple_teacher_process_album,config_email_report]
+#          Deduction configuration: [is_reduce]
+      edit:
+        title: Edit PsWorkPlaces: %%title%%
+        actions:
+          _list: ~          
+          _save: ~
+          _delete: ~
+      new:
+        actions:
+          _list: ~
+          _save: ~
+          _save_and_add: ~

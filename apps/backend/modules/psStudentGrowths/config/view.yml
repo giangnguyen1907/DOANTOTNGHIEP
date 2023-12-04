@@ -1,0 +1,43 @@
+indexSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/modules/ps_student_growths.js: {position: first}
+    - /psAdminThemePlugin/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js
+    - /psAdminThemePlugin/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js
+    - /psAdminThemePlugin/js/plugin/flot/jquery.flot.cust.min.js
+    - /psAdminThemePlugin/js/plugin/flot/jquery.flot.resize.min.js
+    - /psAdminThemePlugin/js/plugin/flot/jquery.flot.tooltip.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    
+  stylesheets:
+    - /psAdminThemePlugin/css/fix_title_table.css
+
+statisticSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js 
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js
+    - /psAdminThemePlugin/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js
+    - /psAdminThemePlugin/js/plugin/flot/jquery.flot.cust.min.js
+    - /psAdminThemePlugin/js/plugin/flot/jquery.flot.resize.min.js
+    - /psAdminThemePlugin/js/plugin/flot/jquery.flot.tooltip.min.js
+  stylesheets:
+    - /psAdminThemePlugin/css/fix_title_table.css

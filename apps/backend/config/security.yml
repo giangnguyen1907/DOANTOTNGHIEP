@@ -1,0 +1,20 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+# Danh sach: SHOW; Chi tiet: DETAIL; Them moi: ADD; Sua: EDIT; Xoa: DELETE 
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure:   true
+  #credentials: Adminitrator
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+new:
+  is_secure: true
+edit:
+  is_secure: true
+delete:
+  is_secure: true

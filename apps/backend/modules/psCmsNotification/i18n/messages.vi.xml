@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>- Is system -</source>
+				<target>- Chọn gửi -</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>All teacher</source>
+				<target>Gửi tất cả giáo viên hệ thống</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>All relative</source>
+				<target>Gửi tất cả phụ huynh trong hệ thống</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Statistic birthday of month</source>
+				<target>Thống kê sinh nhật của tháng </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Notifications</source>
+				<target>Thông báo của bạn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Inbox</source>
+				<target>Đã nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Sent</source>
+				<target>Đã gửi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Send</source>
+				<target>Gửi đi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Draft</source>
+				<target>Nháp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Created by</source>
+				<target>Người tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Notification infomation</source>
+				<target>Thông tin thông báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New</source>
+				<target>Thêm mới</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User sent</source>
+				<target>Người gửi</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>All system</source>
+				<target>Toàn bộ hệ thống</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>All school</source>
+				<target>Toàn trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List received relative</source>
+				<target>Danh sách phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List received teacher</source>
+				<target>Danh sách giáo viên</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Number received</source>
+				<target>Số người nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Trash</source>
+				<target>Thùng rác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Id</source>
+				<target>Mã thông báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Private key</source>
+				<target>Khóa cá nhân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is all</source>
+				<target>Chọn hình thức</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is worplace</source>
+				<target>Gửi toàn cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is system</source>
+				<target>Gửi toàn hệ thống</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is basic</source>
+				<target>Gửi tất cả</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is status</source>
+				<target>Trạng thái</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date at</source>
+				<target>Ngày gửi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total object received</source>
+				<target>Số người nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List received</source>
+				<target>Danh sách người nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Description</source>
+				<target>Nội dung</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Notification</source>
+				<target>Thêm thông báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Notification</source>
+				<target>Cập nhật thông báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter a value</source>
+				<target>Vui lòng nhập giá trị</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter a valid length value</source>
+				<target>Vui lòng nhập giá trị có độ dài hợp lệ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member</source>
+				<target>Giáo viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relative</source>
+				<target>Phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Notification new</source>
+				<target>Thêm mới thư</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Sent notification error.</source>
+				<target>Lỗi gửi thông báo.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Sent notification successfully.</source>
+				<target>Gửi thông báo thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Delete notification error.</source>
+				<target>Bạn không có quyền được xóa thông báo này.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You deleted just sent notification.</source>
+				<target>Bạn chỉ được xóa những thông báo của mình.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item empty.</source>
+				<target>Chưa chọn người gửi.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List teacher</source>
+				<target>Danh sách giáo viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List relative</source>
+				<target>Danh sách phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Send school</source>
+				<target>Gửi toàn trường / cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The title over size.</source>
+				<target>Tiêu đề vượt quá số ký tự cho phép, vui lòng kiểm tra lại.
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is object</source>
+				<target>Chọn đối tượng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>- Is object -</source>
+				<target>-Chọn đối tượng gửi-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>- Is all -</source>
+				<target>-Chọn hình thức gửi-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is school</source>
+				<target>Gửi toàn trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is workplace</source>
+				<target>Gửi toàn cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is teacher</source>
+				<target>Tất cả giáo viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is relative</source>
+				<target>Tất cả phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relatives list</source>
+				<target>Danh sách phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Students list</source>
+				<target>Danh sách học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member list</source>
+				<target>Danh sách giáo viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Birthday Notification %%date_at%%</source>
+				<target>Thông báo sinh nhật tháng : %%date_at%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The value is not a valid date</source>
+				<target>Giá trị ngày sai định dạng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Statistic birthday class %%value%% of month %%value1%%</source>
+				<target>Thống kê sinh nhật của lớp %%value%% trong tháng %%value1%%</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>From</source>
+				<target>Từ</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

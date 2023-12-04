@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi" datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z" product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Estimated monthly fee</source>
+				<target>Phí dự kiến tháng</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Discount amount</source>
+				<target>Giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Balance previous month</source>
+				<target>Dư đầu kỳ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Nha truong dang no</source>
+				<target>Nhà trường đang nợ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Phu huynh dang no</source>
+				<target>Phụ huynh đang nợ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tuition receipts of class %%value%%</source>
+				<target>PHIẾU THU HỌC PHÍ CỦA LỚP %%value%%, THÁNG </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Notice of tuition fees of class %%value%%</source>
+				<target>PHIẾU BÁO PHÍ CỦA LỚP %%value%%, THÁNG </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Report no</source>
+				<target>Mã Phiếu Báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Other services</source>
+				<target>Dịch vụ khác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Su dung</source>
+				<target>Sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ki ten</source>
+				<target>(Ký, họ tên)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User create</source>
+				<target>Người lập</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relative</source>
+				<target>Phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Or</source>
+				<target>Hoặc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total amount payment</source>
+				<target>Tổng số tiền phải nộp
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total amount payment detail</source>
+				<target>Tổng phải nộp(Tổng tháng này - dư tháng trước + phí nộp muộn)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Amount relative</source>
+				<target>Dư tháng này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relative payment</source>
+				<target>Số tiền phụ huynh nộp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Late payment</source>
+				<target>Phí nộp muộn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Price previous month</source>
+				<target>Dư tháng trước chuyển sang</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total provisional</source>
+				<target>Tổng tháng này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Debt</source>
+				<target>Dư nợ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total reality</source>
+				<target>Tổng thực tế</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total expected</source>
+				<target>Tổng dự kiến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Lien 1</source>
+				<target>Liên 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Lien 2</source>
+				<target>Liên 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Cashier admin</source>
+				<target>Thủ quỹ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Balance reality</source>
+				<target>Dư thực tế</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Cashier</source>
+				<target>Thu ngân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tuition receipts %%value%%</source>
+				<target>PHIẾU THU HỌC PHÍ LỚP %%value%%, THÁNG </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fee report</source>
+				<target>Báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Normal day</source>
+				<target>Số ngày học không tính thứ 7</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Saturday day</source>
+				<target>Số ngày học có tính thứ 7</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select: Class, month, year to view the fee</source>
+				<target>Vui lòng chọn: Lớp, tháng, năm để xem phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select: School, month, year to view the fee</source>
+				<target>Vui lòng chọn: Tháng, năm để tra cứu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Step</source>
+				<target>Bước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Choose school</source>
+				<target>Chọn trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Choose workplace</source>
+				<target>Chọn cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Choose month</source>
+				<target>Chọn tháng, nhập số ngày và chọn cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Choose class</source>
+				<target>Chọn lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select year-</source>
+				<target>-Chọn năm-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Month-</source>
+				<target>-Tháng-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add new receivable or skip</source>
+				<target>Thêm khoản phải thu hoặc bỏ qua</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fee expected</source>
+				<target>Thành tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Collected amount</source>
+				<target>Số tiền nộp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Balance amount</source>
+				<target>Số dư</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Paid</source>
+				<target>Đã thanh toán</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Unpaid</source>
+				<target>Chưa thanh toán</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add new receivable</source>
+				<target>Thêm khoản phải thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Process fee report</source>
+				<target>Xử lý báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>See the fee</source>
+				<target>Xem báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Data not available</source>
+				<target>Chưa có dữ liệu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receivables added of month</source>
+				<target>Các khoản phải thu đã thêm của tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add receivables to fee report</source>
+				<target>Thêm khoản phải thu cho báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Delete this receivable</source>
+				<target>Xóa khoản phải thu này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm remove receivable in the month</source>
+				<target>Xác nhận xóa khoản phải thu trong tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>OK and re-run the fee report</source>
+				<target>Đồng ý và chạy lại báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You do not select receivable to perform</source>
+				<target>Bạn chưa chọn khoản phải thu khác để thực hiện</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You do not select students to perform</source>
+				<target>Bạn chưa chọn học sinh để thực hiện</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note remove receivable 1</source>
+				<target>Xóa và giữ lại kết quả báo phí đã chạy.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note remove receivable 2</source>
+				<target>Xóa và đồng thời chạy lại báo phí nếu phí chưa thanh toán.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receivable at</source>
+				<target>Ngày chốt báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Report fee month %%month%%, %%first_name%% %%last_name%%</source>
+				<target>Thống kê học phí tháng %%month%%, %%first_name%% %%last_name%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Payment fee month %%month%%, %%first_name%% %%last_name%%</source>
+				<target>Thanh toán học phí tháng %%month%%, %%first_name%% %%last_name%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Month</source>
+				<target>Tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Giam tru</source>
+				<target>Giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Discount</source>
+				<target>Giảm trừ %</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Discount fixed</source>
+				<target>Giảm trừ cố định</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Discount %</source>
+				<target>GT %</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Discount fixed short</source>
+				<target>GTCĐ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Quantily short</source>
+				<target>SL</target>
+			</trans-unit>			
+
+			<trans-unit>
+				<source>Name fees</source>
+				<target>Tên phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Price</source>
+				<target>Giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Quantily</source>
+				<target>Số lượng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Quantily expected</source>
+				<target>SL dự kiến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Quantily expected full</source>
+				<target>Số lượng dự kiến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Temporary money</source>
+				<target>Tạm tính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Used</source>
+				<target>Sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Actual costs</source>
+				<target>Thực tế</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Rest</source>
+				<target>Còn lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total remain</source>
+				<target>Tổng số tiền cần nộp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Payment fees for previous month</source>
+				<target>Thanh toán các khoản phí tháng trước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Payment date</source>
+				<target>Ngày thanh toán</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Balance of previous month</source>
+				<target>Dư tháng trước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Estimated fees</source>
+				<target>Dự kiến các khoản thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Estimated fees this month</source>
+				<target>Dự kiến các khoản phí tháng này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export receipt</source>
+				<target>Xuất phiếu thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export fee report</source>
+				<target>Xuất báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export statistic</source>
+				<target>Xuất thống kê</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export to Excel</source>
+				<target>Xuất ra Excel</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Notice of tuition fees</source>
+				<target>PHIẾU BÁO PHÍ THÁNG</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tuition receipts</source>
+				<target>PHIẾU THU HỌC PHÍ THÁNG</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Detail tuition fees</source>
+				<target>THỐNG KÊ CHI TIẾT BÁO PHÍ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Day</source>
+				<target>Ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tel2</source>
+				<target>ĐT</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student code</source>
+				<target>Mã h/s</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Estimated tuition this month</source>
+				<target>Dự kiến học phí tháng này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Estimated month</source>
+				<target>Dự kiến tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receipt no</source>
+				<target>Mã phiếu thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fee report no</source>
+				<target>Mã phiếu báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Payment status</source>
+				<target>T/T thanh toán</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated at</source>
+				<target>Cập nhật báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Choose school and workplace</source>
+				<target>Chọn trường và cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select training facility</source>
+				<target>Chọn cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Choose class or skip</source>
+				<target>Chọn lớp hoặc bỏ qua</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Processing...</source>
+				<target>Đang xử lý...</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Prev</source>
+				<target>Trước đó</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Next</source>
+				<target>Tiếp theo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select School.</source>
+				<target>Hãy chọn trường.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select Workplace.</source>
+				<target>Hãy chọn cơ sở đào tạo.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select Month.</source>
+				<target>Hãy chọn tháng.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Year month</source>
+				<target>Chọn tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select Class.</source>
+				<target>Hãy chọn Lớp học.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List of paid processing classes</source>
+				<target>D/s các lớp đã xử lý báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List of select classes</source>
+				<target>D/s các lớp chọn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note: choose class or skip.</source>
+				<target>Nếu không chọn lớp hệ thống sẽ xử lý dữ liệu cho toàn bộ cơ sở.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Only show unprocessed layers of the month.</source>
+				<target>Chỉ hiển thị các lớp chưa được xử lý báo phí của tháng.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note: Enter normal day and saturday day</source>
+				<target>Nhập Số ngày học bình thường và số ngày học có thứ 7 dự kiến của tháng báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter a value for a valid normal number of days.</source>
+				<target>Vui lòng nhập giá trị cho số ngày học bình thường hợp lệ.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter a value for the number of days that have a valid Saturday.</source>
+				<target>Vui lòng nhập giá trị cho số ngày học có thứ bảy hợp lệ.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Information processing fee report</source>
+				<target>Thông tin xử lý báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm process</source>
+				<target>Xác nhận xử lý</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Calculate of the second time</source>
+				<target>Tính theo tổng số giờ về muộn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Calculate of the second time</source>
+				<target>Tính theo tổng số giờ về muộn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Months ago</source>
+				<target>Nợ trước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Invoice no</source>
+				<target>Mã phiếu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total amount</source>
+				<target>Tổng tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total payment</source>
+				<target>Tổng số tiền cần nộp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter the amount</source>
+				<target>Nhập số tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>So ngay nghi</source>
+				<target>Số ngày nghỉ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Excess money</source>
+				<target>Tiền thừa</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Excess number money</source>
+				<target>Số tiền thừa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter the note</source>
+				<target>Nhập ghi chú cho phiếu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Payment status</source>
+				<target>Trạng thái</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Process fee report successfully.</source>
+				<target>Xử lý phí thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Process fee report fail.</source>
+				<target>Xử lý phí không thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>System found students were handling press charges.</source>
+				<target>Hệ thống nhận thấy học sinh đã được xử lý báo phí.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Payment successfully.</source>
+				<target>Lưu thanh toán thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Payment fail. Data invalid.</source>
+				<target>Lưu thất bại. Hãy kiểm tra lại số tiền nhập.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure wish delete this fee report?</source>
+				<target>Nếu xóa phiếu. Bạn sẽ phải thực hiện chạy lại tính phí cho học sinh này. Bạn có muốn xóa không?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This month has been paid. You can not delete.</source>
+				<target>Tháng này đã thanh toán. Bạn không thể xóa.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Delete the tuition fee notice %value% successfully.</source>
+				<target>Xóa phiếu báo phí %value% thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>of student</source>
+				<target>của học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Old debt</source>
+				<target>Nợ cũ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export fee report for class</source>
+				<target>Xuất phiếu báo của lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export receipt of class</source>
+				<target>Xuất phiếu thu của lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export statistic collection of class</source>
+				<target>Xuất Sổ thu của lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export statistic debt</source>
+				<target>Xuất sổ nợ của cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select the class to export the data.</source>
+				<target>Vui lòng chọn lớp để xuất dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receivable of students</source>
+				<target>Khoản phải thu khác của h/s</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receivables months</source>
+				<target>Khoản phải thu khác của tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Run receivable</source>
+				<target>Lưu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List receivables</source>
+				<target>Danh sách khoản phải thu khác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Save receivable</source>
+				<target>Lưu khoản phải thu khác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add receivable for month fail.</source>
+				<target>Thêm khoản phải thu khác thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add receivable for month successfully.</source>
+				<target>Thêm khoản phải thu khác thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>See receivable of student</source>
+				<target>Xem khoản phải thu khác của h/s này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You sure want to delete this receivable?</source>
+				<target>Bạn thực sự muốn xóa khoản phải thu của học sinh này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>FEE LIST UNPAID IN MONTH </source>
+				<target>DANH SÁCH NỢ PHÍ THEO THÁNG </target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>No data information</source>
+				<target>Chưa có dữ liệu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Input file</source>
+				<target>Chọn tệp *</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Upload</source>
+				<target>Tải lên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fee report import</source>
+				<target>Import Phiếu thanh toán phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file successfully. You can add another one below.</source>
+				<target>Import lịch hoạt động thành công. Bạn có thể tiếp tục.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file failed.</source>
+				<target>File import bị lỗi, vui lòng kiểm tra lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Unknown student code</source>
+				<target>Không xác định mã học sinh = </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>line</source>
+				<target>, Dòng : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Of file</source>
+				<target>, Của File : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The excel file must be in the format: xls, xlsx. File size less than %value%KB.</source>
+				<target>Không đúng định dạng file : xls, xlxs. Hoặc kích thước vượt quá %value%KB</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student name</source>
+				<target>Tên học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title rececipt</source>
+				<target>Tiêu đề</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receipt date</source>
+				<target>Phiếu thu của tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Data receipt of month</source>
+				<target>Danh sách phiếu thanh toán phí của tháng : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Download file</source>
+				<target> Tải file mẫu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file successfully %value% data. No error student code </source>
+				<target>Import file thành công %value% dữ liệu. Không có lỗi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file successfully. Successfully : %value% . Error student code : %value1% , line : %value2%</source>
+				<target>Import file thành công. Thành công : %value% hàng . Lỗi mã h/s : %value1% , Hàng : %value2%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file successfully.</source>
+				<target>Import file thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Successfully : </source>
+				<target>Thành công : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error : </source>
+				<target>Lỗi : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Line</source>
+				<target>, Hàng : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Studen code</source>
+				<target>Mã H/s lỗi : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Publish receipt</source>
+				<target>Hiển thị ra app</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The parents see</source>
+				<target>Cho phụ huynh xem</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Number</source>
+				<target>Số lần SD</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student not have receipt fees</source>
+				<target>Danh sách sinh viên chưa có phiếu báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Allow to edit values and accept negative values</source>
+				<target>Cho phép sửa giá trị và chấp nhận giá trị âm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List service</source>
+				<target>Danh sách dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Delete this receivable successfully.</source>
+				<target>Xóa khoản phải thu khác thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No thang truoc</source>
+				<target>Nợ tháng trước</target>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>
+
+

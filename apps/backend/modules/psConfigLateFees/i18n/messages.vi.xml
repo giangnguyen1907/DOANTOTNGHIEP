@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsConfigLateFees List</source>
+				<target>Thiết lập phí trông ngoài giờ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsConfigLateFees</source>
+				<target>Thêm mức phí trông ngoài giờ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsConfigLateFees</source>
+				<target>Cập nhật mức phí trông ngoài giờ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Price</source>
+				<target>Số tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>From minute</source>
+				<target>Số phút từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>To minute</source>
+				<target>Đến</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Are you sure?</source>
+				<target>Bạn có chắc chắn xóa thông tin này không?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter the quantity</source>
+				<target>Nhập số lượng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter receivable price</source>
+				<target>Nhập số tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receivable detail infomation</source>
+				<target>Chi tiết khoản thu theo thời điểm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>receivable detail</source>
+				<target>Chi tiết khoản thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Detail at</source>
+				<target>Áp dụng từ ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Detail end</source>
+				<target>Áp dụng đến ngày</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Receivable id</source>
+				<target>Tên khoản thu</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Description</source>
+				<target>Ghi chú</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
+			

@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsMenusImports
+    theme:                 admin2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_menus_imports
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [meal_title,date_at,object_group_title,description,updated_by]
+        table_method: doSelectQuery
+        sort: [date_at, desc]
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_NUTRITION_MENUS_ADD}
+        object_actions:
+          _edit: {credentials: PS_NUTRITION_MENUS_EDIT}
+          _delete: {credentials: PS_NUTRITION_MENUS_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_NUTRITION_MENUS_DELETE,confirm: "Are you sure?"} 
+      filter:
+        display: [ps_customer_id,ps_workplace_id,ps_object_group_id,date_at_from,date_at_to]
+      form:    ~
+      edit:    ~
+      new:     ~

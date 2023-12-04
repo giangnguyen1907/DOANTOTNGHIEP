@@ -1,0 +1,55 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+localized_homepage:
+  url:   /:sf_culture/
+  param: { module: job, action: index }
+
+homepage:
+  url:   /
+  param: { module: job, action: index }
+
+change_language:
+  url:   /change_language
+  param: { module: language, action: changeLanguage }
+
+job:
+  class:   sfDoctrineRouteCollection
+  options:
+    model:  JobeetJob
+    column: token
+    object_actions: { publish: put, extend: put }
+    prefix_path:    /:sf_culture/job
+  requirements:
+    token: \w+
+
+job_search:
+  url:   /:sf_culture/search.:sf_format
+  param: { module: job, action: search, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+job_show_user:
+  url:     /:sf_culture/job/:company_slug/:location_slug/:id/:position_slug
+  class:   sfDoctrineRoute
+  options:
+    model: JobeetJob
+    type:  object
+    method_for_query: retrieveActiveJob
+  param:   { module: job, action: show }
+  requirements:
+    id: \d+
+
+category:
+  url:      /:sf_culture/category/:slug
+  class:    sfDoctrineRoute
+  param:    { module: category, action: show }
+  options:  { model: JobeetCategory, type: object }
+
+default_index:
+  url:  /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

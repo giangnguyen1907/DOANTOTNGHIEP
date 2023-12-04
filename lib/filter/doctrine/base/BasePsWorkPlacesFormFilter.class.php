@@ -1,0 +1,206 @@
+<?php
+
+/**
+ * PsWorkPlaces filter form base class.
+ *
+ * @package    KidsSchool.vn
+ * @subpackage filter
+ * @author     KidsSchool.vn <contact@kidsschool.vn>
+ * @version    SVN: $Id: sfDoctrineFormFilterGeneratedTemplate.php 29570 2010-05-21 14:49:47Z Kris.Wallsmith $
+ */
+abstract class BasePsWorkPlacesFormFilter extends BaseFormFilterDoctrine
+{
+  public function setup()
+  {
+    $this->setWidgets(array(
+      'ps_customer_id'                           => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('PsCustomer'), 'add_empty' => true)),
+      'ps_ward_id'                               => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('PsWard'), 'add_empty' => true)),
+      'title'                                    => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'address'                                  => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'phone'                                    => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'principal'                                => new sfWidgetFormFilterInput(),
+      'email'                                    => new sfWidgetFormFilterInput(),
+      'note'                                     => new sfWidgetFormFilterInput(),
+      'description'                              => new sfWidgetFormFilterInput(),
+      'iorder'                                   => new sfWidgetFormFilterInput(),
+      'is_activated'                             => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'is_receipt'                               => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'is_reduce'                                => new sfWidgetFormFilterInput(),
+      'config_default_login'                     => new sfWidgetFormFilterInput(),
+      'config_default_logout'                    => new sfWidgetFormFilterInput(),
+      'config_choose_charge_paylate'             => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_choose_charge_late'                => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_choose_charge_showlate'            => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_choose_charge_fee_mobile'          => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'config_choose_attendances_view_app'       => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_choose_attendances_relative'       => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_time_receive_valid'                => new sfWidgetFormFilterInput(),
+      'config_normal_day'                        => new sfWidgetFormFilterInput(),
+      'config_full_day'                          => new sfWidgetFormFilterInput(),
+      'config_number_attendance'                 => new sfWidgetFormFilterInput(),
+      'config_time_cancel_saturday_valid'        => new sfWidgetFormFilterInput(),
+      'config_closing_date_fee'                  => new sfWidgetFormFilterInput(),
+      'config_start_date_system_fee'             => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'config_class_late'                        => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_chat_relative_to_relative'         => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_chat_relative_to_teacher'          => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_time_chat_relative_to_teacher'     => new sfWidgetFormFilterInput(),
+      'config_msg_relative_to_relative'          => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_view_relative_attendance'          => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'is_notication_activities'                 => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'from_time_notication_activities'          => new sfWidgetFormFilterInput(),
+      'to_time_notication_activities'            => new sfWidgetFormFilterInput(),
+      'from_time_notication_attendances'         => new sfWidgetFormFilterInput(),
+      'to_time_notication_attendances'           => new sfWidgetFormFilterInput(),
+      'from_time_class_delay'                    => new sfWidgetFormFilterInput(),
+      'to_time_class_delay'                      => new sfWidgetFormFilterInput(),
+      'config_note_receipt'                      => new sfWidgetFormFilterInput(),
+      'config_template_receipt_export'           => new sfWidgetFormFilterInput(),
+      'config_template_report_export'            => new sfWidgetFormFilterInput(),
+      'config_template_menus'                    => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'is_warning_attendance'                    => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'time_warning_attendance'                  => new sfWidgetFormFilterInput(),
+      'mail_warning_attendance'                  => new sfWidgetFormFilterInput(),
+      'config_multiple_teacher_process_album'    => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_push_notication_update_attendance' => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'config_email_report'                      => new sfWidgetFormFilterInput(),
+      'user_created_id'                          => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('UserCreated'), 'add_empty' => true)),
+      'user_updated_id'                          => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('UserUpdated'), 'add_empty' => true)),
+      'created_at'                               => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'updated_at'                               => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+    ));
+
+    $this->setValidators(array(
+      'ps_customer_id'                           => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('PsCustomer'), 'column' => 'id')),
+      'ps_ward_id'                               => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('PsWard'), 'column' => 'id')),
+      'title'                                    => new sfValidatorPass(array('required' => false)),
+      'address'                                  => new sfValidatorPass(array('required' => false)),
+      'phone'                                    => new sfValidatorPass(array('required' => false)),
+      'principal'                                => new sfValidatorPass(array('required' => false)),
+      'email'                                    => new sfValidatorPass(array('required' => false)),
+      'note'                                     => new sfValidatorPass(array('required' => false)),
+      'description'                              => new sfValidatorPass(array('required' => false)),
+      'iorder'                                   => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'is_activated'                             => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'is_receipt'                               => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'is_reduce'                                => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'config_default_login'                     => new sfValidatorPass(array('required' => false)),
+      'config_default_logout'                    => new sfValidatorPass(array('required' => false)),
+      'config_choose_charge_paylate'             => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_choose_charge_late'                => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_choose_charge_showlate'            => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_choose_charge_fee_mobile'          => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'config_choose_attendances_view_app'       => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_choose_attendances_relative'       => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_time_receive_valid'                => new sfValidatorPass(array('required' => false)),
+      'config_normal_day'                        => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'config_full_day'                          => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'config_number_attendance'                 => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'config_time_cancel_saturday_valid'        => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'config_closing_date_fee'                  => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'config_start_date_system_fee'             => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'config_class_late'                        => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_chat_relative_to_relative'         => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_chat_relative_to_teacher'          => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_time_chat_relative_to_teacher'     => new sfValidatorPass(array('required' => false)),
+      'config_msg_relative_to_relative'          => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_view_relative_attendance'          => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'is_notication_activities'                 => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'from_time_notication_activities'          => new sfValidatorPass(array('required' => false)),
+      'to_time_notication_activities'            => new sfValidatorPass(array('required' => false)),
+      'from_time_notication_attendances'         => new sfValidatorPass(array('required' => false)),
+      'to_time_notication_attendances'           => new sfValidatorPass(array('required' => false)),
+      'from_time_class_delay'                    => new sfValidatorPass(array('required' => false)),
+      'to_time_class_delay'                      => new sfValidatorPass(array('required' => false)),
+      'config_note_receipt'                      => new sfValidatorPass(array('required' => false)),
+      'config_template_receipt_export'           => new sfValidatorPass(array('required' => false)),
+      'config_template_report_export'            => new sfValidatorPass(array('required' => false)),
+      'config_template_menus'                    => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'is_warning_attendance'                    => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'time_warning_attendance'                  => new sfValidatorPass(array('required' => false)),
+      'mail_warning_attendance'                  => new sfValidatorPass(array('required' => false)),
+      'config_multiple_teacher_process_album'    => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_push_notication_update_attendance' => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'config_email_report'                      => new sfValidatorPass(array('required' => false)),
+      'user_created_id'                          => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('UserCreated'), 'column' => 'id')),
+      'user_updated_id'                          => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('UserUpdated'), 'column' => 'id')),
+      'created_at'                               => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+      'updated_at'                               => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 00:00:00')), 'to_date' => new sfValidatorDateTime(array('required' => false, 'datetime_output' => 'Y-m-d 23:59:59')))),
+    ));
+
+    $this->widgetSchema->setNameFormat('ps_work_places_filters[%s]');
+
+    $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);
+
+    $this->setupInheritance();
+
+    parent::setup();
+  }
+
+  public function getModelName()
+  {
+    return 'PsWorkPlaces';
+  }
+
+  public function getFields()
+  {
+    return array(
+      'id'                                       => 'Number',
+      'ps_customer_id'                           => 'ForeignKey',
+      'ps_ward_id'                               => 'ForeignKey',
+      'title'                                    => 'Text',
+      'address'                                  => 'Text',
+      'phone'                                    => 'Text',
+      'principal'                                => 'Text',
+      'email'                                    => 'Text',
+      'note'                                     => 'Text',
+      'description'                              => 'Text',
+      'iorder'                                   => 'Number',
+      'is_activated'                             => 'Boolean',
+      'is_receipt'                               => 'Number',
+      'is_reduce'                                => 'Number',
+      'config_default_login'                     => 'Text',
+      'config_default_logout'                    => 'Text',
+      'config_choose_charge_paylate'             => 'Boolean',
+      'config_choose_charge_late'                => 'Boolean',
+      'config_choose_charge_showlate'            => 'Boolean',
+      'config_choose_charge_fee_mobile'          => 'Number',
+      'config_choose_attendances_view_app'       => 'Boolean',
+      'config_choose_attendances_relative'       => 'Boolean',
+      'config_time_receive_valid'                => 'Text',
+      'config_normal_day'                        => 'Number',
+      'config_full_day'                          => 'Number',
+      'config_number_attendance'                 => 'Number',
+      'config_time_cancel_saturday_valid'        => 'Number',
+      'config_closing_date_fee'                  => 'Number',
+      'config_start_date_system_fee'             => 'Date',
+      'config_class_late'                        => 'Boolean',
+      'config_chat_relative_to_relative'         => 'Boolean',
+      'config_chat_relative_to_teacher'          => 'Boolean',
+      'config_time_chat_relative_to_teacher'     => 'Text',
+      'config_msg_relative_to_relative'          => 'Boolean',
+      'config_view_relative_attendance'          => 'Boolean',
+      'is_notication_activities'                 => 'Boolean',
+      'from_time_notication_activities'          => 'Text',
+      'to_time_notication_activities'            => 'Text',
+      'from_time_notication_attendances'         => 'Text',
+      'to_time_notication_attendances'           => 'Text',
+      'from_time_class_delay'                    => 'Text',
+      'to_time_class_delay'                      => 'Text',
+      'config_note_receipt'                      => 'Text',
+      'config_template_receipt_export'           => 'Text',
+      'config_template_report_export'            => 'Text',
+      'config_template_menus'                    => 'Boolean',
+      'is_warning_attendance'                    => 'Boolean',
+      'time_warning_attendance'                  => 'Text',
+      'mail_warning_attendance'                  => 'Text',
+      'config_multiple_teacher_process_album'    => 'Boolean',
+      'config_push_notication_update_attendance' => 'Boolean',
+      'config_email_report'                      => 'Text',
+      'user_created_id'                          => 'ForeignKey',
+      'user_updated_id'                          => 'ForeignKey',
+      'created_at'                               => 'Date',
+      'updated_at'                               => 'Date',
+    );
+  }
+}

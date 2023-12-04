@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsCertificate
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_certificate
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:      
+      actions:
+        _edit: {credentials:  PS_HR_CERTIFICATE_EDIT}
+        _new: {credentials:  PS_HR_CERTIFICATE_ADD}
+        _delete: {credentials:  PS_HR_CERTIFICATE_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:
+        display: [title,description,_iorder,is_activated,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        batch_actions:
+         _updateOrder: {credentials: PS_HR_CERTIFICATE_EDIT,label: Update}
+         _delete: ~        
+      filter: 
+        display: [title,is_activated]
+      form:    ~
+      edit:    ~
+      new:     ~

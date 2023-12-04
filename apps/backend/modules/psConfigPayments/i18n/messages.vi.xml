@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsConfigPayments List</source>
+				<target>Cấu hình gói cước dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên gói cước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsConfigPayments</source>
+				<target>Thêm gói cước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsConfigPayments</source>
+				<target>Cập nhật gói cước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Price</source>
+				<target>Số tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Number month</source>
+				<target>Số tháng</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

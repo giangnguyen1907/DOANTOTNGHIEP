@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Action</source>
+				<target>Thao tác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure?</source>
+				<target>Bạn có chắc chắn xóa thông tin này không?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add receipt</source>
+				<target>Thêm mới</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receivable detail apply</source>
+				<target>Chi tiết khoản thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receivable infomation</source>
+				<target>Thông tin khoản phải thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receivable List</source>
+				<target>Danh sách các khoản phải thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Receivable</source>
+				<target>Thêm mới các khoản phải thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit receivable: "%%title%%"</source>
+				<target>Sửa khoản phải thu: "%%title%%"</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps school year</source>
+				<target>Năm học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên khoản thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Amount</source>
+				<target>Số tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List price</source>
+				<target>Số tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Allow to enter values less than 0</source>
+				<target>Cho phép nhập giá trị nhỏ hơn 0</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>If not checked, will use the entire training base</source>
+				<target>Nếu không chọn thì sẽ sử dụng được cho toàn bộ các cơ sở đào
+					tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add receivables to fee report</source>
+				<target>Thêm khoản phải thu cho báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Month %%ps_date%%</source>
+				<target>Tháng %%ps_date%%</target>
+			</trans-unit>
+
+
+
+		</body>
+	</file>
+</xliff>

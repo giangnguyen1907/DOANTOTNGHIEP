@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsEvaluateIndexStudent List</source>
+				<target>Đánh giá chỉ số học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Evaluate index criteria</source>
+				<target>Chỉ số đánh giá </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject code</source>
+				<target>Mã Chủ Đề</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Criteria code</source>
+				<target>Mã tiêu chí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsChatTime List</source>
+				<target>Danh sách khung giờ chat</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select approval state-</source>
+				<target>-Chọn chế độ kiểm duyệt-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You doesn't define any rule of symbol evaluate in year
+					%%year%%</source>
+				<target>Chưa khai báo quy chuẩn ký hiệu đánh giá trong năm học
+					%%year%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select evaluate subject-</source>
+				<target>-Chọn chủ đề đánh giá-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Rule of symbol evaluate in year %%year%%</source>
+				<target>Quy chuẩn ký hiệu đánh giá trong năm học %%year%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Can't do because: </source>
+				<target>Không thể lưu vì lỗi: </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is public</source>
+				<target>Công khai</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is awaiting approval</source>
+				<target>Hiệu trưởng xác nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is awaiting</source>
+				<target>Hiệu trưởng xác nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Success</source>
+				<target>Thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Activate state for this class</source>
+				<target>Set trạng thái kích hoạt cho lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Apply</source>
+				<target>Áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure you want to Remove?</source>
+				<target>Bạn thực sự muốn Xóa?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You don't enought permission to change this data</source>
+				<target>Bạn không có quyền tác động vào dữ liệu này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>SUM</source>
+				<target>TỔNG</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>index criteria</source>
+				<target>chỉ số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PECENTAGE Class</source>
+				<target>Đánh giá tỷ lệ tháng của lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PECENTAGE</source>
+				<target>TỶ LỆ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Apply</source>
+				<target>Áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>EVALUATE INDEX STUDENT %%obj_group%% (%%class%%)</source>
+				<target>BẢNG ĐÁNH GIÁ CHỈ SỐ TRẺ %%obj_group%% (%%class%%)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Month %%month%%</source>
+				<target>Tháng %%month%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time apply</source>
+				<target>Thời gian áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Evaluate index student month</source>
+				<target>Bảng ĐGCS tháng </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Rule of symbol evaluate</source>
+				<target>Quy định ký hiệu đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Semester one</source>
+				<target>Học kỳ 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Semester two</source>
+				<target>Học kỳ 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Semester all</source>
+				<target>Cả năm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Statistic evaluate</source>
+				<target>Thống kê</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Update evaluate</source>
+				<target>Cập nhật</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Evaluate student by semester</source>
+				<target>Đánh giá học sinh theo học kỳ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Semester</source>
+				<target>Học kỳ </target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

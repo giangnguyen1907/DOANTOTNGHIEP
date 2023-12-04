@@ -1,0 +1,122 @@
+# Khai báo bảng giảm trừ - done
+# PsStudentServiceReduce:
+#   actAs: { Timestampable: ~ }
+#   options:
+#     type: InnoDB
+#     collate: utf8mb4_unicode_ci
+#     charset: utf8mb4
+#   columns:
+#     title: { type: string(255), notnull: true, default: null } # giảm trừ loại nào?
+#     student_id: { type: integer, notnull: true, default: null} # Học sinh
+#     service_id: { type: integer, notnull: true, default: null} # Dịch vụ
+#     receivable_at: { type: date, default: null} # Thời điểm giảm trừ
+#     level: { type: integer, default: 0} # Mức độ giảm trừ
+#     discount: { type: integer, default: 0} # Nhập số lượng giảm trừ
+#     is_type: { type: boolean, default: 0} # 0: Giảm trừ %, 1: giảm trừ trực tiếp
+#     user_created_id: { type: integer, notnull: true}
+#     user_updated_id: { type: integer, notnull: false, default: null }
+
+# Nhóm đối tượng
+# PsTargetGroup:
+#   actAs: { Timestampable: ~ }
+#   options:
+#     type: InnoDB
+#     collate: utf8mb4_unicode_ci
+#     charset: utf8mb4
+#   columns:
+#     ps_customer_id: { type: integer, notnull: true, default: null} 
+#     ps_workplace_id: { type: integer, notnull: true, default: null} 
+#     title: { type: string(255), notnull: true, default: null } # Tiêu đề
+#     note: { type: integer, notnull: false, default: null} # ghi chú
+#     status: { type: boolean, default: 1} # 0: Không hoạt động, 1: hoạt động
+#     user_created_id: { type: integer, notnull: true}
+#     user_updated_id: { type: integer, notnull: false, default: null }
+
+# # Độ tuổi
+# PsTypeAge:
+#   actAs: { Timestampable: ~ }
+#   options:
+#     type: InnoDB
+#     collate: utf8mb4_unicode_ci
+#     charset: utf8mb4
+#   columns:
+#     ps_customer_id: { type: integer, notnull: true, default: null}
+#     ps_workplace_id: { type: integer, notnull: true, default: null}
+#     title: { type: string(255), notnull: true, default: null } # Tiêu đề
+#     start_month: { type: integer, notnull: false, default: null} # Từ tháng
+#     stop_month: { type: integer, notnull: false, default: null} # Đến tháng
+#     user_created_id: { type: integer, notnull: true}
+#     user_updated_id: { type: integer, notnull: false, default: null }
+
+<<<<<<< HEAD
+# Nhóm tài khoản tính phí  -- Chưa có module / routing
+=======
+<<<<<<< HEAD
+# Hoạt động
+# PsActiveStudent:
+#   actAs: { Timestampable: ~ }
+#   options:
+#     type: InnoDB
+#     collate: utf8mb4_unicode_ci
+#     charset: utf8mb4
+#   columns:
+#     ps_class_id: { type: string(255), notnull: true } # Mã lớp
+#     start_at: { type: date, notnull: true } # Ngày bắt đầu
+#     end_at: { type: date, notnull: false } # Ngày kết thúc
+#     start_time: { type: string(255), notnull: true } # Thời gian bắt đầu
+#     end_time: { type: string(255), notnull: false } # Thời gian kết thúc
+#     note: { type: string(255), notnull: false } # Ghi chú
+#     user_created_id: {type: integer}
+#     user_updated_id: {type: integer}
+PsFeeAcounts:
+  actAs: { Timestampable: ~ }
+  options:
+    type: InnoDB
+    collate: utf8mb4_unicode_ci
+    charset: utf8mb4
+  columns:
+    ps_customer_id: { type: integer, notnull: true, default: null}
+    ps_workplace_id: { type: integer, notnull: true, default: null}
+    title: { type: string(255), notnull: true, default: null } # Tiêu đề
+    tk_no: { type: string(255), default: null} # tài khoản nợ
+    tk_co: { type: string(255), default: null} # Tài khoản có
+    tk_von: { type: string(255), default: null} # Tài khoản vốn
+    tk_xuat: { type: string(255), default: null} # Tài khoản xuất kho
+    is_type: { type: integer(4), default: 0} # 0: dịch vụ, 1: trông muộn, 2: khách hàng, 3: nhà cung cấp, 4: kho tiền
+    user_created_id: { type: integer, notnull: true}
+    user_updated_id: { type: integer, notnull: false, default: null }
+
+# Nhật ký lưu lại toàn bộ giao dịch, khoản dịch vụ -- 
+PsNhatKyCongNo:
+  actAs: { Timestampable: ~ }
+  options:
+    type: InnoDB
+    collate: utf8mb4_unicode_ci
+    charset: utf8mb4
+  columns:
+    ps_customer_id: { type: integer, notnull: true, default: null}
+    ps_workplace_id: { type: integer, notnull: true, default: null}
+    chungtu: { type: string(255), notnull: true, default: null } # Chứng từ
+    sochungtu: { type: string(255), notnull: true, default: null } # số Chứng từ
+    tkno: { type: string(255), default: null} # tài khoản nợ
+    tkco: { type: string(255), default: null} # Tài khoản có
+    thoigian: { type: date, default: null} # Thời gian giao dịch
+    doituongno: { type: string(255), default: null} # Đối tượng nợ - Học sinh
+    doituongco: { type: string(255), default: null} # Đối tượng có - 
+    idhocsinh: { type: integer, default: null} # ID học sinh
+    iddichvu: { type: integer, default: null} # ID dịch vụ
+    tendichvu: { type: string(255), default: null} # Tên dịch vụ
+    donvitinh: { type: string(255), default: null} # Đơn vị tính
+    soluong: { type: integer, default: null} # Số lượng
+    dongia: { type: integer, default: null} # Số lượng
+    thanhtien: { type: integer, default: null} # thành tiền
+    giamtru: { type: integer, default: null} # Tổng tiền giảm trừ
+    machietkhau: { type: string(255), default: null} # Mã chiết khấu
+    mucdo: { type: string(255), default: null} # Mức độ chiết khấu
+    chietkhau: { type: string(255), default: null} # Giá trị chiết khấu
+    kieuchietkhau: { type: integer(4), default: null} # Kiểu chiết khấu
+    makhono: { type: string(255), default: null} #Mã kho nợ
+    makhoco: { type: string(255), default: null} #Mã kho có
+    user_created_id: { type: integer, notnull: true}
+    user_updated_id: { type: integer, notnull: false, default: null }
+

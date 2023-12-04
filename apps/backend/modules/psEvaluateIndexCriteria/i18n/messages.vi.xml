@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsEvaluateIndexCriteria List</source>
+				<target>Danh sách tiêu chí đánh giá tiêu chí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject title</source>
+				<target>Lĩnh vực đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>School name</source>
+				<target>Trường học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Criteria code</source>
+				<target>Mã tiêu chí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsEvaluateIndexCriteria</source>
+				<target>Thêm mới tiêu chí đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select evaluate subject-</source>
+				<target>-Chọn lĩnh vực đánh giá-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsEvaluateIndexCriteria</source>
+				<target>Sửa đổi tiêu chí đánh giá</target>
+			</trans-unit>
+			Evaluate Index Criteria
+
+			<trans-unit>
+				<source>Edit PsEvaluateIndexCriteria</source>
+				<target>Sửa đổi tiêu chí đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Evaluate Index Criteria</source>
+				<target>Tiêu chí đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Evaluate Index Class</source>
+				<target>Lớp áp dụng tiêu chí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please delete all data in Evaluate index student and
+					Evaluate class time before delete this</source>
+				<target>Hãy xóa mọi dữ liệu liên quan tới Chỉ số đánh giá học sinh
+					và lớp học trước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List class apply</source>
+				<target>Lớp áp dụng tiêu chí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date start</source>
+				<target>Ngày bắt đầu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date end</source>
+				<target>Ngày kết thúc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Object does not exist.</source>
+				<target>Không tồn tại đối tượng đang thao tác</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

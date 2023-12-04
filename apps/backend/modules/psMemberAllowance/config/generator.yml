@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsMemberAllowance
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_member_allowance
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _delete: {credentials: PS_HR_HR_DELETE,confirm: "Are you sure you want to delete this item?"}
+        _save: {credentials: PS_HR_HR_EDIT}
+      fields:  []
+      list:    []
+      filter:  ~
+      form:    ~
+      edit:        
+        actions:
+          _save: {credentials: PS_HR_HR_EDIT}          
+          _cancel: ~
+          _delete: {credentials: PS_HR_HR_DELETE,confirm: "Are you sure you want to delete this item?"} 
+        display: [ps_member_id,ps_allowance_id,start_at,stop_at,note]
+      new:
+        title:
+        display: [ps_member_id,ps_allowance_id,start_at,stop_at,note]
+        actions:
+          _save: {credentials: PS_HR_HR_EDIT}
+          _cancel: ~

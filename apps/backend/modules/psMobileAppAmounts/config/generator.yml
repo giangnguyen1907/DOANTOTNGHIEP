@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsMobileAppAmounts
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_mobile_app_amounts
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _history: {credentials: PS_MOBILE_APP_AMOUNTS_DETAIL}
+        _new: {credentials: PS_MOBILE_APP_AMOUNTS_ADD}
+        _edit: {credentials: PS_MOBILE_APP_AMOUNTS_EDIT}
+        _delete: {credentials: PS_MOBILE_APP_AMOUNTS_DELETE}
+      fields:  ~
+      list:
+        title: App Amount List
+        display: [user_name, amount, expiration_date_at, description]
+        table_method: doSelectQuery
+        max_per_page: 35
+        sort: [expiration_date_at, desc]
+        object_actions:
+          _history: {credentials: PS_MOBILE_APP_AMOUNTS_DETAIL}
+          _edit: {credentials: PS_MOBILE_APP_AMOUNTS_EDIT}
+          _delete: {credentials: PS_MOBILE_APP_AMOUNTS_DELETE}
+        batch_actions: {}
+      filter:  
+        display: [ps_customer_id, ps_workplace_id, keywords, is_expire, year, month]
+      form:    ~
+      edit:    
+        title: Editing app amount: %%title%% 
+      new:     
+        title: New app amount

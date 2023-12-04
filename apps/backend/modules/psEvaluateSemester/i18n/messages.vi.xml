@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>The selected items have been publish successfully.</source>
+				<target>Cập nhật trạng thái hiển thị thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Publish receipt</source>
+				<target>Hiển thị ra app</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Get link from google drive</source>
+				<target>Nhập link từ google drive</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Preview</source>
+				<target>Xem trước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>View file</source>
+				<target>Xem trước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Url file</source>
+				<target>Đường link file</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsEvaluateSemester List</source>
+				<target>Danh sách phiếu nhận xét học kỳ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Comment study semester</source>
+				<target>Phiếu nhận xét Học kỳ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsEvaluateSemester</source>
+				<target>Sửa thông tin nhận xét học kỳ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsEvaluateSemester</source>
+				<target>Thêm mới nhận xét học kỳ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps class</source>
+				<target>Lớp học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is public</source>
+				<target>Hiển thị ra app</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>File</source>
+				<target>Đính kèm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The excel file must be in the format file. File size less
+					than %value%KB.</source>
+				<target>Không đúng định dạng file ảnh, excel, pdf, word. Hoặc kích
+					thước vượt quá %value%KB</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

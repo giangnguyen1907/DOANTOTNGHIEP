@@ -1,0 +1,7 @@
+editSuccess:
+  javascripts: 
+    - /psAdminThemePlugin/js/modules/ps_template_exports.js: {position: last}
+
+newSuccess:
+  javascripts: 
+    - /psAdminThemePlugin/js/modules/ps_template_exports.js: {position: last}

@@ -1,0 +1,60 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsMember
+    i18n_catalogue:        messages
+    theme:                 admin2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_member
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: [PS_HR_HR_EDIT,PS_HR_HR_DETAIL,PS_HR_HR_DELETE]}
+        _edit: {credentials: PS_HR_HR_EDIT}
+        _new: {credentials: PS_HR_HR_ADD}
+        _delete: {credentials: PS_HR_HR_DELETE,confirm: "Are you sure you want to delete this item?"}
+      fields:  
+        updated_at : {date_format: dd/MM/yyyy, label: Updated by}
+        birthday : {date_format: dd/MM/yyyy}
+        is_status : {label: Status}
+      list:        
+        display: [image,=member_code,first_name,last_name,birthday,_sex,mobile,username,department_function,rank,is_status,updated_at]
+        sort: [id, asc]
+        table_method: doSelectQuery
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_HR_HR_ADD}
+        object_actions:
+          _detail: {credentials: PS_HR_HR_DETAIL}
+          _edit: {credentials: PS_HR_HR_EDIT}
+          _delete: {credentials: PS_HR_HR_DELETE}
+        batch_actions: {}
+#         _delete: {credentials: PS_HR_HR_DELETE}        
+      filter:        
+        display: [ps_customer_id,ps_workplace_id,sex,is_status,rank,keywords]
+      form:	   ~
+      detail:  ~
+      edit:
+        title: Edit Member: %%name%%
+        display:
+          Member infomation: [ps_customer_id,ps_workplace_id,member_code,rank,first_name,last_name,birthday,sex,identity_card,card_date,card_local,ethnic_id,nationality,religion_id,address,phone,mobile,email,image,is_status]
+          Member Department: [_list_member_department]
+          Member Salary: [_list_member_salary]
+          Member Allowance: [_list_member_allowance]
+          Member Working Time: [_list_member_working_time]
+        actions:
+          _list: ~          
+          _save: ~
+          _save_and_add: ~
+          _delete: ~
+      new:
+        display: [ps_customer_id,ps_workplace_id,member_code,rank,first_name,last_name,birthday,sex,identity_card,card_date,card_local,ethnic_id,nationality,religion_id,address,phone,mobile,email,image,is_status]
+        actions:
+          _list: ~
+          _save: ~
+          _save_and_add: ~

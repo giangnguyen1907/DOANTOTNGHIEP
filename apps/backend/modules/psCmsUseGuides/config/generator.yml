@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsCmsUseGuide
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_cms_use_guides
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials:  PS_CMS_USEGUIDE_EDIT}
+        _new: {credentials:  PS_CMS_USEGUIDE_ADD}
+        _delete: {credentials:  PS_CMS_USEGUIDE_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:
+        title: Use guides list
+        display: [title,note,iorder,is_activated,updated_at]
+      filter:
+        display: [title,is_activated]
+      form:    ~
+      edit: 
+        title: Edit use guide: %%title%%
+      new:
+        title: Add use guides

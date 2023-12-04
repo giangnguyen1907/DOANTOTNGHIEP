@@ -1,0 +1,9 @@
+editSuccess:
+  javascripts: 
+    - /psAdminThemePlugin/js/plugin/tinymce/tinymce.min.js
+    - /psAdminThemePlugin/js/modules/ps_album.js
+
+newSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/tinymce/tinymce.min.js
+    - /psAdminThemePlugin/js/modules/ps_album.js

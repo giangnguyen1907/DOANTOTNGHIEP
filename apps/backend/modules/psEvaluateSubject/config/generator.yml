@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsEvaluateSubject
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_evaluate_subject
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        table_method: doSelectQuery
+        display: [school_name,subject_code,title,is_activated,updated_by]
+        actions:
+          _new: {credentials: PS_EVALUATE_INDEX_SUBJECT_ADD}
+        object_actions:
+          _edit: {credentials: PS_EVALUATE_INDEX_SUBJECT_EDIT}
+          _delete: {credentials: PS_EVALUATE_INDEX_SUBJECT_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_EVALUATE_INDEX_SUBJECT_DELETE,confirm: "Are you sure?"}
+      filter:  
+        display: [school_year_id,ps_customer_id,ps_workplace_id,is_activated,keywords]
+      form:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,subject_code,title,iorder,is_activated]
+      edit:    ~
+      new:     ~

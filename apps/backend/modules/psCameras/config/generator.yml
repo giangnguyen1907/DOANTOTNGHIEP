@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsCamera
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_cameras
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_SYSTEM_CAMERA_EDIT}
+        _new: {credentials: PS_SYSTEM_CAMERA_ADD}
+        _delete: {credentials: PS_SYSTEM_CAMERA_DELETE}
+      fields:
+        updated_at : {date_format: HH:mm dd-MM-yyyy}
+        view_image : {label: Image}
+      list:
+        title: Camera list
+        display:  [_view_image,=title,url_ip,iorder,note,is_activated,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        max_per_page: {}
+        object_actions:
+          _edit: ~
+          _delete: ~
+      filter:
+         display: [ps_customer_id,ps_workplace_id,ps_class_room_id,title,is_activated]
+      form:
+         display: [ps_customer_id,ps_workplace_id,ps_class_room_id,title,url_ip,user_camera,password_camera,note,iorder,image_name,is_activated]
+      edit:
+         title: Edit camera: "%%title%%"
+         actions:
+           _list: ~
+           _save: ~
+           _save_and_add: ~
+           _delete: ~
+      new:
+         title: Add new camera

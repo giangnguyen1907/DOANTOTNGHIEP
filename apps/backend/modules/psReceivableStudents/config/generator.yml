@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ReceivableStudent
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_receivable_students
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        updated_at: {date_format: HH:mm dd/MM/yyyy, label: Updated by}
+      list:
+        display: [student_id,amount,is_number,receivable_at,note,updated_at]
+        table_method: doSelectQuery
+        max_per_page: 35
+        batch_actions: {}
+        object_actions: {}
+        actions: {}
+      filter:
+        display: [school_year_id,ps_month,ps_customer_id,ps_workplace_id,ps_class_id,student_id,receivable_id]
+      form:    ~
+      edit:    ~
+      new:     ~

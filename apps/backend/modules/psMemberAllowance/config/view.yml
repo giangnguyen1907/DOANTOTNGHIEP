@@ -1,0 +1,15 @@
+editSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js
+newSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js
+  

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsTypeAge List</source>
+				<target>Danh sách độ tuổi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsTypeAge</source>
+				<target>Thêm mới độ tuổi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsTypeAge</source>
+				<target>Cập nhật thông tin độ tuổi</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Is type</source>
+				<target>Mã sử dụng trước giờ thao tác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title service</source>
+				<target>Dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Độ tuổi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Start month</source>
+				<target>Từ tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop month</source>
+				<target>Đến tháng</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

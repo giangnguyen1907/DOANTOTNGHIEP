@@ -1,0 +1,1 @@
+<?php echo $ps_fee_news_letters->getNumberPushNotication() ?>

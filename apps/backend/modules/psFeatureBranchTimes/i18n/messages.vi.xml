@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			<trans-unit>
+				<source>Add calendar for activities: %%ps_feature_branch%%</source>
+				<target>Thêm lịch cho hoạt động: %%ps_feature_branch%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps feature branch</source>
+				<target>Hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import feature branch times template 2</source>
+				<target>Import lịch hoạt động biểu mẫu 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import feature branch times template 3</source>
+				<target>Import lịch hoạt động biểu mẫu 3</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import template 1</source>
+				<target>Import HĐ mẫu 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import template 2</source>
+				<target>Import HĐ mẫu 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import template 3</source>
+				<target>Import HĐ mẫu 3</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export file</source>
+				<target>Xuất lịch HĐ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Hour working</source>
+				<target>Thời gian hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature branch times infomation</source>
+				<target>Thông tin lịch</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List class apply</source>
+				<target>Lớp áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note activitie of class</source>
+				<target>Nội dung hoạt động của lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Location</source>
+				<target>Địa điểm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Lich hoat dong tu ngay %value1% den ngay %value2%</source>
+				<target>LỊCH HOẠT ĐỘNG TỪ NGÀY %value1% - %value2%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file</source>
+				<target> Import lịch</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not feature branch times by week</source>
+				<target>Không có lịch hoạt động nào trong tuần</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import feature branch times</source>
+				<target>Import lịch hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps feature branch export</source>
+				<target>Tải biểu mẫu import</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Start date-</source>
+				<target>Từ ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Stop date-</source>
+				<target>Đến ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>ID class not found</source>
+				<target>ID lớp không tồn tại. Vui lòng kiểm tra lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>ID feature not found</source>
+				<target>ID hoạt động không tồn tại. Vui lòng kiểm tra lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error time</source>
+				<target>Lỗi giá trị thời gian. Vui lòng kiểm tra lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not import data</source>
+				<target>Không có dữ liệu nào được thêm.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file feature successfully</source>
+				<target>Import dữ liệu lịch hoạt động thành công. Bạn có thể tiếp tục</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ke Hoach Giao Duc Tu Ngay %value1% den %value2%</source>
+				<target>KẾ HOẠCH GIÁO DỤC TỪ NGÀY %value1% ĐẾN %value2%</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Ps feature branch export template 2</source>
+				<target>Tải biểu mẫu import mẫu 2<br/></target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Ps feature branch export template 3</source>
+				<target>Tải biểu mẫu import mẫu 3<br/></target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

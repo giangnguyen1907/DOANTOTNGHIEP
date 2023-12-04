@@ -1,0 +1,15 @@
+# Ignore all files 
+
+apps/backend/config/app.yml
+
+cache
+
+config/databases.yml
+
+config/doctrine/daXuLy.txt
+
+web/uploads/import_data
+
+log
+lib2
+*.log

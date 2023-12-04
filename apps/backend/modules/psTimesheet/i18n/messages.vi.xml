@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>-Select department-</source>
+				<target>-Chọn phòng ban-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsTimesheet List</source>
+				<target>Chấm công nhân viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member</source>
+				<target>Nhân viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is io</source>
+				<target>Trạng thái</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>In</source>
+				<target>Đến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Out</source>
+				<target>Về</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Timesheet at</source>
+				<target>Ngày chấm công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select member-</source>
+				<target>-Chọn nhân viên-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Action</source>
+				<target>Thao tác</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

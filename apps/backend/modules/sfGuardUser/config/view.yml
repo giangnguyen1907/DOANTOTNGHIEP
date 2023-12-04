@@ -1,0 +1,17 @@
+editSuccess:
+  javascripts: 
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js 
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/modules/ps_users.js: {position: last}
+
+newSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js 
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/modules/ps_users.js: {position: last}

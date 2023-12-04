@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Some hosts may require you to use the `RewriteBase` directive.
+# If you need to use the `RewriteBase` directive, it should be the
+# absolute physical path to the directory that contains this htaccess file.
+#
+# RewriteBase /
+
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>

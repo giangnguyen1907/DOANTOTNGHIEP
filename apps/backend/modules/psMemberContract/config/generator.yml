@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsMemberContract
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_member_contract
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~
+      list:    ~
+      filter:
+        display: 	[ps_customer_id,member_id,code,factorial,allowance,start_at,expire_at,signature_at,is_activated]
+      form:
+        fields:
+          ps_customer_id:
+            credentials: PS_HR_PROFESSIONAL_EDIT
+      edit:    ~
+      new:     ~

@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsReduceYourself
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_reduce_yourself
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list: 
+        display: 	[reduce_code, title, level, status, start, stop, is_type, updated_by, updated_at]
+        table_method: doSelectQuery
+      filter:
+         display: [ps_customer_id, ps_workplace_id,title, status, is_type]
+      form:
+        fields:
+          status: {help: Status reduce help}
+          level: {help: Level reduce help}
+          discount: {help: Discount reduce help}
+        display:
+          Reduce Yourself Information: [ps_customer_id,ps_workplace_id,reduce_code,title,start,stop,level,status,is_type,discount]
+          Service Information: [_list_service]
+      edit:  ~
+      new:   ~

@@ -1,0 +1,44 @@
+default:
+  is_secure:   true
+
+all:
+  is_secure: true
+
+# quyen cua action:
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_FEE_RECEIPT_NOTICATION_PUSH,PS_FEE_RECEIPT_NOTICATION_IMPORT,PS_FEE_RECEIPT_NOTICATION_SHOW,PS_FEE_RECEIPT_NOTICATION_DETAIL,PS_FEE_RECEIPT_NOTICATION_ADD,PS_FEE_RECEIPT_NOTICATION_EDIT,PS_FEE_RECEIPT_NOTICATION_DELETE,PS_FEE_RECEIPT_NOTICATION_FILTER_SCHOOL]]   
+
+new:
+  is_secure: true
+  credentials: [PS_FEE_RECEIPT_NOTICATION_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_FEE_RECEIPT_NOTICATION_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_FEE_RECEIPT_NOTICATION_EDIT]  
+
+delete:
+  is_secure: true
+  credentials: [PS_FEE_RECEIPT_NOTICATION_DELETE]
+
+import:
+  is_secure: true
+  credentials: [PS_FEE_RECEIPT_NOTICATION_IMPORT]  
+
+batchPushNotication:
+  is_secure: true
+  credentials: [PS_FEE_RECEIPT_NOTICATION_PUSH]
+
+pushNotication:
+  is_secure: true
+  credentials: [PS_FEE_RECEIPT_NOTICATION_PUSH]
+
+notication:
+  is_secure: true
+  credentials: [PS_FEE_RECEIPT_NOTICATION_PUSH]
+  

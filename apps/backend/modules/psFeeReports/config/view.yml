@@ -1,0 +1,108 @@
+indexSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/notification/SmartNotification.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+    - /psAdminThemePlugin/js/modules/ps_fee_reports.js: {position: last}
+  stylesheets:    []
+ 
+feeControlSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+  stylesheets:    []
+  
+warningSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+    - /psAdminThemePlugin/js/modules/ps_fee_reports.js: {position: last}
+  stylesheets:    []
+
+feeControlStep1Success:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/modules/ps_fee_reports_step1.js: {position: last}
+  stylesheets:    []
+  
+feeControlStep2Success:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/js_action_batch.js
+  stylesheets:    []
+  
+feeControlStep3Success:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/modules/ps_fee_reports_step3.js: {position: last}
+  stylesheets:    []
+  
+feeReceivableStudentStep1Success:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/modules/ps_fee_reports_receivable_student_filter.js: {position: last}
+  stylesheets:    []
+  
+importSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+ 

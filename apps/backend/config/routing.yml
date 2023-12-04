@@ -1,0 +1,4561 @@
+ps_baby_gift:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsBabyGift
+    module:               psBabyGift
+    prefix_path:          /ps_baby_gift
+    column:               id
+    with_wildcard_routes: true
+    
+# chon gui thong nhan xet cho tung phu huynh
+ps_comment_week_send_notication:
+  url: /ps_comment_week/notication
+  class: sfDoctrineRoute
+  options: { model: PsCommentWeek, type: object }  
+  param: { module: psCommentWeek, action: notication }
+  requirements:
+    sf_method: [post]
+    
+# Tạo tài khoản tự động
+ps_user_created_account_auto:
+  url:        /users/created_account
+  class:      sfDoctrineRoute
+  options:    { model: sfGuardUser, type: object }
+  params:     { module: sfGuardUser, action: createdAccount }
+  requirements:
+    sf_format: (?:html|js)
+
+# form import biểu mẫu cấu hình chạy phí
+import_template_receipt:
+  url:        /import_template_receipt
+  params:     { module: psReceipts, action: importTemplate, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Tải biểu mẫu cấu hình chạy phí
+export_template_receipt:
+  url:   /export_template_receipt
+  param: { module: psReceipts, action: exportTemplate, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_review:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsReview
+    module:               psReview
+    prefix_path:          /ps_review
+    column:               id
+    with_wildcard_routes: true
+
+ps_review_relative:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsReviewRelative
+    module:               psReviewRelative
+    prefix_path:          /ps_review_relative
+    column:               id
+    with_wildcard_routes: true
+
+ps_category_review:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsCategoryReview
+    module:               psCategoryReview
+    prefix_path:          /ps_category_review
+    column:               id
+    with_wildcard_routes: true
+
+ps_album_like:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAlbumLike
+    module:               psAlbumLike
+    prefix_path:          /ps_album_like
+    column:               id
+    with_wildcard_routes: true
+
+ps_album_comment:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAlbumComment
+    module:               psAlbumComment
+    prefix_path:          /ps_album_comment
+    column:               id
+    with_wildcard_routes: true
+
+ps_album:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAlbum
+    module:               psAlbum
+    prefix_path:          /ps_album
+    column:               id
+    with_wildcard_routes: true
+    
+# form import đăng ký sử dụng dịch vụ
+import_register_service:
+  url:        /import_register_service
+  params:     { module: psReceipts, action: importRegisterService, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Tải biểu mẫu đăng ký sử dụng dịch vụ
+export_register_service:
+  url:   /export_register_service
+  param: { module: psReceipts, action: exportRegisterService, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xem những khoản được giảm trừ
+ps_student_service_reduce_detail:
+  url:        /ps_student_service_reduce/:sid/:rid/detail
+  class:      sfDoctrineRoute
+  options:    { model: Receipts, type: object }
+  params:     { module: psReceipts, action: viewReduce }
+  requirements:
+    sf_method: [get]
+
+ps_active_student:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsActiveStudent
+    module:               psActiveStudent
+    prefix_path:          /ps_active_student
+    column:               id
+    with_wildcard_routes: true
+
+# form import khoan du dau ky
+ps_receipts_import_amount_last_month:
+  url:        /ps_receipts/import_amount_last_month
+  params:     { module: psReceipts, action: importAmountLastMonth, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Tải biểu mẫu import các khoản đầu kỳ
+ps_receipts_export_amount_last_month:
+  url:   /ps_receipts/export_amount_last_month
+  param: { module: psReceipts, action: amountLastMonthExport, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+
+# doc file xls khoan du dau ky va luu vao db -- Hàm cũ
+# ps_receipts_last_month_import_save:
+#   url:   /ps_receipts/import_last_month/save  
+#   param: { module: psReceipts, action: importLastMonthSave}
+#   requirements:
+#     sf_method: [post]
+
+# form import khoan du dau ky
+# ps_receipts_last_month_import: -- Hàm cũ
+#   url:        /ps_receipts/import_last_month
+#   class:      sfDoctrineRoute
+#   options:    { model: Receipt, type: object }
+#   params:     { module: psReceipts, action: importLastMonth }
+#   requirements:
+#     sf_format: (?:html|js)
+
+ps_type_age:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsTypeAge
+    module:               psTypeAge
+    prefix_path:          /ps_type_age
+    column:               id
+    with_wildcard_routes: true
+
+ps_target_group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsTargetGroup
+    module:               psTargetGroup
+    prefix_path:          /ps_target_group
+    column:               id
+    with_wildcard_routes: true
+
+ps_policy_group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsPolicyGroup
+    module:               psPolicyGroup
+    prefix_path:          /ps_policy_group
+    column:               id
+    with_wildcard_routes: true
+
+ps_reduce_yourself:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsReduceYourself
+    module:               psReduceYourself
+    prefix_path:          /ps_reduce_yourself
+    column:               id
+    with_wildcard_routes: true
+
+ps_regularity:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsRegularity
+    module:               psRegularity
+    prefix_path:          /ps_regularity
+    column:               id
+    with_wildcard_routes: true
+
+ps_symbol_group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsSymbolGroup
+    module:               psSymbolGroup
+    prefix_path:          /ps_symbol_group
+    column:               id
+    with_wildcard_routes: true
+
+ps_symbol:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsSymbol
+    module:               psSymbol
+    prefix_path:          /ps_symbol
+    column:               id
+    with_wildcard_routes: true
+
+# form import lich hoat dong lam
+ps_active_student_import:
+  url:        /ps_active_student/import
+  params:     { module: psActiveStudent, action: import, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Detail Ps Feature Branch Times
+ps_menus_imports_by_week:
+  url:        /ps_menus_import
+  class:      sfDoctrineRoute
+  options:    { model: PsMenusImports, type: object }
+  params:     { module: psMenusImports, action: show }
+  requirements:
+    sf_method: [get] 
+
+ps_menus_imports:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMenusImports
+    module:               psMenusImports
+    prefix_path:          /ps_menus_imports
+    column:               id
+    with_wildcard_routes: true
+
+
+# Xuat ra file mau de import du lieu thuc don
+ps_menus_export:
+  url:        /ps_menus/export_temp
+  class:      sfDoctrineRoute
+  options:    { model: PsMenusImports, type: object }
+  params:     { module: psMenusImports, action: exportTemp }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file xls va luu vao db
+ps_menus_import_save:
+  url:   /ps_menus_imports/import/save  
+  param: { module: psMenusImports, action: importSave}
+  requirements:
+    sf_method: [post]
+
+# form import thuc don
+ps_menus_import:
+  url:        /ps_menus/import
+  class:      sfDoctrineRoute
+  options:    { model: PsMenusImports, type: object }
+  params:     { module: psMenusImports, action: import }
+  requirements:
+    sf_format: (?:html|js)
+ 
+# Tong hop ket qua danh gia theo chi so
+ps_evaluate_index_student_statistic:
+  url:        /ps_evaluate_index_student/statistic
+  class:      sfDoctrineRoute
+  options:    { model: PsEvaluateIndexStudent, type: object }
+  params:     { module: psEvaluateIndexStudent, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+    
+# Phan lop cho nhieu giao vien
+ps_teacher_class_add_members:
+  url:        /ps_teacher_class/:id/members
+  class:      sfDoctrineRoute
+  options:    { model: PsTeacherClass, type: object }
+  params:     { module: psTeacherClass, action: members }
+  requirements:
+    sf_method: [get]
+
+# Khoi phuc nguoi than
+ps_relatives_restore:
+  url:        /ps_relatives/:id/restore
+  params:     { module: psRelatives, action: restore }
+  requirements:
+    sf_method: [get]
+ 
+# Xuat so theo doi cua hoc sinh
+ps_student_class_synthetic_export:
+  url:        /ps_students/synthetic_export
+  class:      sfDoctrineRoute
+  options:    { model: Student, type: object }
+  params:     { module: psStudents, action: syntheticExport }
+  requirements:
+    sf_format: (?:html|js)
+
+# Luu lai thiet lap hoc ky
+ps_semester_config_save:
+  url:   /ps_semester/save.:sf_format
+  param: { module: psSemester, action: saveConfig, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Thiet lap hoc ky
+ps_semester_config:
+  url:        /ps_semester/config
+  class:      sfDoctrineRoute
+  options:    { model: PsSemester, type: object }
+  params:     { module: psSemester, action: config }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_semester:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsSemester
+    module:               psSemester
+    prefix_path:          /ps_semester
+    column:               id
+    with_wildcard_routes: true
+
+#Doi trang thai cua Album Item
+ps_albums_archive_download:
+  url: /ps_albums/archive_download
+  param: { module: psAlbums, action: archiveDownload }
+  requirements:
+    sf_method: [post]
+
+ps_history_fees:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsHistoryFees
+    module:               psHistoryFees
+    prefix_path:          /ps_history_fees
+    column:               id
+    with_wildcard_routes: true
+
+# Cap nhat trang thai tieu chi danh gia
+ps_feature_option_feature_updated_status:
+  url: /ps_feature_option_feature/updated_status
+  class: sfDoctrineRoute
+  options: { model: PsFeatureOptionFeature, type: object }  
+  param: { module: psFeatureOptionFeature, action: updatedStatus }
+  requirements:
+    sf_method: [post]
+
+# Load lai dich vu
+ps_student_service_load_ajax:
+  url:   /ps_service/select
+  param: { module: psService, action: loadService}
+  requirements:
+    sf_method: [POST]
+
+# Load trang thong ke y te
+ps_student_growths_search:
+  url:   /ps_student_growths/search
+  param: { module: psStudentGrowths, action: studentGrowthsSearch, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Load lai bang modul tieu chi
+ps_feature_option_feature_load_ajax:
+  url: /ps_feature_option_feature/load_ajax
+  class: sfDoctrineRoute
+  options: { model: FeatureOptionFeature, type: object }  
+  param: { module: psFeatureOptionFeature, action: loadAjax }
+  requirements:
+    sf_method: [post]
+
+# Cap nhat trang thai ban tin phi
+ps_fee_news_letters_updated_status:
+  url: /ps_fee_news_letters/updated_status
+  class: sfDoctrineRoute
+  options: { model: PsFeeNewsLetters, type: object }  
+  param: { module: psFeeNewsLetters, action: updatedStatus }
+  requirements:
+    sf_method: [post]
+
+# Gui thong bao modul Ban Tin Phi
+ps_fee_news_letters_send_notication:
+  url: /ps_fee_news_letters/notication
+  class: sfDoctrineRoute
+  options: { model: PsFeeNewsLetters, type: object }  
+  param: { module: psFeeNewsLetters, action: notication }
+  requirements:
+    sf_method: [post]
+
+# luu diem danh ve muon theo lop    
+ps_attendances_delay_save:
+  url:   /ps_attendances_class_delay/save.:sf_format
+  param: { module: psAttendances, action: saveAttendancesDelay, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# chon gui thong bao y te cho tung phu huynh man hinh them moi
+ps_student_growths_send_notication:
+  url: /ps_student_growths/notication
+  class: sfDoctrineRoute
+  options: { model: PsStudentGrowths, type: object }  
+  param: { module: psStudentGrowths, action: notication }
+  requirements:
+    sf_method: [post]
+
+#Nhan su cap so
+ps_fee_news_letters:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsFeeNewsLetters
+    module:               psFeeNewsLetters
+    prefix_path:          /ps_fee_news_letters
+    column:               id
+    with_wildcard_routes: true
+
+#Nhan su cap so
+ps_hr_departments:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMember
+    module:               psHrDepartments
+    prefix_path:          /ps_hr_departments
+    column:               id
+    with_wildcard_routes: true
+
+ps_hr_departments_detail:
+  url:        /ps_hr_departments/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsMember, type: object }
+  params:     { module: psHrDepartments, action: detail }
+  requirements:
+    sf_method: [get]
+
+# Xuat lich hoat dong
+ps_feature_branch_times_export_by_class:
+  url:        /ps_feature_branch_times/export_class
+  params:     { module: psFeatureBranchTimes, action: exportClass }
+  requirements:
+    sf_method: [post]
+
+# Xuat Thong ke thanh toan theo ngay
+ps_fee_receipt_payment_synthetic_export_post:
+  url:   /ps_fee_receipt/payment_synthetic_export
+  param: { module: psFeeReceipt, action: paymentSyntheticExport}
+  requirements:
+    sf_method: [post]
+    
+# Thong ke thanh toan theo ngay
+ps_fee_receipt_payment_synthetic_export:
+  url:        /ps_fee_receipt/payment_synthetic
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReceipt, type: object }
+  params:     { module: psFeeReceipt, action: paymentSynthetic }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file xls va luu vao db lich hoat dong mau 3
+ps_feature_branch_times_import_tem3_save:
+  url:   /ps_feature_branch_times/import_tem3/save  
+  param: { module: psFeatureBranchTimes, action: importTem3Save}
+  requirements:
+    sf_method: [post]
+
+# form import import lich hoat dong mau 3
+ps_feature_branch_times_import_tem3:
+  url:        /ps_feature_branch_times/import_tem3
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranchTimes, type: object }
+  params:     { module: psFeatureBranchTimes, action: importTem3 }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xuat ra file mau de import lich hoat dong mau 3
+ps_feature_branch_times_export_tem3:
+  url:        /ps_feature_branch_times/export_tem3
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranchTimes, type: object }
+  params:     { module: psFeatureBranchTimes, action: exportTem3 }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file xls va luu vao db lich hoat dong mau 2
+ps_feature_branch_times_import_save:
+  url:   /ps_feature_branch_times/import/save  
+  param: { module: psFeatureBranchTimes, action: importSave}
+  requirements:
+    sf_method: [post]
+
+# form import import lich hoat dong mau 2
+ps_feature_branch_times_import:
+  url:        /ps_feature_branch_times/import
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranchTimes, type: object }
+  params:     { module: psFeatureBranchTimes, action: import }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xuat ra file mau de import lich hoat dong mau 2
+ps_feature_branch_times_export:
+  url:        /ps_feature_branch_times/export
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranchTimes, type: object }
+  params:     { module: psFeatureBranchTimes, action: export }
+  requirements:
+    sf_format: (?:html|js)
+
+# Luu chuyen lop hang loat --- New
+ps_students_move_class_save:
+  url:   /ps_students_class/save_student_move
+  param: { module: psClass, action: saveStudentsMove }
+  requirements:
+    sf_method: [post]
+
+# Xuat so diem danh -- Old
+ps_logtimes_statistic_export:
+  url:        /ps_logtimes/:clid/:date/export_logtimes
+  params:     { module: psLogtimes, action: exportLogtimesStatistic }
+  requirements:
+    sf_method: [post]    
+
+# Xuat so diem danh -- New
+ps_attendances_statistic_export:
+  url:   /ps_attendances/statistic_export
+  param: { module: psAttendances, action: statisticExport}
+  requirements:
+    sf_method: [post]
+
+# So diem danh -- New
+ps_attendance_statistic:
+  url:        /ps_attendances/statistic
+  class:      sfDoctrineRoute
+  options:    { model: PsLogtime, type: object }
+  params:     { module: psAttendances, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+
+# So diem danh -- Old
+ps_logtimes_statistic:
+  url:        /ps_logtimes/statistic
+  class:      sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psLogtimes, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+
+# Detail Ps Feature Branch Times
+ps_feature_branch_times_by_week:
+  url:        /ps_feature_branch_times
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranchTimes, type: object }
+  params:     { module: psFeatureBranchTimes, action: show }
+  requirements:
+    sf_method: [get] 
+
+# Luu thay doi mat khau
+refresh_password_save:
+  url:        /users/save_password_refresh
+  params:     { module: sfGuardUser, action: savePasswordRefresh, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Cap lai mat khau
+sf_guard_user_refresh_password:
+  url:        /users/:id/refreshpassword
+  class:      sfDoctrineRoute
+  options:    { model: sfGuardUser, type: object }
+  params:     { module: sfGuardUser, action: refreshpassword }
+  requirements:
+    sf_method: [get]
+
+# Cap nhat trang thai album
+ps_albums_update_status:
+  url: /ps_albums/update_status
+  class: sfDoctrineRoute
+  options: { model: PsAlbums, type: object }  
+  param: { module: psAlbums, action: updateStatus }
+  requirements:
+    sf_method: [post]
+
+# luu cap nhat diem danh -- saveStatistic
+ps_attendances_student_statistic_save:
+  url:   /ps_attendances_student_statistic_save/save.:sf_format
+  param: { module: psAttendances, action: saveStatistic, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Diem danh hoc sinh tren so diem danh
+ps_attendances_student_in_statistic:
+  url:   /ps_attendances/:sid/:date/attendance
+  param: { module: psAttendances, action: attendance, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xuat excel thong ke khoan thu
+ps_fee_receipt_export_receivable:
+  url: /ps_fee_receipt/export_receivable
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReceipt, type: object }
+  param: { module: psFeeReceipt, action: exportReceivable}
+  requirements:
+    sf_method: [post]
+
+# Load ajax cac khoan phai thu khac
+ps_receivable_by_ps_customer:
+  url:   /receivable/by_ps_customer
+  param: { module: receivable, action: receivableCustomer }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xuat bao cao tung khoan cua thang
+ps_fee_receipt_statistic:
+  url:        /ps_fee_receipt/statistic
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReceipt, type: object }
+  params:     { module: psFeeReceipt, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+
+# Bang tong hop cong no
+ps_fee_receipt_student_synthetic_export:
+  url:        /ps_fee_receipt/student_synthetic_export
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReceipt, type: object }
+  params:     { module: psFeeReceipt, action: studentSyntheticExport }
+  requirements:
+    sf_format: (?:html|js)
+
+# So theo doi tong hop cua hoc sinh
+ps_students_synthetic:
+  url:   /ps_students/:sid/:date/synthetic
+  param: { module: psStudents, action: synthetic, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Luu Nhan xet tat ca hoc sinh
+ps_comment_week_all_save:
+  url:   /ps_comment_week_all_save/save.:sf_format
+  param: { module: psCommentWeek, action: commentSave, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Nhan xet tat ca hoc sinh
+ps_comment_week_all:
+  url:   /ps_comment_week/comment
+  param: { module: psCommentWeek, action: comment, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_comment_week:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsCommentWeek
+    module:               psCommentWeek
+    prefix_path:          /ps_comment_week
+    column:               id
+    with_wildcard_routes: true
+
+ps_receivable_detail:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ReceivableDetail
+    module:               psReceivableDetail
+    prefix_path:          /ps_receivable_detail
+    column:               id
+    with_wildcard_routes: true
+
+#luu so theo doi -- new
+ps_attendances_trackbook_save:
+  url:   /ps_attendances_trackbook_save/save.:sf_format
+  param: { module: psAttendances, action: saveTrackbook, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+#luu so theo doi -- old
+ps_logtime_trackbook_save:
+  url:   /ps_logtime_trackbook_save/save.:sf_format
+  param: { module: psLogtimes, action: saveTrackbook, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+# So theo doi
+ps_student_info_trackbook:
+  url:   /ps_attendances/:sid/trackbook
+#  param: { module: psLogtimes, action: trackbook, sf_format: html }
+  param: { module: psAttendances, action: trackbook, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Luu Quan he cua phu huynh va hoc sinh
+ps_relative_student_save_ajax:
+  url: /ps_relative_student/save_ajax
+  class: sfDoctrineRoute
+  options: { model: RelativeStudent, type: object }  
+  param: { module: psRelativeStudent, action: saveAjax }
+  requirements:
+    sf_method: [post]
+
+# Chuyen trang thai tam dung hang loat hoc sinh
+student_stop_studying:
+  url:   /student/stop_studying
+  param: { module: psClass, action: stopStudying }
+  requirements:
+    sf_method: [post]
+
+# Xuat ra file mau de import du lieu diem danh
+ps_attendances_student_export:
+  url:        /ps_attendances/export_student
+  class:      sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psAttendances, action: exportStudent }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file xls va luu du lieu diem danh vao db
+ps_attendances_import_save:
+  url:   /ps_attendances/import_save  
+  param: { module: psAttendances, action: importSave}
+  requirements:
+    sf_method: [post]
+
+# form import du lieu diem danh
+ps_attendances_import:
+  url:        /ps_attendances/import
+  class:      sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psAttendances, action: import }
+  requirements:
+    sf_format: (?:html|js)
+
+
+# Xuat phieu thu theo co so
+ps_fee_reports_batch_export_fee_receipt_for_workplace:
+  url:   /ps_fee_reports/batch_export_fee_receipt_workplace
+  param: { module: psFeeReports, action: batchExportFeeReceiptWorkplace}
+  requirements:
+    sf_method: [post]
+
+# Xuat phieu bao theo co so
+ps_fee_reports_batch_export_fee_report_for_workplace:
+  url:   /ps_fee_reports/batch_export_fee_report_workplace
+  param: { module: psFeeReports, action: batchExportFeeReportWorkplace}
+  requirements:
+    sf_method: [post]
+
+# In phieu thu cua co so
+ps_fee_receipt_by_workplace_print:
+  url:        /ps_fee_reports/print_fee_receipt_by_workplace
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: printFeeReceiptByWorkplace }
+  requirements:
+    sf_method: [post]
+
+# In phieu bao cua co so
+ps_fee_reports_by_workplace_print:
+  url:        /ps_fee_reports/print_fee_report_by_workplace
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: printFeeReportByWorkplace }
+  requirements:
+    sf_method: [post]
+
+# In phieu thu cua 1 lop hoc
+ps_fee_receipt_by_class_print:
+  url:        /ps_fee_reports/print_fee_receipt_by_class
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: printFeeReceiptByClass }
+  requirements:
+    sf_method: [post]
+
+# In phieu bao cua 1 lop hoc
+ps_fee_reports_by_class_print:
+  url:        /ps_fee_reports/print_fee_report_by_class
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: printFeeReportByClass }
+  requirements:
+    sf_method: [post]
+
+# In phieu thu cua 1 hoc sinh
+ps_fee_receipt_print:
+  url:        /ps_fee_reports/:id/print_fee_receipt
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: printFeeReceipt }
+  requirements:
+    sf_method: [post]
+
+# In phieu bao cua 1 hoc sinh
+ps_fee_reports_print:
+  url:        /ps_fee_reports/:id/print_fee_report
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: printFeeReport }
+  requirements:
+    sf_method: [post]
+
+
+# Load lai so tien nop nop hoc phi muon
+ps_receipts_load_amount:
+  url: /ps_receipts/load_amount
+  class: sfDoctrineRoute
+  options: { model: Receipt, type: object }  
+  param: { module: psReceipts, action: loadAmount }
+  requirements:
+    sf_method: [post]
+
+# Luu lai thiet lap phi nop cham
+config_late_payments_save:
+  url:   /ps_config_late_payments/save.:sf_format
+  param: { module: psConfigLatePayments, action: saveConfigLate, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Thiet lap phi nop cham
+config_late_payments:
+  url:        /ps_config_late_payments/configLate
+  class:      sfDoctrineRoute
+  options:    { model: PsConfigLatePayment, type: object }
+  params:     { module: psConfigLatePayments, action: configLate }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file xls phieu thanh toan va luu vao db
+ps_receipts_student_import_save:
+  url:   /ps_receipts/import/save  
+  param: { module: psReceipts, action: importreceiptSave}
+  requirements:
+    sf_method: [post]
+
+# form import phieu thu thanh toan
+ps_receipts_student_import:
+  url:        /ps_receipts/import
+  class:      sfDoctrineRoute
+  options:    { model: Receipt, type: object }
+  params:     { module: psReceipts, action: importreceipt }
+  requirements:
+    sf_format: (?:html|js)
+
+# Bieu mau phieu phieu du dau ky
+ps_receipts_balance_last_month:
+  url:        /ps_receipts/export_balance
+  params:     { module: psReceipts, action: exportBalance }
+  requirements:
+    sf_method: [post]
+    
+# Ket qua thanh toan   
+ps_receipts_statistic_payment:
+  url:        /ps_receipts/export_payment
+  params:     { module: psReceipts, action: exportPayment }
+  requirements:
+    sf_method: [post]
+    
+# chon gui thong bao phi cho tung phu huynh
+ps_receipt_send_notication:
+  url: /ps_receipts/notication
+  class: sfDoctrineRoute
+  options: { model: Receipt, type: object }  
+  param: { module: psReceipts, action: notication }
+  requirements:
+    sf_method: [post]
+
+# chon gui thong bao phi cho tung phu huynh man hinh quan ly thong bao phi
+ps_fee_receipt_send_notication:
+  url: /ps_fee_receipt/notication
+  class: sfDoctrineRoute
+  options: { model: PsFeeReceipt, type: object }  
+  param: { module: psFeeReceipt, action: notication }
+  requirements:
+    sf_method: [post]
+
+# Nhan xet hoc ky
+ps_evaluate_semester:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsEvaluateSemester
+    module:               psEvaluateSemester
+    prefix_path:          /ps_evaluate_semester
+    column:               id
+    with_wildcard_routes: true
+
+# Xuat xls danh sach sinh nhat trong thang
+ps_cms_notification_birthday_export:
+  url:        /ps_student_growths/:cid/:wid/:clid/:date/export_birthday
+  params:     { module: psCmsNotification, action: exportByClassOfMonth }
+  requirements:
+    sf_method: [post]
+    
+# Xem lich hoc ngoai khoa
+ps_student_service_course_comment_detail:
+  url:        /ps_student_service_course_comment/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentServiceCourseComment, type: object }
+  params:     { module: psStudentServiceCourseComment, action: detail }
+  requirements:
+    sf_method: [get]
+
+# ajax lay phu huynh trong truong
+ps_relative_by_customer:
+  url:   /ps_relative/customer.:sf_format
+  param: { module: psHistoryScreenRelatives, action: customerRelative, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# thong ke thao tac cua phu huynh
+ps_history_screen_relatives:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsHistoryScreenRelatives
+    module:               psHistoryScreenRelatives
+    prefix_path:          /ps_history_screen_relatives
+    column:               id
+    with_wildcard_routes: true
+
+
+# Xuat ra file mau de import du lieu y te
+ps_student_growths_export:
+  url:        /ps_student_growths/export_student
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentBmi, type: object }
+  params:     { module: psStudentBmi, action: exportStudent }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file xls va luu vao db
+ps_student_bmi_import_save:
+  url:   /ps_student_growths/import/save  
+  param: { module: psStudentBmi, action: importSave}
+  requirements:
+    sf_method: [post]
+
+# form import chi so kham suc khoe
+ps_student_bmi_import:
+  url:        /ps_student_growths/import
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentBmi, type: object }
+  params:     { module: psStudentBmi, action: import }
+  requirements:
+    sf_format: (?:html|js)
+
+# luu diem danh theo lop    
+ps_attendances_save:
+  url:   /ps_attendances_class/save.:sf_format
+  param: { module: psAttendances, action: savePsLogtime, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file xls va luu vao db
+ps_member_import_save:
+  url:   /ps_member/import/save  
+  param: { module: psRelationship, action: importmemberSave}
+  requirements:
+    sf_method: [post]
+
+# form import nhan su
+ps_member_import:
+  url:        /ps_member/import
+  class:      sfDoctrineRoute
+  options:    { model: Relationship, type: object }
+  params:     { module: psRelationship, action: importmember }
+  requirements:
+    sf_format: (?:html|js)
+
+
+# doc file xls va luu vao db
+ps_students_relationship_import_save:
+  url:   /ps_students/import/save  
+  param: { module: psRelationship, action: importSave}
+  requirements:
+    sf_method: [post]
+
+# form import hoc sinh va nguoi than
+ps_students_relationship_import:
+  url:        /ps_students/import
+  class:      sfDoctrineRoute
+  options:    { model: Relationship, type: object }
+  params:     { module: psRelationship, action: import }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xuat ra file mau
+ps_fee_receipt_student_export:
+  url:        /ps_fee_receipt/export
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReceipt, type: object }
+  params:     { module: psFeeReceipt, action: export }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file xls va luu vao db
+ps_fee_receipt_import_save:
+  url:   /ps_fee_receipt/import_save  
+  param: { module: psFeeReceipt, action: importSave}
+  requirements:
+    sf_method: [post]
+
+# form import du lieu phi
+ps_fee_receipt_import:
+  url:        /ps_fee_receipt/import
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReceipt, type: object }
+  params:     { module: psFeeReceipt, action: import }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_receivable_student:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsFeeReceivableStudent
+    module:               psFeeReceivableStudent
+    prefix_path:          /ps_fee_receivable_student
+    column:               id
+    with_wildcard_routes: true
+
+ps_fee_receipt:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsFeeReceipt
+    module:               psFeeReceipt
+    prefix_path:          /ps_fee_receipt
+    column:               id
+    with_wildcard_routes: true
+
+#Thong bao ngay sinh nhat
+ps_cms_notifications_ps_cms_notification_birthday_notify:
+  url:        /ps_cms_notification/birthdayNotify
+  class:      sfDoctrineRoute
+  options:    { model: PsCmsNotifications, type: object }
+  params:     { module: psCmsNotification, action: birthdayNotify }
+  requirements:
+    sf_format: (?:html|js)
+
+# Ham updated du lieu cu
+ps_attendances_synthetic_updated_month:
+  url: /ps_attendances/synthetic_updated
+  class: sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psAttendances, action: syntheticMonthOld }
+  requirements:
+    sf_format: (?:html|js)
+ 
+# Xuat thong ke tong hop theo ngay
+ps_attendances_synthetic_by_date_export:
+  url:        /ps_attendances/date_export
+  params:     { module: psAttendances, action: exportSyntheticDate}
+  requirements:
+    sf_method: [post] 
+
+# Xuat thong ke tong hop
+ps_attendances_synthetic_export:
+  url:        /ps_attendances/export_synthetic
+  params:     { module: psAttendances, action: exportSynthetic}
+  requirements:
+    sf_method: [post] 
+
+# thống kê tổng hợp. điểm danh, đánh giá hoat động của lớp theo tháng
+ps_attendances_synthetic_month:
+  url: /ps_attendances/syntheticMonth
+  class: sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psAttendances, action: syntheticMonth }
+  requirements:
+    sf_format: (?:html|js)
+
+# thống kê tổng hợp. điểm danh, đánh giá hoat động theo ngày
+ps_attendances_synthetic:
+  url: /ps_attendances/synthetic
+  class: sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psAttendances, action: synthetic }
+  requirements:
+    sf_format: (?:html|js)
+
+#Xuat file doi soat tai khoan phu huynh 
+ps_mobile_apps_cross_checking_export:
+  url: /ps_mobile_apps/:y_id/:c_id/:w_id/:class_id/:from/:to/cross_checking_export
+  class: sfDoctrineRoute
+  options:    { model: PsMobileApps, type: object }
+  params:     { module: psMobileApps, action: exportCrossChecking }
+  requirements:
+    sf_format: [get]
+
+
+#Doi soat tai khoan phu huynh 
+ps_mobile_apps_cross_checking:
+  url: /ps_mobile_apps/crossChecking
+  class: sfDoctrineRoute
+  options:    { model: PsMobileApps, type: object }
+  params:     { module: psMobileApps, action: crossChecking }
+  requirements:
+    sf_format: (?:html|js)
+
+#Xuat xls danh sach kich hoat tai khoan
+ps_mobile_apps_export:
+  url:        /ps_mobile_apps/:y_id/:month/:c_id/:w_id/export
+  params:     { module: psMobileApps, action: export }
+  requirements:
+    sf_method: [get]
+
+ps_mobile_apps_detail:
+  url:        /ps_mobile_apps/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsMobileApps, type: object }
+  params:     { module: psMobileApps, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_receivable_students_detail:
+  url:        /ps_receivable_students/:sid/:rid/detail
+  class:      sfDoctrineRoute
+  options:    { model: ReceivableStudent, type: object }
+  params:     { module: psReceivableStudents, action: detail }
+  requirements:
+    sf_method: [get]
+
+# thong ke hoc sinh su dung khoan thu nao
+ps_receivable_students_statistic:
+  url:        /ps_receivable_students/statistic
+  class:      sfDoctrineRoute
+  options:    { model: ReceivableStudent, type: object }
+  params:     { module: psReceivableStudents, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xuat file excel Danh gia chi so hoc sinh
+ps_evaluate_index_student_export:
+  url: /ps_evaluate_index_student/:y_id/:c_id/:w_id/:class_id/:month/export
+  class: sfDoctrineRoute
+  options: { model: PsEvaluateIndexStudent, type: object }  
+  param: { module: psEvaluateIndexStudent, action: exportEvaluateStudent }
+  requirements:
+    sf_format: (?:html|js)
+    
+# Xuat phieu thu theo lop
+ps_receivable_students_export_class:
+  url:        /ps_receivable_students/:year_id/:month/:customer/:workplace/:class/export_class
+  params:     { module: psReceivableStudents, action: exportReceivableClass }
+  requirements:
+    sf_method: [post] 
+   
+# Xuat phieu thu khi khong chon hoc sinh    --Có thể sẽ bỏ--
+ps_receivable_students_export:
+  url:        /ps_receivable_students/:year_id/:month/:customer/:workplace/:class/:receivable_id/export
+  params:     { module: psReceivableStudents, action: exportReceivable }
+  requirements:
+    sf_method: [post] 
+
+#Xoa chi so danh gia toan bo hoc sinh theo lop
+ps_evaluate_index_student_delete_all_by_class:
+  url: /ps_evaluate_index_student/delete_by_class
+  class: sfDoctrineRoute
+  options: { model: PsEvaluateIndexStudent, type: object }
+  param: { module: psEvaluateIndexStudent, action: deleteForClass }
+  requirements:
+    sf_method: [post]
+
+#Luu danh gia chi so cua hoc sinh, theo toan bo lop
+ps_evaluate_index_student_save_state_by_class:
+  url: /ps_evaluate_index_student/save_state_by_class
+  class: sfDoctrineRoute
+  options: { model: PsEvaluateIndexStudent, type: object }  
+  param: { module: psEvaluateIndexStudent, action: saveStateByClass }
+  requirements:
+    sf_method: [post]
+
+
+#Luu danh gia chi so cua hoc sinh
+ps_evaluate_index_student_save:
+  url: /ps_evaluate_index_student/save_data_student
+  class: sfDoctrineRoute
+  options: { model: PsEvaluateIndexStudent, type: object }  
+  param: { module: psEvaluateIndexStudent, action: saveEvaluateStudent }
+  requirements:
+    sf_method: [post]
+
+# Load lai bang modul thong bao
+ps_cms_notification_load_ajax:
+  url: /ps_cms_notification/load_ajax
+  class: sfDoctrineRoute
+  options: { model: PsCmsNotifications, type: object }  
+  param: { module: psCmsNotification, action: loadAjax }
+  requirements:
+    sf_method: [post]
+
+ps_cms_notifications_ps_cms_notification:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsCmsNotifications
+    module:               psCmsNotification
+    prefix_path:          /ps_cms_notification
+    column:               id
+    with_wildcard_routes: true
+
+ps_evaluate_class_time:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsEvaluateClassTime
+    module:               psEvaluateClassTime
+    prefix_path:          /psEvaluateClassTime
+    column:               id
+    with_wildcard_routes: true
+
+#Load ajax Evaluate Subject theo param
+ps_evaluate_subject_by_params:
+  url:   /ps_evaluate_subject/select
+  param: { module: psEvaluateSubject, action: evaluateSubjectByParams}
+  requirements:
+    sf_method: [POST]
+
+
+ps_evaluate_index_student:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsEvaluateIndexStudent
+    module:               psEvaluateIndexStudent
+    prefix_path:          /ps_evaluate_index_student
+    column:               id
+    with_wildcard_routes: true
+
+ps_evaluate_index_symbol:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsEvaluateIndexSymbol
+    module:               psEvaluateIndexSymbol
+    prefix_path:          /ps_evaluate_index_symbol
+    column:               id
+    with_wildcard_routes: true
+
+ps_evaluate_index_criteria:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsEvaluateIndexCriteria
+    module:               psEvaluateIndexCriteria
+    prefix_path:          /ps_evaluate_index_criteria
+    column:               id
+    with_wildcard_routes: true
+
+ps_evaluate_subject:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsEvaluateSubject
+    module:               psEvaluateSubject
+    prefix_path:          /ps_evaluate_subject
+    column:               id
+    with_wildcard_routes: true
+   
+# Xem lich su import
+ps_history_import:
+  url:        /ps_history_import
+  class:      sfDoctrineRoute
+  options:    { model: PsReceiptTemporary, type: object }
+  params:     { module: psReceiptTemporary, action: history }
+  requirements:
+    sf_format: (?:html|js)
+
+#Download file exel thong ke tai khoan phu huynh
+ps_relative_statistic_download_file:
+  url:   /ps_relatives/statistic/:y_id/:c_id/:class_id/export
+  param: { module: psRelatives, action: exportRelativeAccountStatistic }
+  requirements:
+    sf_format: (?:html|js)
+
+#thong ke tai khoan hoc sinh
+ps_relative_statistic:
+  url:   /ps_relatives/statistic
+  param: { module: psRelatives, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_service_courses_save:
+  url:   /ps_service_courses/statistic/save
+  param: { module: psServiceCourses, action: moveClassSave }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_receivable_student_by_customer:
+  url:   /ps_receivable_temporary/ps_customer.:sf_format
+  param: { module: psReceivableTemporary, action: customerReceivable, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file xls va luu vao db
+ps_receivable_temporary_import_save:
+  url:   /ps_receivable_temporary/import/save  
+  param: { module: psReceivableTemporary, action: importSave}
+  requirements:
+    sf_method: [post]
+
+# form import khoan phai thu
+ps_receivable_temporary_import:
+  url:        /ps_receivable_temporary/import
+  class:      sfDoctrineRoute
+  options:    { model: PsReceivableTemporary, type: object }
+  params:     { module: psReceivableTemporary, action: import }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_receivable_temporary:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsReceivableTemporary
+    module:               psReceivableTemporary
+    prefix_path:          /ps_receivable_temporary
+    column:               id
+    with_wildcard_routes: true
+
+ps_receipt_temporary:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsReceiptTemporary
+    module:               psReceiptTemporary
+    prefix_path:          /ps_receipt_temporary
+    column:               id
+    with_wildcard_routes: true
+
+ps_receipts_payment:
+  url:        /ps_receipts/:id/payment
+  class:      sfDoctrineRoute
+  options:    { model: Receipt, type: object }
+  params:     { module: psReceipts, action: Payment}
+  requirements:
+    sf_method: [post]
+
+# Chi tiet 1 bao phi cua 1 hoc sinh
+ps_receipts_show:
+  url:        /ps_receipts/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: Receipt, type: object }
+  params:     { module: psReceipts, action: detail }
+  requirements:
+    sf_method: [post]
+
+ps_receipts_view:
+  url:        /ps_receipts/:id/view
+  class:      sfDoctrineRoute
+  options:    { model: Receipt, type: object }
+  params:     { module: psReceipts, action: detail }
+  requirements:
+    sf_method: [post]
+
+
+ps_receipts_detail:
+  url:        /ps_receipts/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: Receipt, type: object }
+  params:     { module: psReceipts, action: detail }
+  requirements:
+    sf_method: [post]
+
+ps_receipts:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Receipt
+    module:               psReceipts
+    prefix_path:          /ps_receipts
+    column:               id
+    with_wildcard_routes: true
+
+ps_chat_time:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsChatTime
+    module:               psChatTime
+    prefix_path:          /ps_chat_time
+    column:               id
+    with_wildcard_routes: true
+
+# doc file xls va luu vao db
+ps_receipts_import_save:
+  url:   /ps_receipt_temporary/import/save  
+  param: { module: psReceipts, action: importSave}
+  requirements:
+    sf_method: [post]
+
+# form import phieu thu
+ps_receipts_import:
+  url:        /ps_receipt_temporary/import
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psReceipts, action: import }
+  requirements:
+    sf_format: (?:html|js)
+
+# doc file exl va luu vao db
+ps_feature_branch_import_save:
+  url:   /ps_feature_branch/import/save  
+  param: { module: psFeatureBranch, action: importSave}
+  requirements:
+    sf_method: [post]
+
+# form import lich hoat dong
+ps_feature_branch_import:
+  url:        /ps_feature_branch/import
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranch, type: object }
+  params:     { module: psFeatureBranch, action: import }
+  requirements:
+    sf_format: (?:html|js)
+
+# thong ke thao tac cua nhan vien
+ps_attendances_manipulation:
+  url:        /ps_attendances/manipulation
+  class:      sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psAttendances, action: manipulation }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_receivable_class:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ReceivableTemp
+    module:               psReceivableClass
+    prefix_path:          /ps_receivable_class
+    column:               id
+    with_wildcard_routes: true
+
+
+# xoa dich vu cua hoc sinh
+ps_service_registration_student_delete_ajax:
+  url:   /ps_student_service/delete_ajax  
+  param: { module: psStudentService, action: deleteAjax}
+  requirements:
+    sf_method: [post]
+
+# Xem chi tiet cac dich vu ma hoc sinh da dang ky
+ps_service_registration_student_detail:
+  url:   /ps_student_service/registration/:sid/:kstime/detail
+  param: { module: psStudentService, action: detail, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_registration_student_search:
+  url:   /ps_student_service/registration/search
+  param: { module: psStudentService, action: registrationSearch, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Luu dang ky dich vu
+ps_service_registration_student_save:
+  url:   /ps_student_service/registration/save  
+  param: { module: psStudentService, action: registrationSave}
+  requirements:
+    sf_method: [post]
+
+
+# Add dich vu hang loat cho hoc sinh duoc chon
+ps_service_registration_student:
+  url:   /ps_student_service/registration.:sf_format
+  param: { module: psStudentService, action: registration, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+#Lay ra gio gui don xin nghi hop le cua co so
+ps_work_places_time_receive_valid:
+  url: /ps_work_places/select.:sf_format
+  params: { module: psWorkPlaces, action: workplaceTimeReceiveValid, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_member_working_time:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMemberWorkingTime
+    module:               psMemberWorkingTime
+    prefix_path:          /ps_member_working_time
+    column:               id
+    with_wildcard_routes: true
+
+ps_working_time:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsWorkingTime
+    module:               psWorkingTime
+    prefix_path:          /ps_working_time
+    column:               id
+    with_wildcard_routes: true
+
+ps_receivable_students_delete_ajax:
+  url:   /ps_receivable_students/delete_ajax  
+  param: { module: psReceivableStudents, action: deleteAjax}
+  requirements:
+    sf_method: [post]
+
+#
+ps_receivable_students_in_receipt_save:
+  url:   /ps_receivable_students_in_receipt/save  
+  param: { module: psReceivableStudents, action: saveReceivableStudentInReceipt}
+  requirements:
+    sf_method: [post]
+
+#Luu sua cac khoan phai thu cua thang
+ps_receivable_students_batch_update:
+  url:   /ps_receivable_students/batch_update  
+  param: { module: psReceivableStudents, action: updateReceivableStudentReceipt}
+  requirements:
+    sf_method: [post]
+
+#Toan bo cac khoan phai thu cua hoc sinh: khaon phai thu khac + dich vu + ve muon
+ps_receivable_students:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ReceivableStudent
+    module:               psReceivableStudents
+    prefix_path:          /ps_receivable_students
+    column:               id
+    with_wildcard_routes: true
+
+#Xuat file Phieu no Hoc phi
+#ps_fee_reports_receipt_not_pay:
+#  url: /ps_fee_reports/:y_id/:c_id/:w_id/:cl_id/:month/export
+#  params: { module: psFeeReports, action: exportFeeReceiptNotPay }
+#  requirements:
+#    sf_method: [post]
+
+#Xuat file bao cao sy so theo lop
+ps_class_export_report_total_student:
+  url: /ps_class/:y_id/:c_id/:w_id/:og_id/export
+  params: { module: psClass, action: exportTotalStudentByClass }
+  requirements:
+    sf_method: [post]
+
+ps_config_late_payments:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsConfigLatePayment
+    module:               psConfigLatePayments
+    prefix_path:          /ps_config_late_payments
+    column:               id
+    with_wildcard_routes: true
+
+#Doi trang thai cua Feature Branch
+ps_feature_branch_activated:
+  url: /ps_feature_branch/item_activated
+  class: sfDoctrineRoute
+  options: { model: PsFeatureBranch, type: object }  
+  param: { module: psFeatureBranch, action: featureBranchActivated }
+  requirements:
+    sf_method: [post]
+    
+# xoa diem danh
+ps_attendance_deleted:
+  url: /ps_logtimes/deleted
+  class: sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psAttendances, action: deleted }
+  requirements:
+    sf_format: (?:html|js)
+    
+# Luu Diem danh ve
+ps_attendance_save_logout:
+  url: /ps_attendance/save_logout
+  class: sfDoctrineRoute
+  options: { model: PsLogtimes, type: object }  
+  param: { module: psAttendances, action: saveLogout }
+  requirements:
+    sf_method: [post]
+
+# Luu Diem danh den
+ps_attendance_save_login:
+  url: /ps_attendance/save_login
+  class: sfDoctrineRoute
+  options: { model: PsLogtimes, type: object }  
+  param: { module: psAttendances, action: saveLogin }
+  requirements:
+    sf_method: [post]
+
+# diem danh version 2.0
+ps_attendances:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsLogtimes
+    module:               psAttendances
+    prefix_path:          /ps_attendances
+    column:               id
+    with_wildcard_routes: true
+
+# Detail Advice
+ps_feature_branch_times_week:
+  url:   /feature_branch_times/week.:sf_format
+  param: { module: psFeatureBranchTimes, action: featureBranchTimesWeek, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+   
+# Detail Ps Feature Branch Times
+ps_feature_branch_times_detail:
+  url:        /ps_feature_branch_times/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranchTimes, type: object }
+  params:     { module: psFeatureBranchTimes, action: detailByWeek }
+  requirements:
+    sf_method: [get] 
+
+ps_logtime_save_delay:
+  url: /ps_attendances/save_delay
+  class: sfDoctrineRoute
+  options: { model: PsLogtimes, type: object }  
+  param: { module: psAttendances, action: saveDelay }
+  requirements:
+    sf_method: [post]
+
+# Diem danh hoc sinh ve muon
+ps_logtimes_delay:
+  url:        /ps_attendances/delay
+  class:      sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psAttendances, action: delay }
+  requirements:
+    sf_format: (?:html|js)
+
+
+ps_member_allowance:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMemberAllowance
+    module:               psMemberAllowance
+    prefix_path:          /ps_member_allowance
+    column:               id
+    with_wildcard_routes: true
+
+ps_allowance:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAllowance
+    module:               psAllowance
+    prefix_path:          /ps_allowance
+    column:               id
+    with_wildcard_routes: true
+
+# Xuat cham cong nhan vien
+ps_timesheet_summarys_export:
+  url:        /ps_timesheet_summarys/:cus/:wp/:dpm/:date/export_summarys
+  params:     { module: psTimesheetSummarys, action: exportTimesheetSummarys }
+  requirements:
+    sf_method: [post]    
+
+# tong hop so gio lam cua nhan vien theo so so, phong ban
+ps_timesheet_summarys_synthetic:
+  url:        /ps_timesheet_summarys/synthetic
+  class:      sfDoctrineRoute
+  options:    { model: PsTimesheetSummarys, type: object }
+  params:     { module: psTimesheetSummarys, action: synthetic }
+  requirements:
+    sf_format: (?:html|js)
+
+# thong ke so ngay di lam cua nhan vien
+ps_timesheet_summarys_statistic:
+  url:        /ps_timesheet_summarys/statistic
+  class:      sfDoctrineRoute
+  options:    { model: PsTimesheetSummarys, type: object }
+  params:     { module: psTimesheetSummarys, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_timesheet_summarys:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsTimesheetSummarys
+    module:               psTimesheetSummarys
+    prefix_path:          /ps_timesheet_summarys
+    column:               id
+    with_wildcard_routes: true
+
+ps_member_salary:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMemberSalary
+    module:               psMemberSalary
+    prefix_path:          /ps_member_salary
+    column:               id
+    with_wildcard_routes: true
+
+ps_salary:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsSalary
+    module:               psSalary
+    prefix_path:          /ps_salary
+    column:               id
+    with_wildcard_routes: true
+
+# xem lại cham cong theo ngay
+ps_timesheet_review:
+  url:        /ps_timesheet/review
+  class:      sfDoctrineRoute
+  options:    { model: PsTimesheet, type: object }
+  params:     { module: psTimesheet, action: review }
+  requirements:
+    sf_format: (?:html|js)
+
+# load lai thoi gian vao ra
+ps_logtime_member_time:
+  url: /ps_timesheet_time/in_out
+  class: sfDoctrineRoute
+  options: { model: PsTimesheet, type: object }  
+  param: { module: psTimesheet, action: psLogtimeMemberTime }
+  requirements:
+    sf_method: [post]
+
+# luu trang thai diem danh nhan vien
+ps_logtime_member:
+  url: /ps_timesheet/in_out
+  class: sfDoctrineRoute
+  options: { model: PsTimesheet, type: object }  
+  param: { module: psTimesheet, action: psLogtimeMember }
+  requirements:
+    sf_method: [post]
+
+# load ajax lay member tu phong ban
+ps_member_department:
+  url:   /member_department/customer.:sf_format
+  param: { module: psMemberDepartments, action: memberDepartment, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# load ajax lay phong ban tu co so
+ps_department_workplace:
+  url:   /department_workplace/customer.:sf_format
+  param: { module: psMemberDepartments, action: departmentWorkplace, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_member_absents:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMemberAbsents
+    module:               psMemberAbsents
+    prefix_path:          /ps_member_absents
+    column:               id
+    with_wildcard_routes: true
+
+ps_timesheet:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsTimesheet
+    module:               psTimesheet
+    prefix_path:          /ps_timesheet
+    column:               id
+    with_wildcard_routes: true
+
+ps_member_departments:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMemberDepartments
+    module:               psMemberDepartments
+    prefix_path:          /ps_member_departments
+    column:               id
+    with_wildcard_routes: true
+
+# load ajax lay cac thang hien tại cua nam
+ps_start_end_year:
+  url:   /start_end_year/customer.:sf_format
+  param: { module: psSchoolYear, action: start_EndYear, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# load ajax lay cac thang hien tại cua nam
+ps_year_month:
+  url:   /year_month/customer.:sf_format
+  param: { module: psSchoolYear, action: yearMonth, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+# Xem lai toan bo du lieu cac lan sua xoa cua diem danh
+ps_logtimes_history:
+  url:        /ps_logtimes/history
+  class:      sfDoctrineRoute
+  options:    { model: PsLogtimes, type: object }
+  params:     { module: psLogtimes, action: history }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xem lai toan bo du lieu cac lan sua xoa cua danh gia mon hoc
+ps_student_service_course_comment_history:
+  url:        /ps_student_service_course_comment/history
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentServiceCourseComment, type: object }
+  params:     { module: psStudentServiceCourseComment, action: history }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xem lai toan bo du lieu cac lan sua xoa cua hoat dong
+ps_student_features_history:
+  url:        /ps_student_features/history
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentFeatures, type: object }
+  params:     { module: psStudentFeatures, action: history }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xuat hoc sinh dang ky di hoc ngay thu 7 theo co so hoac theo lop
+ps_service_saturday_export:
+  url:        /ps_service_saturday/:wid/:clid/:date/export_saturday
+  params:     { module: psServiceSaturday, action: exportServiceSaturday }
+  requirements:
+    sf_method: [post]    
+
+# Detail Advice
+ps_advices_detail:
+  url:        /ps_advices/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsAdvices, type: object }
+  params:     { module: psAdvices, action: detail }
+  requirements:
+    sf_method: [get] 
+
+ps_advice_feedbacks:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAdviceFeedbacks
+    module:               psAdviceFeedbacks
+    prefix_path:          /ps_advice_feedbacks
+    column:               id
+    with_wildcard_routes: true
+
+ps_advices:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAdvices
+    module:               psAdvices
+    prefix_path:          /ps_advices
+    column:               id
+    with_wildcard_routes: true
+
+ps_advice_categories:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAdviceCategories
+    module:               psAdviceCategories
+    prefix_path:          /ps_advice_categories
+    column:               id
+    with_wildcard_routes: true
+
+#Doi trang thai cua Album Item
+ps_album_item_activated:
+  url: /ps_albums/item_activated
+  class: sfDoctrineRoute
+  options: { model: PsAlbumItems, type: object }  
+  param: { module: psAlbums, action: albumItemActivated }
+  requirements:
+    sf_method: [post]
+
+ps_album_items:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAlbumItems
+    module:               psAlbumItems
+    prefix_path:          /ps_album_items
+    column:               id
+    with_wildcard_routes: true
+
+ps_albums:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAlbums
+    module:               psAlbums
+    prefix_path:          /ps_albums
+    column:               id
+    with_wildcard_routes: true
+
+#Doi trang thai cua Don xin nghi hoc
+ps_off_school_activated:
+  url: /ps_off_school/item_activated
+  class: sfDoctrineRoute
+  options: { model: PsOffSchool, type: object }  
+  param: { module: psOffSchool, action: offSchoolActivated }
+  requirements:
+    sf_method: [post]
+
+# Detail Ps OffSchool
+ps_off_school_detail:
+  url:        /ps_off_school/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsOffSchool, type: object }
+  params:     { module: psOffSchool, action: detail }
+  requirements:
+    sf_method: [get] 
+
+   
+# Detail Ps Albums
+ps_albums_detail:
+  url:        /ps_albums/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsAlbums, type: object }
+  params:     { module: psAlbums, action: detail }
+  requirements:
+    sf_method: [get]  
+    
+ps_off_school:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsOffSchool
+    module:               psOffSchool
+    prefix_path:          /ps_off_school
+    column:               id
+    with_wildcard_routes: true
+
+#thong ke hoc sinh dang ky hoc ngay thu 7 khong co dinh
+ps_service_saturday_statistic:
+  url:        /ps_service_saturday/statistic
+  class:      sfDoctrineRoute
+  options:    { model: PsServiceSaturday, type: object }
+  params:     { module: psServiceSaturday, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_saturday:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsServiceSaturday
+    module:               psServiceSaturday
+    prefix_path:          /ps_service_saturday
+    column:               id
+    with_wildcard_routes: true
+
+# Xuat xls cua thong ke hoc sinh da kham
+ps_student_growths_statistic_examined_export:
+  url:        /ps_student_growths/:clid/:date/export_examined
+  params:     { module: psStudentGrowths, action: exportByExaminationExamined }
+  requirements:
+    sf_method: [post]
+    
+# Xuat xls cua thong ke hoc sinh theo chieu cao
+ps_student_growths_statistic_height_export:
+  url:        /ps_student_growths/:exa/:clid/:id/export_height
+  params:     { module: psStudentGrowths, action: exportByExaminationHeight }
+  requirements:
+    sf_method: [post]    
+    
+# Xuat xls cua thong ke hoc sinh theo can nang
+ps_student_growths_statistic_weight_export:
+  url:        /ps_student_growths/:exa/:clid/:id/export_weight
+  params:     { module: psStudentGrowths, action: exportByExaminationWeight }
+  requirements:
+    sf_method: [post]    
+    
+# Xuat xls cua thong ke dot kham
+ps_student_growths_statistic_export:
+  url:        /ps_student_growths/statistic_export
+  params:     { module: psStudentGrowths, action: exportByWorkplace }
+  requirements:
+    sf_method: [post]  
+
+#Xuat xls thong ke hoc sinh theo co so
+ps_students_statistic_by_workplace_export:
+  url:        /ps_students/export_student_statistic_by_workplace
+  params:     { module: psStudents, action: exportStudentStatisticByWorkplace }
+  requirements:
+    sf_method: [post]
+
+#Xuat xls thong ke hoc sinh theo truong
+ps_students_statistic_by_customer_export:
+  url:        /ps_students/export_student_statistic_by_customer
+  params:     { module: psStudents, action: exportStudentStatisticByCustomer }
+  requirements:
+    sf_method: [post]
+
+      
+#Xuat xls cua hoc sinh theo co so hoac lop  
+ps_students_export:
+  url:        /ps_students/export_student_data
+  params:     { module: psStudents, action: exportStudentData }
+  requirements:
+    sf_method: [post]
+
+#Xuat xls cua hoc sinh kem nguoi than theo co so hoac lop  
+ps_students_relatives_export:
+  url:        /ps_students/export_student_relatives_data
+  params:     { module: psStudents, action: exportStudentDataWithRelatives }
+  requirements:
+    sf_method: [post]    
+
+#Xuat xls HS theo lop, co nguoi than        
+ps_students_export_by_class_with_relatives:
+  url:        /ps_students/export_by_class_with_relatives
+  params:     { module: psStudents, action: exportByClassWithRelatives }
+  requirements:
+    sf_method: [post]   
+
+#Xuat xls HS theo lop,    
+ps_students_export_by_class:
+  url:        /ps_students/export_by_class
+  params:     { module: psStudents, action: exportByClass }
+  requirements:
+    sf_method: [post]
+    
+#Xuat xls HS theo co so, co nguoi than        
+ps_students_export_by_workplace_with_relatives:
+  url:        /ps_students/export_by_workplace_with_relatives
+  params:     { module: psStudents, action: exportByWorkPlaceWithRelatives }
+  requirements:
+    sf_method: [post]    
+
+#Xuat xls HS theo co so,    
+ps_students_export_by_workplace:
+  url:        /ps_students/export_by_workplace
+  params:     { module: psStudents, action: exportByWorkPlace }
+  requirements:
+    sf_method: [post]
+        
+ps_examination:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsExamination
+    module:               psExamination
+    prefix_path:          /ps_examination
+    column:               id
+    with_wildcard_routes: true
+
+ps_template_exports:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsTemplateExports
+    module:               psTemplateExports
+    prefix_path:          /ps_template_exports
+    column:               id
+    with_wildcard_routes: true
+
+ps_student_bmi:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsStudentBmi
+    module:               psStudentBmi
+    prefix_path:          /ps_student_bmi
+    column:               id
+    with_wildcard_routes: true
+
+ps_config_late_fees:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsConfigLateFees
+    module:               psConfigLateFees
+    prefix_path:          /ps_config_late_fees
+    column:               id
+    with_wildcard_routes: true
+
+ps_config_payments:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsConfigPayments
+    module:               psConfigPayments
+    prefix_path:          /ps_config_payments
+    column:               id
+    with_wildcard_routes: true
+
+ps_mobile_app_amounts:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMobileAppAmounts
+    module:               psMobileAppAmounts
+    prefix_path:          /ps_mobile_app_amounts
+    column:               id
+    with_wildcard_routes: true
+
+ps_history_app_pay_amounts_get_expiration:
+  url:        /ps_history_mobile_app_pay_amounts/get_expiration
+  params:     { module: psHistoryMobileAppPayAmounts, action: expirationAjax }
+  requirements:
+    sf_method: [POST]
+
+ps_history_app_pay_amounts_pay_multi:
+  url:        /ps_history_mobile_app_pay_amounts/pay_multi
+  params:     { module: psHistoryMobileAppPayAmounts, action: batchPay }
+  requirements:
+    sf_method: [POST]
+
+ps_history_app_pay_amount_get_amount:
+  url:        /ps_history_mobile_app_pay_amounts/get_amount
+  params:     { module: psHistoryMobileAppPayAmounts, action: amountAjax }
+  requirements:
+    sf_method: [POST]  
+
+ps_history_app_pay_amount_get_month:
+  url:        /ps_history_mobile_app_pay_amounts/get_month
+  params:     { module: psHistoryMobileAppPayAmounts, action: monthAjax }
+  requirements:
+    sf_method: [POST]    
+
+ps_mobile_app_amounts_quick_pay:
+  url:        /ps_history_mobile_app_pay_amounts/pay
+  class:      sfDoctrineRoute
+  options:    { model: PsHistoryMobileAppPayAmounts, type: object }
+  params:     { module: psHistoryMobileAppPayAmounts, action: pay }
+  requirements:
+    sf_method: [POST]
+
+ps_mobile_app_amounts_history:
+  url:        /ps_mobile_app_amounts/history
+  class:      sfDoctrineRoute
+  options:    { model: PsMobileAppAmounts, type: object }
+  params:     { module: psMobileAppAmounts, action: history }
+  requirements:
+    sf_method: [get]
+
+ps_mobile_app_amounts_list_history:
+  url:        /ps_mobile_app_amounts/list_history
+  class:      sfDoctrineRoute
+  options:    { model: PsMobileAppAmounts, type: object }
+  params:     { module: psMobileAppAmounts, action: listHistory }
+  requirements:
+    sf_method: [get]
+
+ps_history_mobile_app_pay_amounts:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsHistoryMobileAppPayAmounts
+    module:               psHistoryMobileAppPayAmounts
+    prefix_path:          /ps_history_mobile_app_pay_amounts
+    column:               id
+    with_wildcard_routes: true
+
+ps_mobile_apps:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMobileApps
+    module:               psMobileApps
+    prefix_path:          /ps_mobile_apps
+    column:               id
+    with_wildcard_routes: true
+
+ps_cms_use_guides:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsCmsUseGuide
+    module:               psCmsUseGuides
+    prefix_path:          /ps_cms_use_guides
+    column:               id
+    with_wildcard_routes: true
+
+ps_subject_splits:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ServiceSplit
+    module:               psSubjectSplits
+    prefix_path:          /ps_subject_splits
+    column:               id
+    with_wildcard_routes: true
+
+ps_cms_articles_update_publish:
+  url: /ps_cms_articles/update_publish
+  class: sfDoctrineRoute
+  options: { model: PsCmsArticles, type: object }  
+  param: { module: psCmsArticles, action: updatePublish }
+  requirements:
+    sf_method: [post]
+
+ps_cms_articles_detail:
+  url:        /ps_cms_articles/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsCmsArticles, type: object }
+  params:     { module: psCmsArticles, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_cms_articles:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsCmsArticles
+    module:               psCmsArticles
+    prefix_path:          /ps_cms_articles
+    column:               id
+    with_wildcard_routes: true
+
+ps_student_service_course_comment_warning:
+  url:   /ps_student_service_course_comment/warning.:sf_format
+  param: { module: psStudentServiceCourseComment, action: warning, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_student_service_course_comment_view_comment:
+  url:   /ps_student_service_course_comment/view_comment.:sf_format
+  param: { module: psStudentServiceCourseComment, action: viewComment, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_student_service_course_comment:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StudentServiceCourseComment
+    module:               psStudentServiceCourseComment
+    prefix_path:          /ps_student_service_course_comment
+    column:               id
+    with_wildcard_routes: true    
+
+ps_service_course_schedule_by_ps_service_course:
+  url:   /ps_service_course_schedule/ps_service_course.:sf_format
+  param: { module: psStudentServiceCourseComment, action: psServiceCourseScheduleByPsServiceCourse, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_student_service_course_comment_save:
+  url:   /ps_student_service_course_comment/save.:sf_format
+  param: { module: psStudentServiceCourseComment, action: saveStudentServiceCourseComment, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_feature_option_subject_service:
+  url: /ps_feature_option_subject/:service_id/service
+  param: { module: psFeatureOptionSubject, action: index}
+  requirements:
+    service_id: \d+
+    sf_method: [GET]
+    
+ps_feature_option_subject:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                FeatureOptionSubject
+    module:               psFeatureOptionSubject
+    prefix_path:          /ps_feature_option_subject
+    column:               id
+    with_wildcard_routes: true
+
+ps_service_splits:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ServiceSplit
+    module:               psServiceSplits
+    prefix_path:          /ps_service_splits
+    column:               id
+    with_wildcard_routes: true
+
+ps_service_split_split_value:
+  url:   /ps_service_split/split_value.:sf_format
+  param: { module: psServiceSplits, action: splitValue, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_service_split_value_price:
+  url:   /ps_service_split/value_price.:sf_format
+  param: { module: psServiceSplits, action: valuePrice, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_subjects:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Service
+    module:               psSubjects
+    prefix_path:          /ps_subjects
+    column:               id
+    with_wildcard_routes: true
+
+ps_subjects_detail:
+  url:        /ps_subjects/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: Service, type: object }
+  params:     { module: psSubjects, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_subject_splits_split_value:
+  url:   /ps_subject_splits/split_value.:sf_format
+  param: { module: psSubjectSplits, action: splitValue, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_course_schedules_personal:
+  url:        /ps_service_course_schedules/personal
+  class:      sfDoctrineRoute
+  options:    { model: PsServiceCourseSchedules, type: object }
+  params:     { module: psServiceCourseSchedules, action: personal }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_service_course_schedules:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsServiceCourseSchedules
+    module:               psServiceCourseSchedules
+    prefix_path:          /ps_service_course_schedules
+    column:               id
+    with_wildcard_routes: true
+
+ps_courses_by_customer:
+  url:   /ps_service_course_schedules/ps_customer.:sf_format
+  param: { module: psServiceCourseSchedules, action: coursesByCustomer, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_schedules_copy:
+  url:   /ps_service_course_schedules/copy.:sf_format
+  param: { module: psServiceCourseSchedules, action: psSchedulesCopy, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_course_schedules_checkschedules:
+  url:   /ps_course_schedules/checkschedules.:sf_format
+  param: { module: psServiceCourseSchedules, action: checkSchedules, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_student_service_course_comment_week:
+  url:   /ps_student_service_course_comment/week.:sf_format
+  param: { module: psStudentServiceCourseComment, action: psCourseSchedulesWeek, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_course_schedules_week:
+  url:   /ps_course_schedules/week.:sf_format
+  param: { module: psServiceCourseSchedules, action: psCourseSchedulesWeek, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+#phan lop cho hoc sinh dang ky dich vu chua phan lop
+ps_service_courses_show_form:
+  url:   /ps_service_courses/statistic/:student_id/:service_id/save
+  param: { module: psServiceCourses, action: moveClass, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_courses_save:
+  url:   /ps_service_courses/statistic/save
+  param: { module: psServiceCourses, action: moveClassSave }
+  requirements:
+    sf_format: (?:html|js)
+
+
+#thong ke hoc sinh dang ky hoc/khong dang ky hoc ngoai khoa
+ps_service_courses_statistic:
+  url:        /ps_service_courses/statistic
+  class:      sfDoctrineRoute
+  options:    { model: PsServiceCourses, type: object }
+  params:     { module: psServiceCourses, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+   
+ps_service_courses:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsServiceCourses
+    module:               psServiceCourses
+    prefix_path:          /ps_service_courses
+    column:               id
+    with_wildcard_routes: true
+
+ps_service_courses_detail:
+  url:        /ps_service_courses/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsServiceCourses, type: object }
+  params:     { module: psServiceCourses, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_service_courses_by_ps_workplace:
+  url:   /ps_service_courses/ps_year_workplace
+  param: { module: psServiceCourses, action: servicePsWorkplace }
+  requirements:
+    sf_format: (?:html|js)
+
+
+ps_service_courses_by_ps_customer:
+  url:   /ps_service_courses/ps_customer.:sf_format
+  param: { module: psServiceCourses, action: servicePsCustomer, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_course_by_ps_service:
+  url:   /ps_service_courses/service.:sf_format
+  param: { module: psServiceCourses, action: serviceCoursesService, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_courses_member:
+  url:   /ps_service_courses/member.:sf_format
+  param: { module: psServiceCourses, action: serviceCoursesMember, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+  
+ps_student_class_class:
+  url:        /ps_student_class/:ps_class_id/students
+  params:     { module: psStudentClass, action: studentsForClass, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+   
+ps_student_class:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StudentClass
+    module:               psStudentClass
+    prefix_path:          /ps_student_class
+    column:               id
+    with_wildcard_routes: true
+
+
+ps_student_info:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsStudentInfo
+    module:               psStudentInfo
+    prefix_path:          /ps_student_info
+    column:               id
+    with_wildcard_routes: true
+
+ps_cms_notifications_sent:
+  url:   /ps_cms_notifications/sent
+  param: { module: psCmsNotifications, action: sent, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_cms_notifications_received:
+  url:        /ps_cms_notifications/received
+  class:      sfDoctrineRoute
+  options:    { model: PsCmsNotifications, type: object }
+  params:     { module: psCmsNotifications, action: received }
+  requirements:
+    sf_method: [get]
+    
+ps_cms_notifications:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsCmsNotifications
+    module:               psCmsNotifications
+    prefix_path:          /ps_cms_notifications
+    column:               id
+    with_wildcard_routes: true
+
+ps_cms_notification_detail:
+  url:        /ps_cms_notification/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsCmsNotifications, type: object }
+  params:     { module: psCmsNotification, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_cms_notifications_detail:
+  url:        /ps_cms_notifications/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsCmsNotifications, type: object }
+  params:     { module: psCmsNotifications, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_student_service_restore:
+  url:   /ps_student_service/restore
+  param: { module: psStudentService, action: studentServiceRestore, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+   
+ps_student_service:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StudentService
+    module:               psStudentService
+    prefix_path:          /ps_student_service
+    column:               id
+    with_wildcard_routes: true
+
+ps_student_service_register:
+  url:   /ps_student_service/register.:sf_format
+  param: { module: psStudentService, action: register, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_student_service_register_create:
+  url:   /ps_student_service/register_create.:sf_format
+  param: { module: psStudentService, action: registerCreate, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_student_service_course_delete:
+  url:   /ps_student_service/course_delete.:sf_format
+  param: { module: psStudentService, action: courseDelete, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_student_by_keywords:
+  url:   /ps_student/keywords.:sf_format
+  param: { module: psStudentService, action: studentKeywords, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_by_myclass_id:
+  url:   /ps_service/myclass_id.:sf_format
+  param: { module: psService, action: serviceMyclassId, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_logtimes:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsLogtimes
+    module:               psLogtimes
+    prefix_path:          /ps_logtimes
+    column:               id
+    with_wildcard_routes: true
+
+ps_system_cms_content_detail:
+  url:        /ps_system_cms_content/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsSystemCmsContent, type: object }
+  params:     { module: PsSystemCmsContent, action: detail }
+  requirements:
+    sf_method: [get]
+    
+ps_system_cms_content:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsSystemCmsContent
+    module:               psSystemCmsContent
+    prefix_path:          /ps_system_cms_content
+    column:               id
+    with_wildcard_routes: true
+
+ps_teacher_class:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsTeacherClass
+    module:               psTeacherClass
+    prefix_path:          /ps_teacher_class
+    column:               id
+    with_wildcard_routes: true
+
+ps_relative_student:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                RelativeStudent
+    module:               psRelativeStudent
+    prefix_path:          /ps_relative_student
+    column:               id
+    with_wildcard_routes: true
+
+ps_relative_by_keywords:
+  url:   /ps_relative/keywords.:sf_format
+  param: { module: psRelativeStudent, action: relativeKeywords, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_students:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Student
+    module:               psStudents
+    prefix_path:          /ps_students
+    column:               id
+    with_wildcard_routes: true
+
+ps_students_restore:
+  url:        /ps_students/:id/restore
+  params:     { module: psStudents, action: restore }
+  requirements:
+    sf_method: [get]
+    
+ps_students_detail:
+  url:        /ps_students/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: Student, type: object }
+  params:     { module: psStudents, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_student_features_save:
+  url:   /ps_student_features/save.:sf_format
+  param: { module: psStudentFeatures, action: saveStudentFeature, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)    
+
+ps_student_features_warning:
+  url:   /ps_student_features/warning.:sf_format
+  param: { module: psStudentFeatures, action: warning, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+ 
+ps_student_features:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StudentFeature
+    module:               psStudentFeatures
+    prefix_path:          /ps_student_features
+    column:               id
+    with_wildcard_routes: true
+
+ps_logtimes_save:
+  url:   /ps_logtimes_save/save.:sf_format
+  param: { module: psLogtimes, action: save, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_logtime_save:
+  url:   /ps_logtime_save/save.:sf_format
+  param: { module: psLogtimes, action: savePsLogtime, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_cameras:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsCamera
+    module:               psCameras
+    prefix_path:          /ps_cameras
+    column:               id
+    with_wildcard_routes: true
+
+ps_relatives_detail:
+  url:        /ps_relatives/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: Relative, type: object }
+  params:     { module: psRelatives, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_relatives:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Relative
+    module:               psRelatives
+    prefix_path:          /ps_relatives
+    column:               id
+    with_wildcard_routes: true
+
+ps_relatives_by_customer:
+  url:   /ps_relatives/customer.:sf_format
+  param: { module: sfGuardUser, action: relativeCustomer, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_menus_detail:
+  url:        /ps_menus/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsMenus, type: object }
+  params:     { module: psMenus, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_menus_weeks_year:
+  url:   /ps_menus/weeks_year.:sf_format
+  param: { module: psMenus, action: psMenusWeeksYear, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_menus_checkmenu:
+  url:   /ps_menus/checkmenu.:sf_format
+  param: { module: psMenus, action: checkMenu, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_menus_week:
+  url:   /ps_menus/week.:sf_format
+  param: { module: psMenus, action: psMenusWeek, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_menus_copy:
+  url:   /ps_menus/copy.:sf_format
+  param: { module: psMenus, action: psMenusCopy, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_menus:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMenus
+    module:               psMenus
+    prefix_path:          /ps_menus
+    column:               id
+    with_wildcard_routes: true
+
+ps_meals:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMeals
+    module:               psMeals
+    prefix_path:          /ps_meals
+    column:               id
+    with_wildcard_routes: true
+    
+ps_meals_by_ps_customer:
+  url:   /ps_meals/customer.:sf_format
+  param: { module: psMeals, action: customerMeals, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_foods:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsFoods
+    module:               psFoods
+    prefix_path:          /ps_foods
+    column:               id
+    with_wildcard_routes: true
+    
+ps_foods_by_ps_customer:
+  url:   /ps_foods/customer.:sf_format
+  param: { module: psFoods, action: customerFoods, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_work_places_by_customer:
+  url:   /ps_work_places/customer.:sf_format
+  param: { module: psWorkPlaces, action: customerWorkPlaces, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_work_places_detail:
+  url:        /ps_work_places/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsWorkPlaces, type: object }
+  params:     { module: psWorkPlaces, action: detail }
+  requirements:
+    sf_method: [get]
+
+
+ps_ward_by_district:
+  url:   /ps_ward/district.:sf_format
+  param: { module: psWard, action: psWardDistrict, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_class_room_by_ps_workplace:
+  url:   /ps_class_rooms/ps_workplace.:sf_format
+  param: { module: psClassRooms, action: workplacePsClassRooms, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_work_places:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsWorkPlaces
+    module:               psWorkPlaces
+    prefix_path:          /ps_work_places
+    column:               id
+    with_wildcard_routes: true
+
+ps_class_rooms:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsClassRooms
+    module:               psClassRooms
+    prefix_path:          /ps_class_rooms
+    column:               id
+    with_wildcard_routes: true
+
+ps_object_groups:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsObjectGroups
+    module:               psObjectGroups
+    prefix_path:          /ps_object_groups
+    column:               id
+    with_wildcard_routes: true
+
+ps_images:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsImages
+    module:               psImages
+    prefix_path:          /ps_images
+    column:               id
+    with_wildcard_routes: true
+
+ps_student_bmi:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsStudentBmi
+    module:               psStudentBmi
+    prefix_path:          /ps_student_bmi
+    column:               id
+    with_wildcard_routes: true
+
+ps_student_growths:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsStudentGrowths
+    module:               psStudentGrowths
+    prefix_path:          /ps_student_growths
+    column:               id
+    with_wildcard_routes: true
+
+ps_student_growths_statistic:
+  url:        /ps_student_growths/statistic
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentGrowths, type: object }
+  params:     { module: psStudentGrowths, action: statistic }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_student_growths_detail:
+  url:        /ps_student_growths/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentGrowths, type: object }
+  params:     { module: psStudentGrowths, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_student_growths_viewheight:
+  url:        /ps_student_growths/:exa/:clid/:id/viewheight
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentGrowths, type: object }
+  params:     { module: psStudentGrowths, action: viewheight}
+  requirements:
+    sf_method: [get]
+    
+ps_student_growths_viewweight:
+  url:        /ps_student_growths/:exa/:clid/:id/viewweight
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentGrowths, type: object }
+  params:     { module: psStudentGrowths, action: viewweight}
+  requirements:
+    sf_method: [get]
+   
+ps_student_growths_viewch:
+  url:        /ps_student_growths/:id/:date/viewch
+  class:      sfDoctrineRoute
+  options:    { model: PsStudentGrowths, type: object }
+  params:     { module: psStudentGrowths, action: viewch}
+  requirements:
+    sf_method: [get]
+
+ps_student_growths_examination:
+  url:   /ps_student_growths/examination.:sf_format
+  param: { module: psStudentGrowths, action: examinationForFilter, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_class_by_ps_customer_school_year_id:
+  url:   /ps_student_growths/customer_school_year.:sf_format
+  param: { module: psStudentGrowths, action: classForFilter, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_ward:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsWard
+    module:               psWard
+    prefix_path:          /ps_ward
+    column:               id
+    with_wildcard_routes: true
+    
+ps_profile:
+  url:   /ps_profile
+  param: { module: psProfile, action: profile, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_profile_change_password:
+  url:        /ps_profile/change_password
+  params:     { module: psProfile, action: changePassword, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+change_password:
+  url:        /ps_profile/save_password
+  params:     { module: psProfile, action: savePassword, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+  
+#routing.yml
+ps_school_year:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsSchoolYear
+    module:               psSchoolYear
+    prefix_path:          /ps_school_year
+    column:               id
+    with_wildcard_routes: true
+
+ps_class_school_year:
+  url:   /ps_class/class_school_year.:sf_format
+  param: { module: psClass, action: classSchoolYear, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_group_class_by_params:
+  url:   /ps_group_class/select
+  param: { module: psClass, action: groupClassByParams}
+  requirements:
+    sf_method: [POST]
+    
+ps_class_by_params2:
+  url:   /ps_class/select2
+  param: { module: psClass, action: classByParams2}
+  requirements:
+    sf_method: [POST]
+    
+ps_class_by_params:
+  url:   /ps_class/select
+  param: { module: psClass, action: classByParams}
+  requirements:
+    sf_method: [POST]
+
+# lay danh sach nguoi than theo hoc sinh
+ps_relative_by_students:
+  url:   /ps_relatives/all_relative
+  param: { module: psRelativeStudent, action: allRelative}
+  requirements:
+    sf_method: [POST]
+
+# lay danh sach nguoi than theo hoc sinh co quyen dua don chinh
+ps_relative_students_id:
+  url:   /ps_relatives/by_student
+  param: { module: psRelativeStudent, action: relativeStudentId}
+  requirements:
+    sf_method: [POST]
+
+# lay hoc sinh trong lop khong dang ky di hoc ngay thu 7 co dinh
+ps_students_not_saturday:
+  url:   /ps_students/not_saturday
+  param: { module: psStudents, action: studentNotSaturday}
+  requirements:
+    sf_method: [POST]
+
+# lay hoc sinh theo lop
+ps_students_by_class_id:
+  url:   /ps_students/by_class
+  param: { module: psStudents, action: studentByClass}
+  requirements:
+    sf_method: [POST]
+
+# Lay lop theo nhom tre
+ps_class_object_by_params:
+  url:   /ps_class/object_groups
+  param: { module: psClass, action: classByObjectGroups}
+  requirements:
+    sf_method: [POST]
+
+ps_student_by_class:
+  url:   /ps_student/class.:sf_format
+  param: { module: psClass, action: studentClass, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+  
+
+#Luu giao vien duoc phan lop
+ps_teachers_class:
+  url:        /ps_class/:id/teachers_class
+  class:      sfDoctrineRoute
+  options:    { model: MyClass, type: object }
+  params:     { module: psClass, action: teachersClass }
+  requirements:
+    sf_method: [POST]
+    
+#Danh sach giao vien de phan lop
+ps_class_of_hr:
+  url:        /ps_class/:id/assignment_teachers
+  class:      sfDoctrineRoute
+  options:    { model: MyClass, type: object }
+  params:     { module: psClass, action: teachersNotAssignmentClass }
+  requirements:
+    sf_method: [get]
+
+ps_class:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                MyClass
+    module:               psClass
+    prefix_path:          /ps_class
+    column:               id
+    with_wildcard_routes: true
+
+ps_class_detail:
+  url:        /ps_class/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: MyClass, type: object }
+  params:     { module: psClass, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_class_move:
+  url:   /ps_class_move.:sf_format
+  param: { module: psClass, action: move, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_class_assign_students:
+  url:   /ps_class/assign_students.:sf_format
+  param: { module: psClass, action: assignStudents, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# StudentNotExitsClass
+ps_class_student_not_exits:
+  url:   /ps_class/student_not_exits.:sf_format
+  param: { module: psClass, action: studentNotExitsClass, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_class_by_customer:
+  url:   /ps_class/class_customer.:sf_format
+  param: { module: psClass, action: classCustomer, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_class_ps_work_places:
+  url:   /ps_class/class_work_places.:sf_format
+  param: { module: psClass, action: classWorkPlaces, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+
+    
+relationship_psRelationship:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Relationship
+    module:               psRelationship
+    prefix_path:          /ps_relationship
+    column:               id
+    with_wildcard_routes: true
+
+ps_constant_constant_list:
+  url:   /ps_constant/constant_list.:sf_format
+  param: { module: psConstant, action: psConstantList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_constant_option_constant:
+  url:   /ps_constant_option/constant/action
+  param: { module: psConstantOption, action: constant}
+
+ps_constant_constant_option:
+  url:   /ps_constant/option/action
+  param: { module: psConstant, action: option}
+
+ps_constant_option:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsConstantOption
+    module:               psConstantOption
+    prefix_path:          /ps_constant_option
+    column:               id
+    with_wildcard_routes: true
+
+ps_constant:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsConstant
+    module:               psConstant
+    prefix_path:          /ps_constant
+    column:               id
+    with_wildcard_routes: true
+
+ps_service_split:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ServiceSplit
+    module:               psServiceSplit
+    prefix_path:          /ps_service_split
+    column:               id
+    with_wildcard_routes: true
+
+ps_service_get_split_value:
+  url:   /ps_service/getsplitvalue.:sf_format
+  param: { module: psService, action: getSplitValue, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_get_split:
+  url:   /ps_service_split/split.:sf_format
+  param: { module: psServiceSplit, action: new, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+service_split_save:
+  url: /service_split/save
+  params: {module : psServiceSplit ,action :saveForm}
+
+ps_service_update_order:
+  url:   /ps_service/update_order.:sf_format
+  param: { module: psService, action: updateOrder, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_service_group:
+  url:   /ps_service/service_group.:sf_format
+  param: { module: psService, action: serviceGroup, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_add_detail:
+  url:   /ps_service/add_detail.:sf_format
+  param: { module: psService, action: addDetail, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service_by_customer:
+  url:   /ps_service/by_customer.:sf_format
+  param: { module: psService, action: byCustomer, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_service:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Service
+    module:               psService
+    prefix_path:          /ps_service
+    column:               id
+    with_wildcard_routes: true
+
+ps_service_detail:
+  url:        /ps_service/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: Service, type: object }
+  params:     { module: psService, action: detail }
+  requirements:
+    sf_method: [get]
+
+
+ps_member_contract:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMemberContract
+    module:               PsMemberContract
+    prefix_path:          /ps_member_contract
+    column:               id
+    with_wildcard_routes: true
+
+ps_department:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsDepartment
+    module:               psDepartment
+    prefix_path:          /ps_department
+    column:               id
+    with_wildcard_routes: true
+
+ps_professional:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsProfessional
+    module:               psProfessional
+    prefix_path:          /ps_professional
+    column:               id
+    with_wildcard_routes: true
+
+ps_function:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsFunction
+    module:               psFunction
+    prefix_path:          /ps_function
+    column:               id
+    with_wildcard_routes: true
+
+ps_contract:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsContract
+    module:               psContract
+    prefix_path:          /ps_contract
+    column:               id
+    with_wildcard_routes: true
+
+ps_certificate:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsCertificate
+    module:               psCertificate
+    prefix_path:          /ps_certificate
+    column:               id
+    with_wildcard_routes: true
+
+ps_group_district:
+  url:   /ps_district/group.:sf_format
+  param: { module: psDistrict, action: groupDistrictList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_districts_by_province:
+  url:   /ps_districts/province.:sf_format
+  param: { module: psDistrict, action: districtsProvince, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_district:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsDistrict
+    module:               psDistrict
+    prefix_path:          /ps_district
+    column:               id
+    with_wildcard_routes: true
+
+ps_province_country:
+  url:   /ps_province/plist.:sf_format
+  param: { module: psProvince, action: provinceList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_province:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsProvince
+    module:               psProvince
+    prefix_path:          /ps_province
+    column:               id
+    with_wildcard_routes: true
+
+ps_member:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsMember
+    module:               psMember
+    prefix_path:          /ps_hr
+    column:               id
+    with_wildcard_routes: true
+
+ps_member_detail:
+  url:        /hr/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsMember, type: object }
+  params:     { module: psMember, action: detail }
+  requirements:
+    sf_method: [get]
+
+
+ps_member_profile:
+  url:        /hr/:id/profile
+  class:      sfDoctrineRoute
+  options:    { model: PsMember, type: object }
+  params:     { module: psMember, action: memberProfile }
+  requirements:
+    sf_method: [get]
+
+hr_checkemail:
+  url:   /ps_hr/checkemail.:sf_format
+  param: { module: psMember, action: checkEmail, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+hr_checkidentitycard:
+  url:   /ps_hr/checkidentitycard.:sf_format
+  param: { module: psMember, action: CheckIdentityCard, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_religion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsReligion
+    module:               psReligion
+    prefix_path:          /ps_religion
+    column:               id
+    with_wildcard_routes: true
+
+ps_ethnic:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsEthnic
+    module:               psEthnic
+    prefix_path:          /ps_ethnic
+    column:               id
+    with_wildcard_routes: true
+
+ps_app_permission:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsAppPermission
+    module:               psAppPermission
+    prefix_path:          /ps_app_permission
+    column:               id
+    with_wildcard_routes: true
+
+ps_app:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsApp
+    module:               psApp
+    prefix_path:          /ps_app
+    column:               id
+    with_wildcard_routes: true
+
+ps_user_by_customer:
+  url:   /users/customer.:sf_format
+  param: { module: sfGuardUser, action: usersCustomer, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_customer_by_ps_ward:
+  url:   /ps_customer/ps_ward.:sf_format
+  param: { module: psCustomer, action: psCustomerWard, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_customer_lock:
+  url:        /ps_customer/:id/lock
+  class:      sfDoctrineRoute
+  options:    { model: PsCustomer, type: object }
+  params:     { module: psCustomer, action: lock }
+  requirements:
+    sf_method: [get]
+
+ps_customer_view:
+  url:        /ps_customer/view
+  params:     { module: psCustomer, action: view, sf_format: html}
+  requirements:
+    sf_format: (?:html|js)
+
+ps_customer_detail:
+  url:        /ps_customer/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsCustomer, type: object }
+  params:     { module: psCustomer, action: detail }
+  requirements:
+    sf_method: [get]
+
+ps_customer:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsCustomer
+    module:               psCustomer
+    prefix_path:          /ps_customer
+    column:               id
+    with_wildcard_routes: true
+
+ps_type_school:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsTypeSchool
+    module:               psTypeSchool
+    prefix_path:          /ps_type_school
+    column:               id
+    with_wildcard_routes: true
+
+ps_feature_branch_schedule:
+  url:        /ps_feature_branch_times/:id/schedule
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranch, type: object }
+  params:     { module: psFeatureBranchTimes, action: schedule }
+  requirements:
+    sf_method: [get]
+
+ps_feature_branch_times_warning:
+  url:   /ps_feature_branch_times/warning.:sf_format
+  param: { module: psFeatureBranchTimes, action: warning, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_feature_branch_times:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                FeatureBranchTimes
+    module:               psFeatureBranchTimes
+    prefix_path:          /ps_feature_branch_timess
+    column:               id
+    with_wildcard_routes: true
+
+ps_feature:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Feature
+    module:               psFeature
+    prefix_path:          /ps_feature
+    column:               id
+    with_wildcard_routes: true
+
+ps_feature_branch_group_filters:
+  url:   /ps_feature_branch/group_filters.:sf_format
+  param: { module: psFeatureBranch, action: groupFilters, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_feature_branch_save_myclass:
+  url:   /ps_feature_branch/:id/save_myclass
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranch, type: object }
+  param: { module: psFeatureBranch, action: saveMyclass}
+  requirements:
+    sf_method: [get]
+    
+ps_feature_branch_set_myclass:
+  url:        /ps_feature_branch/:id/set_myclass
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranch, type: object }
+  params:     { module: psFeatureBranch, action: setMyclass }
+  requirements:
+    sf_method: [get]
+
+ps_feature_branch_detail:
+  url:        /ps_feature_branch/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: FeatureBranch, type: object }
+  params:     { module: psFeatureBranch, action: detail }
+  requirements:
+    sf_method: [get]
+    
+ps_feature_branch:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                FeatureBranch
+    module:               psFeatureBranch
+    prefix_path:          /ps_feature_branch
+    column:               id
+    with_wildcard_routes: true
+
+ps_feature_option_feature_branch:
+  url: /ps_feature_option_feature/:branch_id/branch
+  param: { module: psFeatureOptionFeature, action: index}
+  requirements:
+    branch_id: \d+
+    sf_method: [GET]
+
+ps_feature_option_feature:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                FeatureOptionFeature
+    module:               psFeatureOptionFeature
+    prefix_path:          /ps_feature_option_feature
+    column:               id
+    with_wildcard_routes: true
+
+ps_feature_by_customer:
+  url:   /ps_feature/customer.:sf_format
+  param: { module: psFeature, action: psFeatureCustomer, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_feature_branch_by_ps_shool_year_id:
+  url:   /ps_feature_branch/customer.:sf_format
+  param: { module: psFeatureBranch, action: psFeatureBranchSchoolYear, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+    
+ps_feature_branch_by_ps_customer_id:
+  url:   /ps_feature_branch/customer.:sf_format
+  param: { module: psFeatureBranch, action: psFeatureBranchCustomer, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+#Lay hoat dong cua lop
+ps_feature_branch_by_class_params:
+  url:   /ps_feature_branch/by_class_params.:sf_format
+  param: { module: psFeatureBranch, action: psFeatureBranchByClass, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+ps_student_feature_save:
+  url:   /ps_student_feature/save.:sf_format
+  param: { module: psStudentFeatures, action: saveStudentFeature, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+####################################################################################
+service_service2:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Service
+    module:               service2
+    prefix_path:          /service2
+    column:               id
+    with_wildcard_routes: true
+
+student_hocsinh:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Student
+    module:               hocsinh
+    prefix_path:          /hocsinh
+    column:               id
+    with_wildcard_routes: true
+
+student_save_form:
+  class: sfDoctrineRoute
+  url:   /student/save_form  
+  options: {model: Student, type: object}
+  param:   { module: student, action: saveForm}
+  requirements: { sf_method: post}
+
+receipt:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Receipt
+    module:               receipt
+    prefix_path:          /receipt
+    column:               id
+    with_wildcard_routes: true
+
+service_group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ServiceGroup
+    module:               servicegroup
+    prefix_path:          /servicegroup
+    column:               id
+    with_wildcard_routes: true
+
+
+#student_fee_temp:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                StudentFeeTemp
+#    module:               studentfee
+#    prefix_path:          /studentfee
+#    column:               id
+#    with_wildcard_routes: true
+
+#student_fee_temp_ajax_reload_filter:
+#  url:   /studentfee/ajax_reload_filter
+#  param: { module: studentfee, action: ajaxReloadFilter, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)
+
+#student_fee_temp_ajax_id_checked:
+#  url:   /studentfee/ajax_id_checked
+#  param: { module: studentfee, action: ajaxStudentIdChecked, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)
+    
+#student_fee_temp_ajax_delete:
+#  url:   /studentfee/ajax_delete
+#  param: { module: studentfee, action: ajaxDelete, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)
+
+#student_fee_temp_load_pager_list:
+#  url:   /student_fee_temp/load_pager_list.:sf_format
+#  param: { module: studentfee, action: loadPagerList, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)
+
+#student_fee_temp_ajax_save_collected_student:
+#  url:   /studentfee/ajax_save_collected_student
+#  param: { module: studentfee, action: ajaxSaveCollectedStudent, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)
+    
+#student_fee_export_report_batch:
+#  url:   /studentfee/export_batch.:sf_format
+#  param: { module: studentfee, action: feeExportBatch, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)    
+
+#student_fee_get_file_batch:
+#  class: sfDoctrineRoute
+#  url:   /studentfee/download_file  
+#  options: {model: StudentFeeTemp, type: object}
+#  param:   { module: studentfee, action: getFile}
+#  requirements: { sf_method: get}
+  
+#student_fee_delete_file_batch:
+#  class: sfDoctrineRoute
+#  url:   /studentfee/delete_file  
+#  options: {model: StudentFeeTemp, type: object}
+#  param:   { module: studentfee, action: deleteFile}
+#  requirements: { sf_method: get}
+
+#student_fee_delete_service_temp:  
+#  url:   /studentfee/delete_servicetemp 
+#  param:   { module: studentfee, action: deleteServiceTemp}
+  
+#student_fee_batch_reload:
+#  url:   /studentfee/fee_reload  
+#  param: { module: studentfee, action: reload }    
+    
+#Theo doi hoat dong trong ngay cua hoc sinh
+student_feature:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StudentFeature
+    module:               studentfeature
+    prefix_path:          /studentfeature
+    column:               id
+    with_wildcard_routes: true
+
+student_feature_show:
+  url:   /studentfeature/show
+  class:   sfDoctrineRoute
+  options: { model: StudentFeature, type: object }
+  param: { module: studentfeature, action: show }
+
+student_feature_ajax_save:
+  url:   /studentfeature/ajax_save
+  param: { module: studentfeature, action: ajaxSaveStudentFeature, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+student_feature_ajax_search:
+  url:   /studentfeature/ajax_search.:sf_format
+  param: { module: studentfeature, action: ajaxSearchStudentFeature, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_feature_ajax_list:
+  url:   /studentfeature/ajax_list.:sf_format
+  param: { module: studentfeature, action: ajaxList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# BEGIN: Nguoi than cua hoc sinh
+relationship:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Relationship
+    module:               relationship
+    prefix_path:          /relationship
+    column:               id
+    with_wildcard_routes: true
+
+relative:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Relative
+    module:               psRelatives
+    prefix_path:          /relative
+    column:               id
+    with_wildcard_routes: true
+
+relative_ajax_relative_student_delete:
+  url:   /relative/ajax_relative_student_delete.:sf_format
+  param: { module: relative, action: ajaxRelativeStudentDelete, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+relative_of_student:
+  url:   /relative/relative_of_student  
+  param: { module: relative, action: relativeOfStudent }
+
+relative_new_popup:
+  url:   /relative/new_popup.:sf_format
+  param: { module: relative, action: newPopup, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+relative_frame:
+  url:   /relative/frame.:sf_format
+  param: { module: relative, action: frame, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+relative_select_popup:
+  url:   /relative/selectpopup.:sf_format
+  param: { module: relative, action: selectPopup, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+relative_select_list:
+  url:   /relative/select_list.:sf_format
+  param: { module: relative, action: selectList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+relative_load_pager_list:
+  url:   /relative/load_pager_list.:sf_format
+  param: { module: relative, action: loadPagerList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+relative_ajax_save:
+  url:   /relative/ajax_save.:sf_format
+  param: { module: relative, action: ajaxSave, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+relative_ajax_relativestudent_save:
+  url:   /relative/ajax_relativestudent_save.:sf_format
+  param: { module: relative, action: ajaxRelativeStudentSave, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+relative_checkemail:
+  url:   /ps_relative/checkemail.:sf_format
+  param: { module: psRelatives, action: checkEmail, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+    
+relative_checkidentitycard:
+  url:   /ps_relative/checkidentitycard.:sf_format
+  param: { module: psRelatives, action: CheckIdentityCard, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# END: Nguoi than cua hoc sinh
+
+# BEGIN: Dich vu cua lop    
+class_service:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ClassService
+    module:               classservice
+    prefix_path:          /classservice
+    column:               id
+    with_wildcard_routes: true
+    
+# END: Dich vu cua lop
+
+# receivable OLD
+
+receivable_student:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ReceivableStudent
+    module:               receivablestudent
+    prefix_path:          /receivablestudent
+    column:               id
+    with_wildcard_routes: true
+
+# END receivable OLD
+
+# Xem chi tiet cac khoan phai thu cua thang cua 1 hoc sinh
+ps_fee_reports_receivable_student_detail:
+  url:   /ps_fee_reports/receivable_student/:sid/:kstime/detail
+  param: { module: psFeeReports, action: feeReceivableStudentDetail, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Luu khoan phai thu cua thang cho cac hoc sinh duoc chon
+ps_fee_reports_receivable_student_save:
+  url:   /ps_fee_reports/receivable_student/save  
+  param: { module: psFeeReports, action: feeReceivableStudentSave}
+  requirements:
+    sf_method: [post]
+
+# Add khoan phai thu cua thang cho cho cac hoc sinh duoc chon
+ps_fee_reports_receivable_student_step1:
+  url:   /ps_fee_reports/receivable_student/step1.:sf_format
+  param: { module: psFeeReports, action: feeReceivableStudentStep1, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_receivable_student_step2:
+  url:   /ps_fee_reports/receivable_student/step2.:sf_format
+  param: { module: psFeeReports, action: feeReceivableStudentStep2, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_receivable_student_step3:
+  url:   /ps_fee_reports/receivable_student/step3.:sf_format
+  param: { module: psFeeReports, action: feeReceivableStudentStep3, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_receivable_student_search:
+  url:   /ps_fee_reports/receivable_student/search
+  param: { module: psFeeReports, action: feeReceivableStudentSearch, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Luu khoan phai thu cho thang
+ps_receivable_month_put_save:
+  url:   /ps_receivable_month/put_save  
+  param: { module: psReceivableMonth, action: putSave}
+  requirements:
+    sf_method: [post]
+
+# Xoa khoan phai thu cua thang
+ps_receivable_month_put_delete:
+  url:   /ps_receivable_month/put_delete  
+  param: { module: psReceivableMonth, action: putDelete}
+  requirements:
+    sf_method: [post]
+ 
+ps_receivable_month:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ReceivableTemp
+    module:               psReceivableMonth
+    prefix_path:          /ps_receivable_month
+    column:               id
+    with_wildcard_routes: true
+    
+receivable_list_for_fee_reports:
+  url:   /receivable/list_for_fee_reports
+  class:   sfDoctrineRoute
+  options: { model: Receivable, type: object }
+  param: { module: receivable, action: listForFeeReports }
+
+receivable:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Receivable
+    module:               receivable
+    prefix_path:          /receivable
+    column:               id
+    with_wildcard_routes: true
+
+# Chay bao phi theo lop - hang loat ?
+ps_fee_reports_batch_process_fee:
+  url:   /ps_fee_reports/batch_process_fee
+  param: { module: psFeeReports, action: batchProcessFee}
+  requirements:
+    sf_method: [post]
+
+# Xuat phieu thu theo lop
+ps_fee_reports_batch_export_fee_receipt_for_class:
+  url:   /ps_fee_reports/batch_export_fee_receipt_class
+  param: { module: psFeeReports, action: batchExportFeeReceiptClass}
+  requirements:
+    sf_method: [post]
+
+#Xuat bao phi cua lop
+ps_fee_reports_batch_export_fee_for_class:
+  url:   /ps_fee_reports/batch_export_fee_class
+  param: { module: psFeeReports, action: batchExportFeeClass}
+  requirements:
+    sf_method: [post]
+
+#Xuat 1 bao phi cua 1 hoc sinh
+ps_fee_reports_export:
+  url:        /ps_fee_reports/:id/export_fee_reports
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: exportFeeReports }
+  requirements:
+    sf_method: [post]
+
+# Chi tiet 1 bao phi cua 1 hoc sinh
+ps_fee_reports_detail:
+  url:        /ps_fee_reports/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: detail }
+  requirements:
+    sf_method: [post]
+
+#Xuat so no cua lop
+ps_fee_reports_batch_export_fee_debt_for_class:
+  url:   /ps_fee_reports/batch_export_debt_fee_class
+  param: { module: psFeeReports, action: runBatchExportFeeDebtClass}
+  requirements:
+    sf_method: [post]
+    
+ps_fee_reports_warning:
+  url:   /ps_fee_reports/warning.:sf_format
+  param: { module: psFeeReports, action: warning, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_panel:
+  url:   /ps_fee_reports/panel.:sf_format
+  param: { module: psFeeReports, action: feePanel, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# man hinh xu ly phi
+ps_fee_reports_control:
+  url:   /ps_fee_reports/control.:sf_format
+  param: { module: psFeeReports, action: feeControl, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# man hinh xu ly phi cho mot co so
+ps_fee_reports_control_step1:
+  url:   /ps_fee_reports/control/step1.:sf_format
+  param: { module: psFeeReports, action: feeControlStep1, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_control_step2:
+  url:   /ps_fee_reports/control/step2.:sf_format
+  param: { module: psFeeReports, action: feeControlStep2, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_control_step3:
+  url:   /ps_fee_reports/control/step3.:sf_format
+  param: { module: psFeeReports, action: feeControlStep3, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_control_step4:
+  url:   /ps_fee_reports/control/step4.:sf_format
+  param: { module: psFeeReports, action: feeControlStep4, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_control_step5:
+  url:   /ps_fee_reports/control/step5.:sf_format
+  param: { module: psFeeReports, action: feeControlStep5, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_filter_number_day_by_month:
+  url:   /ps_fee_reports/filter_number_day_by_month.:sf_format
+  param: { module: psFeeReports, action: filterNumberDayByMonth, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_fee_reports_payment_receipt:
+  url:        /ps_fee_reports/:id/payment_receipt
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: paymentReceipt}
+  requirements:
+    sf_method: [post]
+
+#Xuat phieu thu
+ps_fee_receipt_export:
+  url:        /ps_fee_reports/:id/export_receipt
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: exportReceipt}
+  requirements:
+    sf_method: [post]
+
+# Edit phieu thu
+ps_fee_reports_edit_payment_receipt:
+  url:        /ps_fee_reports/:id/edit_payment_receipt
+  class:      sfDoctrineRoute
+  options:    { model: PsFeeReports, type: object }
+  params:     { module: psFeeReports, action: editPaymentReceipt}
+  requirements:
+    sf_method: [get]
+
+ps_fee_reports:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                PsFeeReports
+    module:               psFeeReports
+    prefix_path:          /ps_fee_reports
+    column:               id
+    with_wildcard_routes: true      
+
+collected_student_ajax_pre_month_save:
+  url:   /collectedstudent/ajax_pre_month_save.:sf_format
+  param: { module: collectedstudent, action: ajaxPreMonthSave, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+# Xoa collected_student
+collected_student_ajax_delete:
+  url:   /collectedstudent/ajax_delete.:sf_format
+  param: { module: collectedstudent, action: ajaxDelete, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+    
+collected_student_ajax_save:
+  url:   /collectedstudent/ajax_save.:sf_format
+  param: { module: collectedstudent, action: ajaxSave, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+collected_student_ajax_confirm:
+  url:   /collectedstudent/ajax_confirm.:sf_format
+  param: { module: collectedstudent, action: ajaxConfirm, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+
+collected_student_apply:
+  url:   /collectedstudent/apply
+  class:   sfDoctrineRoute
+  options: { model: CollectedStudent, type: object }
+  param: { module: collectedstudent, action: apply }
+
+collected_student_list:
+  url:   /collectedstudent/list  
+  param: { module: collectedstudent, action: list }
+  
+collected_student_ajax_create:
+  url:   /collectedstudent/ajax_create
+  class:   sfDoctrineRoute
+  options: { model: CollectedStudent, type: object }
+  param: { module: collectedstudent, action: ajaxCreate }  
+
+collected_student_save_receipt:
+  url:   /collectedstudent/export_receipt_card.:sf_format
+  param: { module: collectedstudent, action: saveReceiptCard, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+collected_student_receipt_reset:  
+  url:   /collectedstudent/receipt_reset.:sf_format 
+  param:   { module: collectedstudent, action: receiptReset, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+collected_student_export_receipt:  
+  url:   /student/fee_export.:sf_format 
+  param:   { module: collectedstudent, action: exportReceipt, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+collected_student:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                CollectedStudent
+    module:               collectedstudent
+    prefix_path:          /collectedstudent
+    column:               id
+    with_wildcard_routes: true
+    
+student_service_diary:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StudentServiceDiary
+    module:               studentservicediary
+    prefix_path:          /studentservicediary
+    column:               id
+    with_wildcard_routes: true
+
+student_service_diary_update:
+  url:   /:sf_culture/update.:sf_format
+  param: { module: studentservicediary, action: update, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_service_diary_ajax_save:
+  url:   /studentservicediary/ajax_save.:sf_format
+  param: { module: studentservicediary, action: ajaxSave, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_service_diary_show:
+  url:   /studentservicediary/:sid/show
+  param: { module: studentservicediary, action: show, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_service_diary_ajax_save_show:
+  url:   /studentservicediary/:sid/ajax_save_show
+  param: { module: studentservicediary, action: ajaxSaveShow, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+
+#feature_add_branch:
+#  url:   /feature/add_branch.:sf_format
+#  param: { module: feature, action: addBranch, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)
+
+#feature:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                Feature
+#    module:               feature
+#    prefix_path:          /feature
+#    column:               id    
+#    with_wildcard_routes: true
+ 
+#feature_submit:
+#  url: /feature/submit
+#  params: {module : feature ,action :submit }
+  
+#feature_branch:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                FeatureBranch
+#    module:               featurebranch
+#    prefix_path:          /featurebranch
+#    column:               id
+#    with_wildcard_routes: true
+    
+#feature_branch_submit:
+#  url: /feature_branch/submit
+#  params: {module : featurebranch ,action :submit }
+
+#feature_option_feature_update_order:
+#  url: /featureoptionfeature/:branch_id/update_order
+#  param: { module: featureoptionfeature, action: update}
+#  requirements:
+#    branch_id: \d+
+#   sf_method: [GET]
+
+#feature_option_feature_branch:
+#  url: /featureoptionfeature/:branch_id/branch
+#  param: { module: featureoptionfeature, action: index}
+#  requirements:
+#    branch_id: \d+
+#    sf_method: [GET]
+      
+#feature_option_feature:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                FeatureOptionFeature
+#    module:               featureoptionfeature
+#    prefix_path:          /featureoptionfeature
+#    column:               id
+#    with_wildcard_routes: true
+
+feature_option:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                FeatureOption
+    module:               featureoption
+    prefix_path:          /featureoption
+    column:               id
+    with_wildcard_routes: true
+
+#feature_branch_option_add_list:
+#  url:   /featureoptionfeature/branch_option_add_list.:sf_format
+#  param: { module: featureoptionfeature, action: optionAddList, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)
+
+#feature_branch_option_list:
+#  url:   /featureoptionfeature/branch_option_list  
+#  param: { module: featureoptionfeature, action: branchOptionList }
+    
+#feature_ajax_branch_option_add:
+#  url:   /featureoptionfeature/ajax_branch_option_add_list.:sf_format
+#  param: { module: featureoptionfeature, action: ajaxBranchOptionAdd, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)
+    
+#feature_ajax_branch_option_delete:
+#  url:   /featureoptionfeature/ajax_branch_option_delete.:sf_format
+#  param: { module: featureoptionfeature, action: ajaxBranchOptionDelete, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js) 
+    
+#feature_ajax_branch_option_order:
+#  url:   /featureoptionfeature/ajax_branch_option_order.:sf_format
+#  param: { module: featureoptionfeature, action: ajaxBranchOptionOrder, sf_format: html }
+#  requirements:
+#    sf_format: (?:html|js)
+
+recurrence_service:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                RecurrenceService
+    module:               recurrenceservice
+    prefix_path:          /recurrenceservice
+    column:               id
+    with_wildcard_routes: true
+
+student_service:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StudentService
+    module:               studentservice
+    prefix_path:          /studentservice
+    column:               id
+    with_wildcard_routes: true
+
+#student_class:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                StudentClass
+#    module:               studentclass
+#    prefix_path:          /studentclass
+#    column:               id
+#    with_wildcard_routes: true
+
+service_detail:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ServiceDetail
+    module:               servicedetail
+    prefix_path:          /servicedetail
+    column:               id
+    with_wildcard_routes: true
+
+#logtime:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                Logtime
+#    module:               logtime
+#    prefix_path:          /logtime
+#    column:               id
+#    with_wildcard_routes: true
+
+#my_class:
+#  class: sfDoctrineRouteCollection
+#  options:
+#    model:                MyClass
+#    module:               myclass
+#    prefix_path:          /myclass
+#    column:               id
+#    with_wildcard_routes: true
+
+
+service_get_split_value:
+  url:   /service/getsplitvalue.:sf_format
+  param: { module: service, action: getSplitValue, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+service_update_order:
+  url:   /service/update_order.:sf_format
+  param: { module: service, action: updateOrder, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+service:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Service
+    module:               service
+    prefix_path:          /service
+    column:               id
+    with_wildcard_routes: true
+
+service_submit:
+  url: /service/submit
+  params: {module : service ,action :submit }
+  
+service_split:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                ServiceSplit
+    module:               servicesplit
+    prefix_path:          /service_split
+    column:               id
+    with_wildcard_routes: true
+    
+service_split_submit:
+  url: /service_split/submit
+  params: {module : servicesplit ,action :submit }
+
+relationship:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Relationship
+    module:               relationship
+    prefix_path:          /relationship
+    column:               id
+    with_wildcard_routes: true
+
+student_fee3:
+  class: sfDoctrineRoute
+  url:   /student/:id/fee3 
+  options: { model: Student, type: object }
+  param:   { module: student, action: fee3}
+  requirements: { sf_method: post }
+
+student_fee_reload:
+  url:   /student/fee_reload  
+  param: { module: student, action: feeReload }
+
+student_fee_changedate:
+  class: sfDoctrineRoute
+  url:   /student/:id/feechangedate
+  options: { model: Student, type: object }
+  param:   { module: student, action: feeChangeDate}
+  requirements: { sf_method: post }
+
+student_closingfees:
+  class: sfDoctrineRoute
+  url:   /student/:id/closingfees
+  options: { model: Student, type: object }
+  param:   { module: student, action: closingFees}
+  requirements: { sf_method: post }
+
+student_report_form:
+  class: sfDoctrineRoute
+  url:   /student/:id/report_form
+  options: { model: Student, type: object }
+  param:   { module: student, action: reportForm}
+  requirements: { sf_method: post }
+
+student_fee:
+  class: sfDoctrineRoute
+  url:   /student/:id/fee 
+  options: { model: Student, type: object }
+  param:   { module: student, action: fee}
+  requirements: { sf_method: post }
+  
+student_file:
+  class: sfDoctrineRoute
+  url:   /student/:id/file 
+  options: { model: Student, type: object }
+  param:   { module: student, action: file}
+  requirements: { sf_method: get}
+
+student_content:
+  class: sfDoctrineRoute
+  url:   /student/:id/content 
+  options: { model: Student, type: object }
+  param:   { module: student, action: content}
+  requirements: { sf_method: get}
+
+
+student:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Student
+    module:               student
+    prefix_path:          /student
+    column:               id
+    with_wildcard_routes: true
+
+student_show:
+  url:      /student/:id/show.:sf_format
+  class:    sfDoctrineRoute
+  param:    { module: student, action: edit, sf_format: html }
+  options:  { model: Student, type: object }
+  requirements:
+    sf_format: (?:html|js)
+
+student_search:
+  url:   /student/search.:sf_format
+  param: { module: student, action: search, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_search_load_pager_list:
+  url:   /student/search/load_pager_list.:sf_format
+  param: { module: student, action: searchLoadPagerList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_orderby:
+  url:   /student/orderby.:sf_format
+  param: { module: student, action: orderby, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_moveclass:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Student
+    module:               student
+    prefix_path:          /student
+    column:               id
+    with_wildcard_routes: true
+
+student_ajax_find_service:
+  url:   /student/ajax_find_service.:sf_format
+  param: { module: student, action: ajaxFindService, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+    
+# chuyen lop hang loat
+student_move_class:
+  url:   /student/move_class.:sf_format
+  param: { module: student, action: moveClass, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_student_service_list:
+  url:   /student/student_service_list  
+  param: { module: student, action: studentServiceList }
+  
+student_ajax_studentservice_delete:
+  url:   /studentclass/ajax_studentservice_delete.:sf_format
+  param: { module: student, action: ajaxStudentserviceDelete, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_student_service_add_list:
+  url:   /student/student_service_add_list.:sf_format
+  param: { module: student, action: serviceAddList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_ajax_student_service_add_list:
+  url:   /student/ajax_student_service_add_list.:sf_format
+  param: { module: student, action: ajaxServiceAddList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+student_ajax_student_service_add:
+  url:   /student/ajax_student_service_add.:sf_format
+  param: { module: student, action: ajaxStudentServiceAdd, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+studentclass:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                StudentClass
+    module:               studentclass
+    prefix_path:          /studentclass
+    column:               id
+    with_wildcard_routes: true
+
+studentclass_extend:
+  url:   /studentclass/extend.:sf_format
+  param: { module: studentclass, action: extend, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+studentclass_ajax_edit:
+  url:   /studentclass/ajax_edit.:sf_format
+  param: { module: studentclass, action: ajaxEdit, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+studentclass_list:
+  url:   /studentclass/list  
+  param: { module: studentclass, action: list }
+
+studentclass_ajax_delete:
+  url:   /studentclass/ajax_obj_delete.:sf_format
+  param: { module: studentclass, action: ajaxDelete, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+studentclass_ajax_activate_update:
+  url:   /studentclass/ajax_activate_update.:sf_format
+  param: { module: studentclass, action: ajaxActivateUpdate, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+ 
+constant:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Constant
+    module:               constant
+    prefix_path:          /constant
+    column:               id
+    with_wildcard_routes: true
+
+ps_group_user_by_customer:
+  url:   /users/customer.:sf_format
+  param: { module: sfGuardUser, action: groupUserByCustomer, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+ps_user_check_username:
+  url:   /ps_user/check_username.:sf_format
+  param: { module: sfGuardUser, action: checkUsername, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+#Doi trang thai cua User
+sf_guard_user_activated:
+  url: /sf_guard_user/item_activated
+  class: sfDoctrineRoute
+  options: { model: sfGuardUser, type: object }  
+  param: { module: sfGuardUser, action: userActivated }
+  requirements:
+    sf_method: [post]
+
+sf_guard_group_ps_users:
+  url:   /sf_guard_user/user_list.:sf_format
+  param: { module: sfGuardUser, action: userList, sf_format: html }
+  requirements:
+    sf_format: (?:html|js)
+
+sf_guard_permission:
+  url:   /permission
+  param: { module: sfGuardPermission, action: index }
+
+sf_guard_group_detail:
+  url:        /sf_guard_group/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: sfGuardGroup, type: object }
+  params:     { module: sfGuardGroup, action: detail }
+  requirements:
+    sf_method: [get]
+
+sf_guard_group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardGroup
+    module:               sfGuardGroup
+    prefix_path:          /groups
+    column:               id
+    with_wildcard_routes: true
+
+#sf_guard_user:
+#  url:   /user
+#  param: { module: sfGuardUser, action: index }
+
+ps_user_departments:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               psUserDepartments
+    prefix_path:          /ps_user_departments
+    column:               id
+    with_wildcard_routes: true
+
+ps_user_departments_new:
+  url:        /ps_user_departments/:id/new
+  class:      sfDoctrineRoute
+  options:    { model: PsMember, type: object }
+  params:     { module: psUserDepartments, action: new }
+  requirements:
+    id: \d+
+  
+sf_guard_user:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               sfGuardUser
+    prefix_path:          /users
+    column:               id
+    with_wildcard_routes: true
+
+sf_guard_user_detail:
+  url:        /users/:id/detail
+  class:      sfDoctrineRoute
+  options:    { model: sfGuardUser, type: object }
+  params:     { module: sfGuardUser, action: detail }
+  requirements:
+    sf_method: [get]
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+sf_guard_password:
+  url:   /request_password
+  param: { module: sfGuardAuth, action: password }
+
+country:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Country
+    module:               country
+    prefix_path:          /country
+    column:               id
+    with_wildcard_routes: true
+  
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+ps_user_file:
+  url:        /ps_user_file/:file_name/:school_code
+  params:     { module: psCpanel, action: showMemberThumb }
+  requirements:
+    sf_method: [get]
+
+#Doi ngon ngu
+change_language:
+  url:   /change_language
+  param: { module: psCpanel, action: changeLanguage }
+    
+# default rules
+localized_homepage:
+  url:   /:sf_culture
+  param: { module: psCpanel, action: dashboard }
+  requirements:
+    sf_culture: (?:vi|en)
+
+homepage:
+  url:   /
+  param: { module: psCpanel, action: dashboard }
+  requirements:
+    sf_method: [post]
+
+ps_header_filter:
+  url:   /ps_header
+  param: { module: psCpanel, action: psHeaderFilter }
+  requirements:
+    sf_method: [post]  
+
+ps_header_filter_reset:
+  url:   /ps_header/reset
+  param: { module: psCpanel, action: psHeaderFilterReset }
+  requirements:
+    sf_method: [post]
+    
+#Load thu vien kcfinder
+ps_kcfinder:
+  url:   /ps_kcfinder
+  param: { module: psCpanel, action: loadKcFinder }
+  requirements:
+    sf_method: [post]    
+
+
+# generic rules
+# please, remove them by adding more specific rules
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+  
+default:
+  url:   /:module/:action/*

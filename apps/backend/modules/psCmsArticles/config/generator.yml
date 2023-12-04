@@ -1,0 +1,49 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsCmsArticles
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_cms_articles
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        is_publish : {label: Status}
+        updated_at : {date_format: HH:mm dd-MM-yyyy}
+      list:
+        display: [ps_customer_id,ps_workplace_id,school_name,wp_title,file_name,is_publish,is_access,is_global,title,note,year_data,ps_class_ids,created_by,updated_by,updated_at,created_at]
+        table_method: doSelectQuery
+        sort: [created_at, desc]
+        max_per_page: 20
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,is_publish,is_access,is_global, keywords]
+      form:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_ids,title,note,description,is_access,is_global,file_name,is_publish]
+        fields:
+          ps_workplace_id : {help: If not selected entries will be displayed in all the training facilities of schools}
+      edit:
+        title: Edit articles: %%title%%
+        actions:
+          _list:
+            credentials: ~          
+          _save:
+            credentials: ~
+          _save_and_add:
+            credentials: ~
+          _delete:
+            credentials: ~
+      new:
+        title: Add articles
+        actions:
+          _list:
+            credentials: ~          
+          _save:
+            credentials: ~
+          _save_and_add:
+            credentials: ~

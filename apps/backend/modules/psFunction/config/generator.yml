@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsFunction
+    i18n_catalogue:        messages
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_function
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: PS_HR_FUNCTION_DETAIL}
+        _edit: {credentials: PS_HR_FUNCTION_EDIT}
+        _new: {credentials: PS_HR_FUNCTION_ADD}
+        _delete: {credentials: PS_HR_FUNCTION_DELETE}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        customer_title : {label: Ps customer}        
+      list:    
+        display: [title,customer_title,description,iorder,is_activated, updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        object_actions:
+          _edit: ~
+          _delete: ~
+        fields: ~          
+      filter:
+        display: 	[ps_customer_id,title,is_activated]
+      form:    ~
+      edit: ~       
+      new: ~

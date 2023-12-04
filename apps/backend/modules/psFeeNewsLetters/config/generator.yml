@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsFeeNewsLetters
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_fee_news_letters
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        updated_at : {date_format: HH:mm dd-MM-yyyy, label: Updated by}
+      list:
+        title: Fee NewsLetter        
+        display: [ps_year_month,title,is_public,number_push_notication,updated_at]
+        table_method: doSelectQuery
+        sort: [ps_year_month, desc]
+        max_per_page: 35
+      filter:
+        display: [ps_workplace_id,ps_year_month,is_public]
+      form:
+        display: [ps_workplace_id,ps_year_month,title,note,is_public]
+      edit:
+        title: Edit Fee Newsletter
+        actions:
+          _list: ~          
+          _save: ~
+          _save_and_add: ~
+          _delete: ~
+      new:
+        title: New Fee Newsletter

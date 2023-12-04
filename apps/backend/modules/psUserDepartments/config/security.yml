@@ -1,0 +1,29 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_SYSTEM_USER_FILTER_SCHOOL,PS_SYSTEM_USER_SHOW,PS_SYSTEM_USER_EDIT,PS_SYSTEM_USER_DETAIL,PS_SYSTEM_USER_ADD,PS_SYSTEM_USER_DELETE,PS_SYSTEM_USER_RESET_PASSWORD]]   
+
+new:
+  is_secure: true
+  credentials: [PS_SYSTEM_USER_ADD,PS_SYSTEM_USER_MANAGER_DEPARTMENT]  
+
+create:
+  is_secure: true
+  credentials: [PS_SYSTEM_USER_ADD,PS_SYSTEM_USER_MANAGER_DEPARTMENT]
+
+edit:
+  is_secure: true
+  credentials: [PS_SYSTEM_USER_EDIT,PS_SYSTEM_USER_MANAGER_DEPARTMENT]
+
+delete:
+  is_secure: true
+  credentials: [PS_SYSTEM_USER_DELETE,PS_SYSTEM_USER_MANAGER_DEPARTMENT]

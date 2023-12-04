@@ -1,0 +1,55 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ServiceGroup
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          service_group
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: PS_STUDENT_SERVICE_GROUP_DETAIL}
+        _edit: {credentials: PS_STUDENT_SERVICE_GROUP_EDIT}
+        _new: {credentials: PS_STUDENT_SERVICE_GROUP_ADD}
+        _delete: {credentials: PS_STUDENT_SERVICE_GROUP_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        customer_title : {label: Ps customer}
+      list:    
+        display: [=title,note,tk_no,tk_co,tk_mua,_iorder, customer_title,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery        
+        batch_actions:
+         _updateOrder: {credentials: PS_STUDENT_SERVICE_GROUP_EDIT,label: Update Order}
+        fields:  
+          #title_link: {label: Title, credentials: PS_HR_FUNCTION_DETAIL}
+                                    
+      filter:  
+        display: [ps_customer_id,title]
+      form:    ~
+      edit:
+        title: Editing service group: %%title%%    
+        display: [ps_customer_id,title,note,tk_no,tk_co,tk_mua,iorder]
+        actions:
+          _delete: ~
+          _list:
+            credentials: [[PS_STUDENT_SERVICE_GROUP_SHOW,PS_STUDENT_SERVICE_GROUP_DETAIL,PS_STUDENT_SERVICE_GROUP_EDIT,PS_STUDENT_SERVICE_GROUP_ADD]]
+          _save:
+            credentials: [PS_STUDENT_SERVICE_GROUP_EDIT]
+          _save_and_add:
+            credentials: [PS_STUDENT_SERVICE_GROUP_EDIT,PS_STUDENT_SERVICE_GROUP_ADD]        
+      new:     
+        display: [ps_customer_id,title,note,tk_no,tk_co,tk_mua,iorder]
+        actions:          
+          _list:
+            credentials: [[PS_STUDENT_SERVICE_GROUP_SHOW,PS_STUDENT_SERVICE_GROUP_EDIT,PS_STUDENT_SERVICE_GROUP_ADD,PS_STUDENT_SERVICE_GROUP_DELETE]]
+          _save:
+            credentials: [PS_STUDENT_SERVICE_GROUP_ADD]
+          _save_and_add:
+            credentials: [PS_STUDENT_SERVICE_GROUP_ADD]        

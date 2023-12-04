@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>yes</source>
+				<target>Nam</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>no</source>
+				<target>Nữ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member List</source>
+				<target>Danh sách nhân sự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsMember List</source>
+				<target>Danh sách nhân sự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsMember</source>
+				<target>Thêm mới nhân sự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsMember</source>
+				<target>Cập nhật nhân sự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Detail psMember</source>
+				<target>Thông tin nhân sự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Groups list</source>
+				<target>Nhóm người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select status-</source>
+				<target>-Chọn trạng thái-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Input: Hr code, Fullname, email, mobile</source>
+				<target>Nhập: Mã nhân sự, họ tên, email, điện thoại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member Department</source>
+				<target>Quá trình công tác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsMember: %%name%%</source>
+				<target>Sửa nhân viên: %%name%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Department</source>
+				<target>Phòng ban</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Function</source>
+				<target>Chức vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Start At</source>
+				<target>Bắt đầu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop At</source>
+				<target>Kết thúc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps department</source>
+				<target>Phòng ban</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps function</source>
+				<target>Chức vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The member departments was updated successfully.</source>
+				<target>Cập nhật quá trình công tác thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The member departments was created successfully.</source>
+				<target>Thêm mới quá trình công tác thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is current</source>
+				<target>Nơi làm việc hiện tại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Current</source>
+				<target>Phòng làm việc chính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not current</source>
+				<target>Phòng phụ trách</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error: Department or function of member is null</source>
+				<target>Có lỗi: Phòng ban hoặc chức vụ chưa đặt giá trị</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Member Salary</source>
+				<target>Lương nhân viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated By</source>
+				<target>Cập nhật</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is status</source>
+				<target>Trạng thái công việc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Department information</source>
+				<target>Thông tin phòng ban</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Salary information</source>
+				<target>Thông tin lương</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Customer</source>
+				<target>Trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Days Working</source>
+				<target>Ngày công hưởng nguyên lương</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Salary</source>
+				<target>Thông tin lương</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member Allowance</source>
+				<target>Phụ cấp nhân viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This member isn't have any allowance now</source>
+				<target>Thành viên này chưa có bất kỳ khoản phụ cấp hiện tại nào
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm remove</source>
+				<target>Xác thực: Bạn muốn xóa?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure you want to remove this?</source>
+				<target>Bạn muốn tiến hành xóa?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure you want to remove this member allowance?
+				</source>
+				<target>Bạn muốn tiến hành xóa phụ cấp nhân viên này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure you want to remove this member department?
+				</source>
+				<target>Bạn muốn tiến hành xóa phòng ban công tác nhân viên này?
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure you want to remove this member salary?</source>
+				<target>Bạn muốn tiến hành xóa lương nhân viên này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Allowance Value</source>
+				<target>Mức phụ cấp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member Working Time</source>
+				<target>Khung giờ làm việc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select member rank-</source>
+				<target>-Chọn bậc giáo viên-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not any rank</source>
+				<target>Chưa phân bậc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Rank 1</source>
+				<target>Bậc 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Rank 2</source>
+				<target>Bậc 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Rank 3</source>
+				<target>Bậc 3</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Rank</source>
+				<target>Bậc giáo viên</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

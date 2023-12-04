@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Category</source>
+				<target>Chủ đề</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Content</source>
+				<target>Nội dung</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feedback content</source>
+				<target>Phản hồi</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Not Active</source>
+				<target>Vô hiệu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Active</source>
+				<target>Kích hoạt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User</source>
+				<target>Giáo viên nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Created by</source>
+				<target>Người viết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated by</source>
+				<target>Người sửa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>yes</source>
+				<target>Đã duyệt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>no</source>
+				<target>Chưa duyệt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Activity</source>
+				<target>Đã được duyệt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Inactive</source>
+				<target>Chờ xét duyệt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps class</source>
+				<target>Lớp học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsAdviceFeedbacks List</source>
+				<target>Nội dung dặn dò</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Advice information</source>
+				<target>Chi tiết dặn dò</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

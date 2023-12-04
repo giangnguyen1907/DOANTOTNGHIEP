@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Featureoptionfeature List "%%feature_name%%"</source>
+				<target>Bạn đang lập đánh giá hoạt động cho nhóm "%%feature_name%%"
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Featureoptionfeature List</source>
+				<target>Bạn đang lập đánh giá hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Back group</source>
+				<target>Về nhóm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Back work</source>
+				<target>Về d/s hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Branch name</source>
+				<target>Hoạt động</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Group feature</source>
+				<target>Nhóm hoạt động</target>
+			</trans-unit>
+			
+
+			<trans-unit>
+				<source>Feature option</source>
+				<target>Đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Type</source>
+				<target>Kiểu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select Featureoptionfeature</source>
+				<target>Chọn đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tpl custom/order by</source>
+				<target>Thứ tự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tpl custom/type</source>
+				<target>Chế độ/Kiểu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Actions</source>
+				<target>Xóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You must at least select one evaluate item.</source>
+				<target>Bạn cần chọn ít nhất một đánh giá để thực hiện</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Someone item not updated.</source>
+				<target>Một vài tiêu chí không được cập nhật vì bạn chưa chọn chế độ đánh giá.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error update failed</source>
+				<target>Không có bản ghi nào được cập nhật. Vui lòng chọn chế độ đánh giá.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not deleted item feature option</source>
+				<target>Tiêu chí này đã được đánh giá, bạn không thể xóa tiêu chí này khỏi hoạt động.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Someone item not deleted</source>
+				<target>Một vài tiêu chí đánh giá không được xóa vì tiêu chí này đã được đánh giá.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

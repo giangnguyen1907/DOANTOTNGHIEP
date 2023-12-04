@@ -1,0 +1,1 @@
+<?php echo $sfGuardUserForm['groups_list']->render()?>

@@ -1,0 +1,11 @@
+dashboardSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/momentjs/moment2.min.js
+#    - /psAdminThemePlugin/js/plugin/chartjs/_chart.min.js
+    - /psAdminThemePlugin/js/plugin/Chart.js/Chart.min.js
+    - /psAdminThemePlugin/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js
+    - /psAdminThemePlugin/js/modules/dashboard.js
+  stylesheets:   
+#    - /psAdminThemePlugin/css/modules/ps_cpanel.css

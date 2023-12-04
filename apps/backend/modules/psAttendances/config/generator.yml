@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsLogtimes
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_attendances
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [_view_img,student_id,login_relative_id,login_member_id,login_at]
+        table_method: doSelectQueryAttendance
+        max_per_page: {}
+        batch_actions: {}
+        object_actions: {}
+        actions: {}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,tracked_at,attendance_type]
+      form:    ~
+      edit:    ~
+      new:     ~

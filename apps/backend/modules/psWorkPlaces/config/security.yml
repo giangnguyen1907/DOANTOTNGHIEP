@@ -1,0 +1,35 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+#  credentials: [[PS_SYSTEM_WORK_PLACES_SHOW,PS_SYSTEM_WORK_PLACES_EDIT,PS_SYSTEM_WORK_PLACES_DETAIL,PS_SYSTEM_WORK_PLACES_ADD,PS_SYSTEM_WORK_PLACES_DELETE]]   
+
+new:
+  is_secure: true
+  credentials: [PS_SYSTEM_WORK_PLACES_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_SYSTEM_WORK_PLACES_ADD]
+
+# Chua lập trình giới hạn cho khi thêm mã quyền PS_SYSTEM_WORK_PLACES_EDIT_DETAIL 
+edit:
+  is_secure: true
+  credentials: [[PS_SYSTEM_WORK_PLACES_EDIT,PS_SYSTEM_WORK_PLACES_EDIT_DETAIL]]  
+
+detail:
+  is_secure: true
+  credentials: [[PS_SYSTEM_WORK_PLACES_DETAIL,PS_SYSTEM_WORK_PLACES_EDIT,PS_SYSTEM_WORK_PLACES_DELETE]]
+
+# Khi xóa cơ sở cần có quyền cả quyền PS_SYSTEM_WORK_PLACES_EDIT_DETAIL moi duoc xoa.
+delete:
+  is_secure: true
+  credentials: [PS_SYSTEM_WORK_PLACES_DELETE]

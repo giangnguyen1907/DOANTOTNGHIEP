@@ -1,0 +1,1 @@
+<?php include_partial('psMemberAbsents/field_type', array('value' => $ps_member_absents->getAbsentType()))?>

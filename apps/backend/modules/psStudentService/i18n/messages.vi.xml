@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			
+			<trans-unit>
+				<source>Regularity</source>
+				<target>Tần xuất thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student registration service</source>
+				<target>Danh sách học sinh sử dụng dịch vụ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Registration by</source>
+				<target>Đăng ký bởi</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Register service for student: %%ps_student%%</source>
+				<target>Đăng ký dịch vụ cho học sinh: %%ps_student%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Register courses for student</source>
+				<target>Đăng ký khóa học cho học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject</source>
+				<target>Môn học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Courses</source>
+				<target>Khóa học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Keywords: Student code, first name, last name</source>
+				<target>Từ khóa: Mã học sinh, họ đệm, tên</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>You have not selected any student !</source>
+				<target>Bạn chưa chọn học sinh !</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Restore registered service fail.</source>
+				<target>Khôi phục đăng ký dịch vụ thất bại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Restore registered service successfully.</source>
+				<target>Khôi phục đăng ký dịch vụ thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List service</source>
+				<target>Danh sách các dịch vụ của năm học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service workplace</source>
+				<target>Dịch vụ theo cơ sở : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service customer</source>
+				<target>Dịch vụ theo trường : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Save service</source>
+				<target>Lưu dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student service</source>
+				<target>Đăng ký dịch vụ hàng loạt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service registration</source>
+				<target>Dịch vụ đã đăng ký</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service registration remove</source>
+				<target>Dịch vụ đã hủy</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm remove service of student</source>
+				<target>Bạn có muốn hủy dịch vụ của học sinh không ?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Restore service of student</source>
+				<target>Bạn có muốn khôi phục lại dịch vụ của học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You do not select receivable to perform</source>
+				<target>Bạn cần chọn dịch vụ cần đăng ký</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You do not select students to perform</source>
+				<target>Bạn cần chọn học sinh cần đăng ký</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add receivable for month successfully.</source>
+				<target>Thêm dịch vụ cho học sinh thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm remove registered service</source>
+				<target>Xác nhận xóa dịch vụ đã đăng ký</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You sure want to delete this registered service?</source>
+				<target>Bạn có chắc muốn xóa dịch vụ đã đăng ký này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select service to filter the data.</source>
+				<target>Bạn cần phải chọn dịch vụ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Note discount amount.</source>
+				<target>Phí phải nộp sẽ được bằng Phí sau khi giảm trừ khác - Giảm trừ cố định</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Update service of student: %%student%%</source>
+				<target>Cập nhật dịch vụ cho học sinh: %%student%%</target>
+			</trans-unit>
+			
+			
+
+		</body>
+	</file>
+</xliff>

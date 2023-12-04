@@ -1,0 +1,49 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsSchoolYear
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_school_year
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_SYSTEM_SCHOOL_YEAR_EDIT}
+        _new: {credentials: PS_SYSTEM_SCHOOL_YEAR_ADD}
+        _delete: {credentials: PS_SYSTEM_SCHOOL_YEAR_DELETE}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:    
+        title: School Year List
+        display: [=title,date,iorder,is_default,note,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+      filter:
+        display: 	[title]
+      form:
+        display:    [id,title,date,iorder,is_default,note]
+      edit:
+        title: Edit School year
+        actions:
+          _delete:       ~
+          _list:
+            credentials: [[PS_SYSTEM_SCHOOL_YEAR_SHOW,PS_SYSTEM_SCHOOL_YEAR_EDIT]]
+          _save:
+            credentials: [PS_SYSTEM_SCHOOL_YEAR_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_SCHOOL_YEAR_EDIT,PS_SYSTEM_SCHOOL_YEAR_ADD]
+      new:
+        title: New School year
+        actions:          
+          _list:
+            credentials: [[PS_SYSTEM_SCHOOL_YEAR_SHOW,PS_SYSTEM_SCHOOL_YEAR_EDIT,PS_SYSTEM_SCHOOL_YEAR_ADD,PS_SYSTEM_SCHOOL_YEAR_DELETE]]
+          _save:
+            credentials: [PS_SYSTEM_SCHOOL_YEAR_ADD]
+          _save_and_add:
+            credentials: [PS_SYSTEM_SCHOOL_YEAR_ADD]

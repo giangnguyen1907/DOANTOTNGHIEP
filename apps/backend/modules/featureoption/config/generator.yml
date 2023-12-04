@@ -1,0 +1,51 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           FeatureOption
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          feature_option
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: [[PS_SYSTEM_FEATURE_OPTION_EDIT,PS_SYSTEM_FEATURE_OPTION_DETAIL,PS_SYSTEM_FEATURE_OPTION_DELETE]]}
+        _edit: {credentials: PS_SYSTEM_FEATURE_OPTION_EDIT}
+        _new: {credentials: PS_SYSTEM_FEATURE_OPTION_ADD}
+        _delete: {credentials: PS_SYSTEM_FEATURE_OPTION_DELETE,confirm: "Are you sure this Feature option?"}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        customer_title : {label: Ps customer}
+      list:    
+        display: [feature_name,service_title,=name,description,customer_title,_iorder,is_activated,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        max_per_page: 35
+        object_actions:
+          _edit: ~
+          _delete: ~        
+        batch_actions:
+          _updateOrder:
+            label: Update Order
+            credentials: PS_SYSTEM_FEATURE_OPTION_EDIT
+          _delete: ~        
+      filter:
+#        display: [ps_customer_id,name,is_activated]
+        display: [ps_customer_id,feature_id,servicegroup_id,name,is_activated]
+      form:
+#        display: [ps_customer_id,name,description,iorder,is_activated]
+        display: [ps_customer_id,feature_id,servicegroup_id,name,description,iorder,is_activated,is_global] 
+      edit:    
+        title: Editing Featureoption: %%name%%
+        actions:
+          _list: ~         
+          _save: ~
+          _save_and_add: ~
+          _delete: ~
+      new: ~  
+  

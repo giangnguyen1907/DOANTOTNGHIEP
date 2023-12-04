@@ -1,0 +1,53 @@
+indexSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+  stylesheets:    []
+  
+editSuccess:
+  has_layout:     true
+  layout:         layout
+
+newSuccess:
+  has_layout:     true
+  layout:         layout
+   
+importSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+    
+importmemberSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+    

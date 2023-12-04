@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsTimesheet
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_timesheet
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        created_at: {date_format: HH:mm dd/MM/yyyy}
+        updated_at: {date_format: HH:mm dd/MM/yyyy, label: Updated by}
+        time_at: {date_format: HH:mm:ss dd/MM/yyyy}
+      list:
+        display: [member_id,time,is_io,time_at,timesheet_at]
+        table_method: doSelectQuery
+        max_per_page: {}
+        batch_actions: {}
+        object_actions: {}
+        actions: {}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_department_id,time_at]
+      form:    ~
+      edit:    ~
+      new:     ~

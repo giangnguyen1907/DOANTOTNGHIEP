@@ -1,0 +1,55 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsCustomer
+    i18n_catalogue:        messages
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_customer
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials:  PS_SYSTEM_CUSTOMER_DETAIL}
+        _edit: {credentials:  PS_SYSTEM_CUSTOMER_EDIT}
+        _new: {credentials:  PS_SYSTEM_CUSTOMER_ADD}
+        _delete: {credentials:  PS_SYSTEM_CUSTOMER_DELETE}
+        _lock: {credentials:  PS_SYSTEM_CUSTOMER_EDIT}
+      fields:
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        user_updated_id: {label: "Updated by"}
+        ps_typeschool_id: {label: Type school}
+        _view_logo: {label: Logo}
+      list:
+        display: 	[_view_logo,=school_code,=school_name,principal,address,_is_activated,is_deploy,user_updated_id]
+        sort:		[id, desc]
+        max_per_page: 35
+        object_actions: 
+          _detail: {credentials:  PS_SYSTEM_CUSTOMER_DETAIL}
+          _edit: ~
+          _delete: ~          
+        batch_actions: {}
+        table_method: doSelectQuery
+      filter:
+        display: [ps_province_id,ps_district_id,ps_ward_id,ps_typeschool_id,is_deploy,tel_fax,is_activated,keywords]
+        fields:
+          tel: {label: Tel-Fax}
+      form: ~
+#         display: [ps_province_id,ps_district_id,ps_ward_id,is_root,school_code,school_name,title,address,tel,fax,mobile,email,url,ps_typeschool_id,agent,principal,note,description,iorder,logo,is_activated,is_deploy]
+      edit:
+        display: [ps_province_id,ps_district_id,ps_ward_id,is_root,school_code,school_name,title,address,tel,fax,mobile,email,url,ps_typeschool_id,agent,principal,note,description,iorder,logo,is_activated,is_deploy]
+        actions:
+          _list: ~
+          _save: ~
+          _save_and_add: ~
+          _delete: ~
+      new:
+        display: [ps_province_id,ps_district_id,ps_ward_id,is_root,school_code,school_name,title,address,tel,fax,mobile,email,url,ps_typeschool_id,agent,principal,note,description,iorder,is_activated,is_deploy]
+        actions:
+          _list: ~
+          _save: ~
+          _save_and_add: ~

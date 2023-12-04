@@ -1,0 +1,52 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           StudentService
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_student_service
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _delete: {credentials: PS_STUDENT_SERVICE_REGISTER_STUDENT, confirm: "Confirm remove service of student?"}
+        _save: {credentials: PS_STUDENT_SERVICE_REGISTER_STUDENT}
+        _register: {credentials: PS_STUDENT_SERVICE_REGISTER_STUDENT}
+        _new: {credentials: PS_STUDENT_SERVICE_REGISTER_STUDENT, label: Register service}        
+      fields:
+        created_at : {date_format: HH:mm dd-MM-yyyy, label: Registration by}
+        updated_at : {date_format: HH:mm dd-MM-yyyy, label: Updated by}
+        service_title: {label: "Name Service/Subject"}
+        discount_amount: { help: "Note discount amount." }
+      list:
+        title: List student registration service         
+        display: [student_name,birthday,service_title,created_at,updated_at]
+        table_method: doSelectQueryStudent
+        sort: [created_at, asc]
+        max_per_page: 35
+        object_actions:
+          _delete: {credentials: PS_STUDENT_SERVICE_REGISTER_STUDENT, label: Unsubscribe, confirm: "Confirm remove service of student?"}
+        batch_actions:
+          _delete: {credentials: PS_STUDENT_SERVICE_REGISTER_STUDENT, label: Unsubscribe}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,service_id,keywords]
+      form:
+        fields:  
+          discount_amount : {label: Discount fixed }
+      edit:        
+        display: [regularity_id,service_id,note]
+        actions:
+          _save: {credentials: PS_STUDENT_SERVICE_REGISTER_STUDENT}
+          _delete: {credentials: PS_STUDENT_SERVICE_REGISTER_STUDENT, label: Unsubscribe}
+          _cancel: { label: Close }
+      new:
+        title:
+        actions:
+          _save: {credentials: PS_STUDENT_SERVICE_REGISTER_STUDENT}
+          _cancel: ~
+
+

@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ServiceSplit
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_service_splits
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        count_value: { is_real: true }
+      list:    []
+      filter:  ~
+      form:
+        display: [service_id,count_value,count_ceil, split_value, value_price]
+      edit:    ~
+      new:
+        title: Formula for calculating fees of: %%Service%%
+        actions:
+          list_service:
+            action: Service
+            label: Back to service
+            params: class=btn btn-default btn-success bg-color-green btn-psadmin pull-left
+          _save: ~

@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsAlbums
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_albums
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:  ~
+      fields:
+        is_activated : {label: Status}
+        updated_at : {date_format: HH:mm dd-MM-yyyy}
+        user_create_id : {label: User Create?}
+        album_key : {label: Album}
+      list:
+        title: Albums List
+        display: [title,number_img,number_view,note,user_created_id,=is_activated,created_at]
+        max_per_page: 36
+        table_method: doSelectQuery
+        actions:
+          _new: {credentials: PS_CMS_ALBUMS_ADD}
+        object_actions:
+#          _detail: {credentials: PS_CMS_ALBUMS_DETAIL}
+          _edit: {credentials: PS_CMS_ALBUMS_EDIT}
+#          _delete: {credentials: PS_CMS_ALBUMS_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_CMS_ALBUMS_DELETE,confirm: "Are you sure?"}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,is_activated,keywords]
+      form:
+        display: [ps_customer_id,ps_class_id,album_key,title,note,is_activated]
+      edit:    ~
+      new:     ~

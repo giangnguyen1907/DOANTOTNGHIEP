@@ -1,0 +1,7 @@
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+editSuccess:    
+  javascripts:   [/psAdminThemePlugin/js/modules/object_group.js: { position: last }]
+
+newSuccess:     
+  javascripts:   [/psAdminThemePlugin/js/modules/object_group.js: { position: last }]

@@ -1,0 +1,35 @@
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+indexSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+
+statisticSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js 
+    - /psAdminThemePlugin/js/js_action_batch.js
+
+statisticupdateSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js 
+    - /psAdminThemePlugin/js/js_action_batch.js
+     

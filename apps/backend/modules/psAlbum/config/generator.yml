@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsAlbum
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_album
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list: 
+        display: 	[title, content, class_name, total_like, total_comment, status, updated_by, updated_at]
+        table_method: doSelectQuery
+      filter: 
+        display: [ps_customer_id, ps_workplace_id, title, status, member_id, class_id]
+      form: ~
+        # display: [ps_customer_id,ps_workplace_id,title,is_global,note,iorder,is_activated]
+      edit: 
+        display:
+          Thông tin Album: [ps_customer_id, ps_workplace_id, member_id, class_id, title, status, content ]
+          File đính kèm: [_list_file]
+      new: 
+        display:
+          Thông tin Album: [ps_customer_id, ps_workplace_id, member_id, class_id, title, status, content ]
+          File đính kèm: [_list_file]

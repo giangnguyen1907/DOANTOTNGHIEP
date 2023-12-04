@@ -1,0 +1,49 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsObjectGroups
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_object_groups
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_SYSTEM_OBJECT_GROUPS_EDIT}
+        _new: {credentials: PS_SYSTEM_OBJECT_GROUPS_ADD}
+        _delete: {credentials: PS_SYSTEM_OBJECT_GROUPS_DELETE}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:    
+        title: Object group List
+        display: [=title,note,iorder,is_activated,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+      filter:
+        display: 	[title]
+      form:
+        display:    [id,title,note,iorder,is_activated]
+      edit:
+        title: Edit object group
+        actions:
+          _delete:       ~
+          _list:
+            credentials: [[PS_SYSTEM_OBJECT_GROUPS_SHOW,PS_SYSTEM_OBJECT_GROUPS_EDIT]]
+          _save:
+            credentials: [PS_SYSTEM_OBJECT_GROUPS_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_OBJECT_GROUPS_EDIT,PS_SYSTEM_OBJECT_GROUPS_ADD]
+      new:
+        title: Edit object group
+        actions:          
+          _list:
+            credentials: [[PS_SYSTEM_OBJECT_GROUPS_SHOW,PS_SYSTEM_OBJECT_GROUPS_EDIT,PS_SYSTEM_OBJECT_GROUPS_ADD,PS_SYSTEM_OBJECT_GROUPS_DELETE]]
+          _save:
+            credentials: [PS_SYSTEM_OBJECT_GROUPS_ADD]
+          _save_and_add:
+            credentials: [PS_SYSTEM_OBJECT_GROUPS_ADD]

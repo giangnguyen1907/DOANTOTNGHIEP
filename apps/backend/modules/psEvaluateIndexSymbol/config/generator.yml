@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsEvaluateIndexSymbol
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_evaluate_index_symbol
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [school_year_title,school_name,symbol_code,title,is_activated,updated_by]
+        table_method: doSelectQuery
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_EVALUATE_INDEX_SYMBOL_ADD}
+        object_actions:
+          _edit: {credentials: PS_EVALUATE_INDEX_SYMBOL_EDIT}
+          _delete: {credentials: PS_EVALUATE_INDEX_SYMBOL_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_EVALUATE_INDEX_SYMBOL_DELETE,confirm: "Are you sure?"}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,is_activated,keywords]
+      form:    ~
+      edit:    ~
+      new:     ~

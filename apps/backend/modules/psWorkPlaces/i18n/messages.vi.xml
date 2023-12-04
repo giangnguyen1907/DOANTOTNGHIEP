@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Deduction configuration</source>
+				<target>Cấu hình giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is reduce</source>
+				<target>Giảm trừ từ con số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>0 means no deduction; 1 means deduction from the number 2 onwards</source>
+				<target>0 nghĩa là giảm trừ tất cả, 1 nghĩa là giảm trừ từ con số 2 trở đi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config template receipt export</source>
+				<target>Chọn biểu mẫu Phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config choose attendances view app</source>
+				<target>Hiển thị người đưa/đón trên APP phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config choose attendances view app relative</source>
+				<target>Hiển thị thông tin người đưa/đón trên màn hình Điểm danh của
+					APP phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Type minute</source>
+				<target>Phút</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Type hour</source>
+				<target>Giờ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config number attendance</source>
+				<target>Số ngày đi học đạt Phiếu bé ngoan (trong tuần)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config choose charge showlate</source>
+				<target>Cách hiển thị thời gian về muộn trên phiếu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsWorkPlaces List</source>
+				<target>Danh sách cơ sở đào tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsWorkPlaces</source>
+				<target>Thêm mới cơ sở đào tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsWorkPlaces: %%title%%</source>
+				<target>Cập nhật thông tin cơ sở: %%title%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Work places information</source>
+				<target>Thông tin cơ sở đào tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Infomation</source>
+				<target>Thông tin</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Configuration related fees</source>
+				<target>Cấu hình liên quan phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Communication configuration</source>
+				<target>Cấu hình giao tiếp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config default login</source>
+				<target>Giờ đón bé</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config default logout</source>
+				<target>Giờ trả bé</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config late money</source>
+				<target>Phí về muộn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config normal day</source>
+				<target>Số ngày học bình thường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config full day</source>
+				<target>Số ngày học có thứ 7</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config closing date fee</source>
+				<target>Ngày chốt báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config template export</source>
+				<target>Kiểu biểu mẫu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config chat relative to relative</source>
+				<target>Phụ huynh trò chuyện với nhau</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config msg relative to relative</source>
+				<target>Phụ huynh gửi thông báo cho nhau</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config chat relative to teacher</source>
+				<target>Phụ huynh trò chuyện với giáo viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config time chat relative to teacher</source>
+				<target>Phụ huynh trò chuyện với giáo viên sau</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Principal</source>
+				<target>Hiệu trưởng/Người quản lý</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config time receive valid</source>
+				<target>Thời gian nhận báo nghỉ cần trước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config time cancel saturday valid</source>
+				<target>Thời gian nhận báo nghỉ ngày thứ bảy cần trước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Example holiday report before 8h will be valid</source>
+				<target>Ví dụ: Báo trước 8h sẽ hợp lệ, thì nhập 8h</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Example holiday report before 8h will be valid</source>
+				<target>Ví dụ: Báo trước 8h sẽ hợp lệ, thì nhập 8h</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Valid Enter 1 to 28</source>
+				<target>Giá trị hợp lệ là: 1 đến 28</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Valid Enter 10 to 31</source>
+				<target>Giá trị hợp lệ là: 10 đến 31</target>
+			</trans-unit>
+
+
+
+			<trans-unit>
+				<source>Config choose charge late</source>
+				<target>Cách tính phí về muộn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>By day</source>
+				<target>Số phút về muộn trong ngày * giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>By total hour</source>
+				<target>Tổng phút về muộn trong tháng * giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config start date system fee</source>
+				<target>Ngày bắt đầu khởi tạo tính phí cho hệ thống</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Check the ingredients on the screen</source>
+				<target>Kiểm tra lại các thành phần trên màn hình nhập</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>From time notication activities</source>
+				<target>Giờ nhận thông báo đánh giá hoạt động từ:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>To time notication activities</source>
+				<target>Đến:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>From time notication attendances</source>
+				<target>Gửi thông báo Điểm danh Đến trước:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>To time notication attendances</source>
+				<target>Gửi thông báo Điểm danh Về trước:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is notication activities</source>
+				<target>Gửi thông báo khi đánh giá hoạt động:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is receipt</source>
+				<target>Nguồn dữ liệu phí hiển thị</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config fee receipt file import</source>
+				<target>Chọn nguồn dữ liệu phí từ Phân hệ Quản lý phí hoặc Quản lý thông báo phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config choose charge paylate</source>
+				<target>Cách tính phí nộp học phí chậm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No progression</source>
+				<target>Chỉ tính 1 lần(nếu chậm nhiều tháng cũng chỉ phạt 1 lần)
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Multiplication progression</source>
+				<target>Nhân giá theo số tháng nộp chậm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Only works if configured late payment fee</source>
+				<target>Chỉ có tác dụng nếu thiết lập cấu hình phí nộp chậm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config choose charge fee mobile</source>
+				<target>Hiển thị Phí trên App phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>View detail</source>
+				<target>Hiển thị chi tiết các khoản</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>View total</source>
+				<target>Hiển thị tổng số tiền</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>View category</source>
+				<target>Hiển thị danh mục phí(không có: Trạng thái thanh toán, tổng phí, dư nợ,...)</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Related to late return fees and late attendance</source>
+				<target>Sử dụng cho Phí trông muộn và Lớp điểm danh về muộn</target>
+			</trans-unit>			
+
+			<trans-unit>
+				<source>Config class late</source>
+				<target>Hiển thị lớp về muộn</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Show class about late for attendance teacher</source>
+				<target>Hiển thị lớp về muộn cho giáo viên điểm danh</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Config push notication update attendance</source>
+				<target>Gửi thông báo khi Sửa điểm danh</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Multiple teacher process album</source>
+				<target>G/v được thêm ảnh vào album của lớp chung</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Config multiple teacher process album</source>
+				<target>Cho phép các giáo viên cùng lớp thêm ảnh vào album như giáo viên tạo. Nhưng chỉ được thao tác với ảnh của mình.</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Config email report</source>
+				<target>Email nhận báo cáo từ hệ thống</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Email addresses separated by signs ; For example: ntsc279@gmail.com; hoanglc20@hotmail.com</source>
+				<target>Địa chỉ email ngăn cách nhau bởi dấu ; Ví dụ: ntsc279@gmail.com;hoanglc20@hotmail.com</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>From time class delay</source>
+				<target>Thời gian hiển thị lớp về muộn bắt đầu từ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>To time class delay</source>
+				<target>Thời gian hiển thị lớp về muộn kết thúc là</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Template 01</source>
+				<target>Mẫu 01 (Phiếu thu rút gọn, 2 liên)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Template 02</source>
+				<target>Mẫu 02 (Danh sách khoản phí tháng trước + phí dự kiến)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Template 03</source>
+				<target>Mẫu 03 (DS Phí dự kiến và tiền sử dụng dịch vụ còn thừa tháng trước)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Template 04</source>
+				<target>Mẫu 04 (Tính theo số ngày không sử dụng dịch vụ)</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Config view relative attendance</source>
+				<target>Hiển thị người đưa / đón</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>By system menus one</source>
+				<target>Hiển thị dữ liệu thực đơn cũ (Chọn món ăn từ hệ thống)</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>By system menus two</source>
+				<target>Hiển thị dữ liệu thực đơn mới (Nhập dữ liệu món ăn)</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Config template menus</source>
+				<target>Chọn biểu mẫu thực đơn(Chưa sử dụng)</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>From time class delay</source>
+				<target>Hiển thị từ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>To time class delay</source>
+				<target>Cho đến</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

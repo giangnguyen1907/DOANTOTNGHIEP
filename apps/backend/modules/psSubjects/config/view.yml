@@ -1,0 +1,10 @@
+editSuccess:
+  javascripts: 
+#    - /psAdminThemePlugin/js/eventform.js: {position: last}    
+#    - /psAdminThemePlugin/js/plugin/momentjs/moment.min.js: {position: last}
+    - /psAdminThemePlugin/js/modules/ps_service_edit.js: {position: last}
+
+newSuccess:
+  javascripts: 
+#    - /psAdminThemePlugin/js/eventform.js: {position: last}
+    - /psAdminThemePlugin/js/modules/ps_service_new.js: {position: last}

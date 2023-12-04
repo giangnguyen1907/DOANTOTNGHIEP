@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>New course schedules</source>
+				<target>Thêm mới lịch học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit course schedules</source>
+				<target>Cập nhật lịch học</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Date at</source>
+				<target>Ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Morning</source>
+				<target>Sáng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Afternoon</source>
+				<target>Chiều</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Evening</source>
+				<target>Tối</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Courses title</source>
+				<target>Tên khóa học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select courses-</source>
+				<target>-Chọn khóa học-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Schedules</source>
+				<target>Thời khóa biểu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Start time at</source>
+				<target>Thời gian bắt đầu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>End time at</source>
+				<target>Thời gian kết thúc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You have not selected a school</source>
+				<target>Bạn chưa chọn trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You have not selected a teacher</source>
+				<target>Bạn chưa chọn giáo viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You have not selected a course</source>
+				<target>Bạn chưa chọn khóa học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The current week has no data</source>
+				<target>Tuần hiện tại không có dữ liệu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Destination schedules has data. Do you want to continue?
+				</source>
+				<target>Thời khóa biểu tuần đích đã có dữ liệu. Bạn có muốn tiếp
+					tục?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Copy</source>
+				<target>Sao chép</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Copy schedules</source>
+				<target>Sao chép thời khóa biểu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Week source</source>
+				<target>Tuần nguồn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Week destination</source>
+				<target>Tuần đích</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select teacher-</source>
+				<target>-Chọn giáo viên-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select subjects-</source>
+				<target>-Chọn môn học-</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

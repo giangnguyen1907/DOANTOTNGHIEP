@@ -1,0 +1,70 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           MyClass
+    theme:                 admin2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_class
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _new: {credentials:  PS_STUDENT_CLASS_ADD}
+        _edit: {credentials:  PS_STUDENT_CLASS_EDIT}
+        _delete: {credentials: PS_STUDENT_CLASS_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, label: Updated by}                
+        ps_memberes_list : {label: Members}
+        obj_group_title : {label: Object group}        
+        list_field_class_room : {label: Class room}
+        list_field_teacher_class : {label: Teacher class}
+        list_field_work_place_name : {label: Work places}
+        id : {label: ID}          
+      list:
+        title: Class list
+        display: [id,code,=name,iorder,obj_group_title,_list_field_class_room,_list_field_teacher_class,note,is_activated,updated_at]
+        table_method: doSelectQuery
+        max_per_page: 35
+        sort: [iorder,is_activated, asc]
+        batch_actions: {}
+        object_actions:
+          _detail: {credentials: [[PS_STUDENT_CLASS_DETAIL,PS_STUDENT_CLASS_ADD,PS_STUDENT_CLASS_EDIT,PS_STUDENT_CLASS_DELETE]]}
+          _edit: {credentials: PS_STUDENT_CLASS_EDIT}
+          _delete: {credentials: PS_STUDENT_CLASS_DELETE}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_obj_group_id,is_activated, keywords]
+      form:
+        fields:
+          code: {help: "Includes only the characters a-zA-Z0-9_-.Exp: KID,LA2014-2015"}
+          year_at: {help: "Time will be automatically set to the corresponding academic year"}                    
+      edit:
+        title: Edit Class: %%name%%
+        display: 
+          Class infomation: [ps_customer_id,ps_workplace_id,ps_class_room_id,school_year_id,ps_obj_group_id,code,name,note,description,iorder,is_activated,is_lastyear]
+          Class services: [_form_field_services]
+          Teacher class: [_list_teacher]
+          Students of class: [_list_student]
+        actions:
+          _list:
+            credentials: [PS_STUDENT_CLASS_SHOW]          
+          _save:
+            credentials: [PS_STUDENT_CLASS_EDIT]
+          _save_and_add:
+            credentials: [PS_STUDENT_CLASS_ADD]
+          _delete:
+            credentials: [PS_STUDENT_CLASS_DELETE]          
+      new:
+        title: New Class
+        display: 
+          Class infomation: [ps_customer_id,ps_workplace_id,ps_class_room_id,school_year_id,ps_obj_group_id,code,name,note,description,iorder,is_activated,is_lastyear]
+        actions:
+          _list: {credentials: PS_STUDENT_CLASS_SHOW}
+          _save: {credentials: PS_STUDENT_CLASS_ADD}
+          _save_and_add: {credentials: PS_STUDENT_CLASS_ADD}
+          
+          

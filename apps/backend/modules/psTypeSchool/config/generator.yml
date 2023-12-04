@@ -1,0 +1,52 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsTypeSchool
+    i18n_catalogue:        messages
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_type_school
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_SYSTEM_TYPE_SCHOOL_EDIT}
+        _new: {credentials: PS_SYSTEM_TYPE_SCHOOL_ADD}
+        _delete: {credentials: PS_SYSTEM_TYPE_SCHOOL_DELETE}                            
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:
+        title: Type school list
+        display: [=title,description,iorder, updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery        
+        batch_actions:
+          _delete: {credentials: PS_SYSTEM_TYPE_SCHOOL_DELETE}
+      filter:
+        display: [title,description]
+      form:
+        display: [title,description,iorder]
+      edit:
+        title: Edit type school
+        actions:
+          _delete:       ~
+          _list:
+            credentials: [[PS_SYSTEM_TYPE_SCHOOL_SHOW,PS_SYSTEM_TYPE_SCHOOL_DETAIL,PS_SYSTEM_TYPE_SCHOOL_EDIT]]
+          _save:
+            credentials: [PS_SYSTEM_TYPE_SCHOOL_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_TYPE_SCHOOL_EDIT,PS_SYSTEM_TYPE_SCHOOL_ADD]
+      new:
+        title: New type school
+        actions:          
+          _list:
+            credentials: [[PS_SYSTEM_TYPE_SCHOOL_SHOW,PS_SYSTEM_TYPE_SCHOOL_EDIT,PS_SYSTEM_TYPE_SCHOOL_ADD,PS_SYSTEM_TYPE_SCHOOL_DELETE]]
+          _save:
+            credentials: [PS_SYSTEM_TYPE_SCHOOL_ADD]
+          _save_and_add:
+            credentials: [PS_SYSTEM_TYPE_SCHOOL_ADD]        

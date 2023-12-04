@@ -1,0 +1,13 @@
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+editSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/modules/constant_option.js: {position: last}
+ 
+newSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/modules/constant_option.js: {position: last}  

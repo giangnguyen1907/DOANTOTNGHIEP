@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsContract List</source>
+				<target>Danh sách loại hợp đồng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsContract</source>
+				<target>Thêm mới loại hợp đồng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsContract</source>
+				<target>Sửa loại hợp đồng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên loại hợp đồng</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

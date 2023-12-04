@@ -1,0 +1,57 @@
+default:
+  is_secure:   true
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_FEE_REPORT_IMPORT,PS_FEE_REPORT_SHOW,PS_FEE_REPORT_DETAIL,PS_FEE_REPORT_ADD,PS_FEE_REPORT_EDIT,PS_FEE_REPORT_DELETE,PS_FEE_REPORT_FILTER_SCHOOL]]   
+
+new:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EDIT]  
+
+delete:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_DELETE]
+
+import:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_IMPORT]  
+
+
+batchExportFeeReports:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EXPORT]
+
+exportFeeReports:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EXPORT]
+
+#man hinh xu ly bao phi  
+feeControl:
+  is_secure: true
+  credentials: [[PS_FEE_REPORT_ADD,PS_FEE_REPORT_EDIT]]
+  
+paymentReceipt:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EDIT]
+
+editPaymentReceipt:
+  is_secure: true
+  credentials: [PS_FEE_REPORT_EDIT]
+
+feeReceivableStudentStep1Success:
+  is_secure: true
+  credentials: [[PS_FEE_REPORT_ADD,PS_FEE_REPORT_EDIT]]

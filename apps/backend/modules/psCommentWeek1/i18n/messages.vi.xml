@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			<trans-unit>
+				<source>Student name</source>
+				<target>Tên học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps year</source>
+				<target>Năm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps month</source>
+				<target>Tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps week</source>
+				<target>Tuần</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Comment</source>
+				<target>Nhận xét</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You can choise month or week</source>
+				<target>Bắt buộc chọn Tháng hoặc Tuần</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title general</source>
+				<target>Tiêu đề chung</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Comment week of student</source>
+				<target>Nhận xét tháng - tuần của học sinh: </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsCommentWeek List</source>
+				<target>Nhận xét tuần - tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsCommentWeek Add</source>
+				<target>Nhập nhận xét Tuần - Tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Comment week was saved successfully. You can add another one below.</source>
+				<target>Thêm nhận xét thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Publish comment</source>
+				<target>Duyệt NX</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The selected items have been publish comment successfully.
+				</source>
+				<target>Cập nhật trạng thái duyệt bài thành công.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

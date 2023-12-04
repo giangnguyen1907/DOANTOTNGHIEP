@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Featureoption List</source>
+				<target>Danh sách tiêu chí(Sử dụng trong cấu hình đánh giá hoạt động- học tập)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Featureoption</source>
+				<target>Thêm mới tiêu chí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Editing Featureoption: %%name%%</source>
+				<target>Cập nhật tiêu chí: %%name%%</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Servicegroup</source>
+				<target>Nhóm dịch vụ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Service title</source>
+				<target>Nhóm dịch vụ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Feature name</source>
+				<target>Nhóm hoạt động</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Is global</source>
+				<target>Áp dụng toàn hệ thống</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Name</source>
+				<target>Tên tiêu chí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item used, not deleted item.</source>
+				<target>Tiêu chí này đang được dùng. Bạn không thể xóa tiêu chí này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not deleted item.</source>
+				<target>Tiêu chí này đang được áp dụng, bạn không thể xóa. Vui lòng kiểm tra lại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Someone the item is deleted.</source>
+				<target>Một vài tiêu chí không được xóa vì có thể đang được áp dụng.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,48 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsStudentGrowths
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_student_growths
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, label: Updated by}
+        input_date_at : {date_format: dd/MM/yyyy}
+      list:    
+        title: Growth index
+        display: [student_name,birthday,sex,index_age,ex_name,height,weight,index_tooth,index_throat,index_eye,index_heart,index_lung,index_skin,updated_at,number_push_notication]
+        sort: [input_date_at, desc]
+        table_method: doSelectQuery
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_MEDICAL_GROWTH_ADD}
+        object_actions:
+          _detail: {credentials: PS_MEDICAL_GROWTH_DETAIL}
+          _edit: {credentials: PS_MEDICAL_GROWTH_EDIT}
+          _delete: {credentials: PS_MEDICAL_GROWTH_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_MEDICAL_GROWTH_DELETE,confirm: "Are you sure?"}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_obj_group_id,ps_class_id,examination_id,keywords]
+      form:    ~
+      edit:
+        title: Update growth index
+        actions:
+         _list: ~
+         _save: ~
+         _save_and_add: ~
+         _delete: ~
+      new:
+        actions:
+         _list: ~
+         _save: ~
+        

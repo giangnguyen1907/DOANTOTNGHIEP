@@ -1,0 +1,64 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Student
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_students
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials:  PS_STUDENT_MSTUDENT_EDIT}
+        _new: {credentials:  PS_STUDENT_MSTUDENT_ADD}
+        _detail: {credentials: [[PS_STUDENT_MSTUDENT_DETAIL,PS_STUDENT_MSTUDENT_ADD,PS_STUDENT_MSTUDENT_EDIT,PS_STUDENT_MSTUDENT_DELETE,PS_STUDENT_ATTENDANCE_TEACHER]]}
+        _delete: {credentials:  PS_STUDENT_MSTUDENT_DELETE}        
+      fields:  
+        birthday : {date_format: dd-MM-yyyy}
+        updated_at : {date_format: HH:mm dd-MM-yyyy}        
+        sex : {label: Gender}        
+      list:
+        title: Student list
+#        display: [_view_img,_avatar,=student_code,=first_name,=last_name,_birthday,_sex,start_date_at,_status,updated_by,updated_at]
+        display: [_view_img,=student_code,=first_name,=last_name,_birthday,_sex,start_date_at,class_name,updated_at]
+        sort: [last_name, asc]
+        table_method: doSelectQuery
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_STUDENT_MSTUDENT_ADD}
+        object_actions:
+          _detail: {credentials: [[PS_STUDENT_MSTUDENT_DETAIL,PS_STUDENT_MSTUDENT_ADD,PS_STUDENT_MSTUDENT_EDIT,PS_STUDENT_MSTUDENT_DELETE]]}
+          _edit: {credentials: PS_STUDENT_MSTUDENT_EDIT}
+#          _restore: {credentials: PS_STUDENT_MSTUDENT_RESTORE}
+          _delete: {credentials: PS_STUDENT_MSTUDENT_DELETE}
+        batch_actions:
+         _delete: {credentials: PS_STUDENT_MSTUDENT_DELETE} 
+      filter: ~
+      form:
+        display: ~
+        fields:  
+          ps_workplace_id : {label: Basis enrollment}
+      edit:
+        title: Edit Students: %%first_name%% %%last_name%%
+        display: 
+          Student infomation: [ps_customer_id,ps_workplace_id,student_code,first_name,last_name,birthday,sex,start_date_at,common_name,nationality,ethnic_id,religion_id,address,policy_id,image,caphoc,chuongtrinh,khoihoc,doituong]
+          Relative of student: [_list_relative]
+          Class infomation: [_list_class]
+          Registered service: [_list_service]
+        actions:
+          _list: ~
+          _save: ~
+          _save_and_add: ~
+          _delete: ~
+      new:
+        display:
+          Student infomation: [ps_customer_id,ps_workplace_id,student_code,first_name,last_name,birthday,sex,start_date_at,common_name,nationality,ethnic_id,religion_id,address,policy_id,image,caphoc,chuongtrinh,khoihoc,doituong]
+        actions:
+          _list: ~
+          _save: ~
+          _save_and_add: ~
+          _delete: ~

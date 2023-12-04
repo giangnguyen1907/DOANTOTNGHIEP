@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsFeature List</source>
+				<target>Danh sách nhóm hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsFeature</source>
+				<target>Thêm mới nhóm hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsFeature: "%%name%%"</source>
+				<target>Cập nhật nhóm hoạt động: "%%name%%"</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Name</source>
+				<target>Tên nhóm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature</source>
+				<target>Nhóm hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature branch</source>
+				<target>Hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Branch list</source>
+				<target>Danh sách hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select branch</source>
+				<target>Các hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Branch name</source>
+				<target>Tên hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New branch</source>
+				<target>Thêm hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add review of activity group:</source>
+				<target>Thêm đánh giá của nhóm hoạt động:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This property is not allowed</source>
+				<target>Không cho phép thay đổi thuộc tính này</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

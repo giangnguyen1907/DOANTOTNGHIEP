@@ -1,0 +1,30 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+#  credentials: [[PS_CMS_ALBUMS_SHOW,PS_CMS_ALBUMS_DETAIL,PS_CMS_ALBUMS_LOCK,PS_CMS_ALBUMS_ADD,PS_CMS_ALBUMS_EDIT,PS_CMS_ALBUMS_DELETE,PS_CMS_ALBUMS_FILTER_SCHOOL]]
+
+new:
+  is_secure: true
+  credentials: [PS_CMS_ALBUMS_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_CMS_ALBUMS_EDIT]
+
+delete:
+  is_secure: true
+  credentials: [PS_CMS_ALBUMS_DELETE]
+
+detail:
+  is_secure: true
+  credentials: [[PS_CMS_ALBUMS_DETAIL,PS_CMS_ALBUMS_ADD,PS_CMS_ALBUMS_EDIT,PS_CMS_ALBUMS_DELETE]]
+
+albumItemActivated:
+  is_secure: true
+  credentials: [PS_CMS_ALBUMS_EDIT]

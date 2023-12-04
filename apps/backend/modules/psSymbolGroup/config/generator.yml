@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsSymbolGroup
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_symbol_group
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:
+        display: 	[title, group_symbol, is_payment, is_type, updated_by, updated_at]
+        table_method: doSelectQuery
+      filter:
+        display: [ps_customer_id, ps_workplace_id, title, is_payment, is_type ]
+      form: ~
+        # display: [ps_customer_id,ps_workplace_id,title,is_global,note,iorder,is_activated]
+      edit: ~
+      new: ~

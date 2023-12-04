@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Allowance value</source>
+				<target>Mức giá phụ cấp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsAllowance</source>
+				<target>Thêm mới phụ cấp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsAllowance: %%title%%</source>
+				<target>Sửa đổi phụ cấp: %%title%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Allowance List</source>
+				<target>Danh mục phụ cấp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>A problem occurs when deleting the selected items has some
+					children relationship.</source>
+				<target> Một số vấn đề xảy ra khi xóa các mục đã chọn: bản ghi tồn
+					tại liên kết khóa ngoại đang được dùng.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

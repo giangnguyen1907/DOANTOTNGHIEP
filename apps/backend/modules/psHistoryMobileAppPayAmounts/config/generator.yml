@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsHistoryMobileAppPayAmounts
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_history_mobile_app_pay_amounts
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _new: {credentials: PS_MOBILE_APP_AMOUNTS_ADD}
+        _edit: {credentials: PS_MOBILE_APP_AMOUNTS_EDIT}
+        _delete: {credentials: PS_MOBILE_APP_AMOUNTS_DELETE}
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:    
+        display: [ps_customer_id, user_id, pay_created_at, expiration_date, month, amount, description]
+      edit:    ~
+      new:     
+        title: New app amount pay
+        actions:
+          _cancel: ~
+          _save: {credentials: PS_MOBILE_APP_AMOUNTS_EDIT}

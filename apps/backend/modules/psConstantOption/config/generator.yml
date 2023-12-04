@@ -1,0 +1,42 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsConstantOption
+    i18n_catalogue:        messages
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_constant_option
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials:  PS_SYSTEM_CONSTANT_OPTION_EDIT}
+        _new: {credentials:  PS_SYSTEM_CONSTANT_OPTION_ADD}
+        _delete: {credentials:  PS_SYSTEM_CONSTANT_OPTION_DELETE}        
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list: 
+        display: [title,customer_title,value,note,updated_by,updated_at]
+        fields:
+          customer_title : {label: Ps customer}
+        table_method: doSelectQuery        
+        sort: [ps_customer_id, asc]
+        batch_actions: {}        
+        actions:
+          _list:
+            label: Back constant list
+            action: constant
+            params:      class=btn btn-default btn-success btn-psadmin
+            credentials:  [[PS_SYSTEM_CONSTANT_SHOW,PS_SYSTEM_CONSTANT_EDIT]]
+          _new: ~
+      filter: 
+        display: [ps_customer_id,note]
+      form: 
+        display: [ps_customer_id,ps_constant_id,value,note]                                
+      edit: ~    
+      new:     ~      

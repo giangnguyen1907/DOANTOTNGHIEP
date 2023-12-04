@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardPermission
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_permission
+    with_doctrine_route:   true
+
+    config:
+      fields:
+        created_at: { date_format: HH:mm dd/MM/yyyy}
+        updated_at: { date_format: HH:mm dd/MM/yyyy}
+      list:
+        title: Permission list
+        display: [=name, description, created_at, updated_at]
+      filter:        
+        display: [=name, description]
+      form: ~
+      edit: ~
+      new: ~      
+      show: ~
+      

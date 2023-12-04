@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsConstant
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_constant
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:      
+      actions:
+        _edit: {credentials:  PS_SYSTEM_CONSTANT_EDIT}
+        _new: {credentials:  PS_SYSTEM_CONSTANT_ADD}
+        _delete: {credentials:  PS_SYSTEM_CONSTANT_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:
+        display: [=title,c_code,value_default,note,iorder,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        batch_actions: {}
+        actions:
+          _new: ~
+          list:
+            label: PsConstantOption List
+            action: option
+            params: class=btn btn-default btn-success btn-psadmin
+            credentials: [PS_SYSTEM_CONSTANT_OPTION_SHOW]
+      filter: 
+        display: [title]
+      form:    
+        display:    [id,c_code,title,value_default,iorder,note]
+      edit:    ~
+      new:     ~

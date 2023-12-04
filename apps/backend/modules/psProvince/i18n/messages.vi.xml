@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsProvince List</source>
+				<target>Danh sách Tỉnh/Thành</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsProvince</source>
+				<target>Thêm mới Tỉnh/Thành</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsProvince</source>
+				<target>Cập nhật thông tin Tỉnh/Thành</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Country code</source>
+				<target>Quốc gia</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>yes</source>
+				<target>Hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>no</source>
+				<target>Khóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>S code</source>
+				<target>Mã Tỉnh/Thành</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Code</source>
+				<target>Mã</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Name</source>
+				<target>Tên Tỉnh/Thành</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

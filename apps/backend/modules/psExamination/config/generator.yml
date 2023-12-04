@@ -1,0 +1,50 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsExamination
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_examination
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        actions: 
+          _edit: {credentials: PS_MEDICAL_EXAMINATION_EDIT}
+          _new: {credentials: PS_MEDICAL_EXAMINATION_ADD}
+          _delete: {credentials: PS_MEDICAL_EXAMINATION_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, label: Updated by}
+      list:
+        title: Examination list
+        display: [ps_customer_id,ps_workplace_id,name,input_date_at,note,updated_at ]
+        sort: [input_date_at, asc]
+        table_method: doSelectQuery
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,name,note ]
+      form:
+        fields:
+          ps_obj_group_id: {help: Config obj group id in examination}
+      edit:
+        actions:          
+          _list:
+            credentials: [[PS_MEDICAL_EXAMINATION_SHOW,PS_MEDICAL_EXAMINATION_DETAIL,PS_MEDICAL_EXAMINATION_EDIT]]
+          _save:
+            credentials: [PS_MEDICAL_EXAMINATION_EDIT]
+          _save_and_add:
+            credentials: [[PS_MEDICAL_EXAMINATION_EDIT,PS_MEDICAL_EXAMINATION_ADD]]
+          _delete:       ~
+      new:
+        title: Examination new
+        actions:          
+          _list:
+            credentials: [[PS_MEDICAL_EXAMINATION_SHOW,PS_MEDICAL_EXAMINATION_EDIT,PS_MEDICAL_EXAMINATION_ADD,PS_MEDICAL_EXAMINATION_DELETE]]
+          _save:
+            credentials: [PS_MEDICAL_EXAMINATION_ADD]
+          _save_and_add:
+            credentials: [PS_MEDICAL_EXAMINATION_ADD]

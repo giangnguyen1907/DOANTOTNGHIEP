@@ -1,0 +1,27 @@
+default:
+  is_secure:   true #Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_HR_TIMESHEETSUMMARY_FILTER_SCHOOL,PS_HR_TIMESHEETSUMMARY_SHOW,PS_HR_TIMESHEETSUMMARY_ADD,PS_HR_TIMESHEETSUMMARY_EDIT,PS_HR_TIMESHEETSUMMARY_DELETE]]   
+
+new:
+  is_secure: true
+  credentials: [PS_HR_TIMESHEETSUMMARY_ADD ]  
+
+create:
+  is_secure: true
+  credentials: [PS_HR_TIMESHEETSUMMARY_ADD ]
+
+edit:
+  is_secure: true
+  credentials: [PS_HR_TIMESHEETSUMMARY_EDIT ]  
+
+delete:
+  is_secure: true
+  credentials: [PS_HR_TIMESHEETSUMMARY_DELETE]

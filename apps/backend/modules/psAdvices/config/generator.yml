@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsAdvices
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_advices
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        is_activated : {label: Status}
+        updated_at : {date_format: HH:mm dd-MM-yyyy}
+        user_create_id : {label: User Create?}
+      list:
+        title: Advice Of Relative
+#        display: [user_created_id,user_id,student_id,category_id,title,content,is_activated,created_at]
+        display: [title,content,student_id,user_created_id,user_id,feedback_content,is_activated]
+        max_per_page: 10
+        table_method: doSelectQuery
+        actions:
+          _new: {credentials: PS_STUDENT_RELATIVE_ADVICE_ADD}
+        object_actions:
+          _detail: {credentials: PS_STUDENT_RELATIVE_ADVICE_DETAIL}
+          _edit: {credentials: PS_STUDENT_RELATIVE_ADVICE _EDIT}
+          _delete: {credentials: PS_STUDENT_RELATIVE_ADVICE_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_STUDENT_RELATIVE_ADVICE_DELETE,confirm: "Are you sure?"}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,is_activated,start_at,stop_at,keywords]
+      form:
+        display: [category_id,title,student_id,user_id,content,feedback_content,is_activated]
+      edit:    ~
+      new:     ~

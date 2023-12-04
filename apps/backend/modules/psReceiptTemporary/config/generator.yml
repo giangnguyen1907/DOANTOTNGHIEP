@@ -1,0 +1,26 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsReceiptTemporary
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_receipt_temporary
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        display: [student_name,title,receipt_date,receivable,collected_amount,balance_amount,is_import,relative_id,note,updated_by]
+        table_method: doSelectQuery
+        max_per_page: 35
+      filter:  
+        display: [school_year_id,ps_month,ps_customer_id,keywords]
+      form:
+        display: [ps_customer_id,student_id,relative_id,title,receivable,collected_amount,balance_amount,receipt_date,note]
+      edit:    ~
+      new:     ~

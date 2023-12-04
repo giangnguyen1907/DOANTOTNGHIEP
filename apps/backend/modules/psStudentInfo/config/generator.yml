@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Student
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_student_info
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        birthday : {date_format: dd-MM-yyyy}
+        updated_at : {date_format: HH:mm dd-MM-yyyy}        
+        sex : {label: Gender}
+      list:
+        title: Student list
+        display: [_view_img,student_code,first_name,last_name,_birthday,_sex,_status]
+        sort: [id, asc]
+        table_method: doSelectQueryStudentInfo
+        max_per_page: 35
+        batch_actions: []
+      filter: ~
+      form:
+        display: ~

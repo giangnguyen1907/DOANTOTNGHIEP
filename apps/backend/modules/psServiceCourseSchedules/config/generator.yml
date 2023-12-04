@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsServiceCourseSchedules
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_service_course_schedules
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_STUDENT_SERVICE_COURSE_SHEDULES_EDIT}
+        _new: {credentials: PS_STUDENT_SERVICE_COURSE_SHEDULES_ADD}
+        _delete: {credentials: PS_STUDENT_SERVICE_COURSE_SHEDULES_DELETE,confirm: "Are you sure?"}
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:
+       actions:
+          _list: ~
+          _delete: {credentials: PS_STUDENT_SERVICE_COURSE_SHEDULES_DELETE,confirm: "Are you sure?"}
+          _save: ~
+          _save_and_add: ~        
+      new:
+       actions:          
+          _list:
+            credentials: [PS_STUDENT_SERVICE_COURSE_SHEDULES_EDIT]
+          _save:
+            credentials: [PS_STUDENT_SERVICE_COURSE_SHEDULES_EDIT]
+          _save_and_add:
+            credentials: [PS_STUDENT_SERVICE_COURSE_SHEDULES_EDIT]
+

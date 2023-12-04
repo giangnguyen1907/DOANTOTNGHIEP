@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Working time</source>
+				<target>Giờ làm việc</target>
+			</trans-unit>
+			Add member working time:
+
+			<trans-unit>
+				<source>Add member working time: %%ps_member%%</source>
+				<target>Thêm khung giờ làm: %%ps_member%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit member working time: %%ps_member%%</source>
+				<target>Sửa khung giờ làm: %%ps_member%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps workingtime</source>
+				<target>Ca làm việc</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

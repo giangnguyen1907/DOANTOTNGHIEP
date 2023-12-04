@@ -1,0 +1,87 @@
+RewriteEngine on
+RewriteRule ^manuals 	manuals.html [L]
+RewriteRule ^about-us 	aboutus.html [L]
+
+#Header always set Strict-Transport-Security "max-age=31536000; includeSubdomains; preload"
+#Header set X-XSS-Protection "1; mode=block"
+#Header always append X-Frame-Options SAMEORIGIN
+#Header set X-Content-Type-Options nosniff
+
+RewriteRule ^icon/(.*) 			web/sys_icon/$1 [L]
+RewriteRule ^images/(.*) 		web/images/$1 [L]
+RewriteRule ^cache/image/(.*) 	web/images/cache/$1 [L]
+RewriteRule ^card_birthday/image/(.*) 	web/images/card_birthday/$1 [L]
+
+# icon menu app
+RewriteRule ^app/(.*)/(.*) 	web/images/app_menu/$1/$2 [L]
+
+# media for APIs
+#RewriteRule ^media/image/(.*)/(.*)/(.*) 	/data_cache/$1/$2/$3 [L]
+
+# Student
+#RewriteRule ^media/image/03/(.*)/(.*)/(.*) 	/data_cache/$1/$2/student/$3 [L]
+RewriteRule ^media/image/03/(.*)/(.*) 	web/pschool/$1/profile/$2 [L]
+#RewriteRule ^media/image/03/(.*)/(.*)/(.*) 	web/pschool/$1/$2/profile/avatar/$3 [L]
+
+#nguoi than
+#RewriteRule ^media/image/02/(.*)/(.*)/(.*) 	/data_cache/$1/$2/relative/$3 [L]
+RewriteRule ^media/image/02/(.*)/(.*)/(.*) 	web/pschool/$1/$2/relative/avatar/$3 [L]
+
+#nhan su
+#RewriteRule ^media/image/01/(.*)/(.*)/(.*) 	/data_cache/$1/$2/hr/$3 [L]
+RewriteRule ^media/image/01/(.*)/(.*)/(.*) 	web/pschool/$1/$2/hr/avatar/$3 [L]
+
+#logo for customer for APIs
+RewriteRule ^media/logo/(.*)/(.*) 	web/pschool/logo/$1/$2 [L]
+
+# Camera
+RewriteRule ^media/image/camera/(.*)/(.*)/(.*) 	web/pschool/$1/$2/camera/$3 [L]
+
+# Article
+RewriteRule ^media/image/article/thumb/(.*)/(.*)/(.*)/(.*)  web/uploads/cms_articles/$1/$2/$3/thumb/$4 [L]
+RewriteRule ^media/image/article/(.*)/(.*)/(.*)/(.*)  web/uploads/cms_articles/$1/$2/$3/$4 [L]
+
+# logo of customer for web
+RewriteRule ^media-web/(.*)/logo/(.*) 	web/pschool/logo/$1/$2 [L]
+
+#nhan su - member
+RewriteRule ^media-web/01/(.*)/(.*)/(.*)  web/pschool/$1/$2/hr/thumb/$3 [L]
+
+#nguoi than
+RewriteRule ^media-web/02/(.*)/(.*)/(.*)  web/pschool/$1/$2/relative/thumb/$3 [L]
+
+#Student
+RewriteRule ^media-web/03/(.*)/(.*)/(.*)  web/pschool/$1/$2/profile/thumb/$3 [L]
+
+# Web form HR
+RewriteRule ^media-web/root/01/(.*)/(.*)/(.*)  web/pschool/$1/$2/hr/$3 [L]
+
+# Web form nguoi than
+RewriteRule ^media-web/root/02/(.*)/(.*)/(.*)  web/pschool/$1/$2/relative/$3 [L]
+
+# Web form Student
+RewriteRule ^media-web/root/03/(.*)/(.*)/(.*)  web/pschool/$1/$2/profile/$3 [L]
+
+#Camera
+RewriteRule ^media-web/04/(.*)/(.*)/(.*)  web/pschool/$1/$2/camera/$3 [L]
+
+# Web form Camera
+RewriteRule ^media-web/root/04/(.*)/(.*)/(.*)  web/pschool/$1/$2/camera/$3 [L]
+
+#Tin tuc yyyy/mm/dd/file
+RewriteRule ^media-articles/article/thumb/(.*)/(.*)/(.*)/(.*)  web/uploads/cms_articles/$1/$2/$3/$4 [L]
+RewriteRule ^media-articles/article/(.*)/(.*)/(.*)/(.*)  web/uploads/cms_articles/$1/$2/$3/$4 [L]
+
+# File image foods cac truong
+RewriteRule ^media/foods/thumb/(.*)  web/uploads/ps_nutrition/$1 [L]
+RewriteRule ^media/foods/(.*)  web/uploads/ps_nutrition/$1 [L]
+
+#Template form import
+RewriteRule ^media-template/import/(.*)  web/uploads/import_data/form/$1 [L]
+
+
+
+
+
+
+

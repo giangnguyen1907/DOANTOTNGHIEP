@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Application name</source>
+				<target>Tên ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Application code</source>
+				<target>Mã ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Application permission</source>
+				<target>Chức năng của ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Application permission list</source>
+				<target>Danh sách chức năng của ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Application permission code</source>
+				<target>Mã chức năng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>App permission code</source>
+				<target>Mã chức năng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Application permission code help</source>
+				<target>Mã chức năng sẽ được tự động bổ sung tiền tố là mã ứng dụng. Ví dụ PS_STUDENT_SHOW(Xem danh sách học sinh),PS_STUDENT_SHOW_DETAIL(Xem chi tiết học sinh)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New application permission</source>
+				<target>Thêm mới chức năng cho ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit application permission</source>
+				<target>Cập nhật chức năng của ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Application permission name</source>
+				<target>Tên chức năng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>--Select Application--</source>
+				<target>--Chọn ứng dụng--</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps app</source>
+				<target>Ứng dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>App permission code already exist.</source>
+				<target>Chức năng này đã tồn tại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter this information for students</source>
+				<target>Nhập thông tin này cho học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Cashier</source>
+				<target>Thu ngân</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Publish</source>
+				<target>Duyệt hiển thị</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>All system</source>
+				<target>Toàn hệ thống</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

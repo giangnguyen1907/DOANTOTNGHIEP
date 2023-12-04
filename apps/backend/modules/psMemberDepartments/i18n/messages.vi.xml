@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Member Department</source>
+				<target>Quản lý công tác nhân viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsMember:: %%name%%</source>
+				<target>Sửa nhân viên: %%name%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Department</source>
+				<target>Phòng ban</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Function</source>
+				<target>Chức vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Start At</source>
+				<target>Bắt đầu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop At</source>
+				<target>Kết thúc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Action</source>
+				<target>Hành động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps department</source>
+				<target>Phòng ban</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps function</source>
+				<target>Chức vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The member departments was updated successfully.</source>
+				<target>Cập nhật quá trình công tác thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The member departments was created successfully.</source>
+				<target>Thêm mới quá trình công tác thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add member department: %%ps_member%%</source>
+				<target>Thêm quá trình công tác: %%ps_member%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit member department: %%ps_member%%</source>
+				<target>Sửa quá trình công tác: %%ps_member%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select departments-</source>
+				<target>-Chọn phòng ban-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select functions-</source>
+				<target>-Chọn chức vụ-</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Error: Department or function of member is null</source>
+				<target>Có lỗi: Phòng ban hoặc chức vụ chưa đặt giá trị</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is current</source>
+				<target>Nơi làm việc hiện tại</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Customer</source>
+				<target>Trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Days Working</source>
+				<target>Ngày công hưởng nguyên lương</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Salary</source>
+				<target>Thông tin lương</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps salary</source>
+				<target>Lương cơ bản</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Days working</source>
+				<target>Ngày công hưởng nguyên lương</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select basic salary-</source>
+				<target>Chọn mức lương</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Salary</source>
+				<target>Thông tin lương</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add member salary: %%ps_member%%</source>
+				<target>Thêm lương nhân viên: %%ps_member%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit member salary:: %%ps_member%%</source>
+				<target>Sửa lương nhân viên: %%ps_member%%</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Please select salary to filter the data.</source>
+				<target>Vui lòng chọn mức lương</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Please select days working to filter the data.</source>
+				<target>Vui lòng chọn ngày công.</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

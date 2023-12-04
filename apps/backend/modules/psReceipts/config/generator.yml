@@ -1,0 +1,51 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Receipt
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_receipts
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: ~
+        _delete: ~       
+      fields:
+        student_name: {label: Student}
+        updated_at : {label: Updated by, date_format: HH:mm dd-MM-yyyy}
+        receivable_at : {date_format: dd-MM-yyyy}
+        td_expected: {label: Fee expected}
+        td_birthday: {label: Birthday}
+        relative_id: {label: or select are here}
+        payment_relative_name: {label: Enter the relative payment}
+        is_public: {label: Publish receipt}
+      list:
+        title: Find fee reports
+        display: [student_name,_td_birthday,class_name,receivable_at,receipt_no,_td_expected,chietkhau,late_payment_amount,collected_amount,balance_amount,payment_status,payment_date,is_public,number_push_notication]
+        table_method: doSelectQuery
+        max_per_page: 35
+        object_actions:
+          _detail: {credentials: PS_FEE_REPORT_DETAIL}
+          _edit: {credentials: PS_FEE_REPORT_EDIT}
+          _delete: {credentials: PS_FEE_REPORT_DELETE,confirm: "Are you sure wish delete this fee report?", title: "Delete fee report"}
+        batch_actions:
+          publishReceipts:
+            label: Publish receipt
+            params: class=btn btn-default btn-success bg-color-green btn-psadmin
+            credentials: [[PS_FEE_REPORT_ADD, PS_FEE_REPORT_EDIT]]
+        actions: {}
+      filter:
+        display: [ps_school_year_id, ps_customer_id,ps_workplace_id,ps_class_id,ps_year_month,receivable_at,payment_status,is_public,keywords]
+      form:
+        display: [student_id, receipt_no,payment_status,balance_last_month_amount,ps_fee_report_amount,collected_amount,balance_amount,payment_date,payment_relative_name,relative_id,payment_type,cashier_name,note]
+      edit:
+        title: Edit PsReceipts: %%receipt_date%%
+        actions:
+         _list: ~
+         _save: ~
+      new:     {}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Not config fee</source>
+				<target>Chưa thiết lập</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>End semester two</source>
+				<target>Kết thúc học kỳ 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>End semester one</source>
+				<target>Kết thúc học kỳ 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error config semerter. End semester two.</source>
+				<target>Lỗi thiết lập học kỳ cho năm học, Kết thúc học kỳ 2 phải lớn hơn kết thúc học kỳ 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config semerter was saved successfully. You can add another one below.</source>
+				<target>Thiết lập học kỳ thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps school year</source>
+				<target>Năm học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps month</source>
+				<target>Tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config semester</source>
+				<target>Thiết lập học kỳ cho cơ sở</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

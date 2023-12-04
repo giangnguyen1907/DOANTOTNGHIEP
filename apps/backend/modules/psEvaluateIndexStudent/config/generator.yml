@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsEvaluateIndexStudent
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_evaluate_index_student
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        table_method: doSelectQuery
+        max_per_page: 35
+        actions: {}
+#          _new: {credentials: PS_EVALUATE_INDEX_STUDENT_ADD}
+        object_actions: {}
+#          _edit: {credentials: PS_EVALUATE_INDEX_STUDENT_EDIT}
+#          _delete: {credentials: PS_EVALUATE_INDEX_STUDENT_EDIT,confirm: "Are you sure?"}
+        batch_actions: {}
+#         _delete: {credentials: PS_EVALUATE_INDEX_STUDENT_EDIT,confirm: "Are you sure?"}
+      filter:
+        display: [school_year_id,ps_month,ps_customer_id,ps_workplace_id,ps_class_id]
+#        display: [school_year_id,ps_month,ps_customer_id,ps_workplace_id,ps_class_id,evaluate_subject_id,is_public,is_awaiting_approval]
+      form:
+        display: [ps_customer_id,ps_workplace_id,ps_class_id,evaluate_subject_id,student_id,date_at,is_public,is_awaiting_approval]
+      edit:    ~
+      new:     ~

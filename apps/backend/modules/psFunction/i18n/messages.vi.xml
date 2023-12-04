@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsFunction List</source>
+				<target>Danh sách chức vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsFunction</source>
+				<target>Thêm mới chức vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsFunction</source>
+				<target>Sửa chức vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên chức vụ</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

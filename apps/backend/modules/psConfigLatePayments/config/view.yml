@@ -1,0 +1,13 @@
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+configLateSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js 

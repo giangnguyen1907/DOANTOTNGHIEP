@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsHistoryScreenRelatives List</source>
+				<target>Lịch sử thao tác app của phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Screen code</source>
+				<target>Mã màn hình</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User</source>
+				<target>Người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Item</source>
+				<target>Mục</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select user-</source>
+				<target>-Chọn người dùng-</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

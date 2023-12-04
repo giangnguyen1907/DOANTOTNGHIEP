@@ -1,0 +1,340 @@
+# update unique thanh nhom tao boi ps_customer_id va name
+# is_super_admin: 1- User admin he thong moi co quyen sua/xoa
+#                 0- User thao tac binh thuong
+sfGuardGroup:
+  actAs: [Timestampable]
+  options:
+    type: InnoDB
+    collate: utf8_unicode_ci
+    charset: utf8
+  columns:
+    ps_customer_id:
+      type: integer
+      notnull: false
+#    ps_workplace_id:
+#      type: integer
+#      notnull: false
+    name:
+      type: string(255)
+      notnull: true
+    description: string(500)
+    iorder: { type: integer(4)}
+    is_super_admin:
+      type: boolean
+      default: false
+    user_created_id: {type:integer}
+    user_updated_id: {type:integer}
+  indexes:
+    ps_customer_id_group_name_idx: { fields: [ps_customer_id, name], type: unique }    
+  relations:
+    Users:
+      class: sfGuardUser
+      refClass: sfGuardUserGroup
+      local: group_id
+      foreign: user_id
+      foreignAlias: Groups
+    Permissions:
+      class: sfGuardPermission
+      local: group_id
+      foreign: permission_id
+      refClass: sfGuardGroupPermission
+      foreignAlias: Groups
+    PsCustomer:
+      class: PsCustomer      
+      local: ps_customer_id
+      foreign: id
+      foreignAlias: PsCustomers
+      onDelete: CASCADE
+#    PsWorkPlaces: {local: ps_workplace_id, foreign: id, type: one,foreignType: one,foreignAlias: PsWorkPlacess,onDelete: CASCADE}
+    UserCreated: {class: sfGuardUser,local: user_created_id,foreign: id}
+    UserUpdated: {class: sfGuardUser,local: user_updated_id,foreign: id,foreignAlias: sfGuardUser_2}
+
+sfGuardPermission:
+  actAs: [Timestampable]
+  options:
+    type: InnoDB
+    collate: utf8_unicode_ci
+    charset: utf8
+  columns:
+    name:
+      type: string(255)
+      unique: true
+      notnull: true
+    title:
+      type: string(255)      
+    ps_app_id:
+      type: integer(11)
+      notnull: true
+    app_permission_code:
+      type: string(255)
+      unique: true
+      notnull: true    
+    description:
+      type: string(1000)
+    iorder:
+      type: integer(11)
+      default: 0      
+    ps_app_permission_id:
+      type: integer
+      unique: true
+    is_system: { type: boolean, notnull: true, default:0}    
+  relations:
+    PsAppPermission: {local: ps_app_permission_id, foreign: id, type: one, foreignType: one, foreignAlias: PsAppPermissions,onDelete: CASCADE}
+    PsApp:
+      class: PsApp
+      local: ps_app_id
+      foreign: id
+      foreignAlias: PsApps
+      onDelete: CASCADE      
+
+sfGuardGroupPermission:
+  options:
+    type: InnoDB
+    collate: utf8_unicode_ci
+    charset: utf8
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    group_id:
+      type: integer
+      primary: true
+    permission_id:
+      type: integer
+      primary: true
+  relations:
+    Group:
+      class: sfGuardGroup
+      local: group_id
+      onDelete: CASCADE
+    Permission:
+      class: sfGuardPermission
+      local: permission_id
+      onDelete: CASCADE
+
+# 
+# Nguoi dung
+# Nang cap: user_type = M : Người Quản lý thuộc Sở/Phòng giáo dục; = T: Nhân sự trong trường; R: Phụ huynh trong hệ thống
+# Truong hop user_type = M thi avatar lay tu table này va luu tai path: web\uploads\user_avatar
+sfGuardUser:
+  actAs: [Timestampable]
+  options:
+    type: InnoDB
+    collate: utf8_unicode_ci
+    charset: utf8
+  columns:
+    ps_customer_id:
+      type: integer
+      notnull: false
+      default: null
+    user_key:
+      type: string(300)
+      notnull: false    
+    member_id:
+      type: integer
+      notnull: false
+      unique: false
+    user_type:
+      type: string(1)
+      notnull: true
+    manager_type:
+      type: string(1)
+      notnull: false
+      default: null
+    first_name: 
+      type: string(255)
+      notnull: true
+    last_name: 
+      type: string(255)
+      notnull: true
+    email_address:
+      type: string(255)
+      notnull: false
+    username:
+      type: string(128)
+      notnull: true
+      unique: true
+    password:
+      type: string(128)
+      notnull: true
+    avatar:
+      type: string(255)
+      notnull: false
+      default: null
+    avatar:
+      type: string(255)
+      notnull: false
+      default: null      
+    app_device_id:
+      type: string(256)
+      notnull: false
+    app_config:
+      type: text
+      notnull: false
+    api_token:
+      type: string(256)
+      notnull: false
+    token_last_login:
+      type: timestamp
+    token_expires_in:
+      type: timestamp
+      default: null
+      notnull: false
+    refresh_token:
+      type: string(256)
+      notnull: false
+    notification_token:
+      type: string(500)
+      notnull: false    
+    notification_at:
+      type: datetime
+      default: null
+      notnull: false
+    osname:
+      type: string(100)
+      notnull: false
+    osvesion:
+      type: string(100)
+      notnull: false
+    algorithm:
+      type: string(128)
+      default: sha1
+      notnull: true
+    salt: string(128)    
+    is_active:
+      type: integer(1)
+      default: 1
+    is_super_admin:
+      type: boolean
+      default: false
+    is_global_super_admin:
+      type: boolean
+      default: false
+    last_login:
+      type: timestamp
+    user_created_id: { type: integer}
+    user_updated_id: { type: integer}
+  indexes:
+    is_active_idx:
+      fields: [is_active]
+    ps_member_id_user_type_idx_idx: { fields: [member_id, user_type], type: unique }
+  relations:
+    Groups:
+      class: sfGuardGroup
+      local: user_id
+      foreign: group_id
+      refClass: sfGuardUserGroup
+      foreignAlias: Users
+    Permissions:
+      class: sfGuardPermission
+      local: user_id
+      foreign: permission_id
+      refClass: sfGuardUserPermission
+      foreignAlias: Users
+    PsMobileAppAmounts: {class: PsMobileAppAmounts,local: id, foreign: user_id, type: one,foreignType: many,foreignAlias: PsMobileAppAmounts,onDelete: CASCADE }
+    PsHistoryMobileAppPayAmounts: {class: PsHistoryMobileAppPayAmounts,local: id, foreign: user_id, type: one,foreignType: many,foreignAlias: PsHistoryMobileAppPayAmounts,onDelete: CASCADE }
+    PsMember: {class: PsMember,local: member_id, foreign: id, type: one,foreignType: one,foreignAlias: PsMemberes,onDelete: CASCADE }
+    PsRelative: {class: Relative,local: member_id, foreign: id, type: one,foreignType: one,foreignAlias: PsRelatives,onDelete: CASCADE }
+    PsCustomer: {local: ps_customer_id, foreign: id, type: one,foreignType: one,foreignAlias: PsCustomers }
+    UserCreated: {class: sfGuardUser,local: user_created_id,foreign: id, foreignAlias: sfGuardUsers}
+    UserUpdated: {class: sfGuardUser,local: user_updated_id,foreign: id,foreignAlias: sfGuardUsers}
+
+sfGuardUserPermission:
+  options:
+    type: InnoDB
+    collate: utf8_unicode_ci
+    charset: utf8
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+      primary: true
+    permission_id:
+      type: integer
+      primary: true
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      onDelete: CASCADE
+    Permission:
+      class: sfGuardPermission
+      local: permission_id
+      onDelete: CASCADE
+
+sfGuardUserGroup:
+  options:
+    type: InnoDB
+    collate: utf8_unicode_ci
+    charset: utf8
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+      primary: true
+    group_id:
+      type: integer
+      primary: true
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      onDelete: CASCADE
+    Group:
+      class: sfGuardGroup
+      local: group_id
+      onDelete: CASCADE
+
+sfGuardRememberKey:
+  options:
+    type: InnoDB
+    collate: utf8_unicode_ci
+    charset: utf8
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    user_id: integer
+    remember_key: string(32)
+    ip_address: string(50)
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreignAlias: RememberKeys
+      foreignType: one
+      onDelete: CASCADE
+
+sfGuardForgotPassword:
+  options:
+    type: InnoDB
+    collate: utf8_unicode_ci
+    charset: utf8
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+    unique_key: string(255)
+    expires_at:
+      type: timestamp
+      notnull: true
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      type: one
+      foreignType: one
+      foreignAlias: ForgotPassword
+      onDelete: CASCADE

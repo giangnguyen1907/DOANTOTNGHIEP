@@ -1,0 +1,9 @@
+editSuccess:
+  javascripts: 
+    - /psAdminThemePlugin/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js
+    - /psAdminThemePlugin/js/modules/ps_work_places.js: {position: last}
+
+newSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js
+    - /psAdminThemePlugin/js/modules/ps_work_places.js: {position: last}

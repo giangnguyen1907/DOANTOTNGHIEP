@@ -1,0 +1,46 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_MEDICAL_GROWTH_FILTER_SCHOOL,PS_MEDICAL_GROWTH_DETAIL,PS_MEDICAL_GROWTH_EDIT,PS_MEDICAL_GROWTH_ADD,PS_MEDICAL_GROWTH_DELETE]]   
+
+detail:
+  is_secure: true
+  credentials: [[PS_MEDICAL_GROWTH_DETAIL,PS_MEDICAL_GROWTH_EDIT,PS_MEDICAL_GROWTH_ADD,PS_MEDICAL_GROWTH_DELETE]]
+
+statistic:
+  is_secure: true
+  credentials: [PS_MEDICAL_GROWTH_STATISTIC]
+
+new:
+  is_secure: true
+  credentials: [PS_MEDICAL_GROWTH_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_MEDICAL_GROWTH_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_MEDICAL_GROWTH_EDIT]  
+  
+update:
+  is_secure: true
+  credentials: [PS_MEDICAL_GROWTH_EDIT]
+
+delete:
+  is_secure: true
+  credentials: [PS_MEDICAL_GROWTH_DELETE]
+  
+batchSendNotication:
+  is_secure: true
+  credentials: [PS_MEDICAL_GROWTH_PUSH]
+  

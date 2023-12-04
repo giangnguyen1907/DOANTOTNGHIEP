@@ -1,0 +1,26 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_STUDENT_OFF_SCHOOL_SHOW,PS_STUDENT_OFF_SCHOOL_DETAIL,PS_STUDENT_OFF_SCHOOL_ADD,PS_STUDENT_OFF_SCHOOL_EDIT,PS_STUDENT_OFF_SCHOOL_DELETE,PS_STUDENT_OFF_SCHOOL_FILTER_SCHOOL]]
+
+new:
+  is_secure: true
+  credentials: [PS_STUDENT_OFF_SCHOOL_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_STUDENT_OFF_SCHOOL_EDIT]
+
+delete:
+  is_secure: true
+  credentials: [PS_STUDENT_OFF_SCHOOL_DELETE]
+
+detail:
+  is_secure: true
+  credentials: [[PS_STUDENT_OFF_SCHOOL_DETAIL,PS_STUDENT_OFF_SCHOOL_ADD,PS_STUDENT_OFF_SCHOOL_EDIT,PS_STUDENT_OFF_SCHOOL_DELETE]]

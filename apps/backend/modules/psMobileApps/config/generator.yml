@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsMobileApps
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_mobile_apps
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: [[PS_REPORT_MOBILE_APPS_SHOW,PS_REPORT_MOBILE_APPS_DETAIL]]}
+      fields:
+        status_used: {label: Account balance}
+        active_created_at: {label: Actived at, date_format: HH:mm dd/MM/yyyy}
+      list:
+        display: [username,full_name,is_activated,user_type,device_id,active_created_at]
+        table_method: doSelectQuery
+        max_per_page: 35
+        actions: {}
+        object_actions:
+          _detail: {credentials: [[PS_REPORT_MOBILE_APPS_SHOW,PS_REPORT_MOBILE_APPS_DETAIL]]}
+        batch_actions: {}   
+      filter:
+        display: [school_year_id,ps_month,ps_customer_id,ps_workplace_id,keywords]
+      form:
+        display: [status_used,is_activated]
+      edit:    ~
+      new:     ~

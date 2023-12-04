@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			<trans-unit>
+				<source>Total student</source>
+				<target>Sĩ số h/s</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Login student count</source>
+				<target>Đi học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not login student count</source>
+				<target>Vắng</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Check out</source>
+				<target>Ra về</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Statistics attendance day</source>
+				<target>Thống kê điểm danh ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Statistics attendance week</source>
+				<target>Thống kê điểm danh tuần</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student statistics chart</source>
+				<target>Biểu đồ thống kê sĩ số học sinh</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Today work</source>
+				<target>Công việc hôm nay</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Statistical</source>
+				<target>Thống kê</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This workplace has no classes</source>
+				<target>Cơ sở này chưa có lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total students in class by month</source>
+				<target>Sĩ số học sinh theo từng tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Jan</source>
+				<target>Tháng 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feb</source>
+				<target>Tháng 2</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Mar</source>
+				<target>Tháng 3</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Apr</source>
+				<target>Tháng 4</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Jun</source>
+				<target>Tháng 6</target>
+			</trans-unit>
+			<trans-unit>
+				<source>May</source>
+				<target>Tháng 5</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Jul</source>
+				<target>Tháng 7</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Aug</source>
+				<target>Tháng 8</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Sep</source>
+				<target>Tháng 9</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Oct</source>
+				<target>Tháng 10</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Nov</source>
+				<target>Tháng 11</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Dec</source>
+				<target>Tháng 12</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Granted</source>
+				<target>Đã cấp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Activated app</source>
+				<target>Đã kích hoạt app</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User relative statistics</source>
+				<target>Thống kê tài khoản người thân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Granted</source>
+				<target>Tài khoản được cấp</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Activated app</source>
+				<target>Được kích hoạt</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Logging</source>
+				<target>Đang đăng nhập</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Relative statistics</source>
+				<target>Thống kê tài khoản phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student birthday on</source>
+				<target>Nhắc nhở sinh nhật</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

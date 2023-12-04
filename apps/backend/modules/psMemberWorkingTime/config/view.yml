@@ -1,0 +1,68 @@
+indexSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+    - /psAdminThemePlugin/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/modules/ps_off_school.js: { position: last }
+
+editSuccess:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+    - /psAdminThemePlugin/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/modules/ps_off_school.js: { position: last }
+
+newSuccess:     
+  javascripts:   
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js
+    - /psAdminThemePlugin/js/modules/ps_off_school.js: { position: last }
+  
+restedSuccess:     
+  javascripts:   
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/plugin/bootstrap-timepicker/bootstrap-timepicker.min.js
+  

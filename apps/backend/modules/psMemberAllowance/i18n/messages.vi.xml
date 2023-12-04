@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Ps allowance</source>
+				<target>Mức phụ cấp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select allowances-</source>
+				<target>Chọn mức phụ cấp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error: Allowance was empty</source>
+				<target>Lỗi: Mức phụ cấp không tồn tại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add member allowance: %%ps_member%%</source>
+				<target>Thêm phụ cấp nhân viên: %%ps_member%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit member allowance:: %%ps_member%%</source>
+				<target>Sửa phụ cấp nhân viên: %%ps_member%%</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

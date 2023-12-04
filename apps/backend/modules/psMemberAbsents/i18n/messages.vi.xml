@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			<trans-unit>
+				<source>Member absents index</source>
+				<target>Ngày nghỉ của nhân sự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member</source>
+				<target>Nhân viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Absent at</source>
+				<target>Ngày nghỉ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Absent type</source>
+				<target>Nghỉ hợp lệ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsMemberAbsents</source>
+				<target>Sửa thông tin ngày nghỉ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsMemberAbsents</source>
+				<target>Thêm mới ngày nghỉ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select member-</source>
+				<target>-Chọn nhân viên-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select department-</source>
+				<target>-Chọn phòng ban-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps department</source>
+				<target>Phòng ban</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not</source>
+				<target>Không</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ok</source>
+				<target>Có</target>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

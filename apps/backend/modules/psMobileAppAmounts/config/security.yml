@@ -1,0 +1,7 @@
+# You can find more information about this file on the symfony website:
+# Quan ly thanh toan nap tien su dung app
+# Ma module: PS_FEE_PAY_MOBILE_APP
+
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+

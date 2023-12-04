@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Statistic track book</source>
+				<target>Sổ điểm danh tháng </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student name</source>
+				<target>Họ tên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student Information</source>
+				<target>Thông tin học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Login relative</source>
+				<target>Người đưa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Logout relative</source>
+				<target>Người đón</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Log out</source>
+				<target>Giờ đón về</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Logout at</source>
+				<target>Giờ đón về</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Login at</source>
+				<target>Giờ đưa đến</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Logout member</source>
+				<target>G.V trả trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Login member</source>
+				<target>G.V nhận trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Login</source>
+				<target>Đưa đến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student service</source>
+				<target>Dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User service</source>
+				<target>Sử dụng dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Marked</source>
+				<target>Đã điểm danh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Unmarked</source>
+				<target>Chưa điểm danh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Logout</source>
+				<target>Đón về</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select login relative-</source>
+				<target>-Người đưa-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select logout relative-</source>
+				<target>-Người đón-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select logout member-</source>
+				<target>-GV trả trẻ-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select login member-</source>
+				<target>-GV đón trẻ-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Infomation relative to</source>
+				<target>Thông tin nhận trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student service diary</source>
+				<target>Dịch vụ hàng ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time</source>
+				<target>Thời gian</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Infomation relative back</source>
+				<target>Thông tin trẻ về</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Attendance by class</source>
+				<target>Điểm danh theo lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Td attendance</source>
+				<target>Đi học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Td login infomation</source>
+				<target>Điểm danh đến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Td logout infomation</source>
+				<target>Điểm danh về</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Whole day</source>
+				<target>Cả ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Half day</source>
+				<target>Nửa ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsLogtimes List</source>
+				<target>Điểm danh theo lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Tracked at must be no larger than</source>
+				<target>Ngày điểm danh không được quá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Attendance by baby</source>
+				<target>Đ/d theo bé</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Attendance your baby</source>
+				<target>Đ/d cho bé</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>At this point students are not classified</source>
+				<target>Tại thời điểm này học sinh chưa được phân lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure you want to delete your baby's attendee
+					info:%value%?</source>
+				<target>Bạn chắc chắn muốn xóa thông tin điểm danh của bé: %value%?
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>If you delete the attendee information. Used services will
+					also be deleted.\nAre you sure?</source>
+				<target>Nếu bạn xóa thông tin điểm danh này. Dịch vụ đã sử dụng cũng
+					sẽ bị xóa.\nBạn chắc chắn chứ?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date must be no larger than %max%</source>
+				<target>Ngày không được lớn hơn %max%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Action</source>
+				<target>Hành động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>History content</source>
+				<target>Nội dung hành động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Statistic logtimes</source>
+				<target>Sổ điểm danh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>History service course comment</source>
+				<target>Lịch sử điểm danh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Day total</source>
+				<target>Số ngày đi học của tháng </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Go school</source>
+				<target>Đi học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Logout_at</source>
+				<target>Điểm danh về</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter note</source>
+				<target>Nhập ghi chú</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Full name</source>
+				<target>Tên học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Unknow relative</source>
+				<target>không xác định phụ huynh đón trẻ, vui lòng chọn phụ huynh
+					của bé</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not Permission</source>
+				<target>Ko phép</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Permission</source>
+				<target>Có phép</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not role data</source>
+				<target>Bạn không có quyền tác động vào dữ liệu này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not data</source>
+				<target>Dữ liệu không tồn tại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Pick up time</source>
+				<target>Giờ trả trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter class filter the data.</source>
+				<target>Vui lòng chọn lớp học.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select workplace to filter the data.</source>
+				<target>Vui lòng chọn cơ sở đào tạo.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select school to filter the data.</source>
+				<target>Vui lòng chọn trường.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select school year to filter the data.</source>
+				<target>Vui lòng chọn năm học.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter student filter the data.</source>
+				<target>Vui lòng chọn học sinh.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Usage statistics</source>
+				<target>Thống kê sử dụng</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

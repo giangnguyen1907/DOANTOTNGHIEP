@@ -1,0 +1,41 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true #Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_STUDENT_MSTUDENT_SHOW,PS_STUDENT_MSTUDENT_ADD,PS_STUDENT_MSTUDENT_EDIT,PS_STUDENT_MSTUDENT_DETAIL,PS_STUDENT_MSTUDENT_DELETE,PS_STUDENT_MSTUDENT_FILTER_SCHOOL,PS_STUDENT_ATTENDANCE_TEACHER]]   
+
+detail:
+  is_secure: true
+  credentials: [[PS_STUDENT_MSTUDENT_DETAIL,PS_STUDENT_MSTUDENT_ADD,PS_STUDENT_MSTUDENT_EDIT,PS_STUDENT_MSTUDENT_DELETE]]
+
+new:
+  is_secure: true
+  credentials: [PS_STUDENT_MSTUDENT_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_STUDENT_MSTUDENT_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_STUDENT_MSTUDENT_EDIT]  
+
+update:
+  is_secure: true
+  credentials: [PS_STUDENT_MSTUDENT_EDIT]
+
+delete:
+  is_secure: true
+  credentials: [PS_STUDENT_MSTUDENT_DELETE]
+
+restore:
+  is_secure: true
+  credentials: [PS_STUDENT_MSTUDENT_RESTORE]

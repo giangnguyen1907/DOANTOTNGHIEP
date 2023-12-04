@@ -1,0 +1,13 @@
+editSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/js_action_batch.js
+    
+detailSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/jszip/FileSaver.js: {position: last}
+    - /psAdminThemePlugin/js/jszip/jszip.js: {position: last}
+    - /psAdminThemePlugin/js/jszip/jszip-utils.js: {position: last}

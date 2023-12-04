@@ -1,0 +1,32 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsWorkingTime
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_working_time
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_HR_WORKINGTIME_EDIT}
+        _new: {credentials: PS_HR_WORKINGTIME_ADD}
+        _delete: {credentials: PS_HR_WORKINGTIME_DELETE}
+      fields:
+        working_time: {label: Working time}
+      list:
+        display: [title,customer_title,working_time,is_activated,updated_by]
+        table_method: doSelectQuery
+        max_per_page: 35
+        batch_actions: {}
+      filter:
+        display: [ps_customer_id,ps_workplace_id,is_activated,keywords]
+      form:    ~
+      edit:
+        display: [ps_customer_id,ps_workplace_id,title,note,start_time,end_time,is_activated]
+      new:
+        display: [ps_customer_id,ps_workplace_id,title,note,start_time,end_time,is_activated]

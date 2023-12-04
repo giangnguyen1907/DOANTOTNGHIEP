@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Notifications</source>
+				<target>Thông báo của bạn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Inbox</source>
+				<target>Đã nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Sent</source>
+				<target>Đã gửi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Send</source>
+				<target>Gửi đi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Draft</source>
+				<target>Nháp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Created by</source>
+				<target>Người tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Notification infomation</source>
+				<target>Thông tin thông báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New</source>
+				<target>Thêm mới</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>All system</source>
+				<target>Toàn bộ hệ thống</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>All school</source>
+				<target>Toàn trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List received relative</source>
+				<target>Danh sách phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List received teacher</source>
+				<target>Danh sách giáo viên</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Number received</source>
+				<target>Số người nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Trash</source>
+				<target>Thùng rác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Id</source>
+				<target>Mã thông báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Private key</source>
+				<target>Khóa cá nhân</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Is all</source>
+				<target>Gửi toàn trường</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Is system</source>
+				<target>Gửi toàn hệ thống</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is status</source>
+				<target>Trạng thái</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date at</source>
+				<target>Ngày gửi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total object received</source>
+				<target>Số người nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List received</source>
+				<target>Danh sách người nhận</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Description</source>
+				<target>Nội dung</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Notification</source>
+				<target>Thêm thông báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Notification</source>
+				<target>Cập nhật thông báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is basic</source>
+				<target>Gửi tất cả trong cơ sở</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

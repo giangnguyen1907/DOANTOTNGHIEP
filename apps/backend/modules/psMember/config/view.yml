@@ -1,0 +1,62 @@
+# http://www.symfony-project.org/reference/1_4/en/13-View
+indexSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.fixedHeader.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js
+    
+  stylesheets:
+    - /psAdminThemePlugin/css/fix_title_table.css
+    
+editSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.fixedHeader.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js
+    - /psAdminThemePlugin/js/plugin/intl-tel/js/intlTelInput.min.js
+    - /psAdminThemePlugin/js/modules/hr.js: {position: last}
+ 
+newSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.fixedHeader.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js
+    - /psAdminThemePlugin/js/plugin/intl-tel/js/intlTelInput.min.js
+    - /psAdminThemePlugin/js/modules/hr.js: {position: last}
+    
+memberProfileSuccess:
+  has_layout:		true
+  layout:			layout
+#  javascripts:
+  stylesheets:
+#    - /psAdminThemePlugin/css/psAdminTheme.css

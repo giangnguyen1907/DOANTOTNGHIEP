@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsCommentWeek
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_comment_week
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: ~
+        _delete: ~ 
+      fields:  ~
+      list:
+        display: [_view_img,student_name,title,comment,is_activated,updated_at,number_push_notication]
+        table_method: doSelectQuery
+        max_per_page: 50
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,ps_year,ps_month,ps_week,is_activated,keywords,receivable_at]
+      form:    ~
+      edit:
+        actions:
+          _save: {credentials: [[PS_FEE_REPORT_ADD,PS_FEE_REPORT_EDIT]]}
+          _cancel: ~
+      new:
+        actions:
+          _save: {credentials: [[PS_FEE_REPORT_ADD,PS_FEE_REPORT_EDIT]]}
+          _cancel: ~

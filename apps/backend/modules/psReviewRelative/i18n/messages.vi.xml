@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsReviewRelative List</source>
+				<target>Danh sách nhận xét - danh mục</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsReviewRelative</source>
+				<target>Thêm mới nhận xét - danh mục</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsReviewRelative</source>
+				<target>Cập nhật thông tin nhận xét - danh mục</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Category review</source>
+				<target>Danh mục nhận xét</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Cate review name</source>
+				<target>Danh mục nhận xét</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total like</source>
+				<target>Tổng lượt like</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total comment</source>
+				<target>Tổng lượt comment</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tiêu đề</target>
+			</trans-unit>
+		
+			<trans-unit>
+				<source>Member</source>
+				<target>Giáo viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Content</source>
+				<target>Nội dung</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>-Select type-</source>
+				<target>-Chọn phân loại-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select payment-</source>
+				<target>-Dùng để tính tiền-</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

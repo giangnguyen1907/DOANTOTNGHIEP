@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsImages
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_images
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_SYSTEM_IMAGES_EDIT}
+        _new: {credentials: PS_SYSTEM_IMAGES_ADD}
+        _delete: {credentials: PS_SYSTEM_IMAGES_DELETE}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:    
+        display: [_file_name,title,file_group,description,iorder,is_activated,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        max_per_page: 35
+        object_actions:
+          _edit: ~
+          _delete: ~
+        fields: ~          
+      filter:
+        display: 	[file_group,title,is_activated]
+      form:
+        display:    [file_group,title,description,iorder,is_activated,file_name]
+      edit: ~       
+      new: ~

@@ -1,0 +1,45 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Feature
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_feature
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _feature_branch: {credentials: [PS_SYSTEM_FEATURE_BRANCH_SHOW,PS_SYSTEM_FEATURE_BRANCH_ADD, PS_SYSTEM_FEATURE_BRANCH_EDIT, PS_SYSTEM_FEATURE_BRANCH_DELETE]}
+        _detail: {credentials: [PS_SYSTEM_FEATURE_EDIT,PS_SYSTEM_FEATURE_DETAIL,PS_SYSTEM_FEATURE_DELETE]}
+        _edit: {credentials: PS_SYSTEM_FEATURE_EDIT}
+        _new: {credentials: PS_SYSTEM_FEATURE_ADD}
+        _delete: {credentials: PS_SYSTEM_FEATURE_DELETE,confirm: "Are you sure this Feature option?"}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        customer_title : {label: Ps customer}
+        feature_branch_info	: {label: Feature branch}
+      list:    
+        display: [=name,_file_name,customer_title,note,_iorder,is_activated,_feature_branch_info,updated_by,updated_at]
+        table_method: doSelectQuery
+        sort: [iorder, asc]
+        max_per_page: 35
+        object_actions:
+          _edit: ~
+          _delete: ~    
+        batch_actions:
+          _updateOrder:
+            label: Update Order
+            credentials: [PS_SYSTEM_FEATURE_EDIT]
+          _delete: ~
+      filter:        
+        display: [ps_customer_id,name,is_activated]
+      form:
+        display: [ps_customer_id,name,ps_image_id,note,description,iorder,is_activated]
+      edit:
+        title: Edit PsFeature: "%%name%%"
+      new:     ~

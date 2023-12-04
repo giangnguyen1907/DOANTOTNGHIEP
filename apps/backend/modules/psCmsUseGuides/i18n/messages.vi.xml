@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			<trans-unit>
+				<source>Use guides list</source>
+				<target>Tài liệu hướng dẫn sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add use guides</source>
+				<target>Thêm hướng dẫn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit use guide: %%title%%</source>
+				<target>Cập nhật hướng dẫn: %%title%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Url file</source>
+				<target>Đường dẫn</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

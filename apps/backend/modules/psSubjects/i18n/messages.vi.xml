@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Split</source>
+				<target>Chia phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New detail</source>
+				<target>Thêm chi tiết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service detail</source>
+				<target>Chi tiết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subjects list</source>
+				<target>Danh sách dịch vụ ngoại khóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New subjects</source>
+				<target>Thêm mới dịch vụ ngoại khóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Editing subjects: %%title%%</source>
+				<target>Cập nhật dịch vụ ngoại khóa: %%title%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên dịch vụ ngoại khóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select enable roll-</source>
+				<target>-Chọn loại dịch vụ-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service detail at</source>
+				<target>Áp dụng từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select service group-</source>
+				<target>-Chọn nhóm dịch vụ-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This subject has generated data. Can not delete.</source>
+				<target>Môn học này đang được sử dụng. Không thể xóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter service price</source>
+				<target>Nhập giá tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps school year</source>
+				<target>Năm học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter the quantity</source>
+				<target>Nhập số lượng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service split</source>
+				<target>Chia phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subjects infomation</source>
+				<target>Thông tin dịch vụ ngoại khóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Price information and the time apply</source>
+				<target>Giá tiền lũy tiến và thời điểm áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date of application</source>
+				<target>Thời điểm áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>From day</source>
+				<target>Từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>To day</source>
+				<target>Đến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note help</source>
+				<target>Nhập nội dung ghi chú dành cho người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Description help</source>
+				<target>Nhập nội dung giới thiệu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not school choice!</source>
+				<target>Chưa chọn trường!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not service group choice!</source>
+				<target>Chưa chọn nhóm dịch vụ!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter a service name!</source>
+				<target>Chưa nhập tên dịch vụ!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This value must be numeric, and > 0</source>
+				<target>Giá trị này phải là kiểu số và > 0</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Entry requirements price!</source>
+				<target>Yêu cầu nhập giá tiền!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Entry requirements number!</source>
+				<target>Yêu cầu nhập số lượng!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The quantity must be between 1 and 100</source>
+				<target>Số lượng phải từ 1 đến 100</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Request select month / year started!</source>
+				<target>Yêu cầu chọn tháng/năm bắt đầu!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The end time must be greater than the start time! Do you
+					want to reset it?</source>
+				<target>Thời gian kết thúc phải lớn hơn thời gian bắt đầu! Bạn có
+					muốn thiết lập lại không?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The end time must be greater than the start time!</source>
+				<target>Thời gian kết thúc phải lớn hơn thời gian bắt đầu!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>End time last month will be charged to </source>
+				<target>Thời gian kết thúc cuối cùng sẽ được tính đến tháng </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source> year </source>
+				<target> năm </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Request select month / year started</source>
+				<target>Bắt buộc chọn thời gian bắt đầu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time to start next adjacent end time earlier</source>
+				<target>Thời gian bắt đầu tiếp theo phải liền kề với thời gian kết
+					thúc trước đó</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time to start next adjacent end time earlier</source>
+				<target>Thời gian bắt đầu tiếp theo phải liền kề với thời gian kết
+					thúc trước đó</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure to delete the selected items?</source>
+				<target>Bạn có chắc chắn xóa các bản ghi đã chọn?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The system does not accept delete all items!</source>
+				<target>Hệ thống không chấp nhận xóa hết!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This subject has generated data. Can not delete.</source>
+				<target>Môn học này đang được sử dụng. Không thể xóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Information "Price information and the time apply" has
+					generated data. Can not delete.</source>
+				<target>Dữ liệu "Giá tiền và thời điểm áp dụng" đang được sử dụng.
+					Không thể xóa.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure want delete this subject?</source>
+				<target>Bạn chắc chắn muốn xóa môn học này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Number course</source>
+				<target>Số khóa học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List field number option subject</source>
+				<target>Tiêu chí đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject information: %%name%%</source>
+				<target>Thông tin DV học: %%name%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject information</source>
+				<target>Thông tin DV học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject price and time apply</source>
+				<target>Giá tiền lũy tiến và thời điểm áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject name</source>
+				<target>Tên DV học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject group</source>
+				<target>Nhóm dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Subject mode</source>
+				<target>Chế độ đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not activated</source>
+				<target>Không hoạt động</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

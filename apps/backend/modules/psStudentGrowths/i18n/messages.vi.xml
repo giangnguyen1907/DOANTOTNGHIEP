@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>List student examination by all</source>
+				<target>DANH SÁCH THỐNG KÊ TỔNG THỂ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student examination by height</source>
+				<target>DANH SÁCH HỌC SINH THEO ĐÁNH GIÁ CHIỀU CAO</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student examination by weight</source>
+				<target>DANH SÁCH HỌC SINH THEO ĐÁNH GIÁ CÂN NẶNG</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student examination by class</source>
+				<target>Danh sách học sinh đã khám theo từng đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Growth index</source>
+				<target>Chiều cao - Cân nặng - Sức khỏe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Update growth index</source>
+				<target>Cập nhật chỉ số tăng trưởng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter health data</source>
+				<target>Nhập dữ liệu sức khỏe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Update health data</source>
+				<target>Sửa dữ liệu sức khỏe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student code</source>
+				<target>Mã h/s</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student name</source>
+				<target>Học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Input date at</source>
+				<target>Ngày khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Height</source>
+				<target>Chiều cao (cm)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Weight</source>
+				<target>Cân nặng (kg)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Students</source>
+				<target>Danh sách học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>People make</source>
+				<target>Người khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Organization make</source>
+				<target>Tổ chức thực hiện</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsStudentGrowths</source>
+				<target>Thêm mới chỉ số tăng trưởng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>World Health Organization</source>
+				<target>Đường chuẩn tăng trưởng trẻ em của Tổ Chức Y Tế Thế Giới
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Medical watchdog</source>
+				<target>Cập nhật : Chiều cao - Cân nặng - Sức Khỏe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Index weight</source>
+				<target>Đánh giá cân nặng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Index height</source>
+				<target>Đánh giá chiều cao</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Gender</source>
+				<target>G/tính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Growths information</source>
+				<target>Thông tin lần khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Birthday </source>
+				<target>Ngày sinh : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Gender </source>
+				<target>Giới tính : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Input Date At</source>
+				<target>Ngày khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Age</source>
+				<target>Tháng tuổi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Chart Height</source>
+				<target>Biểu đồ chiều cao</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Chart Weight</source>
+				<target>Biểu đồ cân nặng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Action</source>
+				<target>Thao tác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Child height</source>
+				<target>Chiều cao của trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Child weight</source>
+				<target>Cân nặng của trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min height1</source>
+				<target>Chiều cao (-3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max height1</source>
+				<target>Chiều cao (+3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min height</source>
+				<target>Chiều cao (-2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max height</source>
+				<target>Chiều cao (+2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min weight1</source>
+				<target>Cân nặng (-3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max weight1</source>
+				<target>Cân nặng (+3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min weight</source>
+				<target>Cân nặng (-2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max weight</source>
+				<target>Cân nặng (+2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Statistic</source>
+				<target>Thống kê</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Examination</source>
+				<target>Đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Age examination</source>
+				<target>Tuổi khi đo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Classroom performance assessment</source>
+				<target>Bảng thống kê</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-All Examination-</source>
+				<target>Chọn Đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select examination-</source>
+				<target>Chọn Đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Class name</source>
+				<target>Tên lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total student</source>
+				<target>Tổng số học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not student</source>
+				<target>H/s đã khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Height nonal</source>
+				<target>Chiều cao đạt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Weight nonal</source>
+				<target>Cân nặng đạt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Low level 2</source>
+				<target>Thấp còi độ 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Low level 1</source>
+				<target>Thấp còi độ 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Thin level 2</source>
+				<target>Suy dd nặng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Thin level 1</source>
+				<target>Suy dd nhẹ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Kid groups</source>
+				<target>Nhóm trẻ : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Examination :</source>
+				<target>Đợt khám : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date examination</source>
+				<target>Ngày khám : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select object-</source>
+				<target>Nhóm trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export xls</source>
+				<target>Xuất File xls</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Export2 xls</source>
+				<target>DSHS thấp còi, suy DD </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Brithday</source>
+				<target>Ngày sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Hsdakham</source>
+				<target>Danh sách học sinh đã khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student height Normal</source>
+				<target>Danh sách học sinh theo chiều cao bình thường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student height Lever1</source>
+				<target>Danh sách học sinh thấp còi độ 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student height Lever2</source>
+				<target>Danh sách học sinh thấp còi độ 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student height Tall</source>
+				<target>Danh sách học sinh cao hơn so với tuổi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student weight Normal</source>
+				<target>Danh sách học sinh theo cân nặng bình thường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student weight Lever1</source>
+				<target>Danh sách học sinh suy dinh dưỡng vừa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student weight Lever2</source>
+				<target>Danh sách học sinh suy dinh dưỡng nặng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student weight Fat</source>
+				<target>Danh sách học sinh nặng hơn so với tuổi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time examination</source>
+				<target>Thời điểm trẻ khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select workplace</source>
+				<target>Bạn phải chọn cơ sở trước khi xuất file xls</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select examination</source>
+				<target>Bạn phải chọn đợt khám trước khi xuất file xls</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter examination filter the data.</source>
+				<target>Vui lòng chọn đợt khám.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select workplace to filter the data.</source>
+				<target>Vui lòng chọn cơ sở đào tạo.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select school to filter the data.</source>
+				<target>Vui lòng chọn trường.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select school year to filter the data.</source>
+				<target>Vui lòng chọn năm học.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Medium height</source>
+				<target>Chiều cao TB</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Medium weight</source>
+				<target>Cân nặng TB</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The selected items have been send notication successfully.</source>
+				<target>Gửi thông báo thông tin sức khỏe thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Notice of growths</source>
+				<target>Thông tin sức khỏe của bé</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Notice growths of</source>
+				<target>Thông báo tình trạng sức khỏe của bé </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Growths from KidsSchool.vn</source>
+				<target>Thông tin y tế từ KidsSchool</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student: %value1%, Height: %value2%, Weight: %value3%</source>
+				<target>Học sinh: %value1%, Chiều cao: %value2%, Cân nặng: %value3%,...</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student examination malnutrition %value%</source>
+				<target>BẢNG THEO DÕI TRẺ THẤP CÒI SUY DINH DƯỠNG ĐỢT KHÁM %value%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Send notication</source>
+				<target>Gửi thông báo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You do not select students to perform</source>
+				<target>Bạn cần chọn học sinh để thao tác dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not Normal</source>
+				<target>Thống kê trẻ SDD, Thấp còi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-All growth-</source>
+				<target>Thống kê tổng hợp</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Month year</source>
+				<target>Tháng tuổi</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Height comment</source>
+				<target>Thấp còi (cm)</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Weight comment</source>
+				<target>Suy dinh dưỡng (Kg)</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Weights comment</source>
+				<target>Nặng hơn so với tuổi (Kg)</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Lever 1</source>
+				<target>Độ 1</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Lever 2</source>
+				<target>Độ 2</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Growth comment</source>
+				<target>Kết luận</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Chieu cao</source>
+				<target>Chiều cao</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Can nang</source>
+				<target>Cân nặng</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>You can input height or weight</source>
+				<target>Thêm dữ liệu thất bại. Bạn cần nhập ít nhất một chỉ số khám sức khỏe.</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Notication</source>
+				<target>Gửi TB</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Tooth</source>
+				<target>RHM</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Throat</source>
+				<target>TMH</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Eye</source>
+				<target>Mắt</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Heart</source>
+				<target>Tim</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Lung</source>
+				<target>Phổi</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Skin</source>
+				<target>Da</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

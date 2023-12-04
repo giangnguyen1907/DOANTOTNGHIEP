@@ -1,0 +1,29 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_HR_DEPARTMENT_SHOW,PS_HR_DEPARTMENT_DETAIL,PS_HR_DEPARTMENT_ADD,PS_HR_DEPARTMENT_EDIT,PS_HR_DEPARTMENT_DELETE]]   
+
+new:
+  is_secure: true
+  credentials: [PS_HR_DEPARTMENT_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_HR_DEPARTMENT_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_HR_DEPARTMENT_EDIT]  
+
+delete:
+  is_secure: true
+  credentials: [PS_HR_DEPARTMENT_DELETE]

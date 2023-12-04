@@ -1,0 +1,26 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_STUDENT_RELATIVE_ADVICE_SHOW,PS_STUDENT_RELATIVE_ADVICE_DETAIL,PS_STUDENT_RELATIVE_ADVICE_ADD,PS_STUDENT_RELATIVE_ADVICE_EDIT,PS_STUDENT_RELATIVE_ADVICE_DELETE,PS_STUDENT_RELATIVE_ADVICE_FILTER_SCHOOL]]
+
+new:
+  is_secure: true
+  credentials: [PS_STUDENT_RELATIVE_ADVICE_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_STUDENT_RELATIVE_ADVICE_EDIT]
+
+delete:
+  is_secure: true
+  credentials: [PS_STUDENT_RELATIVE_ADVICE_DELETE]
+
+detail:
+  is_secure: true
+  credentials: [[PS_STUDENT_RELATIVE_ADVICE_DETAIL,PS_STUDENT_RELATIVE_ADVICE_ADD,PS_STUDENT_RELATIVE_ADVICE_EDIT,PS_STUDENT_RELATIVE_ADVICE_DELETE]]

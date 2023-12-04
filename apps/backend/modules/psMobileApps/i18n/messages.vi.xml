@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>User type</source>
+				<target>Kiểu người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Device</source>
+				<target>Thiết bị đăng nhập</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Actived at</source>
+				<target>Thời gian kích hoạt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Account balance</source>
+				<target>Số dư tài khoản</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select OS-</source>
+				<target>-Chọn loại máy-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Mobile apps actived history</source>
+				<target>Lịch sử kích hoạt Apps</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Network name</source>
+				<target>Nhà mạng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Network frequency band</source>
+				<target>Băng tần</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User member</source>
+				<target>Nhân sự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>User relative</source>
+				<target>Người thân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsMobileApps: %%user_name%%</source>
+				<target>Sửa thông tin đăng nhập app: %%user_name%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsMobileApps List</source>
+				<target>Danh sách người dùng đã kích hoạt app</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No.</source>
+				<target>STT</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Account</source>
+				<target>Tài khoản</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>LIST RELATIVE ACCOUNTS ACTIVE</source>
+				<target>DANH SÁCH TÀI KHOẢN PHỤ HUYNH ĐÃ KÍCH HOẠT</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total relatives</source>
+				<target>Tổng phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total account relatives (Actived and not active)</source>
+				<target>Tổng tài khoản (Đã kích hoạt và chưa)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Mobile actived during the month</source>
+				<target>Kích hoạt App trong tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Account quantity change</source>
+				<target>Biến động tài khoản</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Only accounts actived</source>
+				<target>Lượng tài khoản kích hoạt</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>CROSS CHECKING RELATIVE ACCOUNTS</source>
+				<target>ĐỐI SOÁT TÀI KHOẢN PHỤ HUYNH</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Deleted on month</source>
+				<target>Đã xóa trong tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Created on month</source>
+				<target>Đã tạo trong tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Before</source>
+				<target>Trước</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total relative</source>
+				<target>Tổng phụ huynh</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Actived on month</source>
+				<target>Kích hoạt trong tháng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Locked</source>
+				<target>Đã khóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total user</source>
+				<target>Tổng user</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Users account</source>
+				<target>Tài khoản người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>From</source>
+				<target>Từ</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>To</source>
+				<target>Đến</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

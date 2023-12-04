@@ -1,0 +1,41 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+# Quản lý nhật ký đến trường: PS_STUDENT_SERVICE_COURSE_COMMENT
+# Xem nhật ký điểm danh: PS_STUDENT_SERVICE_COURSE_COMMENT_SHOW
+# Xem chi tiết nhật ký: PS_STUDENT_SERVICE_COURSE_COMMENT_DETAIL 
+# Điểm danh học sinh: PS_STUDENT_SERVICE_COURSE_COMMENT_ADD 
+# Cập nhật dữ liệu điểm danh: PS_STUDENT_SERVICE_COURSE_COMMENT_EDIT
+# Xóa dữ liệu điểm danh: PS_STUDENT_SERVICE_COURSE_COMMENT_DELETE
+# Lọc thông tin theo trường : PS_STUDENT_SERVICE_COURSE_COMMENT_FILTER_SCHOOL
+
+default:
+  is_secure:   true #Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_STUDENT_SERVICE_COURSE_COMMENT_FILTER_SCHOOL,PS_STUDENT_SERVICE_COURSE_COMMENT_SHOW,PS_STUDENT_SERVICE_COURSE_COMMENT_DETAIL,PS_STUDENT_SERVICE_COURSE_COMMENT_ADD,PS_STUDENT_SERVICE_COURSE_COMMENT_EDIT,PS_STUDENT_SERVICE_COURSE_COMMENT_DELETE]]   
+
+detail:
+  is_secure: true
+  credentials: [PS_STUDENT_SERVICE_COURSE_COMMENT_DETAIL]
+
+new:
+  is_secure: true
+  credentials: [PS_STUDENT_SERVICE_COURSE_COMMENT_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_STUDENT_SERVICE_COURSE_COMMENT_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_STUDENT_SERVICE_COURSE_COMMENT_EDIT]  
+
+delete:
+  is_secure: true
+  credentials: [PS_STUDENT_SERVICE_COURSE_COMMENT_DELETE]

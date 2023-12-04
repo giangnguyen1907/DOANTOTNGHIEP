@@ -1,0 +1,47 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsProfessional
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_professional
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_HR_PROFESSIONAL_EDIT}
+        _new: {credentials: PS_HR_PROFESSIONAL_ADD}
+        _delete: {credentials: PS_HR_PROFESSIONAL_DELETE}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        customer_title : {label: Ps customer}
+      list:    
+        display: [title,customer_title,iorder,is_activated, description,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+      filter:
+        display: 	[title,iorder,is_activated,ps_customer_id]
+      form:
+       display: 	[ps_customer_id,title,description,iorder,is_activated]
+      edit:
+        actions:
+          _delete:       ~
+          _list:
+            credentials: [[PS_HR_PROFESSIONAL_SHOW,PS_HR_PROFESSIONAL_DETAIL,PS_HR_PROFESSIONAL_EDIT,PS_HR_PROFESSIONAL_ADD]]
+          _save:
+            credentials: [PS_HR_PROFESSIONAL_EDIT]
+          _save_and_add:
+            credentials: [PS_HR_PROFESSIONAL_EDIT,PS_HR_PROFESSIONAL_ADD]
+      new:
+        actions:          
+          _list:
+            credentials: [[PS_HR_PROFESSIONAL_SHOW,PS_HR_PROFESSIONAL_EDIT,PS_HR_PROFESSIONAL_ADD,PS_HR_PROFESSIONAL_DELETE]]
+          _save:
+            credentials: [PS_HR_PROFESSIONAL_ADD]
+          _save_and_add:
+            credentials: [PS_HR_PROFESSIONAL_ADD]

@@ -1,0 +1,18 @@
+# http://www.symfony-project.org/reference/1_4/en/13-View
+indexSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/smartwidgets/jarvis.widget.min.js
+    - /psAdminThemePlugin/js/libs/jquery-ui-1.10.3.min.js
+    - /psAdminThemePlugin/js/libs/jquery-ui-i18n.min.js
+    - /psAdminThemePlugin/js/app.min.js
+    - /psAdminThemePlugin/js/bootstrap/bootstrap.min.js
+#    - /psAdminThemePlugin/js/libs/jquery-ui-1.10.3.min.js
+    - /psAdminThemePlugin/js/libs/jquery-2.1.4.min.js
+  stylesheets:
+#    - /psAdminThemePlugin/css_v2/smartadmin-production-plugins.min.css
+    - /psAdminThemePlugin/css_v2/smartadmin-production.min.css
+#    - /psAdminThemePlugin/css_v2/smartadmin-skins.min.css
+    - /psAdminThemePlugin/css/smartadmin-production.min.css
+#    - /psAdminThemePlugin/css/smartadmin-skins.min.css

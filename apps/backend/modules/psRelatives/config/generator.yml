@@ -1,0 +1,60 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Relative
+    i18n_catalogue:        messages
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_relatives
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: [[PS_STUDENT_RELATIVE_EDIT,PS_STUDENT_RELATIVE_DETAIL,PS_STUDENT_RELATIVE_DELETE]]}
+        _edit: {credentials: PS_STUDENT_RELATIVE_EDIT}
+        _new: {credentials: PS_STUDENT_RELATIVE_ADD}
+        _delete: {credentials: PS_STUDENT_RELATIVE_DELETE,confirm: "Are you sure this RELATIVE?"}      
+      fields:  
+        birthday : {date_format: dd-MM-yyyy}
+        updated_at : {date_format: HH:mm dd-MM-yyyy}        
+        view_img : {label: Image}
+      list:        
+        display: [_view_img,=first_name,=last_name,birthday,_sex,mobile,email,username,ps_workplace_id,updated_at]
+        sort: [id, asc]
+        table_method: doSelectQuery
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_STUDENT_RELATIVE_ADD}
+        object_actions:
+          _detail: {credentials: PS_STUDENT_RELATIVE_DETAIL}
+          _edit: {credentials: PS_STUDENT_RELATIVE_EDIT}
+          _delete: {credentials: PS_STUDENT_RELATIVE_DELETE}
+        batch_actions:
+         _delete: {credentials: PS_STUDENT_RELATIVE_DELETE, confirm: "Are you sure this Relative?"}        
+      filter:        
+         display: [school_year_id,ps_customer_id,ps_class_id,sex,delete,keywords]
+      form:	   ~
+      detail:  ~
+      edit:
+       actions:
+          _list:
+            credentials: [PS_STUDENT_RELATIVE_SHOW]          
+          _save:
+            credentials: [PS_STUDENT_RELATIVE_EDIT]
+          _save_and_add:
+            credentials: [PS_STUDENT_RELATIVE_EDIT]
+          _delete:
+            credentials: [PS_STUDENT_RELATIVE_DELETE]        
+      new:
+       title: New Relative
+       actions:          
+          _list:
+            credentials: [PS_STUDENT_RELATIVE_SHOW]
+          _save:
+            credentials: [PS_STUDENT_RELATIVE_EDIT]
+          _save_and_add:
+            credentials: [PS_STUDENT_RELATIVE_EDIT]

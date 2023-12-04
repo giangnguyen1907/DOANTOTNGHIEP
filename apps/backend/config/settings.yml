@@ -1,0 +1,75 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/04-Settings
+
+prod:
+  .settings:
+    no_script_name:         false
+    logging_enabled:        true
+    cache: false
+    web_debug:              false
+    escaping_strategy:      true
+    escaping_method:        ESC_SPECIALCHARS
+
+dev:
+  .settings:
+#    error_reporting:        <?php echo ((E_ALL | E_STRICT)^E_DEPRECATED)."\n" ?>
+    logging_enabled:        false
+    web_debug:              true
+    cache:                  false
+    no_script_name:         false
+    etag:                   false
+    default_culture: vi_VN
+
+test:
+  .settings:
+    error_reporting:        <?php echo ((E_ALL | E_STRICT) ^ E_NOTICE)."\n" ?>
+    cache:                  false
+    web_debug:              false
+    no_script_name:         false
+    etag:                   false
+
+all:
+  .settings:
+    no_script_name:         false
+    cache:                  true
+    
+    # Form security secret (CSRF protection)
+    csrf_secret:            Unique$ecret1
+
+    # Output escaping settings
+    escaping_strategy:      true
+    escaping_method:        ESC_SPECIALCHARS
+
+    # Enable the database manager
+    use_database:           true
+    
+    default_culture: vi_VN
+    standard_helpers: [Partial, Cache, I18N]
+    default_timezone: Asia/Ho_Chi_Minh
+    
+    enabled_modules: [default, sfGuardAuth, sfGuardUser,sfGuardGroup]
+    
+    charset: utf-8
+    i18n: on
+
+  .actions:
+    login_module:           sfGuardAuth
+    login_action:           signin
+        
+    secure_module:          sfGuardAuth
+    secure_action:          secure
+    
+    error_404_module:	psCpanel   # module "psCpanel"
+    error_404_action:   error404   # action "executeError404"
+    
+    error_403_module: psCpanel
+    error_403_action: error403    
+    
+    error_500_module: psCpanel
+    error_500_action: error500
+    
+    error_204_module: psCpanel
+    error_204_action: error204
+    
+    error_301_module: psCpanel
+    error_301_action: error301

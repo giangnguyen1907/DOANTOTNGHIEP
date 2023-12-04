@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           ReceivableDetail
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_receivable_detail
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail:  ~
+        _edit: {credentials: PS_FEE_RECEIVABLE_EDIT}
+        _delete: {credentials: PS_FEE_RECEIVABLE_DELETE,confirm: "Are you sure?"}
+      fields:  ~
+      list:    ~
+      filter:  ~
+      form:    ~
+      edit:
+        display:
+          Receivable detail infomation: [receivable_id,description,amount,by_number,detail_at,detail_end]
+        actions:
+          _cancel: ~
+          _save: {credentials: [[PS_FEE_RECEIVABLE_ADD,PS_FEE_RECEIVABLE_EDIT]]}
+          _delete: {credentials: PS_FEE_RECEIVABLE_DELETE}
+      new:
+        display:
+          Receivable detail infomation: [receivable_id,description,amount,by_number,detail_at,detail_end]
+        actions:
+          _cancel: ~
+          _save: {credentials: [[PS_FEE_RECEIVABLE_ADD,PS_FEE_RECEIVABLE_EDIT]]}

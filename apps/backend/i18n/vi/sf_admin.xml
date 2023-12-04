@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			<trans-unit>
+				<source>New user member</source>
+				<target>Tạo tài khoản nhân sự</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Page Not Found or The data you asked for is secure and you do not have proper credentials.</source>
+				<target>Trang bạn tìm không tồn tại hoặc dữ liệu bạn yêu cầu được bảo mật và bạn không có quyền truy cập.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The data you asked for is secure and you do not have proper credentials.</source>
+				<target>Dữ liệu bạn yêu cầu được bảo mật và bạn không có quyền truy cập.</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>The article you asked for is secure and you do not have proper credentials.</source>
+				<target>Bài viết này được thiết lập hiển thị trên toàn bộ khách hàng của KidsSchool.vn. Bạn không có quyền chỉnh sửa.</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Customer Invalid</source>
+				<target>Mã trường học bạn sử dụng không hợp lệ.</target>
+			</trans-unit>
+						
+			<trans-unit>
+				<source>Icon</source>
+				<target>Biểu tượng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date at from</source>
+				<target>Từ ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date at to</source>
+				<target>Đến ngày</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Week</source>
+				<target>Tuần</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>See</source>
+				<target>Xem</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Detail</source>
+				<target>Chi tiết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Trash</source>
+				<target>Thùng rác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit</source>
+				<target>Sửa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Delete</source>
+				<target>Xóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Cancel</source>
+				<target>Hủy</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Save draft</source>
+				<target>Lưu vào nháp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Send</source>
+				<target>Gửi đi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Archives</source>
+				<target>Lưu trữ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item was created successfully.</source>
+				<target>Mục này đã được tạo thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Sent successful notification.</source>
+				<target>Gửi thông báo thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item was updated successfully.</source>
+				<target>Mục này đã được cập nhật thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item was deleted successfully.</source>
+				<target>Mục này đã được xóa thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The %value% was deleted successfully.</source>
+				<target>Mục %value% đã được xóa thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Save to drafts successfully.</source>
+				<target>Lưu vào nháp thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Attendance successfully.</source>
+				<target>Điểm danh thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated attendance successfully.</source>
+				<target>Cập nhật điểm danh thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Close</source>
+				<target>Đóng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Unsubscribe</source>
+				<target>Hủy đăng ký</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Save</source>
+				<target>Lưu lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Save and add</source>
+				<target>Lưu và Thêm mới</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Save and new</source>
+				<target>Lưu và tiếp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>go</source>
+				<target>Thực hiện</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Choose an action</source>
+				<target>Chọn tác vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New</source>
+				<target>Thêm mới</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Filter</source>
+				<target>Tìm kiếm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Reset</source>
+				<target>Làm lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Update failed</source>
+				<target>Cập nhật thất bại</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>You need to select students to perform.</source>
+				<target>Bạn cần chọn học sinh để thực hiện.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You must at least select one item.</source>
+				<target>Bạn cần chọn một mục để thực hiện</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You must select an action to execute on the selected items.</source>
+				<target>Bạn phải chọn một tác vụ xử lý</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>A problem occurs when deleting the selected items as some items do not exist anymore.</source>
+				<target>Một số vấn đề xảy ra khi xóa các mục đã chọn: bản ghi không còn tồn tại hoặc bạn không có quyền tác động.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Actions</source>
+				<target>Thao tác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Back to list</source>
+				<target>Về d/s</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Update</source>
+				<target>Cập nhật</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Update Order</source>
+				<target>Cập nhật TT</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No result</source>
+				<target>Không có bản ghi nào</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item was created successfully. You can add another one below.</source>
+				<target>Tạo mới thành công. Bạn có thể tiếp tục.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item has not been saved due to some errors.</source>
+				<target>Mục này đã không được lưu do một số lỗi.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item has not been remove due have data related.</source>
+				<target>Mục chưa được xoá do có dữ liệu có liên quan.</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>HR has been granted account. You cannot delete.</source>
+				<target>Nhân sự này đã được cấp tài khoản. Bạn không thể xóa.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This item is not allowed to be deleted.</source>
+				<target>Mục này không được phép xóa.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The school is holding the relevant data:</source>
+				<target>Trường học này không thể xóa do đang chứa các dữ liệu liên quan:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>These are important constants of the system. Please careful when data processing.</source>
+				<target>Đây là các hằng số quan trọng của hệ thống. Hãy thận trọng khi xử lý dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure?</source>
+				<target>Bạn chắc chắn muốn xóa thông tin này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The selected items have been deleted successfully.</source>
+				<target>Xóa thành công các mục đã chọn.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item was deleted is default.</source>
+				<target>Mục này đang được sử dụng mặc định.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The selected items has not been remove due have data related.</source>
+				<target>Mục chọn chưa được xoá do có dữ liệu có liên quan.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select a student</source>
+				<target>Vui lòng chọn một học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This student does not exist</source>
+				<target>Học sinh này không tồn tại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item was deleted failed</source>
+				<target>Mục bị xóa không thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove teacher assignment successfully.</source>
+				<target>Gỡ phân công giáo viên thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove teacher assignment failed.</source>
+				<target>Gỡ phân công giáo viên thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Assign the teacher successfully.</source>
+				<target>Phân công giáo viên thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Teacher assignment failed.</source>
+				<target>Phân công giáo viên thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Incorrect old password</source>
+				<target>Mật khẩu cũ không chính xác</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Change password successfully</source>
+				<target>Đổi mật khẩu thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item was created successfully. You can add another one below.</source>
+				<target>Tạo mới thành công. Bạn có thể tiếp tục.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The item was updated successfully. You can add another one below.</source>
+				<target>Cập nhật thành công. Bạn có thể tiếp tục.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure wish delete this service?</source>
+				<target>Bạn chắc chắn muốn xóa dịch vụ này?</target>
+			</trans-unit>
+
+			<!-- GLOBAL LABEL -->
+
+			<trans-unit>
+				<source>-Select icon-</source>
+				<target>-Chọn icon-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>C code</source>
+				<target>Mã</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Checked</source>
+				<target>Hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>UnChecked</source>
+				<target>Không hoạt động</target>
+			</trans-unit>
+
+			<!-- Student -->
+			<trans-unit>
+				<source>Student list</source>
+				<target>Danh sách học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select country-</source>
+				<target>-Chọn quốc gia-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select class to view student list</source>
+				<target>Vui lòng chọn Lớp để xem danh sách học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select feature branch to view student list</source>
+				<target>Vui lòng chọn hoạt động để xem danh sách học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select subject to view student list</source>
+				<target>Vui lòng chọn môn học để xem danh sách sinh viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select course to view student list</source>
+				<target>Vui lòng chọn khóa học để xem danh sách sinh viên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select schedule to view student list</source>
+				<target>Vui lòng chọn lịch để xem danh sách sinh viên</target>
+			</trans-unit>
+
+
+
+			<trans-unit>
+				<source>Performance evaluation was saved successfully. You can add another one below.</source>
+				<target>Đánh giá hoạt động đã được lưu lại thành công. Bạn có thể tiếp tục</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Classroom attendance was saved successfully. You can add another one below.</source>
+				<target>Điểm danh theo lớp được lưu lại thành công. Bạn có thể tiếp tục.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select school to view student list</source>
+				<target>Vui lòng tìm kiếm để xem danh sách học sinh</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Classroom attendance was saved failed.</source>
+				<target>Điểm danh theo lớp lưu lại thất bại. Vui lòng kiểm tra người đưa đón.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relative assignment was updated successfully.</source>
+				<target>Vai trò của người thân được cập nhật thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relative assignment was updated fail.</source>
+				<target>Vai trò của người thân được cập nhật thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Choose a parent for your baby successfully.</source>
+				<target>Chọn người thân cho bé thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Choose a parent for your baby fail.</source>
+				<target>Chọn người thân cho bé thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove relative assignment failed.</source>
+				<target>Xóa vai trò người thân thất bại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove relative assignment successfully.</source>
+				<target>Xóa vai trò người thân thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove registered service successfully.</source>
+				<target>Xóa dịch vụ đã đăng ký thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove registered service failed.</source>
+				<target>Xóa dịch vụ đã đăng ký thất bại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Register service for your baby successfully.</source>
+				<target>Đăng ký dịch vụ cho bé thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Register service for your baby failed.</source>
+				<target>Đăng ký dịch vụ cho bé thất bại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove class successfully.</source>
+				<target>Xóa lớp thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove class fail.</source>
+				<target>Xóa lớp thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Trackbook attendance was saved successfully. You can add another one below.</source>
+				<target>Điểm danh theo sổ theo dõi được lưu lại thành công. Bạn có thể tiếp tục</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Trackbook attendance was saved fail.</source>
+				<target>Điểm danh theo sổ theo dõi lưu thất bại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Menus was copied fail.</source>
+				<target>Thực đơn sao chép thất bại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Menus was copied successfully</source>
+				<target>Thực đơn được sao chép thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Schedules was copied fail.</source>
+				<target>Lịch học sao chép thất bại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Schedules was copied successfully</source>
+				<target>Lịch học được sao chép thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove student from courses successfully.</source>
+				<target>Xóa học sinh khỏi khóa học thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Remove student from courses fail.</source>
+				<target>Xóa học sinh khỏi khóa học thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Register courses for student fail.</source>
+				<target>Đăng ký khóa học cho học sinh thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Register courses for student successfully.</source>
+				<target>Đăng ký khóa học cho học sinh thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Students are transferred class successfully.</source>
+				<target>Học sinh được chuyển lớp thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Students are transferred class fail.</source>
+				<target>Học sinh được chuyển lớp thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This course has generated data. Can not delete.</source>
+				<target>Môn học có dữ liệu liên quan. Không được xóa.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Check in</source>
+				<target>Đánh dấu tích</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Input text</source>
+				<target>Ô nhập liệu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time</source>
+				<target>Ô nhập thời gian</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select the subject, course, schedule to filter the data.</source>
+				<target>Vui lòng chọn môn học, khóa học, lịch học để lọc dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Find from date</source>
+				<target>Ngày khám từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>To date</source>
+				<target>Đến ngày</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Invalid code (includes only the characters a-z A-Z 0-9 _ -)</source>
+				<target>Mã không hợp lệ (chỉ bao gồm các ký tự a-z A-Z 0-9 _ -)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Code already exist.</source>
+				<target>Mã này đã tồn tại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time apply was created successfully.</source>
+				<target>Thời gian áp dụng đã được thêm thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time apply was updated successfully.</source>
+				<target>Thời gian áp dụng đã được cập nhật thành công</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time apply has not been saved due to some errors.</source>
+				<target>Thời gian áp dụng chưa được lưu do một số lỗi.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time apply was deleted successfully.</source>
+				<target>Thời gian áp dụng được xóa thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Receivable in the month was delete successfully.</source>
+				<target>Khoản phải thu trong tháng được xóa thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Delete fee receivable in the month occurred error.</source>
+				<target>Xóa khoản phải thu trong tháng gặp lỗi.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>%value% The receivable for month was updated successfully.
+				</source>
+				<target>%value% Khoản phải thu của tháng đã được cập nhật thành
+					công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated the receivable for month failed.</source>
+				<target>Cập nhật khoản phải thu của tháng thất bại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The system does not identify the class.</source>
+				<target>Hệ thống không xác định được lớp học.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Offical</source>
+				<target>Chính thức</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Test</source>
+				<target>Học thử</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Pause</source>
+				<target>Tạm nghỉ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop studying</source>
+				<target>Thôi học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Graduation</source>
+				<target>Tốt nghiệp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure wish delete this fee report?</source>
+				<target>Nếu phiếu này bị xóa. Bạn sẽ phải thực hiện chạy lại tính phí cho học sinh này. Bạn có muốn xóa không?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error: Department or function of member is null</source>
+				<target>Có lỗi: Phòng ban hoặc chức vụ chưa đặt giá trị</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The member departments was updated successfully.</source>
+				<target>Cập nhật quá trình công tác thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The member departments was created successfully.</source>
+				<target>Thêm mới quá trình công tác thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>A problem occurs when deleting the selected items has some children relationship.</source>
+				<target>Một số vấn đề xảy ra khi xóa các mục đã chọn: bản ghi tồn tại liên kết khóa ngoại đang được dùng.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not choose any items to delete.</source>
+				<target>Chưa chọn mục nào để xóa.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please delete all data in Evaluate index student and Evaluate class time before delete this</source>
+				<target>Hãy xóa mọi dữ liệu liên quan đến chỉ số học sinh, lớp trước khi thực hiện.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Object does not exist.</source>
+				<target>Không tồn tại đối tượng đang thao tác</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>This class has students. You cannot delete.</source>
+				<target>Lớp này đang có học sinh. Bạn không thể xóa.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No save data because description not isset</source>
+				<target>Không thể lưu dữ liệu vì nội dung bữa ăn đang để trống.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

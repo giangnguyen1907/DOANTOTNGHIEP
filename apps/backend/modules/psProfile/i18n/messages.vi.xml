@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+
+
+			<trans-unit>
+				<source>It must be more than 6 characters long</source>
+				<target>Mật khẩu phải dài hơn 6 ký tự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The password is not valid</source>
+				<target>Mật khẩu không hợp lệ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>It must contain at least one upper case character</source>
+				<target>Mật khẩu phải chứa ít nhất một ký tự chữ hoa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>It must contain at least one lower case character</source>
+				<target>Mật khẩu phải chứa ít nhất một ký tự chữ thường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>It must contain at least one digit</source>
+				<target>Mật khẩu phải chứa ít nhất một chữ số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The password is required and cannot be empty</source>
+				<target>Mật khẩu là bắt buộc và không thể để trống</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Old password</source>
+				<target>Mật khẩu cũ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New password</source>
+				<target>Mật khẩu mới</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Comfirm password</source>
+				<target>Xác nhận lại mật khẩu</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

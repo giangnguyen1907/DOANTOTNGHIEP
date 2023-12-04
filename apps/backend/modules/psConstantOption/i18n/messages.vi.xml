@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsConstantOption</source>
+				<target>Cấu hình hằng số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Back constant list</source>
+				<target>Về d/s hằng số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Root constant</source>
+				<target>Cấu hình gốc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsConstantOption List</source>
+				<target>Danh sách cấu hình của trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsConstantOption</source>
+				<target>Thêm mới hằng số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsConstantOption</source>
+				<target>Cập nhật thông tin hằng số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Value</source>
+				<target>Giá trị</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps constant</source>
+				<target>Tên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Full name</source>
+				<target>Người cập nhật</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

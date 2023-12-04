@@ -1,0 +1,52 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsClassRooms
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_class_rooms
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_SYSTEM_ROOMS_EDIT}
+        _new: {credentials: PS_SYSTEM_ROOMS_ADD}
+        _delete: {credentials: PS_SYSTEM_ROOMS_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:
+        display: 	[ps_workplace_title,title, note, iorder,is_activated,updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        max_per_page: {}
+        object_actions:
+          _edit: ~
+          _delete: ~
+      filter:
+        display: [ps_customer_id, ps_workplace_id,is_activated,title]
+      form:
+        display: [ps_customer_id,ps_workplace_id,title,is_global,note,iorder,is_activated]
+      edit:
+        title: Edit PsClassRooms: %%title%%
+        actions:
+          _list:
+            credentials: [PS_SYSTEM_ROOMS_SHOW]          
+          _save:
+            credentials: [PS_SYSTEM_ROOMS_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_ROOMS_ADD]
+          _delete:
+            credentials: [PS_SYSTEM_ROOMS_DELETE]
+      new:
+        actions:
+          _list:
+            credentials: [PS_SYSTEM_ROOMS_SHOW]          
+          _save:
+            credentials: [PS_SYSTEM_ROOMS_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_ROOMS_ADD]

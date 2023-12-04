@@ -1,0 +1,59 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+# Quản lý nhật ký đến trường: PS_STUDENT_ATTENDANCE
+# Xem nhật ký điểm danh: PS_STUDENT_ATTENDANCE_SHOW
+# Xem chi tiết nhật ký: PS_STUDENT_ATTENDANCE_DETAIL 
+# Điểm danh học sinh: PS_STUDENT_ATTENDANCE_ADD 
+# Điểm danh học sinh về muộn: PS_STUDENT_ATTENDANCE_DELAY
+# Cập nhật dữ liệu điểm danh: PS_STUDENT_ATTENDANCE_EDIT
+# Xóa dữ liệu điểm danh: PS_STUDENT_ATTENDANCE_DELETE
+# Thống kê, tổng hợp: PS_STUDENT_ATTENDANCE_STATISTIC
+# Lọc thông tin theo trường : PS_STUDENT_ATTENDANCE_FILTER_SCHOOL
+
+default:
+  is_secure:   true #Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_STUDENT_ATTENDANCE_FILTER_SCHOOL,PS_STUDENT_ATTENDANCE_SHOW,PS_STUDENT_ATTENDANCE_TEACHER,PS_STUDENT_ATTENDANCE_SHOW,PS_STUDENT_ATTENDANCE_ADD,PS_STUDENT_ATTENDANCE_EDIT,PS_STUDENT_ATTENDANCE_DELETE,PS_STUDENT_ATTENDANCE_STATISTIC]]   
+
+detail:
+  is_secure: true
+  credentials: [[PS_STUDENT_ATTENDANCE_DETAIL,PS_STUDENT_ATTENDANCE_TEACHER]]
+
+statistic:
+  is_secure: true
+  credentials: [[PS_STUDENT_ATTENDANCE_STATISTIC,PS_STUDENT_ATTENDANCE_TEACHER]]
+
+synthetic:
+  is_secure: true
+  credentials: [PS_STUDENT_ATTENDANCE_STATISTIC]
+  
+syntheticMonth:
+  is_secure: true
+  credentials: [PS_STUDENT_ATTENDANCE_STATISTIC]
+
+new:
+  is_secure: true
+  credentials: [[PS_STUDENT_ATTENDANCE_ADD,PS_STUDENT_ATTENDANCE_TEACHER]]  
+
+create:
+  is_secure: true
+  credentials: [[PS_STUDENT_ATTENDANCE_ADD,PS_STUDENT_ATTENDANCE_TEACHER]]
+
+edit:
+  is_secure: true
+  credentials: [[PS_STUDENT_ATTENDANCE_EDIT,PS_STUDENT_ATTENDANCE_TEACHER]]
+
+import:
+  is_secure: true
+  credentials: [PS_STUDENT_ATTENDANCE_IMPORT]
+
+importsave:
+  is_secure: true
+  credentials: [PS_STUDENT_ATTENDANCE_IMPORT]

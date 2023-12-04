@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsCmsNotifications
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_cms_notifications
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Notifications
+        display: [user_created_id,title,date_at,total_object_received,text_object_received]
+        sort:		[date_at, desc]
+        max_per_page: 35
+        object_actions:
+          _delete: {credentials: PS_CMS_NOTIFICATIONS_DELETE}
+      filter: ~ 
+#        display: [school_year_id,ps_customer_id,ps_workplace_id,title,description,date_at_from,date_at_to,type]
+      form:    ~
+      edit:    ~
+      new:     ~

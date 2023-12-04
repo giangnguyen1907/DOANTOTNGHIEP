@@ -1,0 +1,55 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsMember
+    i18n_catalogue:        messages
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_hr_departments
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        birthday: {date_format: dd-MM-yyyy}
+        mobile: {label: Contact information}
+        is_status: {label: Status}
+        updated_at : {date_format: HH:mm dd-MM-yyyy, label: Updated by}
+      list:
+        display: [_view_img,=member_code,first_name,last_name,birthday,_sex,mobile,username,is_status,updated_at]
+        sort: [last_name, asc]
+        table_method: doSelectQueryHrDepartments
+        max_per_page: 35
+        actions:
+          _new: {credentials: [PS_HR_HR_ADD,PS_SYSTEM_USER_MANAGER_DEPARTMENT]}
+        object_actions:
+          _detail: {credentials: [PS_HR_HR_DETAIL,[PS_SYSTEM_USER_MANAGER_DEPARTMENT,PS_SYSTEM_USER_MANAGER_SUB_DEPARTMENT]]}
+          _edit: {credentials: [PS_HR_HR_EDIT,[PS_SYSTEM_USER_MANAGER_DEPARTMENT,PS_SYSTEM_USER_MANAGER_SUB_DEPARTMENT]]}
+          _delete: {credentials: [PS_HR_HR_DELETE,[PS_SYSTEM_USER_MANAGER_DEPARTMENT,PS_SYSTEM_USER_MANAGER_SUB_DEPARTMENT]]}
+        batch_actions: {}
+      filter:
+        class: PsHrDepartmentsFormFilter
+        display: [ps_province_id,ps_district_id,sex,is_status,keywords]
+      form:
+        class: PsHrDepartmentsForm
+      edit:
+        display:
+          Infomation: [ps_customer_id,ps_workplace_id,ps_province_id,ps_district_id,member_code,first_name,last_name,birthday,sex,identity_card,card_date,card_local,nationality,ethnic_id,religion_id,address,phone,mobile,email,is_status]
+          Image: [image]
+        actions:
+          _list: ~          
+          _save: ~
+          _save_and_add: ~
+          _delete: ~        
+      new:
+        display:
+          Infomation: [ps_customer_id,ps_workplace_id,ps_province_id,ps_district_id,member_code,first_name,last_name,birthday,sex,identity_card,card_date,card_local,nationality,ethnic_id,religion_id,address,phone,mobile,email,is_status]
+          Image: [image]
+        actions:
+          _list: ~          
+          _save: ~
+          _save_and_add: ~

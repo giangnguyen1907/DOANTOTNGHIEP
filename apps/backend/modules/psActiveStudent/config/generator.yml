@@ -1,0 +1,45 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsActiveStudent
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_active_student
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list: 
+        display: 	[start_at, title, note, start_time, end_time , class_name, updated_by, updated_at]
+        # sort: [id, desc]
+        table_method: doSelectQuery
+      filter:
+        display: [ps_class_id, start_at, end_at, note]
+      form: ~
+        # display: [ps_customer_id,ps_workplace_id,title,is_global,note,iorder,is_activated]
+      edit: ~
+        # title: Edit PsClassRooms: %%title%%
+        # actions:
+        #   _list:
+        #     credentials: [PS_SYSTEM_ROOMS_SHOW]          
+        #   _save:
+        #     credentials: [PS_SYSTEM_ROOMS_EDIT]
+        #   _save_and_add:
+        #     credentials: [PS_SYSTEM_ROOMS_ADD]
+        #   _delete:
+        #     credentials: [PS_SYSTEM_ROOMS_DELETE]
+      new: ~
+        # actions:
+        #   _list:
+        #     credentials: [PS_SYSTEM_ROOMS_SHOW]          
+        #   _save:
+        #     credentials: [PS_SYSTEM_ROOMS_EDIT]
+        #   _save_and_add:
+        #     credentials: [PS_SYSTEM_ROOMS_ADD]

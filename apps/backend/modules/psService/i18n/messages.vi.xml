@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Caphoc</source>
+				<target>Cấp học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Chuongtrinh</source>
+				<target>Chương trình</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Khoihoc</source>
+				<target>Khối học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Doituong</source>
+				<target>Đối tượng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Dotuoi</source>
+				<target>Độ tuổi</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Service month</source>
+				<target>Chọn tháng thu tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Split</source>
+				<target>Chia phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps school year</source>
+				<target>Năm học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New detail</source>
+				<target>Thêm chi tiết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service detail</source>
+				<target>Chi tiết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service reduce</source>
+				<target>Áp dụng giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service type</source>
+				<target>Loại dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enable roll</source>
+				<target>Tính chất dịch vụ</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>PsService List</source>
+				<target>Danh sách dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsService</source>
+				<target>Thêm mới dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Editing service: %%title%%</source>
+				<target>Cập nhật dịch vụ: %%title%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enable roll</source>
+				<target>Loại dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enable saturday</source>
+				<target>Dịch vụ cho thứ 7</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enable saturday help</source>
+				<target>Dịch vụ sẽ chỉ được cung cấp vào ngày thứ 7</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>List enable roll</source>
+				<target>Loại dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select enable roll-</source>
+				<target>-Chọn loại dịch vụ-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enable roll help</source>
+				<target>Kiểm tra xem dịch vụ này có phụ thuộc vào số lần sử dụng hay không?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fixed</source>
+				<target>Không theo điểm danh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fixed note</source>
+				<target>Dịch vụ Cố định: Mức phí sẽ được tính đủ và không phụ thuộc
+					số lần sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not fixed</source>
+				<target>Tính theo điểm danh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not fixed note</source>
+				<target>Dịch vụ Không cố định: Mức phí sẽ được tính theo số lần sử
+					dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fixed schedule note</source>
+				<target>Dịch vụ ngoại khóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fixed schedule note</source>
+				<target>Dịch vụ ngoại khóa: Dạng lịch học theo TKB(khi thiết lập cần
+					tạo lịch học theo thứ trong tuần)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Group name</source>
+				<target>Nhóm dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select group service-</source>
+				<target>-Chọn nhóm dịch vụ-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service detail at</source>
+				<target>Áp dụng từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service amount</source>
+				<target>Giá thành</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter service price</source>
+				<target>Nhập giá tiền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Enter the quantity</source>
+				<target>Nhập số lượng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service split</source>
+				<target>Chia phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service infomation</source>
+				<target>Thông tin dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Price information and the time apply</source>
+				<target>Giá tiền lũy tiến và thời điểm áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date of application</source>
+				<target>Thời điểm áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select service group-</source>
+				<target>-Chọn nhóm dịch vụ-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>From day</source>
+				<target>Từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>To day</source>
+				<target>Đến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Count value</source>
+				<target>Lần sử dụng từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Count ceil</source>
+				<target>Đến</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Split value</source>
+				<target>Tỷ lệ tính giá(%)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Fee</source>
+				<target>Giá thành</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note help</source>
+				<target>Nhập nội dung ghi chú dành cho người dùng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Description help</source>
+				<target>Nhập nội dung giới thiệu dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not school choice!</source>
+				<target>Chưa chọn trường!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not service group choice!</source>
+				<target>Chưa chọn nhóm dịch vụ!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter a service name!</source>
+				<target>Chưa nhập tên dịch vụ!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This value must be numeric, and > 0</source>
+				<target>Giá trị này phải là kiểu số và > 0</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Entry requirements price!</source>
+				<target>Yêu cầu nhập giá tiền!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Entry requirements number!</source>
+				<target>Yêu cầu nhập số lượng!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The quantity must be between 1 and 100</source>
+				<target>Số lượng phải từ 1 đến 100</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Request select month / year started!</source>
+				<target>Yêu cầu chọn tháng/năm bắt đầu!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The end time must be greater than the start time! Do you
+					want to reset it?</source>
+				<target>Thời gian kết thúc phải lớn hơn thời gian bắt đầu! Bạn có
+					muốn thiết lập lại không?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The end time must be greater than the start time!</source>
+				<target>Thời gian kết thúc phải lớn hơn thời gian bắt đầu!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>End time last month will be charged to </source>
+				<target>Thời gian kết thúc cuối cùng sẽ được tính đến tháng </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>year</source>
+				<target>năm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Request select month / year started</source>
+				<target>Bắt buộc chọn thời gian bắt đầu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time to start next adjacent end time earlier</source>
+				<target>Thời gian bắt đầu tiếp theo phải liền kề với thời gian kết
+					thúc trước đó</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Time to start next adjacent end time earlier</source>
+				<target>Thời gian bắt đầu tiếp theo phải liền kề với thời gian kết
+					thúc trước đó</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure to delete the selected items?</source>
+				<target>Bạn có chắc chắn xóa các bản ghi đã chọn?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The system does not accept delete all items!</source>
+				<target>Hệ thống không chấp nhận xóa hết!</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This item has generated data. Can not delete.</source>
+				<target>Mục này đang được sử dụng. Không thể xóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This service has generated data. Can not delete.</source>
+				<target>Dịch vụ này đang được sử dụng. Không thể xóa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Information "Price information and the time apply" has
+					generated data. Can not delete.</source>
+				<target>Dữ liệu "Giá tiền và thời điểm áp dụng" đang được sử dụng.
+					Không thể xóa.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure wish delete this service?</source>
+				<target>Bạn chắc chắn muốn xóa dịch vụ này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Default</source>
+				<target>Trường đăng ký</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not default</source>
+				<target>Không bắt buộc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service information</source>
+				<target>Thông tin dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Order</source>
+				<target>Thứ tự</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Force</source>
+				<target>Cố định</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Not force</source>
+				<target>Không cố định</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Created At</source>
+				<target>Ngày tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Created By</source>
+				<target>Tạo bởi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated At</source>
+				<target>Ngày cập nhật</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated By</source>
+				<target>Cập nhật bởi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is type fee</source>
+				<target>Cách quy đổi khi chia phí</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note of is type fee</source>
+				<target>Chỉ áp dụng đối với loại dịch vụ "Không cố định"</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Calculated according to the number of uses</source>
+				<target>Tính theo số lần sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Calculated according to the number of unused times</source>
+				<target>Tính theo số lần không sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>All school</source>
+				<target>Toàn trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Price</source>
+				<target>Giá tiền 1 lần SD</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>price help</source>
+				<target>Giá này chỉ áp dụng để tính khoản dịch vụ có tính chất hoàn 100% và tính số lần sử dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is kidsschool</source>
+				<target>Được giảm trừ ưu tiên</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Is kidsschool help</source>
+				<target>Kiểm tra xem khoản thu này có được giảm trừ "Ưu tiên" hay không?</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Service reduce help</source>
+				<target>Chọn các loại được giảm trừ cho dịch vụ này</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Service month help</source>
+				<target>Chỉ có tác dụng khi chọn Loại dịch vụ là "Theo tháng ấn định"</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Workplace null help</source>
+				<target>Nếu không chọn "Cơ sở" thì sẽ thu toàn bộ cở sở của trường</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Cap hoc help</source>
+				<target>Nếu không chọn "Cấp học" thì sẽ thu toàn bộ các cấp</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Chuong trinh help</source>
+				<target>Nếu không chọn "Chương trình" thì sẽ thu toàn bộ các chương trình học là như nhau</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Khoi hoc help</source>
+				<target>Nếu không chọn "Khối học" thì sẽ thu toàn bộ các khối như nhau</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Doi tuong help</source>
+				<target>Nếu không chọn "Đối tượng" thì sẽ thu toàn bộ các đối tượng như nhau</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Lop hoc help</source>
+				<target>Nếu không chọn "Lớp học" thì sẽ thu toàn bộ các lớp như nhau</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Do tuoi help</source>
+				<target>Nếu không chọn "Độ tuổi" thì sẽ thu toàn bộ các độ tuổi như nhau</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Service type help</source>
+				<target>Loại "Bình thường" : Tháng nào cũng xuất hiện để thu</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

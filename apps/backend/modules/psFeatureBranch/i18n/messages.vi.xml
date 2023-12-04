@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Back features</source>
+				<target>Về d/s nhóm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Branch mode</source>
+				<target>Chế độ đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List field mode</source>
+				<target>Chế độ đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Ps ward</source>
+				<target>Xã/Phường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is continuity</source>
+				<target>HĐ diễn ra liên tục?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Help for is continuity</source>
+				<target>HĐ diễn ra liên tục là : kéo dài liên tục trong 1 khoảng thời gian.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total options</source>
+				<target>Tổng lựa chọn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Number option feature</source>
+				<target>Tiêu chí đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List field number option feature</source>
+				<target>Tiêu chí đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total options</source>
+				<target>Các đánh giá</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Name</source>
+				<target>Tên hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsFeatureBranch List</source>
+				<target>Danh sách các hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Feature branch</source>
+				<target>Thêm mới hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit Feature branch: "%%name%%"</source>
+				<target>Cập nhật hoạt động: "%%name%%"</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Assigned class for activity: %%feature_branch%%</source>
+				<target>Chọn lớp cho hoạt động: %%feature_branch%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature branch times</source>
+				<target>Thời gian</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add times apply</source>
+				<target>Thêm thời gian áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature branch times apply</source>
+				<target>Thời gian áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List field feature branch times</source>
+				<target>Thời gian áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>This feature branch has generated data. Can not delete.
+				</source>
+				<target>Hoạt động này chứa dữ liệu liên quan. Không thể xóa.
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature branch infomation</source>
+				<target>Thông tin hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The start time must be earlier then the end time</source>
+				<target>Giờ bắt đầu phải nhỏ hơn giờ kết thúc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The end time must be later then the start time</source>
+				<target>Giờ kết thúc phải lớn hơn giờ bắt đầu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Help for object group</source>
+				<target>Nếu không chọn Hoạt động sẽ áp cho tất cả</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>(Max 500 char)</source>
+				<target>(Lớn nhất 500 ký tự)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Description</source>
+				<target>Nội dung</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Object group/Class apply</source>
+				<target>Nhóm trẻ/Lớp thực hiện</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>All object group</source>
+				<target>Tất cả nhóm trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Confirm remove time apply</source>
+				<target>Xác nhận xóa thời gian áp dụng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You sure want to delete this time?</source>
+				<target>Bạn có chắc chắn muốn xóa thời gian này?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select workplace</source>
+				<target>Cơ sở *</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select customer</source>
+				<target>Trường học *</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select class room</source>
+				<target>Phòng học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select feature</source>
+				<target>Nhóm hoạt động *</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select feature branch</source>
+				<target>Tên hoạt động *</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select feature name-</source>
+				<target>-Chọn hoạt động-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Input file</source>
+				<target>Chọn tệp *</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Upload</source>
+				<target>Tải lên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Feature branch import</source>
+				<target>Import lịch hoạt động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file successfully. You can add another one below.
+				</source>
+				<target>Import lịch hoạt động thành công. Bạn có thể tiếp tục.
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file failed.</source>
+				<target>File import bị lỗi, vui lòng kiểm tra lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Unknown class id</source>
+				<target>Không xác định 'ID' = </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>line</source>
+				<target>, Dòng : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Of file</source>
+				<target>, Của File : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The excel file must be in the format: xls, xlsx. File size
+					less than %value%KB.</source>
+				<target>Không đúng định dạng file : xls, xlxs. Hoặc kích thước vượt
+					quá %value%KB</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Download file</source>
+				<target> Tải file mẫu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is study</source>
+				<target>Là hoạt động học?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No study</source>
+				<target>Không là hoạt động học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Yes study</source>
+				<target>Là hoạt động học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error date line</source>
+				<target> Lỗi, Vui lòng kiểm tra lại giá trị thời gian, Dòng :
+				</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Continuity</source>
+				<target>Diễn ra cả kỳ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Depend attendance</source>
+				<target>Đánh giá khi đã điểm danh</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,44 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardUser
+    i18n_catalogue:        messages
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_user_departments
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        is_active: {label: "Is activated"}
+        ps_district_id: {label: "Office of Education"}
+      list:    ~
+      filter:  ~
+      form:
+        class: PsUserDepartmentsForm
+        display: ~
+      edit:
+        title: Edit account for manager
+        display: [user_type,ps_customer_id,member_id,member,manager_type,username, password,is_active]          
+        actions:          
+          _list:
+            credentials: [[PS_SYSTEM_USER_FILTER_SCHOOL,PS_SYSTEM_USER_SHOW,PS_SYSTEM_USER_EDIT,PS_SYSTEM_USER_DETAIL,PS_SYSTEM_USER_ADD,PS_SYSTEM_USER_DELETE,PS_SYSTEM_USER_RESET_PASSWORD,PS_SYSTEM_USER_MANAGER_DEPARTMENT,PS_SYSTEM_USER_MANAGER_SUB_DEPARTMENT]]
+          _save:
+            credentials: [PS_SYSTEM_USER_EDIT,PS_SYSTEM_USER_MANAGER_DEPARTMENT,PS_SYSTEM_USER_MANAGER_SUB_DEPARTMENT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_USER_ADD,PS_SYSTEM_USER_MANAGER_DEPARTMENT,PS_SYSTEM_USER_MANAGER_SUB_DEPARTMENT]
+      new:     
+        title: Create account for manager
+        display: [user_type,ps_customer_id,member_id,member,manager_type,username, password,is_active]
+        actions:          
+          _list:
+            credentials: [[PS_SYSTEM_USER_FILTER_SCHOOL,PS_SYSTEM_USER_SHOW,PS_SYSTEM_USER_EDIT,PS_SYSTEM_USER_DETAIL,PS_SYSTEM_USER_ADD,PS_SYSTEM_USER_DELETE,PS_SYSTEM_USER_RESET_PASSWORD,PS_SYSTEM_USER_MANAGER_DEPARTMENT,PS_SYSTEM_USER_MANAGER_SUB_DEPARTMENT]]
+          _save:
+            credentials: [PS_SYSTEM_USER_EDIT,PS_SYSTEM_USER_MANAGER_DEPARTMENT,PS_SYSTEM_USER_MANAGER_SUB_DEPARTMENT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_USER_ADD,PS_SYSTEM_USER_MANAGER_DEPARTMENT,PS_SYSTEM_USER_MANAGER_SUB_DEPARTMENT]

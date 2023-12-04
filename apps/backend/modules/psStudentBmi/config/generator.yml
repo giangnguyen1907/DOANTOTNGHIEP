@@ -1,0 +1,66 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsStudentBmi
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_student_bmi
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        actions:
+          _edit: {credentials: PS_MEDICAL_BMI_EDIT}
+          _new: {credentials: PS_MEDICAL_BMI_ADD}
+          _delete: {credentials: PS_MEDICAL_BMI_DELETE}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, label: Updated by}
+      list:   
+        title: BMI list 
+        display: [_sex,is_month,min_height1,min_height,medium_height,max_height,max_height1,min_weight1,min_weight,medium_weight,max_weight,max_weight1,updated_at]
+        sort: [is_month, asc]
+        table_method: doSelectQuery
+        max_per_page: {}
+        actions:
+          _new: {credentials: PS_MEDICAL_BMI_ADD}
+        object_actions:
+          _edit: {credentials: PS_MEDICAL_BMI_EDIT}
+          _delete: {credentials: PS_MEDICAL_BMI_DELETE}
+        batch_actions:
+          _delete: {credentials: PS_MEDICAL_BMI_DELETE}
+      filter:
+        display: [sex,is_month,note]
+      form:
+        fields:
+          min_height1: {help: Min height lever 2}
+          max_height1: {help: Max height lever 2}
+          min_height: {help: Min height lever}
+          max_height: {help: Max height lever}
+          min_weight1: {help: Min weight lever 2}
+          max_weight1: {help: Max weight lever 2}
+          min_weight: {help: Min weight lever}
+          max_weight: {help: Max weight lever}
+        display: [sex,is_month,medium_height,medium_weight,min_height1,max_height1,min_height,max_height,min_weight1,max_weight1,min_weight,max_weight,note]
+      edit:
+        actions:          
+          _list:
+            credentials: [[PS_MEDICAL_BMI_SHOW,PS_MEDICAL_BMI_DETAIL,PS_MEDICAL_BMI_EDIT]]
+          _save:
+            credentials: [PS_MEDICAL_BMI_EDIT]
+          _save_and_add:
+            credentials: [[PS_MEDICAL_BMI_EDIT,PS_MEDICAL_BMI_ADD]]
+          _delete:       ~
+      new:
+        title: BMI new
+        actions:          
+          _list:
+            credentials: [[PS_MEDICAL_BMI_SHOW,PS_MEDICAL_BMI_EDIT,PS_MEDICAL_BMI_ADD,PS_MEDICAL_BMI_DELETE]]
+          _save:
+            credentials: [PS_MEDICAL_BMI_ADD]
+          _save_and_add:
+            credentials: [PS_MEDICAL_BMI_ADD]

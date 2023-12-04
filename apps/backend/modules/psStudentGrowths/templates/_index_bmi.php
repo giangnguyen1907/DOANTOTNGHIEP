@@ -1,0 +1,1 @@
+<?php include_partial('psStudentGrowths/field_bmi', array('value' => $ps_student_growths->getIndexBmi()))?>

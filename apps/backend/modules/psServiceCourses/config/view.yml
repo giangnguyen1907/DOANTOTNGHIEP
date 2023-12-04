@@ -1,0 +1,24 @@
+########
+
+editSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/modules/ps_service_courses.js: {position: last}
+ 
+newSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:   
+    - /psAdminThemePlugin/js/modules/ps_service_courses.js: {position: last} 
+
+statisticSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js 
+    - /psAdminThemePlugin/js/js_action_batch.js
+  stylesheets: []  

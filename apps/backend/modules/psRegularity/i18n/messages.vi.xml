@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsRegularity List</source>
+				<target>Danh sách tần xuất thu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsRegularity</source>
+				<target>Thêm mới tần xuất</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsRegularity</source>
+				<target>Cập nhật thông tin tần xuất</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is type</source>
+				<target>Loại giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên tần xuất</target>
+			</trans-unit>
+		
+			<trans-unit>
+				<source>Number</source>
+				<target>Tần xuất thu (tháng)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Discount</source>
+				<target>Số lượng giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Status</source>
+				<target>Kiểu chính sách</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Start</source>
+				<target>Bắt đầu từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop</source>
+				<target>Đến bao nhiêu</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>-Select reduce-</source>
+				<target>Chọn kiểu chính sách</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select type-</source>
+				<target>Chọn loại giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is default</source>
+				<target>Mặc định</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên camera</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Image name</source>
+				<target>Ảnh đại diện</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

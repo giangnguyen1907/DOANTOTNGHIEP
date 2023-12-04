@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Meals List</source>
+				<target>Danh sách bữa ăn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>meals</source>
+				<target>Danh sách bữa ăn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsMeals</source>
+				<target>Thêm mới bữa ăn</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Edit PsMeals</source>
+				<target>Cập nhật bữa ăn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Are you sure this meal?</source>
+				<target>Bạn có chắc chắn xóa bữa ăn này</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select meal-</source>
+				<target>-Chọn bữa-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Workplace title</source>
+				<target>Cơ sở đào tạo</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

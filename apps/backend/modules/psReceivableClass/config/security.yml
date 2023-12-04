@@ -1,0 +1,33 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_FEE_RECEIVABLE_FILTER_SCHOOL,PS_FEE_RECEIVABLE_SHOW,PS_FEE_RECEIVABLE_DETAIL,PS_FEE_RECEIVABLE_ADD,PS_FEE_RECEIVABLE_EDIT,PS_FEE_RECEIVABLE_DELETE]]   
+
+new:
+  is_secure: true
+  credentials: [PS_FEE_RECEIVABLE_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_FEE_RECEIVABLE_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_FEE_RECEIVABLE_EDIT]  
+
+update:
+  is_secure: true
+  credentials: [PS_FEE_RECEIVABLE_EDIT]
+
+delete:
+  is_secure: true
+  credentials: [PS_FEE_RECEIVABLE_DELETE]

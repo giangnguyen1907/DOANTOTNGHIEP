@@ -1,0 +1,4 @@
+newSuccess:
+  javascripts: 
+    - /psAdminThemePlugin/js/modules/ps_service_splits.js: {position: last}
+    

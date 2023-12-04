@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Assigned relative for student: %%ps_student%%</source>
+				<target>Chọn phụ huynh cho học sinh: %%ps_student%%</target>
+			</trans-unit>
+
+
+			<trans-unit>
+				<source>Is order</source>
+				<target>TT ưu tiên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Main</source>
+				<target>Giám hộ chính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Parent</source>
+				<target>Đưa đón</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Avatar</source>
+				<target>Thay avatar</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service</source>
+				<target>Đ.ký dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Role</source>
+				<target>Quyền</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Parent Main</source>
+				<target>Giám hộ chính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Role Parent</source>
+				<target>Quyền đưa đón</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Role Avatar</source>
+				<target>Quyền thay avatar</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Role Service</source>
+				<target>Quyền đ.ký dịch vụ</target>
+			</trans-unit>
+			Change role of relative
+
+			<trans-unit>
+				<source>Update role of relative: %%relative%%</source>
+				<target>Cập nhật vai trò của phụ huynh: %%relative%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select Relation-</source>
+				<target>-Chọn quan hệ-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>You have not selected any relationship !</source>
+				<target>Bạn chưa chọn mối quan hệ !</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

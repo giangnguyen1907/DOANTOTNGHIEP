@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsServiceSaturday
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_service_saturday
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, label: Updated by}
+#        input_date_at : {date_format: dd/MM/yyyy}
+      list:
+        title: Service saturday
+        display: [student_id,service_id,service_date,relative_id,input_date_at,note,updated_at]
+        sort: [input_date_at, desc]
+        table_method: doSelectQuery
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_STUDENT_ATTENDANCE_ADD}
+        object_actions:
+          _edit: {credentials: PS_STUDENT_ATTENDANCE_EDIT}
+#          _delete: {credentials: PS_STUDENT_ATTENDANCE_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_STUDENT_ATTENDANCE_DELETE,confirm: "Are you sure?"}
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,keywords]
+      form:
+        display: [ps_workplace_id,ps_class_id,student_id,relative_id,service_id,input_date_at,note,service_date]
+      edit:    ~
+      new:     ~

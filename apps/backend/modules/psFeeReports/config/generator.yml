@@ -1,0 +1,52 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsFeeReports
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_fee_reports
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        student_name: {label: Student}
+        updated_at : {date_format: HH:mm dd-MM-yyyy}
+        receivable_at : {date_format: dd-MM-yyyy}
+        expected: {label: Fee expected}        
+      list:
+        title: Find fee reports
+        display: [student_name,_birthday,receivable_at,_expected,updated_at,receipt_no,collected_amount,balance_amount,payment_status,payment_date,is_public]
+        table_method: doSelectQuery
+        max_per_page: 35
+        batch_actions:
+          publishReceipts:
+            label: Publish receipt
+            params: class=btn btn-default btn-success bg-color-green btn-psadmin
+            credentials: [[PS_FEE_REPORT_ADD, PS_FEE_REPORT_EDIT]]
+          _delete: {credentials: PS_FEE_REPORT_DELETE}          
+        object_actions:
+          _detail: {credentials: PS_FEE_REPORT_DETAIL}
+          _edit: {credentials: PS_FEE_REPORT_EDIT}
+          _delete: {credentials: PS_FEE_REPORT_DELETE,confirm: "Are you sure wish delete this fee report?", title: "Delete fee report"}
+        actions:
+          add_new_receivable:
+            action: add_new_receivable
+            label: Add new receivable
+            params: class=btn btn-default btn-success bg-color-green btn-psadmin
+            credentials: [[PS_FEE_REPORT_ADD, PS_FEE_REPORT_EDIT]]
+          process_fee:
+            action: process_fee_reports
+            label: Process fee report
+            params: class=btn btn-default btn-success bg-color-green btn-psadmin
+            credentials: [[PS_FEE_REPORT_ADD, PS_FEE_REPORT_EDIT]]
+      filter:
+#        display: [ps_school_year_id, ps_customer_id,ps_workplace_id,ps_class_id,ps_month,ps_year,year_month,receivable_at,payment_status,keywords]
+         display: [ps_school_year_id, ps_customer_id,ps_workplace_id,ps_class_id,ps_year_month,receivable_at,payment_status,keywords]
+      form:    ~
+      edit:    ~
+      new:     ~

@@ -1,0 +1,54 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           FeatureBranchTimes
+    theme:                 admin2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_feature_branch_times
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail:  ~
+        _edit: {credentials: PS_SYSTEM_FEATURE_BRANCH_EDIT}
+        _delete: {credentials: PS_SYSTEM_FEATURE_BRANCH_DELETE,confirm: "Are you sure?"}
+      fields:
+        is_saturday: {label: Saturday}
+        is_sunday: {label: Sunday}
+        list_class_apply: {label: Class apply}
+        date_at: {label: Start End at}
+        ps_feature_branch: {label: Activity}
+        note_class_name: {label: List class apply}
+        fb_title: {label: Ps feature branch}
+      list:
+        title: Schedule activity
+        display: [fb_title,_date_at,_time_at,note,_is_saturday,_is_sunday,note_class_name,_updated_by]
+        table_method: doSelectQuery
+        max_per_page: 35
+        batch_actions: {}
+        actions: {}
+        object_actions:
+          _detail: {credentials: [[PS_SYSTEM_FEATURE_BRANCH_EDIT,PS_SYSTEM_FEATURE_BRANCH_DETAIL,PS_SYSTEM_FEATURE_BRANCH_DELETE]]}
+          _edit: {credentials: PS_SYSTEM_FEATURE_BRANCH_EDIT}
+          _delete: {credentials: PS_SYSTEM_FEATURE_BRANCH_DELETE}
+      filter:
+#        display: [ps_customer_id,feature_id,ps_feature_branch_id]
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,date_at_from,date_at_to,keywords]
+#         display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,date_at_from,date_at_to,keywords]
+      form: ~
+      edit:
+        actions:
+          _cancel: ~
+          _save: {credentials: [[PS_SYSTEM_FEATURE_BRANCH_ADD,PS_SYSTEM_FEATURE_BRANCH_EDIT]]}
+          _delete: {credentials: PS_SYSTEM_FEATURE_BRANCH_DELETE}
+      new:
+        display:
+          Feature branch times infomation: [ps_feature_branch_id,ps_class_room_id,start_at,end_at,start_time,end_time,is_saturday,is_sunday,note]
+#          List class apply: [_form_class_apply]
+        actions:
+          _cancel: ~
+          _save: {credentials: [[PS_SYSTEM_FEATURE_BRANCH_ADD,PS_SYSTEM_FEATURE_BRANCH_EDIT]]}

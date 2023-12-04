@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Statistic class</source>
+				<target>Lớp báo cáo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop studying</source>
+				<target>Thôi học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Start date at</source>
+				<target>Chọn là ngày nhập học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Date start studying</source>
+				<target>Chọn ngày bắt đầu của lớp là ngày nhập học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Hold place</source>
+				<target>Giữ chỗ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop at invalid</source>
+				<target>Giá trị ngày kết thúc không hợp lệ. Vui lòng kiểm tra lại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>To class</source>
+				<target>Chuyển đến lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Change class for student: %%ps_student%%</source>
+				<target>Chuyển lớp cho bé: %%ps_student%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit student class</source>
+				<target>Cập nhật thông tin lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select status studying-</source>
+				<target>Chọn trạng thái học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is activated</source>
+				<target>Lớp hiện tại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note: Type class is stop studying</source>
+				<target>Chú ý: Trạng thái Thôi Học sẽ khóa tài khoản phụ huynh liên quan đến học sinh này.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

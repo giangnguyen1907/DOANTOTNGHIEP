@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Examination</source>
+				<target>Đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Age examination</source>
+				<target>Khám lúc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Input date at</source>
+				<target>Ngày khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Examination list</source>
+				<target>Danh sách đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Examination new</source>
+				<target>Thêm mới đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Examination already exist.</source>
+				<target>Đợt khám này đã tồn tại ở cơ sở của bạn.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsExamination</source>
+				<target>Sửa thông tin đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Config obj group id in examination</source>
+				<target>Nếu chọn nhóm trẻ thì đợt khám chỉ dành riêng cho nhóm trẻ đó, để trống sẽ áp dụng tất cả nhóm trẻ</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

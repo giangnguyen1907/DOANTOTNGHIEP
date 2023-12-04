@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			<trans-unit>
+				<source>Fee NewsLetter</source>
+				<target>Danh sách bản tin phí</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>New Fee Newsletter</source>
+				<target>Thêm mới bản tin phí</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Edit Fee Newsletter</source>
+				<target>Sửa bản tin phí</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Ps year month</source>
+				<target>Bản tin của tháng</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Note</source>
+				<target>Nội dung bản tin</target>
+			</trans-unit>
+						
+			<trans-unit>
+				<source>Is public</source>
+				<target>Hiển thị</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Number push notication</source>
+				<target>Số lần báo đến APP</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Notice of fee news letter</source>
+				<target>Bản tin phí của tháng </target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Notice of fee news letter from KidsSchool.vn</source>
+				<target>Bản tin phí được gửi từ KidsSchool.vn</target>
+			</trans-unit>
+					
+			<trans-unit>
+				<source>You can public notication</source>
+				<target>Bạn cần đổi trạng thái hiển thị trước khi gửi thông báo.</target>
+			</trans-unit>
+					
+			<trans-unit>
+				<source>PsWorkplaceId invalid</source>
+				<target>Không xác định được cơ sở đào tạo. vui lòng kiểm tra lại</target>
+			</trans-unit>
+			
+		</body>
+	</file>
+</xliff>

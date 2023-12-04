@@ -1,0 +1,15 @@
+blogSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:
+    - /psAdminThemePlugin/js/js_action_batch.js
+
+editSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/tinymce/tinymce.min.js
+    - /psAdminThemePlugin/js/modules/ps_cms_article.js    
+
+newSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/plugin/tinymce/tinymce.min.js
+    - /psAdminThemePlugin/js/modules/ps_cms_article.js

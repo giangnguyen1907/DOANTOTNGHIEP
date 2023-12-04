@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsSystemCmsContent
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_system_cms_content
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:      
+      actions:
+        _list: {credentials:  [[PS_SYSTEM_CMS_CONTENT_SHOW, PS_SYSTEM_CMS_CONTENT_DETAIL,PS_SYSTEM_CMS_CONTENT_ADD, PS_SYSTEM_CMS_CONTENT_EDIT, PS_SYSTEM_CMS_CONTENT_DELETE]]}
+        _edit: {credentials:  PS_SYSTEM_CMS_CONTENT_EDIT}
+        _new: {credentials:  PS_SYSTEM_CMS_CONTENT_ADD}
+        _delete: {credentials:  PS_SYSTEM_CMS_CONTENT_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        ps_system_cms_content_code: {Content code}
+      list:
+        title: System Cms Content
+        display: [=ps_system_cms_content_code,title,is_activated,updated_by,updated_at]
+        sort: [is_activated, asc]
+        table_method: doSelectQuery
+        max_per_page: 10
+        batch_actions: {}
+        actions:
+          _new: ~
+      filter: 
+        display: [title]
+      form:    
+        display:    [ps_system_cms_content_code,title,description,note,is_activated]
+      edit:    ~
+      new:     ~

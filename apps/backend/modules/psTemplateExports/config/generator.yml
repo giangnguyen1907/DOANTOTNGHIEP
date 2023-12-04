@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsTemplateExports
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_template_exports
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    ~
+      filter:
+        display: [app_code,is_activated,title]
+      form:
+        display: [app_code,title,name_file,img_file,note,is_activated]
+      edit:    ~
+      new:     ~

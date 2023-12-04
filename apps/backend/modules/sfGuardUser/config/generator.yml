@@ -1,0 +1,75 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardUser
+    theme:                 admin2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _add_member: ~
+      fields:  
+        last_login : {date_format: HH:mm dd/MM/yyyy}
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        field_user_activated: {label: "Is activated"}
+        is_active: {label: "Is activated"}
+      list:
+         display: [=username, first_name,last_name,_user_type,_field_user_activated,updated_at,last_login,app_device_id,api_token]             
+         batch_actions: {}
+         object_actions:
+          _edit: {credentials: [PS_SYSTEM_USER_EDIT]}
+          _delete: {credentials: [PS_SYSTEM_USER_DELETE]}
+          _detail: {credentials: [PS_SYSTEM_USER_DETAIL]}
+         actions:
+          _new: ~
+          _add_relative:
+            label: New user relative
+            action: new
+            params: {class: btn btn-default btn-success bg-color-green btn-psadmin, query_string: utype=R}
+            credentials: [PS_SYSTEM_USER_ADD]
+          _add_member:
+            label: New user member
+            action: new
+            params: {class: btn btn-default btn-success bg-color-green btn-psadmin, query_string: utype=T}
+            credentials: [PS_SYSTEM_USER_ADD]
+         table_method: doSelectQuery
+         max_per_page: 35
+         sort:		[ps_customer_id,id, desc]
+      filter:  
+         display: [ps_customer_id,ps_workplace_id,user_type,is_active,app_device_id_active,keywords]
+      form:    ~
+      edit:    
+        title: Editing user: %%first_name%% %%last_name%%
+        display:
+          Infomation:		[ps_customer_id,user_type,member_id,first_name, last_name, username,password,is_super_admin,is_global_super_admin,is_active]
+#          Area Management:	[_area_management]
+          Groups Infomation:	[groups_list]
+          Features Infomation:	[_permissions_list]          
+        actions:
+          _list:
+            credentials: [PS_SYSTEM_USER_EDIT]
+          _save:
+            credentials: [PS_SYSTEM_USER_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_USER_ADD,PS_SYSTEM_USER_EDIT_XXXXXXXXXX]
+          _delete:       ~
+      new:     
+        title: New User
+        display:
+          Infomation:		[ps_customer_id,user_type,member_id,first_name, last_name, username,password,is_super_admin,is_global_super_admin,is_active]
+#          Groups Infomation:	[groups_list]
+#          Features Infomation:	[permissions_list]
+        actions:          
+          _list:
+            credentials: [PS_SYSTEM_USER_EDIT]
+          _save:
+            credentials: [PS_SYSTEM_USER_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_USER_ADD]

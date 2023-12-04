@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsWard List</source>
+				<target>Danh sách Xã/Phường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsWard</source>
+				<target>Thêm mới Xã/Phường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsWard</source>
+				<target>Chỉnh sửa thông tin Xã/Phường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Name</source>
+				<target>Tên Xã/Phường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>District name</source>
+				<target>Tên Quận/Huyện</target>
+			</trans-unit>
+
+
+
+		</body>
+	</file>
+</xliff>

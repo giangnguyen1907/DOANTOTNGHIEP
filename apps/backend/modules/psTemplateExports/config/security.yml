@@ -1,0 +1,30 @@
+default:
+  is_secure:   true
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_SYSTEM_TEMPLATE_REPORT_SHOW,PS_SYSTEM_TEMPLATE_REPORT_DETAIL,PS_SYSTEM_TEMPLATE_REPORT_ADD,PS_SYSTEM_TEMPLATE_REPORT_EDIT,PS_SYSTEM_TEMPLATE_REPORT_DELETE]]   
+
+new:
+  is_secure: true
+  credentials: [PS_SYSTEM_TEMPLATE_REPORT_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_SYSTEM_TEMPLATE_REPORT_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_SYSTEM_TEMPLATE_REPORT_EDIT]  
+
+delete:
+  is_secure: true
+  credentials: [PS_SYSTEM_TEMPLATE_REPORT_DELETE]
+
+detail:
+  is_secure: true

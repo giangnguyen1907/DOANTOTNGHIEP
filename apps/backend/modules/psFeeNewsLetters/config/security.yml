@@ -1,0 +1,43 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+# NHOM HOAT DONG - Ma module: PS_SYSTEM_FEATURE
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_FEE_NEWSLETTER_SHOW,PS_FEE_NEWSLETTER_ADD,PS_FEE_NEWSLETTER_EDIT,PS_FEE_NEWSLETTER_DELETE,PS_FEE_NEWSLETTER_PUSH,PS_FEE_NEWSLETTER_FILTER_SCHOOL]]   
+
+new:
+  is_secure: true
+  credentials: [PS_FEE_NEWSLETTER_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_FEE_NEWSLETTER_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_FEE_NEWSLETTER_EDIT]  
+
+update:
+  is_secure: true
+  credentials: [PS_FEE_NEWSLETTER_EDIT]
+
+delete:
+  is_secure: true
+  credentials: [PS_FEE_NEWSLETTER_DELETE]
+
+notication:
+  is_secure: true
+  credentials: [PS_FEE_NEWSLETTER_PUSH]
+  
+updatedStatus:
+  is_secure: true
+  credentials: [PS_FEE_NEWSLETTER_EDIT]
+  

@@ -1,0 +1,15 @@
+editSuccess:
+  javascripts: 
+    - /psAdminThemePlugin/js/modules/ps_customer.js: {position: last}
+
+newSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/modules/ps_customer.js: {position: last}
+
+# detailSuccess:
+#   javascripts:
+#     - /psAdminThemePlugin/js/modules/ps_customer.js: {position: last}
+
+# indexSuccess:
+#   javascripts:
+#     - /psAdminThemePlugin/js/modules/ps_customer.js: {position: last}

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>The following student code in system: %er_student_code%
+				</source>
+				<target>Lỗi mã học sinh. Mã học sinh đã tồn tại trong hệ thống:
+					%er_student_code%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsRelationship List</source>
+				<target>Danh sách mối quan hệ người thân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsRelationship</source>
+				<target>Thêm mới mối quan hệ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsRelationship</source>
+				<target>Sửa mối quan hệ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên mối quan hệ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import student</source>
+				<target>Import học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import student failed.</source>
+				<target>Dữ liệu import file không đúng định dạng.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error failed import.</source>
+				<target>File import bị lỗi.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import student successfully.</source>
+				<target>Import học sinh thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relationship error line: %relationship_error%</source>
+				<target>Không xác định mối quan hệ của hoc sinh và phụ huynh vui
+					lòng kiểm tra lại dòng : %relationship_error%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student successfully : %value%, Relative successfully
+					:%value1%</source>
+				<target>Thêm thành công: %value% học sinh và %value1% người thân
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error student: %value%. Error relative : %value1%.</source>
+				<target>Số học sinh lỗi : %value%. Số người thân lỗi : %value1%.
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import student and relative</source>
+				<target>Import dữ liệu học sinh và phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select customer</source>
+				<target>Trường học *</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select workplace</source>
+				<target>Cơ sở đào tạo *</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select class</source>
+				<target>Lớp học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Upload</source>
+				<target>Tải lên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Download template 1</source>
+				<target> Tải mẫu 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Download template 2</source>
+				<target> Tải mẫu 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select template</source>
+				<target>Chọn biểu mẫu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Template 1</source>
+				<target>Mẫu 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Template 2</source>
+				<target>Mẫu 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error template import</source>
+				<target>Lỗi biểu mẫu import. Vui lòng kiểm tra lại biểu mẫu import
+					dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Input file</source>
+				<target>Chọn tệp *</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Roll Back</source>
+				<target> Trở về danh sách</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Download file</source>
+				<target> Tải file mẫu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The excel file must be in the format: xls, xlsx. File size
+					less than %value%KB.</source>
+				<target>Vui lòng kiểm tra lại file import. Không đúng định dạng:
+					xls, xlsx hoặc kích thước vượt quá %value%KB.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import member failed.</source>
+				<target>Lỗi import thông tin nhân sự, vui lòng kiểm tra lại</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error failed import.</source>
+				<target>Lỗi import file</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import member successfully.</source>
+				<target>Lưu thông tin nhân sự thành công.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member successfully</source>
+				<target>Thành công : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error member</source>
+				<target>Lỗi : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error line:</source>
+				<target>Lỗi dòng : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Member successfully</source>
+				<target>Thành công : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The number of additional relatives is faulty: %value%
+				</source>
+				<target>Số người thân thêm bị lỗi: %value%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student successfully : </source>
+				<target>Số học sinh thêm thành công: </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The number of additional students is faulty: %value%
+				</source>
+				<target>Số học sinh thêm bị lỗi: %value%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Lines: %value%</source>
+				<target>Lỗi tại các dòng: %value%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The following email address is malformed or has existed:
+					%error_email_relative%</source>
+				<target>Các địa chỉ Email sau đây không đúng hoặc đã tồn tại:
+					%error_email_relative%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>import teacher class successfully</source>
+				<target>Giáo viên đã được phân vào lớp.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The number of teacher not class %value%</source>
+				<target>Một số giáo viên không được phân vào lớp. Vui lòng kiểm tra lại dòng %value%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Teacher not class</source>
+				<target>Tất cả giáo viên chưa được phân lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit student and add relative</source>
+				<target>Sửa thông tin học sinh và thêm mới người thân thành công.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

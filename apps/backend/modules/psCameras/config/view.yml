@@ -1,0 +1,7 @@
+editSuccess:
+  javascripts: 
+    - /psAdminThemePlugin/js/modules/ps_cameras.js: {position: last}
+
+newSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/modules/ps_cameras.js: {position: last}    

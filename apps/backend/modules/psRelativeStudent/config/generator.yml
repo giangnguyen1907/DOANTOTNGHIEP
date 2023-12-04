@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           RelativeStudent
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_relative_student
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _delete: {credentials: PS_STUDENT_RELATIVE_REGISTER_STUDENT}
+        _save: {credentials: PS_STUDENT_RELATIVE_REGISTER_STUDENT}
+      fields:  []
+      list:    []
+      filter:  ~
+      form:
+      edit:        
+        actions:
+          _delete: {credentials: PS_STUDENT_RELATIVE_REGISTER_STUDENT}
+          _cancel: ~
+          _save: {credentials: PS_STUDENT_RELATIVE_REGISTER_STUDENT}
+      new:
+        title:
+        actions:
+          _cancel: ~
+          _save: {credentials: PS_STUDENT_RELATIVE_REGISTER_STUDENT}
+
+

@@ -1,0 +1,55 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Receivable
+    i18n_catalogue:        messages
+    theme:                 admin2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          receivable
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:  ~
+#        _edit: {credentials: PS_FEE_RECEIVABLE_EDIT}
+#        _new: {credentials: PS_FEE_RECEIVABLE_ADD}
+#        _delete: {credentials: PS_FEE_RECEIVABLE_DELETE}
+#        temp_delete: {credentials: PS_FEE_RECEIVABLE_DELETE}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, lable: Updated by}
+        customer_title : {label: Ps customer}
+      list:    
+        display: [=title,_list_price,iorder,is_activated, customer_title,work_places,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+      filter:
+        display: 	[ps_school_year_id,ps_customer_id,ps_workplace_id,is_activated,title]
+      form:
+        fields:
+          ps_workplace_id: {help: "If not checked, will use the entire training base"}
+          amount: {help: "Allow to enter values less than 0"}
+      edit:
+        title: Edit receivable: "%%title%%"
+        actions:
+          _list:
+            credentials: [[PS_FEE_RECEIVABLE_SHOW,PS_FEE_RECEIVABLE_DETAIL,PS_FEE_RECEIVABLE_EDIT,PS_FEE_RECEIVABLE_ADD]]
+          _save:
+            credentials: [PS_FEE_RECEIVABLE_EDIT]
+          _save_and_add:
+            credentials: [PS_FEE_RECEIVABLE_EDIT,PS_FEE_RECEIVABLE_ADD]
+          _delete:       ~  
+        display:
+          Receivable infomation: [ps_customer_id,ps_workplace_id,ps_school_year_id,title,amount,description,iorder,is_activated]
+          Receivable detail apply: [_list_receivable_detail]
+      new:
+        actions:          
+          _list:
+            credentials: [[PS_FEE_RECEIVABLE_SHOW,PS_FEE_RECEIVABLE_EDIT,PS_FEE_RECEIVABLE_ADD,PS_FEE_RECEIVABLE_DELETE]]
+          _save:
+            credentials: [PS_FEE_RECEIVABLE_ADD]
+          _save_and_add:
+            credentials: [PS_FEE_RECEIVABLE_ADD]

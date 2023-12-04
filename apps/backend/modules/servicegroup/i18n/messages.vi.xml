@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Servicegroup List</source>
+				<target>Danh sách nhóm dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New Servicegroup</source>
+				<target>Thêm mới nhóm dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Editing service group: %%title%%</source>
+				<target>Sửa nhóm dịch vụ: %%title%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên nhóm</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Order group</source>
+				<target>Thứ tự</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

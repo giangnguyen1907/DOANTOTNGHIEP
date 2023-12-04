@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0"
+	xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	packagerversion="1.9.0" version="2.0"
+	xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+	<name>sfSwiftMailerExtendedPlugin</name>
+	<channel>plugins.symfony-project.org</channel>
+	<summary>With sfSwiftMailerExtendedPlugin you are able to define different email transports and fallback transports.</summary>
+	<description>It is necesary that important emails always receive their destination. Symfony lacks a definition of different email transports.
+ With sfSwiftMailerExtendedPlugin you are able to define different email transports.
+ For example gmail for public emails, paid smtp server for approved emails.
+ There is also the possibility, that one of the services fails due to connection problems, service interruptions and so on.
+ You are also able to define fallback transports.
+ At least one transport has to be defined in factories.yml.</description>
+	<lead>
+		<name>Markus Welter</name>
+		<user>welante</user>
+		<email>markus@welante.ch</email>
+		<active>yes</active>
+	</lead>
+	<date>2011-01-19</date>
+	<time>17:30:55</time>
+	<version>
+		<release>1.0.0</release>
+		<api>1.0.0</api>
+	</version>
+	<stability>
+		<release>stable</release>
+		<api>stable</api>
+	</stability>
+	<license uri="http://www.symfony-project.org/license">MIT License</license>
+	<notes>
+-
+ </notes>
+	<contents>
+		<dir name="/">
+			<file md5sum="" name="config/" role="data" />
+			<file md5sum="543177acd42c3094a8c59ec87194846a"
+				name="config/factories.yml.sample" role="data" />
+			<file md5sum="29ed2b211fe6541d5566be727f7d140c"
+				name="config/sfSwiftMailerExtendedPluginConfiguration.class.php"
+				role="data" />
+			<file md5sum="06f4b68aaa4acb0188b9bcb75d7e74a0"
+				name="lib/sfMailerExtended.class.php" role="data" />
+			<file md5sum="f7ae5fa94aba2ac7ab2d602efa6b14bc" name="LICENSE"
+				role="data" />
+			<file md5sum="919a51011a8457c7b8f2af06a8441009" name="README"
+				role="data" />
+			<file md5sum="c9e47dbb0e1927076ed7b2e1ec157be7" name="VERSION"
+				role="data" />
+		</dir>
+	</contents>
+	<dependencies>
+		<required>
+			<php>
+				<min>5.2.4</min>
+			</php>
+			<pearinstaller>
+				<min>1.4.1</min>
+			</pearinstaller>
+
+		</required>
+	</dependencies>
+	<phprelease />
+	<changelog>
+		<release>
+			<version>
+				<release>1.0.0</release>
+				<api>1.0.0</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<license uri="http://www.symfony-project.org/license">MIT License</license>
+			<date>2011-01-19</date>
+			<notes>
+* welante: initial release
+   </notes>
+		</release>
+	</changelog>
+</package>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>PsAlbumComment List</source>
+				<target>Danh sách comment</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsAlbumComment</source>
+				<target>Thêm mới comment</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsAlbumComment</source>
+				<target>Cập nhật thông tin comment</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Relative</source>
+				<target>Phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Nội dung comment</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total comment</source>
+				<target>Tổng lượt comment</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Album title</source>
+				<target>Tên album</target>
+			</trans-unit>
+		
+			<trans-unit>
+				<source>Relative title</source>
+				<target>Phụ huynh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is payment</source>
+				<target>Dùng để tính tiền</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>-Select type-</source>
+				<target>-Chọn phân loại-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select payment-</source>
+				<target>-Dùng để tính tiền-</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

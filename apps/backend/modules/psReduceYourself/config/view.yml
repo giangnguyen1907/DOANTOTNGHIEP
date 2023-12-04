@@ -1,0 +1,7 @@
+editSuccess:
+  javascripts: 
+    - /psAdminThemePlugin/js/modules/ps_class_rooms.js: {position: last}
+
+newSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/modules/ps_class_rooms.js: {position: last}

@@ -1,0 +1,29 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_SYSTEM_CONFIG_PAYMENTS_SHOW,PS_SYSTEM_CONFIG_PAYMENTS_EDIT,PS_SYSTEM_CONFIG_PAYMENTS_DETAIL,PS_SYSTEM_CONFIG_PAYMENTS_ADD,PS_SYSTEM_CONFIG_PAYMENTS_DELETE]]   
+
+new:
+  is_secure: true
+  credentials: [PS_SYSTEM_CONFIG_PAYMENTS_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_SYSTEM_CONFIG_PAYMENTS_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_SYSTEM_CONFIG_PAYMENTS_EDIT]  
+
+delete:
+  is_secure: true
+  credentials: [PS_SYSTEM_CONFIG_PAYMENTS_DELETE]

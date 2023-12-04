@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsCmsNotifications
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_cms_notifications
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        date_at : {date_format: HH:mm dd/MM/yyyy}       
+      list:
+        title: Notifications
+        display: [created_by,title,date_at,_list_received]
+        table_method: doSelectQuery
+        max_per_page: 25            
+      filter:
+        display: [title,description,date_at_from,date_at_to,type]
+      form:    ~
+      edit:    ~
+      new:
+        title: New Notification

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			<trans-unit>
+				<source>Edit articles: %%title%%</source>
+				<target>Sửa bài: %%title%%</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Articles from KidsSchool</source>
+				<target>Bản tin từ KidsSchool.vn</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Articles from school</source>
+				<target>Bản tin từ nhà trường</target>
+			</trans-unit>
+			<trans-unit>
+				<source>Articles List</source>
+				<target>Danh sách tin tức</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Add articles</source>
+				<target>Thêm bài viết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Note</source>
+				<target>Mô tả ngắn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Description</source>
+				<target>Nội dung</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is Publish</source>
+				<target>Trạng thái</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>File name</source>
+				<target>Tên file</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Article information</source>
+				<target>Thông tin bài viết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Created by</source>
+				<target>Người viết</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Updated by</source>
+				<target>Người sửa</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select access-</source>
+				<target>-Vùng hiển thị-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Public</source>
+				<target>Nhà trường + Người thân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Private</source>
+				<target>Nội bộ trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select Kidsschool.vn-</source>
+				<target>-Hiển thị toàn hệ thống-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Article image</source>
+				<target>Ảnh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Blog Search...</source>
+				<target>Tìm kiếm...</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is access</source>
+				<target>Vùng hiển thị</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is global</source>
+				<target>Hiển thị cho toàn bộ khách hàng KidsSchool xem</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No article</source>
+				<target>Không có bài viết nào</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Newest Articles</source>
+				<target>Bài viết mới nhất</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Added after saving the data</source>
+				<target>Thêm mới sau khi đã thêm bài viết</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Basis enrollment</source>
+				<target>Cơ sở đào tạo</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select basis enrollment-</source>
+				<target>-Chọn cơ sở đào tạo-</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>If not selected entries will be displayed in all the training facilities of schools</source>
+				<target>Nếu không chọn bài viết sẽ hiển thị trong tất cả các cơ sở đào tạo của nhà trường</target>
+			</trans-unit>
+			
+			
+		</body>
+	</file>
+</xliff>

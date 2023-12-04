@@ -1,0 +1,18 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true #Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+
+import:
+  is_secure: true
+  credentials: [PS_STUDENT_MSTUDENT_IMPORT]  
+
+importsave:
+  is_secure: true
+  credentials: [PS_STUDENT_MSTUDENT_IMPORT]

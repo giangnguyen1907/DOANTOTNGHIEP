@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Student name</source>
+				<target>Họ tên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List subject option</source>
+				<target>Đánh giá môn học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student list</source>
+				<target>Danh sách học sinh</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Classroom performance assessment</source>
+				<target>Đánh giá học tập</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select subjects-</source>
+				<target>-Chọn môn học-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select courses-</source>
+				<target>-Chọn khóa học-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Choose a schedule-</source>
+				<target>-Chọn lịch học-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-No schedule-</source>
+				<target>-Không có lịch học-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service course comment</source>
+				<target>Chi tiết nhận xét học tập</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Course comment</source>
+				<target>Lịch sử nhận xét</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Comment</source>
+				<target>Nhận xét</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select subject to to filter the data.</source>
+				<target>Hãy chọn môn học để lọc dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select course to to filter the data.</source>
+				<target>Hãy chọn khóa học để lọc dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select schedule to to filter the data.</source>
+				<target>Hãy chọn lịch để lọc dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please enter class filter the data.</source>
+				<target>Hãy chọn lớp học để lọc dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>View history comment</source>
+				<target>Xem các đánh giá khác.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Action</source>
+				<target>Hành động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>History content</source>
+				<target>Nội dung hành động</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Service course</source>
+				<target>Dịch vụ khóa học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>History service course comment</source>
+				<target>Lịch sử đánh giá môn học</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Start time at</source>
+				<target>Thời gian bắt đầu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>End time at</source>
+				<target>Thời gian kết thúc</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Morning</source>
+				<target>Sáng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Afternoon</source>
+				<target>Chiều</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Evening</source>
+				<target>Tối</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

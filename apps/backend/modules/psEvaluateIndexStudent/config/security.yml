@@ -1,0 +1,33 @@
+# You can find more information about this file on the symfony website: dung cho thiet lap man hinh
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true #Yeu cau toan bo ung dung can phai dang nhap
+
+all:
+  is_secure: true
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_EVALUATE_INDEX_STUDENT_SHOW,PS_EVALUATE_INDEX_STUDENT_DETAIL,PS_EVALUATE_INDEX_STUDENT_ADD,PS_EVALUATE_INDEX_STUDENT_EDIT,PS_EVALUATE_INDEX_STUDENT_DELETE,PS_EVALUATE_INDEX_STUDENT_FILTER_SCHOOL]]   
+
+detail:
+  is_secure: true
+  credentials: [PS_EVALUATE_INDEX_STUDENT_DETAIL]
+
+new:
+  is_secure: true
+  credentials: [PS_EVALUATE_INDEX_STUDENT_ADD]  
+
+create:
+  is_secure: true
+  credentials: [PS_EVALUATE_INDEX_STUDENT_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_EVALUATE_INDEX_STUDENT_EDIT]  
+
+delete:
+  is_secure: true
+  credentials: [PS_EVALUATE_INDEX_STUDENT_DELETE]

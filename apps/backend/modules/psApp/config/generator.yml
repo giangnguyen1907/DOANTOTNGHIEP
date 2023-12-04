@@ -1,0 +1,51 @@
+# credentials: [A, B] => A and B; credentials: [[A, B]] => A and B
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsApp
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false    
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_app
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:
+        display: 	[ps_app_root,=title, app_code, is_activated,_iorder, updated_by,updated_at]
+        sort:		[iorder]
+        table_method: doSelectQuery
+        max_per_page: 30
+        batch_actions:
+         _updateOrder: {credentials: PS_SYSTEM_APPLICATION_EDIT,label: Update}
+      filter:  
+        display: 	[ps_app_root,title, app_code, is_system,is_activated]
+      form:
+        display:    [ps_app_root,title, app_code,description,iorder,is_system,is_activated]
+      edit:    
+        fields:
+          app_code: {help: Application code help}
+        actions:
+          _delete:       ~
+          _list:
+            credentials: [PS_SYSTEM_APPLICATION_EDIT]
+          _save:
+            credentials: [PS_SYSTEM_APPLICATION_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_APPLICATION_EDIT]                   
+      new:     
+        fields:
+          app_code: {help: Application code help}
+        actions:          
+          _list:
+            credentials: [PS_SYSTEM_APPLICATION_EDIT]
+          _save:
+            credentials: [PS_SYSTEM_APPLICATION_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_APPLICATION_EDIT]        

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+			<trans-unit>
+				<source>-Gender-</source>
+				<target>Giới tính</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student class</source>
+				<target>DANH SÁCH HỌC SINH LỚP </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student import growths</source>
+				<target>DANH SÁCH HỌC SINH </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is month</source>
+				<target>Tháng tuổi</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min height1</source>
+				<target>Chiều cao (-3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max height1</source>
+				<target>Chiều cao (+3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min height</source>
+				<target>Chiều cao (-2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max height</source>
+				<target>Chiều cao (+2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min weight1</source>
+				<target>Cân nặng (-3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max weight1</source>
+				<target>Cân nặng (+3SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min weight</source>
+				<target>Cân nặng (-2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max weight</source>
+				<target>Cân nặng (+2SD)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>BMI new</source>
+				<target>Thêm mới chỉ số chiều cao, cân nặng tiêu chuẩn của trẻ
+				</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>BMI list</source>
+				<target>Bảng chiều cao, cân nặng tiêu chuẩn của trẻ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Examination</source>
+				<target>Đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsStudentBmi</source>
+				<target>Sửa chỉ số chiều cao cân nặng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min height lever 2</source>
+				<target>Đường biên cảnh báo chiều cao thấp còi độ 2</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max height lever 2</source>
+				<target>Đường biên chiều cao vượt trội</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min height lever</source>
+				<target>Đường biên cảnh báo chiều cao thấp còi độ 1</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max height lever</source>
+				<target>Đường biên chiều cao vượt trung bình</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min weight lever 2</source>
+				<target>Đường biên cảnh báo suy dinh dưỡng nặng</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max weight lever 2</source>
+				<target>Đường biên cảnh báo nguy cơ béo phì</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Min weight lever</source>
+				<target>Đường biên cảnh báo suy dinh dưỡng nhẹ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Max weight lever</source>
+				<target>Đường biên cảnh báo nguy cơ thừa cân</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Student growth import</source>
+				<target>Import dữ liệu khám sức khỏe</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select customer</source>
+				<target>Chọn Trường</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select workplace</source>
+				<target>Chọn cơ sở</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select class</source>
+				<target>Chọn Lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Select examination</source>
+				<target>Chọn đợt khám</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select examination-</source>
+				<target>-Đợt khám-</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Input file</source>
+				<target>Chọn tệp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Upload</source>
+				<target> Tải lên</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Roll Back</source>
+				<target> Về DS</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>The excel file must be in the format: xls, xlsx. File size less than %value%KB.</source>
+				<target>Định dạnh file không đúng xls, xlsx hoặc dung lượng vượt quá %value%KB</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file successfully %value% data.</source>
+				<target>Import thành công %value% dữ liệu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Error : </source>
+				<target>Lỗi : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Line</source>
+				<target>Dòng : </target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student import growths</source>
+				<target>DANH SÁCH HỌC SINH TOÀN CƠ SỞ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Import file failed.</source>
+				<target>File import bị lỗi, vui lòng kiểm tra lại.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>List student export in month</source>
+				<target>Tải biểu mẫu import dữ liệu y tế theo lớp.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Please select class filter the data.</source>
+				<target>Vui lòng chọn lớp để tải biểu mẫu</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Medium height</source>
+				<target>Chiều cao TB</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Medium weight</source>
+				<target>Cân nặng TB</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Student of code %s% students aged unusually large. Please check back.</source>
+				<target>Học sinh có mã %s% có độ tuổi lớn bất thường. Hãy kiểm tra lại.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,28 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsEvaluateSemester
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_evaluate_semester
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        display: [student_id,_student_name,title,url_file,is_public,updated_at]
+        table_method: doSelectQuery
+        max_per_page: 35
+      filter:
+        display: [school_year_id,ps_customer_id,ps_workplace_id,ps_class_id,title]
+      form:
+        fields:
+          url_file: {help: Get link from google drive}
+        display: [ps_customer_id,ps_workplace_id,ps_class_id,student_id,title,url_file,is_public]
+      edit:    ~
+      new:     ~

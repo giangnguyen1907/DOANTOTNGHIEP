@@ -1,0 +1,55 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsFoods
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_foods
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_NUTRITION_FOOD_EDIT}
+        _new: {credentials: PS_NUTRITION_FOOD_ADD}
+        _delete: {credentials: PS_NUTRITION_FOOD_DELETE,confirm: "Are you sure?"}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:
+        title: Foods
+        display: [_file_name,=title,customer_title,note,iorder,is_activated,updated_by,updated_at]
+        table_method: doSelectQuery
+        sort: [ps_customer_id, DESC]
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_NUTRITION_FOOD_ADD}
+        object_actions:
+          _edit: {credentials: PS_NUTRITION_FOOD_EDIT}
+          _delete: {credentials: PS_NUTRITION_FOOD_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_NUTRITION_FOOD_DELETE,confirm: "Are you sure?"}     
+      filter:        
+         display: [ps_customer_id,title,is_activated]
+      form:	   ~
+      detail:  ~
+      edit:
+       actions:
+          _list:
+            credentials: [[PS_NUTRITION_FOOD_SHOW,PS_NUTRITION_FOOD_DETAIL,PS_NUTRITION_FOOD_EDIT,PS_NUTRITION_FOOD_ADD,PS_NUTRITION_FOOD_DELETE]]
+          _delete: {credentials: PS_NUTRITION_FOOD_DELETE,confirm: "Are you sure?"}
+          _save:
+            credentials: [PS_NUTRITION_FOOD_EDIT]
+          _save_and_add:
+            credentials: [PS_NUTRITION_FOOD_ADD]        
+      new:
+       actions:          
+          _list:
+            credentials: [[PS_NUTRITION_FOOD_SHOW,PS_NUTRITION_FOOD_DETAIL,PS_NUTRITION_FOOD_EDIT,PS_NUTRITION_FOOD_ADD,PS_NUTRITION_FOOD_DELETE]]
+          _save:
+            credentials: [PS_NUTRITION_FOOD_ADD]
+          _save_and_add:
+            credentials: [PS_NUTRITION_FOOD_ADD]

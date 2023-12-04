@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="EN" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			<trans-unit>
+				<source>Students statistic in customer: %%title%%</source>
+				<target>Thống kê học sinh trong trường: %%title%%</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>No.</source>
+				<target>STT</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total Class</source>
+				<target>Số lớp</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Total Student</source>
+				<target>Sĩ số</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Offical</source>
+				<target>Chính thức</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Test</source>
+				<target>Học thử</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop studying</source>
+				<target>Thôi học</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

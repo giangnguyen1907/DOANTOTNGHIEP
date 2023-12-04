@@ -1,0 +1,38 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsHistoryFees
+    i18n_catalogue:        messages
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_history_fees
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        ps_action : {label: Action process}
+        receipt_date : {date_format: MM-yyyy, label: Month}
+        updated_at : {date_format: HH:mm dd-MM-yyyy, label: Updated by}
+      list:
+        display: [receipt_no,receipt_date,student_code,student_name,ps_action,updated_at]
+        table_method: doSelectQuery
+        sort: [updated_at, desc]
+        max_per_page: 35
+        object_actions:
+          detail:
+            action: detail
+            credentials: [PS_FEE_REPORT_HISTORY]
+            actions:
+              _list: ~
+        actions: []
+        batch_actions: {}
+      filter:
+        display: [ps_customer_id,student_code,receipt_no,receipt_date]
+      form: []
+      edit: []
+      new:  []

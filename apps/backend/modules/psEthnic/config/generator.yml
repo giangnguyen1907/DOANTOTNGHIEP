@@ -1,0 +1,45 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsEthnic
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_ethnic
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_SYSTEM_ETHNIC_EDIT}
+        _new: {credentials: PS_SYSTEM_ETHNIC_ADD}
+        _delete: {credentials: PS_SYSTEM_ETHNIC_DELETE}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+      list:    
+        display: [=title,iorder,is_activated, updated_by,updated_at]
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+      filter:
+        display: 	[title,is_activated]
+      form:    ~
+      edit:
+        actions:
+          _delete:       ~
+          _list:
+            credentials: [[PS_SYSTEM_ETHNIC_SHOW,PS_SYSTEM_ETHNIC_DETAIL,PS_SYSTEM_ETHNIC_EDIT]]
+          _save:
+            credentials: [PS_SYSTEM_ETHNIC_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_ETHNIC_EDIT,PS_SYSTEM_ETHNIC_ADD]
+      new:
+        actions:          
+          _list:
+            credentials: [[PS_SYSTEM_ETHNIC_SHOW,PS_SYSTEM_ETHNIC_EDIT,PS_SYSTEM_ETHNIC_ADD,PS_SYSTEM_ETHNIC_DELETE]]
+          _save:
+            credentials: [PS_SYSTEM_ETHNIC_ADD]
+          _save_and_add:
+            credentials: [PS_SYSTEM_ETHNIC_ADD]

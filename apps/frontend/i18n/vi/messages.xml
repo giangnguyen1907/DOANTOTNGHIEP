@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file source-language="EN" target-language="vi" datatype="plaintext" original="messages" date="2011-07-14T18:19:46Z" product-name="messages">
+    <header/>
+    <body>
+      <trans-unit id="1">
+        <source>About Jobeet</source>
+        <target>Giới thiệu</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Full feed</source>
+        <target>Tin RSS</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Jobeet API</source>
+        <target>Hàm API</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>and %count% more...</source>
+        <target>và %count% Công việc khác...</target>
+        <target/>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Ask for people</source>
+        <target>Tìm kiếm ứng viên</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Post a Job</source>
+        <target>Đăng tuyển</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Ask for a job</source>
+        <target>Tìm việc</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Enter some keywords (city, country, position, ...)</source>
+        <target>Nhập từ khóa ...(thành phố, đất nước, vị trí tuyển dụng...)</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Recent viewed jobs:</source>
+        <target>Đã xem:</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

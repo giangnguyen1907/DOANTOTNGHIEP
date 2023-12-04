@@ -1,0 +1,56 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsAppPermission
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_app_permission
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+        created_at : {label: "Create At", date_format: HH:mm dd/MM/yyyy}
+        updated_at : {label: "Update At",date_format: HH:mm dd/MM/yyyy}
+      list:    
+        title: Application permission list
+        display: 	[=title, app_code]
+        sort:		[id, asc]
+        fields:
+         app_code : {label: "Application code"}
+         title : {label: "Application name"}
+        max_per_page:   50
+        object_actions: 
+          _edit: ~
+          _delete: ~          
+        batch_actions: {}
+        table_method: doSelectQuery        
+      filter:  
+        display: 	[ps_app_id]
+      form:
+        display: 	[ps_app_id,title,app_permission_code,description,iorder,is_system]
+        fields:
+          app_permission_code: {help: Application permission code help}
+      edit:
+        title: Edit application permission
+        actions:
+          _list:
+            credentials: [PS_SYSTEM_APP_PERMISSION_EDIT]
+          _save:
+            credentials: [PS_SYSTEM_APP_PERMISSION_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_APP_PERMISSION_EDIT]
+          _delete:       ~
+      new:
+        title: New application permission
+        actions:          
+          _list:
+            credentials: [PS_SYSTEM_APP_PERMISSION_EDIT]
+          _save:
+            credentials: [PS_SYSTEM_APP_PERMISSION_EDIT]
+          _save_and_add:
+            credentials: [PS_SYSTEM_APP_PERMISSION_EDIT]

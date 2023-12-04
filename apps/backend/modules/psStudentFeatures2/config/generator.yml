@@ -1,0 +1,33 @@
+# Chuc nang danh gia hoa dong cua hoc sinh theo ngay
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           StudentFeature
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_student_features
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _save: {credentials: [[PS_STUDENT_FEATURE_ADD,PS_STUDENT_FEATURE_EDIT,PS_STUDENT_ATTENDANCE_TEACHER]]}
+        _delete: {credentials: [[PS_STUDENT_FEATURE_DELETE,PS_STUDENT_ATTENDANCE_TEACHER]]}
+      fields:  ~
+      list:
+       display: [_view_img,student_name,_list_feature_option,_send_email]
+       table_method: doSelectQuery
+       max_per_page: {}
+       object_actions:
+         _edit: ~
+         _delete: ~
+       actions:
+         _save: {credentials: [[PS_STUDENT_FEATURE_ADD,PS_STUDENT_FEATURE_EDIT,PS_STUDENT_ATTENDANCE_TEACHER]]}
+       batch_actions:
+         _save: {credentials: [[PS_STUDENT_FEATURE_ADD,PS_STUDENT_FEATURE_EDIT,PS_STUDENT_ATTENDANCE_TEACHER]]}
+         _delete: {credentials: [[PS_STUDENT_FEATURE_DELETE, PS_STUDENT_ATTENDANCE_TEACHER]]}
+      filter:  ~ 
+      form:    ~

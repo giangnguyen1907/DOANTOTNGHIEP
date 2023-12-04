@@ -1,0 +1,38 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/08-Security
+default:
+  is_secure:   true # Yeu cau toan bo ung dung can phai dang nhap
+
+# quyen cua action
+# Hien thi danh sach
+index:
+  is_secure: true
+  credentials: [[PS_STUDENT_CLASS_SHOW,PS_STUDENT_CLASS_DETAIL,PS_STUDENT_CLASS_ADD,PS_STUDENT_CLASS_EDIT,PS_STUDENT_CLASS_DELETE,PS_STUDENT_CLASS_FILTER_SCHOOL,PS_STUDENT_CLASS_REGISTER_STUDENT]]
+
+new:
+  is_secure: true
+  credentials: [PS_STUDENT_CLASS_ADD]
+
+edit:
+  is_secure: true
+  credentials: [PS_STUDENT_CLASS_EDIT]
+
+delete:
+  is_secure: true
+  credentials: [PS_STUDENT_CLASS_DELETE]
+
+detail:
+  is_secure: true
+  credentials: [[PS_STUDENT_CLASS_DETAIL,PS_STUDENT_CLASS_ADD,PS_STUDENT_CLASS_EDIT,PS_STUDENT_CLASS_DELETE]]
+
+move:
+  is_secure: true
+  credentials: [PS_STUDENT_CLASS_REGISTER_STUDENT]
+  
+stopStudying:
+  is_secure: true
+  credentials: [PS_STUDENT_CLASS_REGISTER_STUDENT]
+
+moveClass:
+  is_secure: true
+  credentials: [PS_STUDENT_CLASS_REGISTER_STUDENT]

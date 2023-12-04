@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+	<file source-language="en" target-language="vi"
+		datatype="plaintext" original="messages" date="2011-10-08T12:01:52Z"
+		product-name="messages">
+		<header />
+		<body>
+
+			
+			<trans-unit>
+				<source>Reduce Yourself Information</source>
+				<target>Thông tin giảm trừ</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>Service Information</source>
+				<target>Thông tin dịch vụ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>New PsReduceYourself</source>
+				<target>Thêm mới giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>PsReduceYourself List</source>
+				<target>Danh sách giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Edit PsReduceYourself</source>
+				<target>Cập nhật thông tin giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Is type</source>
+				<target>Loại giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Title</source>
+				<target>Tên giảm trừ</target>
+			</trans-unit>
+		
+			<trans-unit>
+				<source>Level</source>
+				<target>Mức độ giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Discount</source>
+				<target>Giảm lũy kế?</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Reduce code</source>
+				<target>Mã giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Level reduce help</source>
+				<target>Các mức giảm trừ được ưu tiên từ bé đến lớn</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Discount reduce help</source>
+				<target>VD: đã giảm phí ở chính sách rồi, có cho phép giảm lũy kế tiếp hay không</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Status</source>
+				<target>Kiểu giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Start</source>
+				<target>Bắt đầu từ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Stop</source>
+				<target>Đến bao nhiêu</target>
+			</trans-unit>
+			
+			<trans-unit>
+				<source>-Select reduce-</source>
+				<target>Chọn kiểu giảm trừ</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Status reduce help</source>
+				<target>"Năm đầu" không phụ thuộc vào giá trị giới hạn. "Năm cuối": Từ tháng nhập học đến lúc kết thúc năm học còn lại bao nhiêu (từ 0 - 11)</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>-Select type-</source>
+				<target>Chọn loại giảm trừ</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

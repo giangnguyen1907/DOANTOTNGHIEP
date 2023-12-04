@@ -1,0 +1,57 @@
+default:
+  has_layout:     true
+  layout:         layout
+  http_metas:
+    content-type: text/html
+  javascripts:    [/psAdminThemePlugin/js/app.config.js, /psAdminThemePlugin/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js, /psAdminThemePlugin/js/bootstrap/bootstrap.min.js, /psAdminThemePlugin/js/smartwidgets/jarvis.widget.min.js, /psAdminThemePlugin/js/plugin/sparkline/jquery.sparkline.min.js, /psAdminThemePlugin/js/plugin/masked-input/jquery.maskedinput.min.js, /psAdminThemePlugin/js/plugin/msie-fix/jquery.mb.browser.min.js, /psAdminThemePlugin/js/plugin/fastclick/fastclick.min.js, /psAdminThemePlugin/js/plugin/select2/select2.min.js, /psAdminThemePlugin/js/app.min.js, /psAdminThemePlugin/js/page-setup.js: { position: last }]
+  stylesheets:    [/psAdminThemePlugin/css/bootstrap.min.css, /psAdminThemePlugin/css/font-awesome.min.css, /psAdminThemePlugin/css/smartadmin-production.min.css, /psAdminThemePlugin/css/smartadmin-skins.min.css, /psAdminThemePlugin/css/psAdminTheme.css]
+  
+indexSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.colVis.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.tableTools.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/datatables/dataTables.fixedHeader.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/table.js
+  stylesheets:    []
+
+editSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:    
+    - /psAdminThemePlugin/js/plugin/datatables/jquery.dataTables.min.js
+    - /psAdminThemePlugin/js/plugin/datatable-responsive/datatables.responsive.min.js    
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js
+#    - /psAdminThemePlugin/js/plugin/intl-tel/js/intlTelInput.min.js           
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/action.js: {position: last}
+  stylesheets:    
+    - /psAdminThemePlugin/js/plugin/formvalidation/css/formValidation.min.css
+#    - /psAdminThemePlugin/js/plugin/intl-tel/css/intlTelInput.css
+
+newSuccess:
+  has_layout:     true
+  layout:         layout
+  javascripts:    
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/libs/i18n/ui.datepicker-vi.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/form_validation.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/framework/bootstrap.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/i18n.min.js
+    - /psAdminThemePlugin/js/plugin/formvalidation/js/language/vi_VN.js
+#    - /psAdminThemePlugin/js/plugin/intl-tel/js/intlTelInput.min.js
+    - /psAdminThemePlugin/js/js_action_batch.js
+    - /psAdminThemePlugin/js/action.js: {position: last}           
+  stylesheets:    
+    - /psAdminThemePlugin/js/plugin/formvalidation/css/formValidation.min.css
+#    - /psAdminThemePlugin/js/plugin/intl-tel/css/intlTelInput.css

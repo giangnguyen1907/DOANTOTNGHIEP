@@ -1,0 +1,36 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsConfigPayments
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_config_payments
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy, label: Updated by}
+      list:
+        display: 	[title,price,number_month,note,is_activated,updated_at]
+        table_method: doSelectQuery
+        max_per_page: 35
+      filter:
+        display: [ps_customer_id,is_activated,title]
+      form:    ~
+      edit:
+        actions:
+          _list: ~         
+          _save: ~
+          _save_and_add: ~
+          _delete: ~
+      new:
+        actions:
+          _list: ~         
+          _save: ~
+          _save_and_add: ~

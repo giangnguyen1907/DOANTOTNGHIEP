@@ -1,0 +1,31 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           StudentServiceCourseComment
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_student_service_course_comment
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+       title: Classroom performance assessment
+       #display: [_view_img,student_name,_list_subject_option]
+       display: [_view_img,student_name,_list_subject_option]
+       table_method: doSelectQuery
+       max_per_page: {}
+       object_actions:
+          _edit: ~
+          _delete: ~
+       actions: {}
+      filter:
+        display: [ps_customer_id, ps_workplace_id, ps_service_id, ps_service_course_id, tracked_at, ps_service_course_schedule_id]
+      form:    ~
+      edit:    ~
+      new:     ~

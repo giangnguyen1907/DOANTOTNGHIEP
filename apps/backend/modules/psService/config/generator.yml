@@ -1,0 +1,89 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Service
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_service
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: {credentials: [[PS_STUDENT_SERVICE_EDIT,PS_STUDENT_SERVICE_DETAIL,PS_STUDENT_SERVICE_DELETE]]}
+        _edit: {credentials: PS_STUDENT_SERVICE_EDIT}
+        _new: {credentials: PS_STUDENT_SERVICE_ADD}
+        _delete: {credentials: PS_STUDENT_SERVICE_DELETE,confirm: "Are you sure wish delete this service?"}
+      fields:  
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        detail_at: {date_format: dd/MM/yyyy}
+      list:
+        display: [id,=title,_list_enable_roll, group_name,iorder,_service_detail,_list_is_default,is_activated,updated_at]        
+        sort: [iorder, asc]
+        table_method: doSelectQuery
+        max_per_page: {}
+        object_actions:
+          _detail: ~
+          _edit: {credentials: PS_STUDENT_SERVICE_EDIT}
+          _delete: {credentials: PS_STUDENT_SERVICE_DELETE}
+        batch_actions:
+#         _delete: ~
+         _updateOrder: {credentials: PS_STUDENT_SERVICE_EDIT,label: Update Order}      
+      filter:
+        display: [ps_customer_id,ps_workplace_id,service_group_id,enable_roll,is_default,is_activated,title]        
+      form:
+        fields:
+          enable_roll: {help: Enable roll help}
+          is_default: {help: Is default help}
+          enable_saturday: {help: Enable saturday help}
+          is_type_fee: {help: Note of is type fee}
+          price: {help: price help}
+          service_reduce: {help: Service reduce help}
+          service_month: {help: Service month help}
+          ps_workplace_id: {help: Workplace null help}
+          caphoc: {help: Cap hoc help}
+          chuongtrinh: {help: Chuong trinh help}
+          khoihoc: {help: Khoi hoc help}
+          class_id: {help: Lop hoc help}
+          doituong: {help: Doi tuong help}
+          dotuoi: {help: Do tuoi help}
+          is_kidsschool: {help: Is kidsschool help}
+          service_type: {help: Service type help}
+      edit:
+       title: Editing service: %%title%%
+       actions:
+         _list: ~
+#         new_detail:
+#           lable: New detail
+#           action: addDetail
+#           credentials: [[PS_STUDENT_SERVICE_DETAIL_ADD, PS_STUDENT_SERVICE_DETAIL_EDIT]]
+         _save:
+           label: Save
+           action: submit
+         _save_and_add:
+            credentials: [PS_STUDENT_SERVICE_EDIT,PS_STUDENT_SERVICE_ADD]
+         _delete:
+           confirm: "Are you sure wish delete this service?"
+       display:
+#         Service infomation: [ps_customer_id,ps_workplace_id,ps_school_year_id,service_group_id,title,is_kidsschool,enable_roll,is_type_fee,is_default,enable_saturday,ps_image_id,note,iorder,description,is_activated]
+         Service infomation: [ps_customer_id,ps_school_year_id,service_group_id,title,ps_workplace_id,caphoc,chuongtrinh,khoihoc,doituong,class_id,is_kidsschool,enable_roll,is_type_fee,is_default,service_type,service_month,service_reduce,price,ps_image_id,note,iorder,description,is_activated]
+         Price information and the time apply: [_form_edit_servicedetail]
+      new:
+       actions:
+         _list: ~
+#         new_detail:
+#           lable: New detail
+#           action: addDetail
+#           credentials: [[PS_STUDENT_SERVICE_DETAIL_ADD, PS_STUDENT_SERVICE_DETAIL_EDIT]]
+         _save:
+           label: Save
+           action: submit
+         _save_and_add:
+            credentials: [PS_STUDENT_SERVICE_EDIT,PS_STUDENT_SERVICE_ADD]
+       display:
+         Service infomation: [ps_customer_id,ps_school_year_id,service_group_id,title,ps_workplace_id,caphoc,chuongtrinh,khoihoc,doituong,class_id,is_kidsschool,enable_roll,is_type_fee,service_type,is_default,service_month,service_reduce,price,ps_image_id,note,iorder,description,is_activated]
+         Price information and the time apply: [_form_new_servicedetail]

@@ -1,0 +1,28 @@
+Thêm trường statistic_class_id vào bảng student
+			statistic_myclass_id, form_statistic_myclass_id vào bảng student_class
+			is_reduce vào bảng ps_work_places
+
+			number_month, regularity_id vào bảng student_service
+			--number_month (lấy từ number trong bảng ps_regularity)
+			--regularity_id (id của bảng ps_regularity)
+			Số lượng tần xuất->tần xuất thu (tháng)
+
+			is_lastyear vào bảng my_class (int): Tích chọn là năm cuối hay không, nếu tích chọn, cập nhật trạng thái học sinh có trong lớp -> năm cuối // 0: không là năm cuối, 1: là năm cuối
+
+			serviceform (lib/form): hướng dẫn lưu dưới dạng 1,2,3, ($service_reduce)
+
+			policy code: mã giảm trừ
+			json_service: lưu dưới dạng mảng, lấy ra id của service là dịch vụ cố định enable_roll = 1,
+						Thiết kế màn hình checkbox giống sửa sinh viên của trường qldt-uts, 1 bên hiển thị hộp input (số tiền giảm trừ), 1 bên hiển thị tên của dịch vụ cố định
+						Lưu id và số tiền giảm trừ
+
+			truongtrinh: truyền thống, quốc tế (1,2)
+			caphoc: Mầm non, tiểu học, trung học cơ sở, trung học phổ thông (1->4)
+
+			thêm trường ps_myclass_code (varchar) vào bảng ps_feature_branch_time_my_class
+						ps_class_code (varchar) vào bảng feature_branch_times
+			
+psStudents/templates/_list_relative thêm reload()
+
+form select (ấn vào sửa sinh viên -> dịch vụ đã đăng kí -> sửa dịch vụ -> lỗi chọn thẻ select) - done
+			(ấn vào sửa sinh viên -> thông tin lớp học -> sửa hoặc thêm mới -> lỗi chọn thẻ select)

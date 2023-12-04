@@ -1,0 +1,33 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsTeacherClass
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_teacher_class
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _delete: {credentials: PS_STUDENT_TEACHER_CLASS_DELETE}
+        _save: {credentials: PS_STUDENT_TEACHER_CLASS_EDIT}
+      fields:  []
+      list:    []
+      filter:  ~
+      form:
+        display: [ps_myclass_id,ps_member_id,start_at,stop_at,primary_teacher]
+      edit:
+        title: Assigned teachers for class: %%my_class%%
+        actions:
+          _delete: {credentials: PS_STUDENT_TEACHER_CLASS_DELETE}
+          _cancel: ~
+          _save: {credentials: PS_STUDENT_TEACHER_CLASS_EDIT}
+      new:
+        title: Assigned teachers for class: %%my_class%%
+        actions:
+          _cancel: ~
+          _save: {credentials: PS_STUDENT_TEACHER_CLASS_EDIT}

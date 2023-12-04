@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsServiceCourses
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_service_courses
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _edit: {credentials: PS_STUDENT_SERVICE_COURSES_EDIT}
+        _new: {credentials: PS_STUDENT_SERVICE_COURSES_ADD}
+        _delete: {credentials: PS_STUDENT_SERVICE_COURSES_DELETE}
+      fields:  
+        start_at : {date_format: dd-MM-yyyy}
+        end_at : {date_format: dd-MM-yyyy}
+        updated_at : {date_format: HH:mm dd-MM-yyyy}            
+      list:
+        title: Courses list
+        display: [=course_title,subjects_title,teacher,start_at,end_at,note,is_activated,updated_by]
+        sort: [id, asc]
+        table_method: doSelectQuery
+        max_per_page: 35
+      filter:  ~
+      form:    ~      
+      edit:
+        title: Edit service courses
+        display: 
+          Courses information: [ps_customer_id,ps_service_id,ps_member_id,title,start_at,end_at,note,is_activated]
+          Student of the courses: [_list_student]
+        actions:
+          _list: ~
+          _save: ~
+          _save_and_add: ~
+          _delete: ~
+      new:
+        title: New service courses
+        display: [ps_customer_id,ps_service_id,ps_member_id,title,start_at,end_at,note,is_activated]  

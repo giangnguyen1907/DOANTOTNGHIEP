@@ -1,0 +1,54 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsMenus
+    theme:                 admin2
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_menus
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _detail: ~
+        _edit: {credentials: PS_NUTRITION_MENUS_EDIT}
+        _new: {credentials: PS_NUTRITION_MENUS_ADD}
+        _delete: {credentials: PS_NUTRITION_MENUS_DELETE,confirm: "Are you sure?"}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        date_at : {date_format: dd/MM/yyyy}
+      list:
+        title: Menus
+        display: [meal_title,food_title,date_at,note,object_group_title,updated_by,updated_at]
+        table_method: doSelectQuery
+        sort: [date_at, desc]
+        max_per_page: 35
+        actions:
+          _new: {credentials: PS_NUTRITION_MENUS_ADD}
+        object_actions:
+          _detail: ~
+          _edit: {credentials: PS_NUTRITION_MENUS_EDIT}
+          _delete: {credentials: PS_NUTRITION_MENUS_DELETE,confirm: "Are you sure?"}
+        batch_actions:
+         _delete: {credentials: PS_NUTRITION_MENUS_DELETE,confirm: "Are you sure?"}     
+      filter:
+       display: [ps_customer_id,ps_workplace_id,ps_object_group_id,date_at_from,date_at_to,keywords]        
+      form:	   ~
+      edit:
+       actions:
+          _list: ~          
+          _save: ~
+          _save_and_add: ~
+          _delete: {credentials: PS_NUTRITION_MENUS_DELETE,confirm: "Are you sure?"}        
+      new:
+       actions:          
+          _list:
+            credentials: [PS_NUTRITION_MENUS_EDIT]
+          _save:
+            credentials: [PS_NUTRITION_MENUS_EDIT]
+          _save_and_add:
+            credentials: [PS_NUTRITION_MENUS_EDIT]

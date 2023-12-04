@@ -1,0 +1,47 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           FeatureOptionFeature
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_feature_option_feature
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+       _delete: {credentials: PS_SYSTEM_FEATURE_BRANCH_DELETE}
+      fields:
+        created_at : {date_format: HH:mm dd/MM/yyyy}
+        updated_at : {date_format: HH:mm dd/MM/yyyy}
+        order_by	: {label: Iorder}
+        _tpl_custom/type	: {label: Type}
+      list:        
+        title: Featureoptionfeature List "%%feature_name%%"        
+        display: [feature_option, _tpl_custom/type,order_by,is_activated,updated_by]
+        sort: [order_by,asc]
+        max_per_page: {}
+        table_method: doSelectQuery
+        object_actions:
+          _delete: ~
+        actions:
+          ps_feature_branch:
+            action: ps_feature_branch
+            label: Back group
+            params: class=btn btn-default btn-success bg-color-green btn-psadmin pull-left
+            credentials: [[PS_SYSTEM_FEATURE_ADD, PS_SYSTEM_FEATURE_EDIT]]
+        batch_actions:
+          _updateOrder:
+            label: Update Order
+            credentials: [PS_SYSTEM_FEATURE_BRANCH_EDIT]
+          _delete:
+            credentials: [PS_SYSTEM_FEATURE_BRANCH_DELETE]
+      filter: 
+        display: []
+        class: true
+      form:    ~
+      edit:    ~
+      new:     ~

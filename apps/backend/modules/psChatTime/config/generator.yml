@@ -1,0 +1,29 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           PsChatTime
+    theme:                 admin1
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          ps_chat_time
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: 
+        _edit: {credentials: PS_SYSTEM_CHAT_TIME_CONFIG_EDIT}
+        _new: {credentials: PS_SYSTEM_CHAT_TIME_CONFIG_ADD}
+        _delete: {credentials: PS_SYSTEM_CHAT_TIME_CONFIG_DELETE}
+      fields:  ~
+      list:
+        display: [title,ps_customer_id,chat_time,note,is_activated,updated_by]
+        table_method: doSelectQuery
+        max_per_page: 35
+      filter:
+        display: [ps_customer_id,ps_workplace_id,is_activated,keywords]
+      form:
+        display: [ps_customer_id,ps_workplace_id,title,note,start_time,end_time,is_activated]
+      edit:    ~
+      new:     ~

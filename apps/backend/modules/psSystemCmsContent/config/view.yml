@@ -1,0 +1,9 @@
+editSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/modules/ps_system_cms_content.js: {position: first} 
+    - /psAdminThemePlugin/js/plugin/ckeditor/ckeditor.js: {position: last}
+
+newSuccess:
+  javascripts:
+    - /psAdminThemePlugin/js/modules/ps_system_cms_content.js: {position: first} 
+    - /psAdminThemePlugin/js/plugin/ckeditor/ckeditor.js: {position: last}

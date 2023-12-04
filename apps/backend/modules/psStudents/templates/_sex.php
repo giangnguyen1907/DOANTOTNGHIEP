@@ -1,0 +1,1 @@
+<?php echo get_partial('global/field_custom/_field_sex', array('value' => $student->getSex())) ?>
